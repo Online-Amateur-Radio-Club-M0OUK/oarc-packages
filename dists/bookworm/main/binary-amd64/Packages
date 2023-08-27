@@ -1,0 +1,18 @@
+Package: qttermtcp
+Version: 0.0.0.69-1
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 641
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
+Priority: optional
+Section: hamradio
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-1_amd64.deb
+Size: 161976
+SHA256: 8b94a028fe2d1870a0f147a774e59db969f24e592c93b9d2fbae6fa3529f8259
+SHA1: 2cc95747d3b395f5422fbea403ff1ebc5fdcc6b2
+MD5sum: 21291b2b142be3cb3e83031654d0782c
+Description: Qt-based Terminal for packet
+ QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
+ and other modes of connectivity
+

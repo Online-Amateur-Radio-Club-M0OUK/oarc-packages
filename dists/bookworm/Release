@@ -1,0 +1,19 @@
+Origin: OARC Packet Radio Packages
+Label: maintained by hibby <d@vehibberd.com>
+Codename: bookworm
+Date: Sun, 27 Aug 2023 18:32:44 UTC
+Architectures: amd64
+Components: main
+Description: Personal repository
+MD5Sum:
+ 2b5b2d0775c414f95cdf770a0971fcc6 892 main/binary-amd64/Packages
+ c7d5e15715367149dc3b53cb0fd7924e 576 main/binary-amd64/Packages.gz
+ da6fafddca518cc8bbfa427a41488053 149 main/binary-amd64/Release
+SHA1:
+ 074b588ff67acac806fd6205f11a57cb0d84159e 892 main/binary-amd64/Packages
+ 55c13737b79d408afdb178054f647c622a6ba655 576 main/binary-amd64/Packages.gz
+ 861eafbe3c2e5a50dce965108f2d687c26ab0cee 149 main/binary-amd64/Release
+SHA256:
+ a65829af61a88026670d27df193b36eb20edd02d0cd93a7ffab5d93ec6583126 892 main/binary-amd64/Packages
+ 44d56be53e8b478e52af244c5a0117b851e6d0ef135605436b1f5ab28098a746 576 main/binary-amd64/Packages.gz
+ db36f77cd86619062ec8ad5b1cb7bf75cc5fe93f610ddc2a0ea7e08a26178033 149 main/binary-amd64/Release
