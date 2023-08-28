@@ -1,3 +1,20 @@
+Package: linbpq
+Version: 6.0.24.2-1
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 2262
+Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
+Homepage: http://users.telenet.be/on4qz
+Priority: optional
+Section: hamradio
+Filename: pool/main/l/linbpq/linbpq_6.0.24.2-1_amd64.deb
+Size: 659404
+SHA256: 47fe2f54c6c96c64c470a2cd21954a064990c866d2d5cd3bd9d1a4e84013cdd1
+SHA1: f825540e4c961d0ada8a7589fca5591aae9a30e8
+MD5sum: 674ff661d69ddd61a3aae4f9cfc8e70d
+Description: Packet node and ax25 stack
+ LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
+
 Package: qttermtcp
 Version: 0.0.0.69-1
 Architecture: amd64
