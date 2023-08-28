@@ -1,0 +1,36 @@
+Package: qttermtcp
+Version: 0.0.0.69-1~bpo11+1
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 396
+Depends: libc6 (>= 2.7), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
+Priority: optional
+Section: hamradio
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-1~bpo11+1_armhf.deb
+Size: 149164
+SHA256: 216360b1b24f8d4a6214c16e94f874a3d4f13ef55452df9635ef7a2c019d248b
+SHA1: 41aeb2bbe5a34f4b0230b563fc5be50dd836f241
+MD5sum: 68ab1b0007b705b691780e597ba5ea1a
+Description: Qt-based Terminal for packet
+ QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
+ and other modes of connectivity
+
+Package: qttermtcp-dbgsym
+Source: qttermtcp
+Version: 0.0.0.69-1~bpo11+1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1449
+Depends: qttermtcp (= 0.0.0.69-1~bpo11+1)
+Priority: optional
+Section: debug
+Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.69-1~bpo11+1_armhf.deb
+Size: 1408372
+SHA256: a18eac3d45dfae24ad2932cd83a526dba10bcc31c07c8d1187c4e78f1dd54018
+SHA1: cb4f1625fcbe45fcdc4fc8d1b60564468175817f
+MD5sum: d56b6017360c362d6c896091c84c80af
+Description: debug symbols for qttermtcp
+Build-Ids: d92e8477788670cb47d3964348bee4df0d6fef64
+

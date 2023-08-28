@@ -1,0 +1,5 @@
+Component: main
+Origin: OARC Packet Radio Packages
+Label: maintained by hibby <d@vehibberd.com>
+Architecture: armhf
+Description: Personal repository

@@ -1,0 +1,28 @@
+Origin: OARC Packet Radio Packages
+Label: maintained by hibby <d@vehibberd.com>
+Codename: bullseye
+Date: Mon, 28 Aug 2023 00:16:49 UTC
+Architectures: arm64 armhf
+Components: main
+Description: Personal repository
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-arm64/Packages.gz
+ 85a3b3467559fb886b48ea73229837bf 149 main/binary-arm64/Release
+ 7acef56b29b1cb4f63ae215d65e93bab 1548 main/binary-armhf/Packages
+ 21da6b176f2ec93245d53d7b46cdb964 800 main/binary-armhf/Packages.gz
+ 47020d436932796862fce3125a1dd35f 149 main/binary-armhf/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-arm64/Packages.gz
+ aa04bd08b7e068dca493103630f3907f4c39f5ec 149 main/binary-arm64/Release
+ b6d8d162c27b5583a7a2e9ae5fa0d2cc6076ffd1 1548 main/binary-armhf/Packages
+ b0906666655c156dda6eb89e0e913da17a581f91 800 main/binary-armhf/Packages.gz
+ 5e052182ed71404b6416e2ac60bbc072d1be5d55 149 main/binary-armhf/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-arm64/Packages.gz
+ 68dba0e6accaa6b0b39b8467f0d91435f6372669cfc6dd9cbdf75d9542a05c39 149 main/binary-arm64/Release
+ 0da4cc6e5613b9296c2bb8e537659ea97d1f323aa9b24d2a6a6d884deca2a8b0 1548 main/binary-armhf/Packages
+ 24647977e5f356ca84844421a0a825c991999cd7d1e5a87c0b05e8123e59638e 800 main/binary-armhf/Packages.gz
+ 665f0d489dedaa331562d16480cb68769744fceb435bd84030eacb6ed7acab08 149 main/binary-armhf/Release
