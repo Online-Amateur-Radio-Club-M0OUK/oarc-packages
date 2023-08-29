@@ -1,0 +1,31 @@
+<html>
+	<head> <title> OARC Packet Repo </title> </head>
+	<body>
+		<H1> OARC Packet Packages! </H1>
+		<p> Hello, you've stumbled upon our repository of commonly used packages, maintained by hibby, MM0RFN. If you have any issues, annoy him on discord and things might get fixed.</p>
+		<p> To play along at home, please follow the below advice.</p>
+		<br />
+		<p> First up, install the GPG key used to sign everything:
+		<code> curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo apt-key add </code>
+
+		<p>Add the following to your /etc/apt/sources.list:</p>
+		<p>For Debian Testing amd64:</p>
+		<code>deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages testing main</code>
+		<p> For Debian Stable (12, released June 2023) amd64:</p>
+		<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main</code>
+	<p> For Ubuntu 22.04 LTS (Jammy Jellyfish, released April 2022) amd64:</p>
+	<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main </code>
+	<p> RaspiOS Stable (bullseye, 32 bit, released 2020): </p>
+	<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bullseye main</code>
+	<br />
+	<p>Run the below commands to pull in the package lists & install <p> 
+	<code> sudo apt update
+	sudo apt install <pick from below packages> </code>
+
+	<p> Current packages available: </p>
+	<code> QtTermTCP (0.0.0.69 - nice edition)
+	LinBPQ (6.0.24.2)
+	Direwolf (1.7-dev) </code>
+	</body>
+</html>
+
