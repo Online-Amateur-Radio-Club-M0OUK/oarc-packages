@@ -1,3 +1,27 @@
+Package: direwolf
+Version: 1.7-dev+dfsg-jammy1
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1850
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.35), libgps28 (>= 3.3), libhamlib4, libudev1 (>= 183), adduser
+Suggests: gpsd, python3
+Breaks: direwolf-docs (<< 1.1-1)
+Replaces: direwolf-docs (<< 1.1-1)
+Homepage: https://github.com/wb2osz/direwolf
+Priority: optional
+Section: hamradio
+Filename: pool/main/d/direwolf/direwolf_1.7-dev+dfsg-jammy1_amd64.deb
+Size: 507990
+SHA256: edf0bb6dbe9262c7fd0610b9e9a7df3211c1da42e575b672466bde436efad685
+SHA1: d5588e0e1840950332375b55c63d230eab7c5d8b
+MD5sum: 077c0e50b4fea3697731877064f6751a
+Description: Soundcard TNC for APRS
+ Dire Wolf is a software "soundcard" modem/TNC and APRS encoder/decoder. It can
+ be used stand-alone to receive APRS messages, as a digipeater, APRStt gateway,
+ or Internet Gateway (IGate). It can also be used as a virtual TNC for other
+ applications such as APRSIS32, UI-View32, Xastir, APRS-TW, YAAC, UISS, Linux
+ AX25, SARTrack, and many others.
+
 Package: linbpq
 Version: 6.0.24.2-jammy1
 Architecture: amd64

@@ -1,3 +1,45 @@
+Package: direwolf
+Version: 1.7-dev+dfsg-1~bpo11+1
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1353
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.29), libgps28 (>= 3.3), libhamlib4, libudev1 (>= 183), adduser
+Suggests: gpsd, python3
+Breaks: direwolf-docs (<< 1.1-1)
+Replaces: direwolf-docs (<< 1.1-1)
+Homepage: https://github.com/wb2osz/direwolf
+Priority: optional
+Section: hamradio
+Filename: pool/main/d/direwolf/direwolf_1.7-dev+dfsg-1~bpo11+1_armhf.deb
+Size: 425760
+SHA256: 5f561928fa9f3f4a38055113065d2c5bbf44406232cec36c5613e82b1d070507
+SHA1: 0766df55880a46e8e54236d0ae71e95cccfa6fbf
+MD5sum: c001b3e16bdef16c7a74ae34cd52a870
+Description: Soundcard TNC for APRS
+ Dire Wolf is a software "soundcard" modem/TNC and APRS encoder/decoder. It can
+ be used stand-alone to receive APRS messages, as a digipeater, APRStt gateway,
+ or Internet Gateway (IGate). It can also be used as a virtual TNC for other
+ applications such as APRSIS32, UI-View32, Xastir, APRS-TW, YAAC, UISS, Linux
+ AX25, SARTrack, and many others.
+
+Package: direwolf-dbgsym
+Source: direwolf
+Version: 1.7-dev+dfsg-1~bpo11+1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1547
+Depends: direwolf (= 1.7-dev+dfsg-1~bpo11+1)
+Priority: optional
+Section: debug
+Filename: pool/main/d/direwolf/direwolf-dbgsym_1.7-dev+dfsg-1~bpo11+1_armhf.deb
+Size: 1324332
+SHA256: 9c9ba685662a42ebe2b5845dc9729ebf6f8feba9818bcab6844e95a98d70ebcc
+SHA1: 5c72b9559c706f68296e485b962e4ddf6cc1c5c6
+MD5sum: 70fececd18417d58cb106848d086dd6a
+Description: debug symbols for direwolf
+Build-Ids: 040f3702122ab83e1012b3aa369cc301599551c2 1e71beafd4d642b8afa52379ca8a18bfb54a0090 24cb6921c3bb242216357fb8e6c21fdef2c23189 36ef597fa9a493a1c156bf6163bacab2eda975c2 397fda1a93c1524d8fd643dd747d459a31fb8d71 495abff369d9badc4ff5549d0c9ffb095f4966a8 49a1ef852ae84108fbfe94169699105e1be1a64f 4ed7610cec74c0531882b5c36572c79e0670de1c 7eb9c09c6f9af9130aade928d4d85b5d3db67837 8f749769bfe4908a9a3e0a12311c6c4be6c87ad2 b4ac348b5b58beeec447052f1627d3889600d835 ce0f086daa2d42efe628360a705568dbc0808e9a cf81cdf837ba4cc5d414df5ccac62eefd8361b2e e1d5625b4801ceb4b734925f505ccc653937e340 e603d73e4e259308c312c070760d97fd60b43462
+
 Package: linbpq
 Version: 6.0.24.2-1~bpo11+1
 Architecture: armhf
