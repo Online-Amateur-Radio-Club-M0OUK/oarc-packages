@@ -6,7 +6,7 @@
 		<p> To play along at home, please follow the below advice.</p>
 		<br />
 		<p> First up, install the GPG key used to sign everything:
-		<code> curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo apt-key add </code>
+		<code> curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo tee /etc/apt/trusted.gpg.d/hibby.asc </code>
 
 		<p>Add the following to your /etc/apt/sources.list:</p>
 		<p>For Debian Testing amd64:</p>
