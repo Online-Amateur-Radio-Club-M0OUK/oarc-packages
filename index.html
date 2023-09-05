@@ -9,13 +9,13 @@
 		<code> curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo tee /etc/apt/trusted.gpg.d/hibby.asc </code>
 
 		<p>Add the following to your /etc/apt/sources.list:</p>
-		<p>For Debian Testing amd64:</p>
+		<p>For Debian Testing (13, amd64):</p>
 		<code>deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages testing main</code>
 		<p> For Debian Stable (12, released June 2023) amd64:</p>
 		<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main</code>
-	<p> For Ubuntu 22.04 LTS (Jammy Jellyfish, released April 2022) amd64:</p>
+	<p> For Ubuntu 22.04 LTS (Jammy Jellyfish, amd64, released April 2022) amd64:</p>
 	<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main </code>
-	<p> RaspiOS Stable (bullseye, 32 bit, released 2020): </p>
+	<p> RaspiOS Stable (bullseye, 32 bit armv7/armhf AND arm64, released 2020): </p>
 	<code> deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bullseye main</code>
 	<br />
 	<p>Run the below commands to pull in the package lists & install <p> 
@@ -23,9 +23,12 @@
 	<code> sudo apt install <pick from below packages> </code> <br >
 	<br />
 	<p> Current packages available: </p>
-	<code> QtTermTCP (0.0.0.69 - nice edition)</code><br />
+	<code>QtTermTCP (0.0.0.69 - nice edition)</code><br />
+	<code>QtSoundModem (0.0.0.66 - oarc enhanced beta)</code><br />
 	<code>LinBPQ (6.0.24.2)</code><br />
 	<code>Direwolf (1.7-dev) </code><br />
+	<code>Uronode (2.15, hibby's twists edition*) </code><br />
+	<p> * Hibby's twists include: addition of MOTD for users connecting in via Net/Rom, removal of all ROSE & FLEXNET menu commands and likely some other stuff I've forgotten. <p>
 	</body>
 </html>
 
