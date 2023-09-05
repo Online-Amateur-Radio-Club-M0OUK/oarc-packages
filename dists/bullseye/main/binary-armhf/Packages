@@ -57,6 +57,41 @@ MD5sum: ef170a74ccd691490596e7c611edcd39
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
+Package: qtsoundmodem
+Version: 0.0.0.66-1~bpo11+1
+Architecture: armhf
+Maintainer: Dave Hibberd <d@vehibberd.com>,
+Installed-Size: 719
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.27), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
+Priority: optional
+Section: hamradio
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.66-1~bpo11+1_armhf.deb
+Size: 216696
+SHA256: 30fa1e8e2b4cb7140573ab587f6f072287218f9cf78222b9126b61dc9097310d
+SHA1: 86b1cb01cd09ea578db3196a01717a599e7e4b3f
+MD5sum: 2038cf900cc47798d7bd87adf3849525
+Description: Qt-based Sound Modem & Terminal for packet
+ QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
+
+Package: qtsoundmodem-dbgsym
+Source: qtsoundmodem
+Version: 0.0.0.66-1~bpo11+1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: Dave Hibberd <d@vehibberd.com>,
+Installed-Size: 1693
+Depends: qtsoundmodem (= 0.0.0.66-1~bpo11+1)
+Priority: optional
+Section: debug
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.66-1~bpo11+1_armhf.deb
+Size: 1633456
+SHA256: 13d91f425732ecd0e9d7cc94e7e10a370d35f0aced12a90bc5bc5f29d3241bb9
+SHA1: f5c729dc2dd76c16a9a4ad3905c6d93873b673ad
+MD5sum: 662f9d0850c0d2e0a119f21b1a085df7
+Description: debug symbols for qtsoundmodem
+Build-Ids: 670b969ba7f348f79ca9fb3670fa24a1dafcb906
+
 Package: qttermtcp
 Version: 0.0.0.69-1~bpo11+1
 Architecture: armhf
@@ -92,4 +127,26 @@ SHA1: cb4f1625fcbe45fcdc4fc8d1b60564468175817f
 MD5sum: d56b6017360c362d6c896091c84c80af
 Description: debug symbols for qttermtcp
 Build-Ids: d92e8477788670cb47d3964348bee4df0d6fef64
+
+Package: uronode
+Version: 2.15-2~bpo11+1
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 255
+Depends: libax25, libc6 (>= 2.28)
+Breaks: ax25-node
+Replaces: ax25-node
+Homepage: https://uronode.sourceforge.net/
+Priority: optional
+Section: hamradio
+Filename: pool/main/u/uronode/uronode_2.15-2~bpo11+1_armhf.deb
+Size: 109952
+SHA256: 68ebf5122336d2da07e2b545276d04fbabf9cff45aac52f1b60d5e117d60933c
+SHA1: df7f880b65ffefa0d85780f1816f7ba62277fd0e
+MD5sum: bbc509001f250d242422cb7ca0ad4582
+Description: Node front end for AX.25, NET/ROM, Rose and TCP
+ URONode is a packet radio node front end for amateur radio operators.
+ It provides a shell modelled after those of LinuxNode, AWZNode and
+ Flexnode.  It is capable of initiating connections to remote stations
+ and exposing services installed on them to users.
 
