@@ -32,12 +32,12 @@ Nino and [John, G8BPQ](https://www.cantab.net/users/john.wiseman/Documents/) hav
 Direwolf 1.7 (still under development) supports il2p, so it is being shipped as part of this repo to help improve accessibility for all users. 
 
 ## Who is doing this?
-[Hibby, MM0RFN](https://foxk.it) is an experienced Debian maintainer and long-time Packet Radio enthusiast... and is also the author of the Readme!
+[Hibby, MM0RFN](https://foxk.it) is an experienced Debian maintainer and long-time packet radio enthusiast... and is also the author of the Readme!
 
-I run the packet node GB7HIB in the City of Aberdeen, Scotland, which is based on the Linux Kernel native packet stack, Direwolf and FBB - packages that I also maintains within Debian, amongst others. 
+I run the packet node GB7HIB in the City of Aberdeen, Scotland, which uses the Linux Kernel native packet stack, Direwolf and FBB - packages that I also maintain within Debian. 
 My full list of current Debian commitments is available [here.](https://qa.debian.org/developer.php?login=d%40vehibberd.com&comaint=yes).
 
-You'll find me in #scottisconsulate on hackint IRC, in the oarc Debian and on the fediverse as @red@woof.tech.  
+You'll find me in #scottishconsulate on hackint IRC, in the OARC Discord and on the fediverse as @red@woof.tech.  
 
 # Repo Details:
 
