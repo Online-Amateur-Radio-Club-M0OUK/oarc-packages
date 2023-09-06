@@ -71,12 +71,15 @@ Run the below commands to pull in the package lists & install;
 
 `sudo apt install <PACKAGE>`
 
-Current packages available:
-QtTermTCP (0.0.0.69 - nice edition)
-QtSoundModem (0.0.0.66 - oarc enhanced beta)
-LinBPQ (6.0.24.2)
-Direwolf (1.7-dev)
-Uronode (2.15, hibby's twists edition*)
+# Current packages available
+
+| Package | Revision | Install Name |
+| ------- | -------- | ------------ |
+QtTermTCP | 0.0.0.69 - nice edition | qttermtcp |
+QtSoundModem | 0.0.0.66 | qtsoundmodem | 
+LinBPQ | 6.0.24.2 | linbpq |
+Direwolf | 1.7-dev | direwolf |
+Uronode | 2.15, hibby's twists edition* | uronode |
 
 * Hibby's twists include: addition of MOTD for users connecting in via Net/Rom, removal of all ROSE & FLEXNET menu commands and likely some other stuff I've forgotten.
 
