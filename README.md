@@ -43,26 +43,33 @@ You'll find me in #scottisconsulate on hackint IRC, in the oarc Debian and on th
 
 To play along at home, please follow the below advice.
 
-First up, install the GPG key used to sign everything: curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo tee /etc/apt/trusted.gpg.d/hibby.asc
+First up, install the GPG key used to sign everything: 
 
-Add the following to your /etc/apt/sources.list:
+`curl https://online-amateur-radio-club-m0ouk.github.io/oarc-packages/hibby.key | sudo tee /etc/apt/trusted.gpg.d/hibby.asc`
+
+Add the following to your `/etc/apt/sources.list`:
 
 For Debian Testing (13, amd64):
-deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages testing main
+
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages testing main`
 
 For Debian Stable (12, released June 2023) amd64:
-deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main
+
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main`
 
 For Ubuntu 22.04 LTS (Jammy Jellyfish, amd64, released April 2022) amd64:
-deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main
+
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main`
 
 RaspiOS Stable (bullseye, 32 bit armv7/armhf AND arm64, released 2020):
-deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bullseye main
 
-Run the below commands to pull in the package lists & install
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bullseye main`
 
-sudo apt update
-sudo apt install
+Run the below commands to pull in the package lists & install;
+
+`sudo apt update`
+
+`sudo apt install <PACKAGE>`
 
 Current packages available:
 QtTermTCP (0.0.0.69 - nice edition)
