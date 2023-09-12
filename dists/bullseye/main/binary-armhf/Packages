@@ -40,6 +40,50 @@ MD5sum: 70fececd18417d58cb106848d086dd6a
 Description: debug symbols for direwolf
 Build-Ids: 040f3702122ab83e1012b3aa369cc301599551c2 1e71beafd4d642b8afa52379ca8a18bfb54a0090 24cb6921c3bb242216357fb8e6c21fdef2c23189 36ef597fa9a493a1c156bf6163bacab2eda975c2 397fda1a93c1524d8fd643dd747d459a31fb8d71 495abff369d9badc4ff5549d0c9ffb095f4966a8 49a1ef852ae84108fbfe94169699105e1be1a64f 4ed7610cec74c0531882b5c36572c79e0670de1c 7eb9c09c6f9af9130aade928d4d85b5d3db67837 8f749769bfe4908a9a3e0a12311c6c4be6c87ad2 b4ac348b5b58beeec447052f1627d3889600d835 ce0f086daa2d42efe628360a705568dbc0808e9a cf81cdf837ba4cc5d414df5ccac62eefd8361b2e e1d5625b4801ceb4b734925f505ccc653937e340 e603d73e4e259308c312c070760d97fd60b43462
 
+Package: fbb
+Version: 7.011-3~bpo11+1
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1590
+Depends: libax25, libc6 (>= 2.29), libncurses6 (>= 6), libtinfo6 (>= 6)
+Homepage: https://sourceforge.net/projects/linfbb/
+Priority: optional
+Section: hamradio
+Filename: pool/main/f/fbb/fbb_7.011-3~bpo11+1_armhf.deb
+Size: 460724
+SHA256: 862b436aca39fb5c430338504ab3153c467c8ca2f900462ef74b82d1c577a9a2
+SHA1: 18703fb03b59cd3ffff7948831b98e8d1c2d0d0b
+MD5sum: 3c637a0258ef75dc54e9e5a2f9a656e9
+Description: Packet radio mailbox and utilities
+ The fbb package contains software written by f6fbb for setting up a packet
+ radio mailbox. It is intended for amateur radio operators. A short overview
+ of some of the binaries:
+ .
+  * fbb: Script to start the daemon.
+  * xfbbd: The daemon which listens for incoming connects.
+  * epurmess: Delete messages based on age.
+  * epurwp: White Pages maintenance.
+  * reqdir: FBB server which requests directory listings.
+  * xfbbC: B/W Ncurses console for xfbbd.
+
+Package: fbb-dbgsym
+Source: fbb
+Version: 7.011-3~bpo11+1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1121
+Depends: fbb (= 7.011-3~bpo11+1)
+Priority: optional
+Section: debug
+Filename: pool/main/f/fbb/fbb-dbgsym_7.011-3~bpo11+1_armhf.deb
+Size: 977808
+SHA256: e0b213c9f2c7fb02d443d03b8072539aa11e93d43ecb3b1273f5aeabf2a9a20b
+SHA1: 5eeefd7682ee381dc3ebf1262ed06613f42e52fd
+MD5sum: e92bed210ed10a5547648454e7b2cf28
+Description: debug symbols for fbb
+Build-Ids: 1fb6fa4d46410d664ee58c26e24688f169519910 2ceb83a00e8da88c715905bb8f0be14273b07973 4b8d382eac35a7a982207a03da2a20712e21e525 6076aa45d55b5d95db1eba97f55a13a0a5737e08 711fe871b1a3d7edf7862f161fb4f74d61ab4efb 80ce92652e9b99a3f1c3813df26c34374bc8b8d5 a1459d364cb76e0be9d94eb3f611af563d5fcba3 a2176bde4aa46d1f08b4cf829795acc122a15471 b1d8b77f4b17fb2dd7c836c4557f5b1ad2e3e1ed db843a43b8a44792ccc1b8ae8aaf5afc96229e5f de4dd240a64dceb2bf0603ffd4a944c21404565d
+
 Package: linbpq
 Version: 6.0.24.2-1~bpo11+1
 Architecture: armhf
@@ -58,39 +102,39 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.66-1~bpo11+1
+Version: 0.0.0.67-1~bpo11+1
 Architecture: armhf
 Maintainer: Dave Hibberd <d@vehibberd.com>,
-Installed-Size: 719
+Installed-Size: 755
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.27), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.66-1~bpo11+1_armhf.deb
-Size: 216696
-SHA256: 30fa1e8e2b4cb7140573ab587f6f072287218f9cf78222b9126b61dc9097310d
-SHA1: 86b1cb01cd09ea578db3196a01717a599e7e4b3f
-MD5sum: 2038cf900cc47798d7bd87adf3849525
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-1~bpo11+1_armhf.deb
+Size: 228728
+SHA256: 4fe1a2912f8ab85c27e9c752117efba82e5cee28c4e6995a3a48519ed7b0cef4
+SHA1: b50c92657debaed475f398842b24f0709a0d49e5
+MD5sum: 97f7fab611ff2b4ef553cf30428ee80d
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
 Package: qtsoundmodem-dbgsym
 Source: qtsoundmodem
-Version: 0.0.0.66-1~bpo11+1
+Version: 0.0.0.67-1~bpo11+1
 Auto-Built-Package: debug-symbols
 Architecture: armhf
 Maintainer: Dave Hibberd <d@vehibberd.com>,
-Installed-Size: 1693
-Depends: qtsoundmodem (= 0.0.0.66-1~bpo11+1)
+Installed-Size: 1753
+Depends: qtsoundmodem (= 0.0.0.67-1~bpo11+1)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.66-1~bpo11+1_armhf.deb
-Size: 1633456
-SHA256: 13d91f425732ecd0e9d7cc94e7e10a370d35f0aced12a90bc5bc5f29d3241bb9
-SHA1: f5c729dc2dd76c16a9a4ad3905c6d93873b673ad
-MD5sum: 662f9d0850c0d2e0a119f21b1a085df7
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.67-1~bpo11+1_armhf.deb
+Size: 1689172
+SHA256: 4935f73b9e4680e21c5f6b2ae8fc84fd4f0f2e8361512cc38b1ee77aff6b6136
+SHA1: 83d3298489e0f10794c7fa710a6011e15e45d6e8
+MD5sum: 9d444307f9f96c685d40d530f4cce7ef
 Description: debug symbols for qtsoundmodem
-Build-Ids: 670b969ba7f348f79ca9fb3670fa24a1dafcb906
+Build-Ids: afe92a1d0a1a8f6f651310042db6ed86662c3a07
 
 Package: qttermtcp
 Version: 0.0.0.69-1~bpo11+1
@@ -129,7 +173,7 @@ Description: debug symbols for qttermtcp
 Build-Ids: d92e8477788670cb47d3964348bee4df0d6fef64
 
 Package: uronode
-Version: 2.15-2~bpo11+1
+Version: 2.15-3~bpo11+1
 Architecture: armhf
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Installed-Size: 255
@@ -139,11 +183,11 @@ Replaces: ax25-node
 Homepage: https://uronode.sourceforge.net/
 Priority: optional
 Section: hamradio
-Filename: pool/main/u/uronode/uronode_2.15-2~bpo11+1_armhf.deb
-Size: 109952
-SHA256: 68ebf5122336d2da07e2b545276d04fbabf9cff45aac52f1b60d5e117d60933c
-SHA1: df7f880b65ffefa0d85780f1816f7ba62277fd0e
-MD5sum: bbc509001f250d242422cb7ca0ad4582
+Filename: pool/main/u/uronode/uronode_2.15-3~bpo11+1_armhf.deb
+Size: 110012
+SHA256: 993ee3fb741dad8ee24700331cf944c7e940e4eef52910422a509622112f5143
+SHA1: d718b9f0105dd7970345067bebd59e5a0f4c92eb
+MD5sum: a5100c403e60f2ff4366948f30075c13
 Description: Node front end for AX.25, NET/ROM, Rose and TCP
  URONode is a packet radio node front end for amateur radio operators.
  It provides a shell modelled after those of LinuxNode, AWZNode and

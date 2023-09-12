@@ -22,6 +22,32 @@ Description: Soundcard TNC for APRS
  applications such as APRSIS32, UI-View32, Xastir, APRS-TW, YAAC, UISS, Linux
  AX25, SARTrack, and many others.
 
+Package: fbb
+Version: 7.011-3+jammy1
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1795
+Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
+Homepage: https://sourceforge.net/projects/linfbb/
+Priority: optional
+Section: hamradio
+Filename: pool/main/f/fbb/fbb_7.011-3+jammy1_amd64.deb
+Size: 557684
+SHA256: f3edc8d1760c4dfdb279f2e4e22ec1c6ac229e67af852201a029ecfd4dc9cf76
+SHA1: 24ad3293c6e903674bb30411e8517ba83bad927b
+MD5sum: 2e251a257b229d03580bfd44d035ed07
+Description: Packet radio mailbox and utilities
+ The fbb package contains software written by f6fbb for setting up a packet
+ radio mailbox. It is intended for amateur radio operators. A short overview
+ of some of the binaries:
+ .
+  * fbb: Script to start the daemon.
+  * xfbbd: The daemon which listens for incoming connects.
+  * epurmess: Delete messages based on age.
+  * epurwp: White Pages maintenance.
+  * reqdir: FBB server which requests directory listings.
+  * xfbbC: B/W Ncurses console for xfbbd.
+
 Package: linbpq
 Version: 6.0.24.2-jammy1
 Architecture: amd64
@@ -40,19 +66,19 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.66-jammy1
+Version: 0.0.0.67-jammy1
 Architecture: amd64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
-Installed-Size: 606
+Installed-Size: 634
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.66-jammy1_amd64.deb
-Size: 230080
-SHA256: 3b03a93515fd46baf4695cba93eacac042487400285ecacffc47c0f57201e2a4
-SHA1: 769251de291f293c0353c1d9374513c1f3f208c5
-MD5sum: a6f47645f0e67e5d9d60b2c4596c7539
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-jammy1_amd64.deb
+Size: 242830
+SHA256: 143e7c57006ee7600db3d11d47e74fcb0a339cccace4045b518d3f223ce3d85f
+SHA1: 78b0d0cd4cbf6708f97e7790a516213ed3de7cf7
+MD5sum: e96f1cdcca341d1514b214e1fd3d9817
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
@@ -75,7 +101,7 @@ Description: Qt-based Terminal for packet
  and other modes of connectivity
 
 Package: uronode
-Version: 2.15-jammy1
+Version: 2.15-3+jammy1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Installed-Size: 295
@@ -85,11 +111,11 @@ Replaces: ax25-node
 Homepage: https://uronode.sourceforge.net/
 Priority: optional
 Section: hamradio
-Filename: pool/main/u/uronode/uronode_2.15-jammy1_amd64.deb
-Size: 122544
-SHA256: 1773cc32419f4816f52a24097a29eb9efc090cfb5f27c310409442437f97bb21
-SHA1: 6e7253dc8cb995befd2299e039caae95cbad6c7b
-MD5sum: 72f077b35effdab8b68eaddee28a48fc
+Filename: pool/main/u/uronode/uronode_2.15-3+jammy1_amd64.deb
+Size: 122678
+SHA256: 0c78d6d5df4ea4293a3a055341c0648755fb1900cfd4dec9087158064c6e93c7
+SHA1: 302928acce839781b4af2e594c3a2f8f98bbc0d1
+MD5sum: c57e698e34d56fb9c0a64b2137500c8a
 Description: Node front end for AX.25, NET/ROM, Rose and TCP
  URONode is a packet radio node front end for amateur radio operators.
  It provides a shell modelled after those of LinuxNode, AWZNode and
