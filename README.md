@@ -75,11 +75,12 @@ Run the below commands to pull in the package lists & install;
 
 | Package | Revision | Install Name |
 | ------- | -------- | ------------ |
-QtTermTCP | 0.0.0.69 - nice edition | qttermtcp |
-QtSoundModem | 0.0.0.66 | qtsoundmodem | 
-LinBPQ | 6.0.24.2 | linbpq |
-Direwolf | 1.7-dev | direwolf |
-Uronode | 2.15, hibby's twists edition* | uronode |
+|QtTermTCP | 0.0.0.69 - nice edition | qttermtcp |
+|QtSoundModem | 0.0.0.67 | qtsoundmodem | 
+|LinBPQ | 6.0.24.2 | linbpq |
+|Direwolf | 1.7-dev | direwolf |
+|Uronode | 2.15, hibby's twists edition* | uronode |
+|FBB     | 7.011 | FBB |
 
-* Hibby's twists include: addition of MOTD for users connecting in via Net/Rom, removal of all ROSE & FLEXNET menu commands and likely some other stuff I've forgotten.
+* Hibby's twists include: addition of MOTD for users connecting in via Net/Rom, removal of all ROSE & FLEXNET menu commands, removal of telnet/ping and other IP commands and likely some other stuff I've forgotten.
 
