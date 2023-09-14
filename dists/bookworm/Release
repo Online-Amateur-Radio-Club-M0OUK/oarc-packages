@@ -1,19 +1,19 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by hibby <d@vehibberd.com>
 Codename: bookworm
-Date: Tue, 12 Sep 2023 23:13:54 UTC
+Date: Thu, 14 Sep 2023 21:34:21 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 909d262ed8f61efb7091deef20c51fb4 9007 main/binary-amd64/Packages
- 4700c2b8c4060df18388a794699591fe 3672 main/binary-amd64/Packages.gz
+ c0c5c9548e7218c70b92ce4a0d658b60 9029 main/binary-amd64/Packages
+ 33268608ea2eeda9173091fb92a4a80f 3684 main/binary-amd64/Packages.gz
  da6fafddca518cc8bbfa427a41488053 149 main/binary-amd64/Release
 SHA1:
- f166925644f086e042ca4240920eab3b0a56261b 9007 main/binary-amd64/Packages
- bf765bd65e5e3bf10b6125e5cb128dd5d88777ea 3672 main/binary-amd64/Packages.gz
+ cf5d8fe5c448b489bcfe1b79a48fc49fdb10c700 9029 main/binary-amd64/Packages
+ a64098626bddfe48c88eafcc8edfb50f4c851d85 3684 main/binary-amd64/Packages.gz
  861eafbe3c2e5a50dce965108f2d687c26ab0cee 149 main/binary-amd64/Release
 SHA256:
- f42499e3879ac4eb124f3548bc03231814f0c13572565f73f6198aa31b8b244c 9007 main/binary-amd64/Packages
- eb7a27c017e75b1179a43e5525d4fe6aad9c52d28811593ceb355a526e910c74 3672 main/binary-amd64/Packages.gz
+ b28cf941b472b459806b97692cee1d1624700379e451beae8d1a56ae56fb743d 9029 main/binary-amd64/Packages
+ 000afa792c29455351e6260ac7f3a3d6910dac5043c926919972b5504b0ea606 3684 main/binary-amd64/Packages.gz
  db36f77cd86619062ec8ad5b1cb7bf75cc5fe93f610ddc2a0ea7e08a26178033 149 main/binary-amd64/Release

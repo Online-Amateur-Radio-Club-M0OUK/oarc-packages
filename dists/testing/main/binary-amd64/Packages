@@ -102,39 +102,40 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.67-1
+Version: 0.0.0.67-2
 Architecture: amd64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 841
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34), libfftw3-single3 (>= 3.3.10), libgcc-s1 (>= 3.4), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Recommends: libpulse0
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-1_amd64.deb
-Size: 263972
-SHA256: ad8592652aabe7964529ebde790617284886da43b343159af4b8eafb61f7d6cc
-SHA1: f98e7a5237ed158a48ce31a4931101923843c64f
-MD5sum: 38059cbe9751870a7895cc94e502f7ac
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-2_amd64.deb
+Size: 263964
+SHA256: 1bc546e885d4baa5c7bd2c7b07274a745d3bf8f451d8731102e93df75e6b24d6
+SHA1: cfa24e55ca14329d13e36b083545a8760a9717dd
+MD5sum: e29489c718bfe0d981ebd41f648a9d58
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
 Package: qtsoundmodem-dbgsym
 Source: qtsoundmodem
-Version: 0.0.0.67-1
+Version: 0.0.0.67-2
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 1949
-Depends: qtsoundmodem (= 0.0.0.67-1)
+Depends: qtsoundmodem (= 0.0.0.67-2)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.67-1_amd64.deb
-Size: 1892488
-SHA256: 2c28dd5794821aa14464aee708a726de9b74ce42fb28472ded0450fbabb44dc8
-SHA1: 180aeb0159673701077816d1623223608fe2df15
-MD5sum: 84269f60193110ba84200edd5cd5396f
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.67-2_amd64.deb
+Size: 1892576
+SHA256: 00459617304b2bc007c3ebf3aa2d9738557ed5cff595b7aac9aaaec0a449f9d8
+SHA1: 639e4086424c7ba0883e1be0c98cfa9258669258
+MD5sum: ce04207cb7fe014d730c69ee90d934ff
 Description: debug symbols for qtsoundmodem
-Build-Ids: 220b8e82ca5a6b2145c7beba1016ae2a6a44c737
+Build-Ids: e9a46820307ab0f9b886eac14a62dbff97fa7987
 
 Package: qttermtcp
 Version: 0.0.0.69-1

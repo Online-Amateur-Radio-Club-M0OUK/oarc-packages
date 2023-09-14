@@ -102,39 +102,40 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.67-1~bpo11+1
+Version: 0.0.0.67-2~bpo11+1
 Architecture: arm64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 792
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.27), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Recommends: libpulse0
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-1~bpo11+1_arm64.deb
-Size: 235604
-SHA256: eef5b993bf4baa8ffd4b900e79515679f079b3e86a38b3a4cbf1a13167daeebf
-SHA1: c12bb463639e2b095fa846d5db5bb3e0d64a8ea1
-MD5sum: f2e9122dbe5cf12434adc3fc3d064918
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.67-2~bpo11+1_arm64.deb
+Size: 235528
+SHA256: 11f4de1a1cbee6c6bba34a7de35193f9240e42ccdac8fc57bc676d22239601a2
+SHA1: ba908ade296b555f35611b03c58c05ab86d500f1
+MD5sum: 6482bd392487bd1e48953e7077738dc1
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
 Package: qtsoundmodem-dbgsym
 Source: qtsoundmodem
-Version: 0.0.0.67-1~bpo11+1
+Version: 0.0.0.67-2~bpo11+1
 Auto-Built-Package: debug-symbols
 Architecture: arm64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 1621
-Depends: qtsoundmodem (= 0.0.0.67-1~bpo11+1)
+Depends: qtsoundmodem (= 0.0.0.67-2~bpo11+1)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.67-1~bpo11+1_arm64.deb
-Size: 1557848
-SHA256: 396a73dca7c4005303456f9484ff196f055e8e400c17484e6fcf599b0c114b13
-SHA1: c961c883671983623fc625beb89caec16cc976c8
-MD5sum: 99705f76439af4c7120a2b3416db497e
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.67-2~bpo11+1_arm64.deb
+Size: 1557860
+SHA256: 5fbcd8a71674f112e4d90534a4cf24c1d800cc429e2954b2271214555c61229c
+SHA1: be8c85a548edbdd0636b29e56f294a4d3b206ec0
+MD5sum: 9b263af300c931c7e619a01fb6960f1a
 Description: debug symbols for qtsoundmodem
-Build-Ids: aa7e34e62e6af5fb191af7cb34708a7dfaa40166
+Build-Ids: 1a57451d2519bf03094fcdc5d8124be4297a3450
 
 Package: qttermtcp
 Version: 0.0.0.69-1~bpo11+1
