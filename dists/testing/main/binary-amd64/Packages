@@ -138,40 +138,40 @@ Description: debug symbols for qtsoundmodem
 Build-Ids: e9a46820307ab0f9b886eac14a62dbff97fa7987
 
 Package: qttermtcp
-Version: 0.0.0.69-1
+Version: 0.0.0.69-2
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 641
+Installed-Size: 543
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-1_amd64.deb
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-2_amd64.deb
 Size: 161900
-SHA256: 5a383bab9bf702a4921dd7b8d1a5eaa7c030fe8f12a24509408b61f6829a19d4
-SHA1: 983f139e256cf81514cb181851bcb6283aa12d39
-MD5sum: 5e2fabb74d4ec5704ff0b909bd228435
+SHA256: 5d48cf20963b35336a34c4053b891abd55a16341e4c5a9f7fa2bb6a54b3236df
+SHA1: 0bf7cf34ed5f9ec98d809c456126c9f61667f5a0
+MD5sum: f251008c7a68b8ee32ae00cb1dee636b
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity
 
 Package: qttermtcp-dbgsym
 Source: qttermtcp
-Version: 0.0.0.69-1
+Version: 0.0.0.69-2
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Installed-Size: 1586
-Depends: qttermtcp (= 0.0.0.69-1)
+Depends: qttermtcp (= 0.0.0.69-2)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.69-1_amd64.deb
-Size: 1545560
-SHA256: c9e1bc51bb113e637e06e646167a556c1ca4dcc233962787852fb246848e6c17
-SHA1: 78cd16efcf09e9024d665ed92bf40c7f94a1e32e
-MD5sum: f5c4a9b8c8001cf2d2f04be7a261d7ea
+Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.69-2_amd64.deb
+Size: 1545552
+SHA256: 691beeccd3115618078e9478d8b8cedf3774ee2baaf9c8871ff3f603dcf5871a
+SHA1: e6284d5354bbf6f485d15d2aa1a14125d38617f2
+MD5sum: 89e6797b0e07ff9c983ba527ede19413
 Description: debug symbols for qttermtcp
-Build-Ids: 24b8dda15bc8ecd45d86752ecbe9e579ec4b457c
+Build-Ids: 4bb5f3cd3e077ddf3ec712773be5861a728b63b5
 
 Package: uronode
 Version: 2.15-3

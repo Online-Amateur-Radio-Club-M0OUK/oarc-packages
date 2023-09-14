@@ -84,19 +84,19 @@ Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
 Package: qttermtcp
-Version: 0.0.0.69-jammy1
+Version: 0.0.0.69-jammy2
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 654
+Installed-Size: 556
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-jammy1_amd64.deb
-Size: 180216
-SHA256: 23583112a5387db038bb8c8e1445f7baf0287a69e6f52ac9937177427e9f3290
-SHA1: b63696d9483c957a256fb24b3682bba49cda53d7
-MD5sum: d4bf13bda0de80f0cc41307410fd2858
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-jammy2_amd64.deb
+Size: 180244
+SHA256: 63819685e6e5eb2f6be27d2884d5abb8738a57ca41bb829a429145f637ca2026
+SHA1: 88ec32928a57a5e97801a321613fbeba22c0f510
+MD5sum: 8efd3ce97d1e793bf881317d651027fc
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity
