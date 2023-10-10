@@ -4,30 +4,30 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by hibby <d@vehibberd.com>
 Codename: bookworm
-Date: Thu, 14 Sep 2023 22:34:21 UTC
+Date: Tue, 10 Oct 2023 21:56:19 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 816ea42adf33b03c6b3ae9b9ce3408bd 9029 main/binary-amd64/Packages
- 007585065629157969705cdbd8d61166 3685 main/binary-amd64/Packages.gz
+ 2d093b16ddb97d254b7f16902ede8165 9031 main/binary-amd64/Packages
+ b8192a88a51be7f3340764a1cc46abb1 3686 main/binary-amd64/Packages.gz
  da6fafddca518cc8bbfa427a41488053 149 main/binary-amd64/Release
 SHA1:
- a055a4f4830c8b1969f3fef7f2641f2625168e73 9029 main/binary-amd64/Packages
- f44a65b2791f160388f63f5027779c196726929d 3685 main/binary-amd64/Packages.gz
+ c37d42e61db0c937424204fed7befa1f89164e2f 9031 main/binary-amd64/Packages
+ 8eded62bbcd525943f5af12bb43ec831e0976d13 3686 main/binary-amd64/Packages.gz
  861eafbe3c2e5a50dce965108f2d687c26ab0cee 149 main/binary-amd64/Release
 SHA256:
- 9470d07ceca6392b9b37afa721e8972bbb19470ca257c319da7513305b3cac90 9029 main/binary-amd64/Packages
- 23941c4140560d93fc4cae34541c7bfe53a02a08f3cabd96ff0182b21fa43fc9 3685 main/binary-amd64/Packages.gz
+ 6adee98c36a644c6c20be1167ac58807b37f555a97dc67256a853af3ed6e1589 9031 main/binary-amd64/Packages
+ 7768108189f8e20c8ca659d4da8cfc5437428e5c996813add83d5f91de0f4af1 3686 main/binary-amd64/Packages.gz
  db36f77cd86619062ec8ad5b1cb7bf75cc5fe93f610ddc2a0ea7e08a26178033 149 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmUDinAACgkQA6H7ehkE
-dxuTIwgAoPbVhe60nhdSPkQbH2BFB6WLYE5GoLJqA5u0YmF8Fv+ctOyXxeR9D1Fj
-B7Zz+7G7IqwcM+7jXEcH/+I/q760F6+AgF+qQt1xJJugwCnBVT9pkKNkEDInUOk7
-tanv+bDeSNnf8so4WvHD7+jWB/rsMAo++oi2ClIG7Y5eeeuUmJdLH7XuG77lz9nu
-cku+AFLuc2tg901y/G10kyL+VGkeq0TerwGW29JBk8H4/GKq7g7h0EFVZZRc5sb8
-GrvJAz3RLzRBc1P5qQ+2YE9/70ZtdK2QX9xvWjsS6/6YyCG7q0pJ325S8OwFGBCW
-tfv117xo7KOqIMthMcfcpkHKhjsERA==
-=ch87
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmUlyIUACgkQA6H7ehkE
+dxsXngf6Albkeo6B7JELCalqSclmGsm/L2m+O6lAIjtU+4AOHANx3yEVUp/27NOe
++0zUcr1f/NsuaBpo1B/QuyntKwGjAyYGhAbS+CnT1zyN+nm+rsA5V+TG3SL3hF8O
+ashKyit8cDjxxDFI0LDghVgu7iUhvAsNcvvgawnyEagaFQQ5NsMJ5jFugWfr2Yhb
+Q0n12z2IT7QRhHcfIkA1fHZMdZM6B6BSBvyI5rbQPYFhJId/F+djKhaniEnwtXZZ
+99mP2xEca9PCY6kF5kUSohLRWu0MTBoIrZxbVFE9Q5sgSoQmOnj7WWyAEOONPHst
+kvfeTRdy7gKb2ZCp49GcLHyYE/SOmA==
+=g+2U
 -----END PGP SIGNATURE-----

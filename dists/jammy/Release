@@ -1,19 +1,19 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by hibby <d@vehibberd.com>
 Codename: jammy
-Date: Thu, 14 Sep 2023 22:34:52 UTC
+Date: Tue, 10 Oct 2023 21:55:55 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 05d4423fba9a814d102428c9fb4acdf8 5505 main/binary-amd64/Packages
- c0fb74286324376b5729f35128f0c504 2329 main/binary-amd64/Packages.gz
+ 93d8dbf1fdbfaaf36d22e6f34fec7d05 5507 main/binary-amd64/Packages
+ 2f605b83d7d183e0bfc825b860bb087f 2329 main/binary-amd64/Packages.gz
  da6fafddca518cc8bbfa427a41488053 149 main/binary-amd64/Release
 SHA1:
- 693d6c56f134cdda2104396741907ee89d1b5b59 5505 main/binary-amd64/Packages
- 6401c7bd3c94e3f801be0a5c0dce5ebda6d0100d 2329 main/binary-amd64/Packages.gz
+ 2cb3e98de1260f31f9315844a07de7193b5819a5 5507 main/binary-amd64/Packages
+ 346cb73057c06608a7b7ecb3c0a58c8366fd40e8 2329 main/binary-amd64/Packages.gz
  861eafbe3c2e5a50dce965108f2d687c26ab0cee 149 main/binary-amd64/Release
 SHA256:
- b7a211be706ea8591cf7b602e13c5fe174c8fdf0104d23a9a21b06d65838413a 5505 main/binary-amd64/Packages
- 6177d4147610630416c6288df089b586b7df2f408bf65722a58dd7a3330c0ada 2329 main/binary-amd64/Packages.gz
+ bf9aaaad075dfeef900074c8e85ae2e27b2fd043545ff175bdf251c746bc2727 5507 main/binary-amd64/Packages
+ 80413adff768188d12cb1f65a9053df4b1dcf93f923d9ec691279a3405ead812 2329 main/binary-amd64/Packages.gz
  db36f77cd86619062ec8ad5b1cb7bf75cc5fe93f610ddc2a0ea7e08a26178033 149 main/binary-amd64/Release

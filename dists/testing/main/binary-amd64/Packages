@@ -85,19 +85,19 @@ Description: debug symbols for fbb
 Build-Ids: 05a292bf4522659434dfbd44e113903fea867526 46f00ae3fe8cf82ce792ede8c435a4e64394264e 7c4e329aad21cbe985f5b2295c0b48e080c45824 8d477b8998ccfdca027534c734cbdf31f21d483d 94d8e33255e714da0d2e3db5d89e632e5d1414e0 a1a45b7c578a6de30f95bbc34c2a484ba2074fb6 aec298bd5fac8c4c1b55c893faa4bce9eb22f94c c03f8216403e9fbf80016e2c20de7e95f3cc7e74 c534fba9e4111ffdf24d212914cda358124b6e9f f0b94eea7650aa95efee3c92736644d1a6d15b28 f3e779d9ce168305dedf34ca72f8f398fee7c73f
 
 Package: linbpq
-Version: 6.0.24.2-1
+Version: 6.0.24.15-1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2262
+Installed-Size: 2283
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
 Homepage: http://users.telenet.be/on4qz
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.2-1_amd64.deb
-Size: 659404
-SHA256: 47fe2f54c6c96c64c470a2cd21954a064990c866d2d5cd3bd9d1a4e84013cdd1
-SHA1: f825540e4c961d0ada8a7589fca5591aae9a30e8
-MD5sum: 674ff661d69ddd61a3aae4f9cfc8e70d
+Filename: pool/main/l/linbpq/linbpq_6.0.24.15-1_amd64.deb
+Size: 665456
+SHA256: 0f1ee4964ca55beff7898a676ac93fb20ca2dfe6697d265cb64d26131aee1b90
+SHA1: 95bd6d26d71bd15db4652f4b8262cd8ffeaf856e
+MD5sum: ed0ece432d7a92a6f76fe45c0d9af45b
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
