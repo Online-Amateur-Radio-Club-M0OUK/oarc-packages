@@ -76,7 +76,7 @@ Run the below commands to pull in the package lists & install;
 | Package      | Revision                      | Install Name |
 | -------      | --------                      | ------------ |
 | QtTermTCP    | 0.0.0.69 - nice edition       | qttermtcp    |
-| QtSoundModem | 0.0.0.67                      | qtsoundmodem |
+| QtSoundModem | 0.0.0.68                      | qtsoundmodem |
 | LinBPQ       | 6.0.24.15                     | linbpq       |
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
