@@ -4,30 +4,30 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: testing
-Date: Sun, 15 Oct 2023 13:20:11 UTC
+Date: Sun, 15 Oct 2023 21:11:52 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 3b959a0918ac053c103f4b76e4322922 8840 main/binary-amd64/Packages
- d7978366ff3d52915b8e3f5908a69311 3674 main/binary-amd64/Packages.gz
+ 6fc09e6af7c92a0a27c4014f4f331043 8840 main/binary-amd64/Packages
+ 7435b1c803968c3b13c30b1df8d50873 3675 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
 SHA1:
- 1e6e9e2c04909f730b0c1322f8cdf03eb51a18a8 8840 main/binary-amd64/Packages
- 084f8aec04c1c0df9fc8fddede7408aa07db9786 3674 main/binary-amd64/Packages.gz
+ ba1a8631583422040ec77069a4de47e64610ac5f 8840 main/binary-amd64/Packages
+ fe153a94ffc33a9020fa81c53e419fdb5255b777 3675 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
 SHA256:
- 34519f211aead638ebb7f0f7e49132b9282222fb39b541348c0fdb9d3ef4e98c 8840 main/binary-amd64/Packages
- 71a3efbcfcff62321228e0f1a1ea4a9f06f09e082ecb7b70d67881cc1b19910c 3674 main/binary-amd64/Packages.gz
+ 491e9f58549a4d4b4dc6f58590689e5498d70425d321111f29e57a1dd96e0007 8840 main/binary-amd64/Packages
+ 55dff5d44696253885002baf185f741245a1d59798a65cc08167cab8bca51404 3675 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmUr5w8ACgkQA6H7ehkE
-dxvSBgf+J9831KkdF9KO88wzsv+XHnRpC+NcyNtAGR5lluiDmK+jo3VlNG+d9QKT
-M4NSgiAttJwLgqDsnQKVKscJ0Ta2J+m+NC0MB/Qz4X+3rlvWtoYfq5OvGVPElOFU
-AGRyeN6LthyF7KIpjtpAvDd5vpysS9NKjiAyB6FkgkuVK5g35U3OhxBYmnqj+lo1
-rWHygH4XSZjeTiYPpJ1TbzfpJcBjgX9aLvEO5/9dRp2qhMnNoprhVJxA9KqOJFjl
-zdYIleH5f5QFLAprQUFVFqRaZTZ3qdE8rbYieZjLS2ZWxaM7Pyd9KYQi9uGG7sTG
-OPlqLPgb/thnDC+85yQebOq4wRN/tQ==
-=hzSN
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmUsVZoACgkQA6H7ehkE
+dxui1wgAiHqdtODsKB+obRm3i4t4iMBPxcuhrvafKw/yxeGmIUL76rEaihH57umX
+nN9XKoBN5uxpcWTx+EuLDyPpQFyMndH9VdGrMKjiqYqQ3ncPBwzKbjKHQPj37nYZ
+50RVt8F05i9Uu4w8X9MPDOXoORDgPjZuJSVbdfdx7i6vqA7I3XTUl6relijgj8vG
+Myg5kuGPM4qTy5nOo6qZuPjIV9eLuD3J26xDC7tz/QD90BJahr2p7fgW92gXcNNx
+LhojZSmDQRip1pqhiO2q6uZCpVx+9mHuVvQ+WdiuAntEZiCeqoY4uUJwg4YKs6/g
+DGAndvmzeznkj0IQuFJT6tXx90dLtA==
+=cd2R
 -----END PGP SIGNATURE-----
