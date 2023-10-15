@@ -44,16 +44,16 @@ Package: fbb
 Version: 7.011-3
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 1812
+Installed-Size: 1809
 Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
 Homepage: https://sourceforge.net/projects/linfbb/
 Priority: optional
 Section: hamradio
 Filename: pool/main/f/fbb/fbb_7.011-3_amd64.deb
-Size: 543492
-SHA256: e9b68f084a636ac4a690a67526a8f0dccaddac9d670f5587ce55dc9aaf5bb2e8
-SHA1: 639a4ce6bf76ea8aae790d46bf01d02a045c3286
-MD5sum: 065eba1cf3251a3b24823e763048c483
+Size: 543524
+SHA256: 8ff52ebe79c59495dc8deca623af9c9dfebf7573611491c27f0857119c10279d
+SHA1: 1c8cee57df9e14bf2b16e06cd237fb45a8f45190
+MD5sum: 1a764606da98e87897135e93c71fa05f
 Description: Packet radio mailbox and utilities
  The fbb package contains software written by f6fbb for setting up a packet
  radio mailbox. It is intended for amateur radio operators. A short overview
@@ -77,12 +77,12 @@ Depends: fbb (= 7.011-3)
 Priority: optional
 Section: debug
 Filename: pool/main/f/fbb/fbb-dbgsym_7.011-3_amd64.deb
-Size: 1006100
-SHA256: b3c26644c1ad251aaf158d8dbce3059250b83bb786a0f4cc6caefa8163569c6d
-SHA1: 2369af09d25783a4f89153ee279546f0f7dd7d66
-MD5sum: c68e5a23f33b7cbfd5b045529da63ed7
+Size: 1006136
+SHA256: 2139620cf9f83af48617ed230dca73d2a35459658765b2d1bfe79262c2d22c9a
+SHA1: 3a9f80db6ecfe8efe5affb92f2ceff5f0216cc40
+MD5sum: 8980e86bb19833ec338ca2a5c8c8fb3d
 Description: debug symbols for fbb
-Build-Ids: 05a292bf4522659434dfbd44e113903fea867526 46f00ae3fe8cf82ce792ede8c435a4e64394264e 7c4e329aad21cbe985f5b2295c0b48e080c45824 8d477b8998ccfdca027534c734cbdf31f21d483d 94d8e33255e714da0d2e3db5d89e632e5d1414e0 a1a45b7c578a6de30f95bbc34c2a484ba2074fb6 aec298bd5fac8c4c1b55c893faa4bce9eb22f94c c03f8216403e9fbf80016e2c20de7e95f3cc7e74 c534fba9e4111ffdf24d212914cda358124b6e9f f0b94eea7650aa95efee3c92736644d1a6d15b28 f3e779d9ce168305dedf34ca72f8f398fee7c73f
+Build-Ids: 0efbda369d47e736295e4f0700d95277f606139c 31487505c9ff5bcf95f04f327407fd014160c7cd 3e818c03a7b91819c7b3a196c09b79b265d37c10 467075f118b6eed1cbd0f6df0829c76e8729bd6a 67434a28c6a769ffdde37db67bbe27496330e8a9 68f68564d7979686668318c0ebb9be741a1072b9 793789cdaa9cf61a65e0cb62d16661fa76b61055 82e49537e68672b223ffb194f6afa2d49fff6515 8c6f9d978ec205f0c0b35d0671be652a13bd8a83 acd49038efacbb1f1a9092571b7ea2d03f7c5c99 d5dc6b82d6ea7d340ae82f49e324faeebf824a1c
 
 Package: linbpq
 Version: 6.0.24.15-1

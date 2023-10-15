@@ -41,19 +41,19 @@ Description: debug symbols for direwolf
 Build-Ids: 09320d92675a8b22607007c6758b82fcaf65cf59 0d1afc1a5774311bd543a5a69ba283ed256deab1 2a44b58149265f586333e610f0cf8c4d929227dc 2b5a236bf0e73aaa4af2df827b8722efe2e61d4f 8a64abc1ef3bfca1d3a6fba17040e7ea97cca6ac 98b6e658875d52f172d70a0e2703bf0aac4c5164 a1be59c6bdf9ffc6c80f99bbde766d25f07c75cd aba03044b1d440a473b16200f4036c723fc1fd49 b4662b724149c3d0a92bb8143b23e0ca98a00680 c7d7d0d454c4daf710390107bddae5cb70e2db0e d0dd501ea32da93a807db19ab0d41c2888d5b134 db2edb57dc95003024991ea653ffefcf94be43bd ede4179d547d8262e10abcb6083158d17852b5c5 f5a472f9f4fb4af81945cd25397fb294b5c63e70 f6ab6cb06463f12958639030148ca7fc4e2e7e51
 
 Package: fbb
-Version: 7.011-3~bpo12+1
+Version: 7.011-3~bpo12+2
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 1800
+Installed-Size: 1797
 Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
 Homepage: https://sourceforge.net/projects/linfbb/
 Priority: optional
 Section: hamradio
-Filename: pool/main/f/fbb/fbb_7.011-3~bpo12+1_amd64.deb
-Size: 543404
-SHA256: 7d93c7f5e6249b518d6b18d6722a7309903dbf7d9a1162ffa4417acd42bae56d
-SHA1: 28278436a26399d68bc4143cfae1a965611acc3b
-MD5sum: 9559fdfa7b6f8c41454e5eff0259688c
+Filename: pool/main/f/fbb/fbb_7.011-3~bpo12+2_amd64.deb
+Size: 543428
+SHA256: b448f2f4f1a413a65fe56bee51ccf389dad2edb748a6591b4739186c48aaaa8e
+SHA1: bcde33d55bb16edf673fcf5168c305236679fc83
+MD5sum: e0e7ebb963d305c8eee4a58674c0cf6b
 Description: Packet radio mailbox and utilities
  The fbb package contains software written by f6fbb for setting up a packet
  radio mailbox. It is intended for amateur radio operators. A short overview
@@ -68,21 +68,21 @@ Description: Packet radio mailbox and utilities
 
 Package: fbb-dbgsym
 Source: fbb
-Version: 7.011-3~bpo12+1
+Version: 7.011-3~bpo12+2
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Installed-Size: 1126
-Depends: fbb (= 7.011-3~bpo12+1)
+Depends: fbb (= 7.011-3~bpo12+2)
 Priority: optional
 Section: debug
-Filename: pool/main/f/fbb/fbb-dbgsym_7.011-3~bpo12+1_amd64.deb
-Size: 997688
-SHA256: cd829b7595d1d6c0707c0bd3024ae3a0a8c90a9a9eaf1b56df566828678ac346
-SHA1: b7f9e7abee39c3b5eccbf30763f86d85281cd99a
-MD5sum: 7ece1a28401827f1e5081d0fdd31a0f6
+Filename: pool/main/f/fbb/fbb-dbgsym_7.011-3~bpo12+2_amd64.deb
+Size: 997364
+SHA256: 0f4778f0420704cbf3946bddaeccffd1d38b4c60462abc6bf108ad1111236260
+SHA1: 7d4cb12b550722ffd05e744a0df0bba946681c15
+MD5sum: d743e40e5ef25f998bba691c81d937d3
 Description: debug symbols for fbb
-Build-Ids: 213830c9c5537b3fdb01fd93bd29aaa2b6d2b588 27d9e4f3fd3470d2c0e03da27f2a072401cbde02 5635a7b0509f7a37b44700192444d544c3cad964 74dfa0751312b48355edef66da2ebe6945c7749d 8167649959b965609c6d93b8738dcaac8ab4587f 8f6527c82aaac399ab03bb9549b06cf6df171350 a9a7faf3d9b31957472165544216b0b10959d9bb beabd4341b15f70559750c293d38b78ebb65f80b c0a3151f567eccfc8e3bb24a5ee79ea15839ac83 c9ed1b7c6eb407d7f6259cf70365cd45c3a58c5f dcb763137a6f5cad248845180b93b96d0dbf7abd
+Build-Ids: 0b1282093f21371b76c862829f06372d4dcf8a8b 213830c9c5537b3fdb01fd93bd29aaa2b6d2b588 343952c5864c74d4cb0f108c89f6c0453409c03d 5635a7b0509f7a37b44700192444d544c3cad964 74dfa0751312b48355edef66da2ebe6945c7749d 8f6527c82aaac399ab03bb9549b06cf6df171350 a9a7faf3d9b31957472165544216b0b10959d9bb beabd4341b15f70559750c293d38b78ebb65f80b c0a3151f567eccfc8e3bb24a5ee79ea15839ac83 c9ed1b7c6eb407d7f6259cf70365cd45c3a58c5f dcb763137a6f5cad248845180b93b96d0dbf7abd
 
 Package: linbpq
 Version: 6.0.24.15-1~bpo12+1

@@ -23,19 +23,19 @@ Description: Soundcard TNC for APRS
  AX25, SARTrack, and many others.
 
 Package: fbb
-Version: 7.011-3+jammy1
+Version: 7.011-3+jammy2
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 1795
+Installed-Size: 1792
 Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
 Homepage: https://sourceforge.net/projects/linfbb/
 Priority: optional
 Section: hamradio
-Filename: pool/main/f/fbb/fbb_7.011-3+jammy1_amd64.deb
-Size: 557684
-SHA256: f3edc8d1760c4dfdb279f2e4e22ec1c6ac229e67af852201a029ecfd4dc9cf76
-SHA1: 24ad3293c6e903674bb30411e8517ba83bad927b
-MD5sum: 2e251a257b229d03580bfd44d035ed07
+Filename: pool/main/f/fbb/fbb_7.011-3+jammy2_amd64.deb
+Size: 557732
+SHA256: 59d5ac646cee5947665df287461818bee9f24d219ce8d612f124444d0514e123
+SHA1: 4d178cdac6774abcbcf7e3aaec2ed3292b2ccbd5
+MD5sum: 871fa4fa712693a9e49a3ee5b76f4295
 Description: Packet radio mailbox and utilities
  The fbb package contains software written by f6fbb for setting up a packet
  radio mailbox. It is intended for amateur radio operators. A short overview

@@ -1,0 +1,26 @@
+Package: fbb
+Version: 7.011-3+jammy2
+Architecture: arm64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1707
+Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
+Homepage: https://sourceforge.net/projects/linfbb/
+Priority: optional
+Section: hamradio
+Filename: pool/main/f/fbb/fbb_7.011-3+jammy2_arm64.deb
+Size: 550718
+SHA256: 1214bf102a711428b61b621121c335e3225ef2c7703eda999d9121fccbcd546c
+SHA1: f39f8cecfea6ad8c55059f3d6769c3ba1b4a8a62
+MD5sum: 76b8b190f6a75847c2692ee6496be55d
+Description: Packet radio mailbox and utilities
+ The fbb package contains software written by f6fbb for setting up a packet
+ radio mailbox. It is intended for amateur radio operators. A short overview
+ of some of the binaries:
+ .
+  * fbb: Script to start the daemon.
+  * xfbbd: The daemon which listens for incoming connects.
+  * epurmess: Delete messages based on age.
+  * epurwp: White Pages maintenance.
+  * reqdir: FBB server which requests directory listings.
+  * xfbbC: B/W Ncurses console for xfbbd.
+

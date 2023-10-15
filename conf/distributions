@@ -1,13 +1,13 @@
 Origin: OARC Packet Radio Packages
-Label: maintained by hibby <d@vehibberd.com>
+Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bookworm
-Architectures: amd64
+Architectures: amd64 arm64 armhf
 Components: main
 Description: Personal repository
 SignWith: 1904771b
 
 Origin: OARC Packet Radio Packages
-Label: maintained by hibby <d@vehibberd.com>
+Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: testing
 Architectures: amd64
 Components: main
@@ -15,7 +15,7 @@ Description: Personal repository
 SignWith: 1904771b
 
 Origin: OARC Packet Radio Packages
-Label: maintained by hibby <d@vehibberd.com>
+Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bullseye
 Architectures: arm64 armhf
 Components: main
@@ -23,9 +23,9 @@ Description: Personal repository
 SignWith: 1904771b
 
 Origin: OARC Packet Radio Packages
-Label: maintained by hibby <d@vehibberd.com>
+Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: jammy
-Architectures: amd64
+Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 SignWith: 1904771b

@@ -1,0 +1,80 @@
+Package: fbb
+Version: 7.011-3~bpo12+2
+Architecture: arm64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 2220
+Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34), libncurses6 (>= 6), libtinfo6 (>= 6)
+Homepage: https://sourceforge.net/projects/linfbb/
+Priority: optional
+Section: hamradio
+Filename: pool/main/f/fbb/fbb_7.011-3~bpo12+2_arm64.deb
+Size: 512008
+SHA256: b9ff688b380717024a4a22825269dcabfc5e04d13ce26eeb60fb99a454fb8d20
+SHA1: 50d26e50940871fab56f4c70d46eff0f28b09e62
+MD5sum: f7e27760a317cf0724450329e682aac2
+Description: Packet radio mailbox and utilities
+ The fbb package contains software written by f6fbb for setting up a packet
+ radio mailbox. It is intended for amateur radio operators. A short overview
+ of some of the binaries:
+ .
+  * fbb: Script to start the daemon.
+  * xfbbd: The daemon which listens for incoming connects.
+  * epurmess: Delete messages based on age.
+  * epurwp: White Pages maintenance.
+  * reqdir: FBB server which requests directory listings.
+  * xfbbC: B/W Ncurses console for xfbbd.
+
+Package: fbb-dbgsym
+Source: fbb
+Version: 7.011-3~bpo12+2
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1138
+Depends: fbb (= 7.011-3~bpo12+2)
+Priority: optional
+Section: debug
+Filename: pool/main/f/fbb/fbb-dbgsym_7.011-3~bpo12+2_arm64.deb
+Size: 988100
+SHA256: dab07fde0fb5a3620c7ba9d109fc775a13aa7bc6678570bffeeba4f36839f64f
+SHA1: 76c8306714e67203d762243df7ee12b7d63ec6b9
+MD5sum: 744e9f8bef7ef8b3505314540d767eae
+Description: debug symbols for fbb
+Build-Ids: 18c59f4ba5d9106fec1ba12d3234c77f4955ce80 2d498378013985062bb27a5536f0190e57d5e5fe 32f52824629cc39fb4327ab3a1d498b10560928f 42bf3876b86761c62b34d02b60e5f68733258a35 44b07e3bb0a31599c26a0277e08b3844353eba1b 4548e549f82907cec315f7710473745e33d0e3d6 797e57fbaed046db40c256e061e04b937839376b 7a6a45e0a158f9b320ec8f7088fd6223ddf7b1e5 ce49c93f5ccb072efb5e84ba1bbc5bb7f93b9448 f845b4e9be2d50038b96bfd17b55a9388cfc9368 fd43fa0e6bc17f015cc023dd43cd9992f1c85961
+
+Package: qtsoundmodem
+Version: 0.0.0.68-1~bpo12+1
+Architecture: arm64
+Maintainer: Dave Hibberd <d@vehibberd.com>,
+Installed-Size: 858
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34), libfftw3-single3 (>= 3.3.10), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Recommends: libpulse0
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
+Priority: optional
+Section: hamradio
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.68-1~bpo12+1_arm64.deb
+Size: 244640
+SHA256: 16d57520a31a0a554917286345d1d6a95644111d3212e0ae92fb1d5c980d31fa
+SHA1: ad35688ea2596b536cf5e57f79e7b08e024e9890
+MD5sum: 1cd9cc1881c470361fd8aa3c13e7899f
+Description: Qt-based Sound Modem & Terminal for packet
+ QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
+
+Package: qtsoundmodem-dbgsym
+Source: qtsoundmodem
+Version: 0.0.0.68-1~bpo12+1
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Dave Hibberd <d@vehibberd.com>,
+Installed-Size: 1918
+Depends: qtsoundmodem (= 0.0.0.68-1~bpo12+1)
+Priority: optional
+Section: debug
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.68-1~bpo12+1_arm64.deb
+Size: 1854900
+SHA256: 8fd3ed7eba1fc45de094a7339fbcda4199908ce62dea0c19af45ad35c87fbd88
+SHA1: 796c61c8b87ee00851460ee09196cc76d56035c4
+MD5sum: bed613bc3de8abf269c172fd891f4dac
+Description: debug symbols for qtsoundmodem
+Build-Ids: c7f6cbd59cb76a640a780c173d0156dcd6262e76
+

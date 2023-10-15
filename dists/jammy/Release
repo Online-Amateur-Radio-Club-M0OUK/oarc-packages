@@ -1,19 +1,28 @@
 Origin: OARC Packet Radio Packages
-Label: maintained by hibby <d@vehibberd.com>
+Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: jammy
-Date: Tue, 10 Oct 2023 23:00:28 UTC
-Architectures: amd64
+Date: Sun, 15 Oct 2023 13:16:56 UTC
+Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 MD5Sum:
- ca437d5330d432484456b12849a22adf 6129 main/binary-amd64/Packages
- 745f14eee0d6dfbf7885a7120a017c33 2551 main/binary-amd64/Packages.gz
- da6fafddca518cc8bbfa427a41488053 149 main/binary-amd64/Release
+ 50d72186ebdc861668521f52b666c6b3 6129 main/binary-amd64/Packages
+ 11246a7028681a88aa6040a8c546ed49 2557 main/binary-amd64/Packages.gz
+ 332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
+ 06d4228b39ce51226fb08af0569067c3 1062 main/binary-arm64/Packages
+ 2230b8a0779a89ad3b768025562f6e4f 679 main/binary-arm64/Packages.gz
+ 1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
 SHA1:
- 2105b56575aad56f0eacfb351ebaffd170ad63a0 6129 main/binary-amd64/Packages
- 415c6d170b9bdbfd23699e41ef729fffe4bd1c4c 2551 main/binary-amd64/Packages.gz
- 861eafbe3c2e5a50dce965108f2d687c26ab0cee 149 main/binary-amd64/Release
+ cd7924590d56e872ecb3b71600a1fa4e4ef78401 6129 main/binary-amd64/Packages
+ 15085358236dbd3e4c10d24412b8068263f66806 2557 main/binary-amd64/Packages.gz
+ 0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
+ fa2afe04b6d65802fdcfb8947e89a845fb751de1 1062 main/binary-arm64/Packages
+ 4fb6a1c8377a9d445132601c3fb1e2bb77b16e75 679 main/binary-arm64/Packages.gz
+ a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
 SHA256:
- 3094ceb6b33c439563d6c5b968de2094cb77dcc7daebc6d5d5fb937f1e810ad3 6129 main/binary-amd64/Packages
- 936ec69595d91ae9c26aebe96a6ed28ecc256974cc687064f439e152b3a2c715 2551 main/binary-amd64/Packages.gz
- db36f77cd86619062ec8ad5b1cb7bf75cc5fe93f610ddc2a0ea7e08a26178033 149 main/binary-amd64/Release
+ 8cbb713478a3ec54635ff471fe7c3e7d792dbdffe7f0ff92e6f000339abd0cb7 6129 main/binary-amd64/Packages
+ 4d11891c0452f771a054a85b796cfa3e764dc02c53dcb510b26476f10337f6f7 2557 main/binary-amd64/Packages.gz
+ 33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
+ b016d6467c973609eb33778f9ab7436d918fe1fbdc893e777cdc7b8691eb2576 1062 main/binary-arm64/Packages
+ 89b51482c8d6975e29526b43c75f06308be89f0052179ff9f4de85eedb7a1a58 679 main/binary-arm64/Packages.gz
+ 0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
