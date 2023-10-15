@@ -1,0 +1,2273 @@
+sbuild (Debian sbuild) 0.85.2 (11 March 2023) on fennec.foxk.it
+
++==============================================================================+
+| linbpq 6.0.24.15-jammy2 (arm64)              Sun, 15 Oct 2023 21:03:01 +0000 |
++==============================================================================+
+
+Package: linbpq
+Version: 6.0.24.15-jammy2
+Source Version: 6.0.24.15-jammy2
+Distribution: jammy
+Machine Architecture: amd64
+Host Architecture: arm64
+Build Architecture: arm64
+Build Type: binary
+
+I: NOTICE: Log filtering will replace 'var/run/schroot/mount/jammy-arm64-sbuild-d4d68bbb-0435-4571-82ff-b2ce8f3d9fc7' with '<<CHROOT>>'
+I: NOTICE: Log filtering will replace 'build/linbpq-77jZE9/resolver-LfKkpV' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 http://ports.ubuntu.com/ubuntu-ports jammy InRelease [270 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates InRelease [119 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 Packages [1369 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 Packages [13.9 MB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 Packages [900 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 Packages [936 kB]
+Fetched 17.5 MB in 10s (1732 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages will be upgraded:
+  apt base-files binutils binutils-aarch64-linux-gnu binutils-common cpp-11
+  dpkg dpkg-dev file g++-11 gcc-11 gcc-11-base gcc-12-base gpgv gzip
+  libapt-pkg6.0 libasan6 libatomic1 libbinutils libc-bin libc-dev-bin libc6
+  libc6-dev libcap2 libcc1-0 libcom-err2 libctf-nobfd0 libctf0 libdpkg-perl
+  libgcc-11-dev libgcc-s1 libgnutls30 libgomp1 libgssapi-krb5-2 libhwasan0
+  libitm1 libk5crypto3 libkrb5-3 libkrb5support0 liblsan0 libmagic-mgc
+  libmagic1 libpam-modules libpam-modules-bin libpam-runtime libpam0g
+  libpcre2-8-0 libpcre3 libperl5.34 libssl3 libstdc++-11-dev libstdc++6
+  libsystemd0 libtinfo6 libtirpc-common libtirpc-dev libtirpc3 libtsan0
+  libubsan1 libudev1 libxml2 linux-libc-dev login ncurses-base ncurses-bin
+  passwd perl perl-base perl-modules-5.34 tar zlib1g
+71 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 84.9 MB of archives.
+After this operation, 508 kB of additional disk space will be used.
+Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc6-dev arm64 2.35-0ubuntu3.4 [1543 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc-dev-bin arm64 2.35-0ubuntu3.4 [19.6 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 linux-libc-dev arm64 5.15.0-86.96 [1315 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtirpc-common all 1.3.2-2ubuntu0.1 [7766 B]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libk5crypto3 arm64 1.19.2-2ubuntu0.2 [91.6 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libkrb5support0 arm64 1.19.2-2ubuntu0.2 [32.3 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libkrb5-3 arm64 1.19.2-2ubuntu0.2 [356 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgssapi-krb5-2 arm64 1.19.2-2ubuntu0.2 [142 kB]
+Get:9 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcom-err2 arm64 1.46.5-2ubuntu1.1 [8974 B]
+Get:10 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libssl3 arm64 3.0.2-0ubuntu1.10 [1770 kB]
+Get:11 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtirpc-dev arm64 1.3.2-2ubuntu0.1 [199 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtirpc3 arm64 1.3.2-2ubuntu0.1 [82.4 kB]
+Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libubsan1 arm64 12.3.0-1ubuntu1~22.04 [965 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 liblsan0 arm64 12.3.0-1ubuntu1~22.04 [1035 kB]
+Get:15 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libitm1 arm64 12.3.0-1ubuntu1~22.04 [28.4 kB]
+Get:16 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libhwasan0 arm64 12.3.0-1ubuntu1~22.04 [1117 kB]
+Get:17 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgomp1 arm64 12.3.0-1ubuntu1~22.04 [124 kB]
+Get:18 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-12-base arm64 12.3.0-1ubuntu1~22.04 [20.1 kB]
+Get:19 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgcc-s1 arm64 12.3.0-1ubuntu1~22.04 [39.7 kB]
+Get:20 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcc1-0 arm64 12.3.0-1ubuntu1~22.04 [45.0 kB]
+Get:21 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libatomic1 arm64 12.3.0-1ubuntu1~22.04 [10.8 kB]
+Get:22 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libstdc++6 arm64 12.3.0-1ubuntu1~22.04 [661 kB]
+Get:23 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc6 arm64 2.35-0ubuntu3.4 [2704 kB]
+Get:24 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 base-files arm64 12ubuntu4.4 [62.5 kB]
+Get:25 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libsystemd0 arm64 249.11-0ubuntu3.10 [319 kB]
+Get:26 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libudev1 arm64 249.11-0ubuntu3.10 [75.8 kB]
+Get:27 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 zlib1g arm64 1:1.2.11.dfsg-2ubuntu9.2 [57.0 kB]
+Get:28 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libapt-pkg6.0 arm64 2.4.10 [867 kB]
+Get:29 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 tar arm64 1.34+dfsg-1ubuntu0.1.22.04.1 [287 kB]
+Get:30 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dpkg arm64 1.21.1ubuntu2.2 [1219 kB]
+Get:31 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gzip arm64 1.10-4ubuntu4.1 [94.8 kB]
+Get:32 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 login arm64 1:4.8.1-2ubuntu2.1 [186 kB]
+Get:33 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ncurses-bin arm64 6.3-2ubuntu0.1 [183 kB]
+Get:34 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libperl5.34 arm64 5.34.0-3ubuntu1.2 [4726 kB]
+Get:35 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl arm64 5.34.0-3ubuntu1.2 [232 kB]
+Get:36 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl-base arm64 5.34.0-3ubuntu1.2 [1708 kB]
+Get:37 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 perl-modules-5.34 all 5.34.0-3ubuntu1.2 [2977 kB]
+Get:38 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libc-bin arm64 2.35-0ubuntu3.4 [600 kB]
+Get:39 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 ncurses-base all 6.3-2ubuntu0.1 [20.2 kB]
+Get:40 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gpgv arm64 2.2.27-3ubuntu2.1 [133 kB]
+Get:41 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgnutls30 arm64 3.7.3-4ubuntu1.2 [923 kB]
+Get:42 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 apt arm64 2.4.10 [1345 kB]
+Get:43 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam0g arm64 1.4.0-11ubuntu2.3 [60.1 kB]
+Get:44 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam-modules-bin arm64 1.4.0-11ubuntu2.3 [38.7 kB]
+Get:45 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam-modules arm64 1.4.0-11ubuntu2.3 [277 kB]
+Get:46 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libcap2 arm64 1:2.44-1ubuntu0.22.04.1 [18.1 kB]
+Get:47 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpam-runtime all 1.4.0-11ubuntu2.3 [40.2 kB]
+Get:48 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpcre2-8-0 arm64 10.39-3ubuntu0.1 [202 kB]
+Get:49 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libpcre3 arm64 2:8.39-13ubuntu0.22.04.1 [231 kB]
+Get:50 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtinfo6 arm64 6.3-2ubuntu0.1 [104 kB]
+Get:51 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 passwd arm64 1:4.8.1-2ubuntu2.1 [763 kB]
+Get:52 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libxml2 arm64 2.9.13+dfsg-1ubuntu0.3 [728 kB]
+Get:53 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 file arm64 1:5.41-3ubuntu0.1 [21.6 kB]
+Get:54 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libmagic1 arm64 1:5.41-3ubuntu0.1 [85.0 kB]
+Get:55 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libmagic-mgc arm64 1:5.41-3ubuntu0.1 [257 kB]
+Get:56 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf-nobfd0 arm64 2.38-4ubuntu2.3 [108 kB]
+Get:57 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libctf0 arm64 2.38-4ubuntu2.3 [103 kB]
+Get:58 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-aarch64-linux-gnu arm64 2.38-4ubuntu2.3 [3230 kB]
+Get:59 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libbinutils arm64 2.38-4ubuntu2.3 [825 kB]
+Get:60 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils arm64 2.38-4ubuntu2.3 [3162 B]
+Get:61 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 binutils-common arm64 2.38-4ubuntu2.3 [222 kB]
+Get:62 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 g++-11 arm64 11.4.0-1ubuntu1~22.04 [11.1 MB]
+Get:63 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libstdc++-11-dev arm64 11.4.0-1ubuntu1~22.04 [2088 kB]
+Get:64 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libasan6 arm64 11.4.0-1ubuntu1~22.04 [2234 kB]
+Get:65 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11 arm64 11.4.0-1ubuntu1~22.04 [19.4 MB]
+Get:66 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libgcc-11-dev arm64 11.4.0-1ubuntu1~22.04 [1146 kB]
+Get:67 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libtsan0 arm64 11.4.0-1ubuntu1~22.04 [2235 kB]
+Get:68 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 cpp-11 arm64 11.4.0-1ubuntu1~22.04 [9762 kB]
+Get:69 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 gcc-11-base arm64 11.4.0-1ubuntu1~22.04 [20.3 kB]
+Get:70 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 dpkg-dev all 1.21.1ubuntu2.2 [922 kB]
+Get:71 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdpkg-perl all 1.21.1ubuntu2.2 [237 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 84.9 MB in 5s (17.9 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11497 files and directories currently installed.)
+Preparing to unpack .../libc6-dev_2.35-0ubuntu3.4_arm64.deb ...
+Unpacking libc6-dev:arm64 (2.35-0ubuntu3.4) over (2.35-0ubuntu3) ...
+Preparing to unpack .../libc-dev-bin_2.35-0ubuntu3.4_arm64.deb ...
+Unpacking libc-dev-bin (2.35-0ubuntu3.4) over (2.35-0ubuntu3) ...
+Preparing to unpack .../linux-libc-dev_5.15.0-86.96_arm64.deb ...
+Unpacking linux-libc-dev:arm64 (5.15.0-86.96) over (5.15.0-25.25) ...
+Preparing to unpack .../libtirpc-common_1.3.2-2ubuntu0.1_all.deb ...
+Unpacking libtirpc-common (1.3.2-2ubuntu0.1) over (1.3.2-2build1) ...
+Setting up libtirpc-common (1.3.2-2ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libk5crypto3_1.19.2-2ubuntu0.2_arm64.deb ...
+Unpacking libk5crypto3:arm64 (1.19.2-2ubuntu0.2) over (1.19.2-2) ...
+Setting up libk5crypto3:arm64 (1.19.2-2ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libkrb5support0_1.19.2-2ubuntu0.2_arm64.deb ...
+Unpacking libkrb5support0:arm64 (1.19.2-2ubuntu0.2) over (1.19.2-2) ...
+Setting up libkrb5support0:arm64 (1.19.2-2ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libkrb5-3_1.19.2-2ubuntu0.2_arm64.deb ...
+Unpacking libkrb5-3:arm64 (1.19.2-2ubuntu0.2) over (1.19.2-2) ...
+Setting up libkrb5-3:arm64 (1.19.2-2ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libgssapi-krb5-2_1.19.2-2ubuntu0.2_arm64.deb ...
+Unpacking libgssapi-krb5-2:arm64 (1.19.2-2ubuntu0.2) over (1.19.2-2) ...
+Setting up libgssapi-krb5-2:arm64 (1.19.2-2ubuntu0.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libcom-err2_1.46.5-2ubuntu1.1_arm64.deb ...
+Unpacking libcom-err2:arm64 (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+Setting up libcom-err2:arm64 (1.46.5-2ubuntu1.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libssl3_3.0.2-0ubuntu1.10_arm64.deb ...
+Unpacking libssl3:arm64 (3.0.2-0ubuntu1.10) over (3.0.2-0ubuntu1) ...
+Setting up libssl3:arm64 (3.0.2-0ubuntu1.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libtirpc-dev_1.3.2-2ubuntu0.1_arm64.deb ...
+Unpacking libtirpc-dev:arm64 (1.3.2-2ubuntu0.1) over (1.3.2-2build1) ...
+Preparing to unpack .../libtirpc3_1.3.2-2ubuntu0.1_arm64.deb ...
+Unpacking libtirpc3:arm64 (1.3.2-2ubuntu0.1) over (1.3.2-2build1) ...
+Setting up libtirpc3:arm64 (1.3.2-2ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../0-libubsan1_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libubsan1:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../1-liblsan0_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking liblsan0:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../2-libitm1_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libitm1:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../3-libhwasan0_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libhwasan0:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../4-libgomp1_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libgomp1:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../5-gcc-12-base_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking gcc-12-base:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Setting up gcc-12-base:arm64 (12.3.0-1ubuntu1~22.04) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libgcc-s1_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libgcc-s1:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Setting up libgcc-s1:arm64 (12.3.0-1ubuntu1~22.04) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libcc1-0_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libcc1-0:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../libatomic1_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libatomic1:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Preparing to unpack .../libstdc++6_12.3.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libstdc++6:arm64 (12.3.0-1ubuntu1~22.04) over (12-20220319-1ubuntu1) ...
+Setting up libstdc++6:arm64 (12.3.0-1ubuntu1~22.04) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libc6_2.35-0ubuntu3.4_arm64.deb ...
+Unpacking libc6:arm64 (2.35-0ubuntu3.4) over (2.35-0ubuntu3) ...
+Setting up libc6:arm64 (2.35-0ubuntu3.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../base-files_12ubuntu4.4_arm64.deb ...
+Unpacking base-files (12ubuntu4.4) over (12ubuntu4) ...
+Setting up base-files (12ubuntu4.4) ...
+Installing new version of config file /etc/issue ...
+Installing new version of config file /etc/issue.net ...
+Installing new version of config file /etc/lsb-release ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_249.11-0ubuntu3.10_arm64.deb ...
+Unpacking libsystemd0:arm64 (249.11-0ubuntu3.10) over (249.11-0ubuntu3) ...
+Setting up libsystemd0:arm64 (249.11-0ubuntu3.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libudev1_249.11-0ubuntu3.10_arm64.deb ...
+Unpacking libudev1:arm64 (249.11-0ubuntu3.10) over (249.11-0ubuntu3) ...
+Setting up libudev1:arm64 (249.11-0ubuntu3.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../zlib1g_1%3a1.2.11.dfsg-2ubuntu9.2_arm64.deb ...
+Unpacking zlib1g:arm64 (1:1.2.11.dfsg-2ubuntu9.2) over (1:1.2.11.dfsg-2ubuntu9) ...
+Setting up zlib1g:arm64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libapt-pkg6.0_2.4.10_arm64.deb ...
+Unpacking libapt-pkg6.0:arm64 (2.4.10) over (2.4.5) ...
+Setting up libapt-pkg6.0:arm64 (2.4.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../tar_1.34+dfsg-1ubuntu0.1.22.04.1_arm64.deb ...
+Unpacking tar (1.34+dfsg-1ubuntu0.1.22.04.1) over (1.34+dfsg-1build3) ...
+Setting up tar (1.34+dfsg-1ubuntu0.1.22.04.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../dpkg_1.21.1ubuntu2.2_arm64.deb ...
+Unpacking dpkg (1.21.1ubuntu2.2) over (1.21.1ubuntu2) ...
+Setting up dpkg (1.21.1ubuntu2.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../gzip_1.10-4ubuntu4.1_arm64.deb ...
+Unpacking gzip (1.10-4ubuntu4.1) over (1.10-4ubuntu4) ...
+Setting up gzip (1.10-4ubuntu4.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.8.1-2ubuntu2.1_arm64.deb ...
+Unpacking login (1:4.8.1-2ubuntu2.1) over (1:4.8.1-2ubuntu2) ...
+Setting up login (1:4.8.1-2ubuntu2.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../ncurses-bin_6.3-2ubuntu0.1_arm64.deb ...
+Unpacking ncurses-bin (6.3-2ubuntu0.1) over (6.3-2) ...
+Setting up ncurses-bin (6.3-2ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libperl5.34_5.34.0-3ubuntu1.2_arm64.deb ...
+Unpacking libperl5.34:arm64 (5.34.0-3ubuntu1.2) over (5.34.0-3ubuntu1) ...
+Preparing to unpack .../perl_5.34.0-3ubuntu1.2_arm64.deb ...
+Unpacking perl (5.34.0-3ubuntu1.2) over (5.34.0-3ubuntu1) ...
+Preparing to unpack .../perl-base_5.34.0-3ubuntu1.2_arm64.deb ...
+Unpacking perl-base (5.34.0-3ubuntu1.2) over (5.34.0-3ubuntu1) ...
+Setting up perl-base (5.34.0-3ubuntu1.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../perl-modules-5.34_5.34.0-3ubuntu1.2_all.deb ...
+Unpacking perl-modules-5.34 (5.34.0-3ubuntu1.2) over (5.34.0-3ubuntu1) ...
+Preparing to unpack .../libc-bin_2.35-0ubuntu3.4_arm64.deb ...
+Unpacking libc-bin (2.35-0ubuntu3.4) over (2.35-0ubuntu3) ...
+Setting up libc-bin (2.35-0ubuntu3.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../ncurses-base_6.3-2ubuntu0.1_all.deb ...
+Unpacking ncurses-base (6.3-2ubuntu0.1) over (6.3-2) ...
+Setting up ncurses-base (6.3-2ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../gpgv_2.2.27-3ubuntu2.1_arm64.deb ...
+Unpacking gpgv (2.2.27-3ubuntu2.1) over (2.2.27-3ubuntu2) ...
+Setting up gpgv (2.2.27-3ubuntu2.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libgnutls30_3.7.3-4ubuntu1.2_arm64.deb ...
+Unpacking libgnutls30:arm64 (3.7.3-4ubuntu1.2) over (3.7.3-4ubuntu1) ...
+Setting up libgnutls30:arm64 (3.7.3-4ubuntu1.2) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../archives/apt_2.4.10_arm64.deb ...
+Unpacking apt (2.4.10) over (2.4.5) ...
+Setting up apt (2.4.10) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpam0g_1.4.0-11ubuntu2.3_arm64.deb ...
+Unpacking libpam0g:arm64 (1.4.0-11ubuntu2.3) over (1.4.0-11ubuntu2) ...
+Setting up libpam0g:arm64 (1.4.0-11ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpam-modules-bin_1.4.0-11ubuntu2.3_arm64.deb ...
+Unpacking libpam-modules-bin (1.4.0-11ubuntu2.3) over (1.4.0-11ubuntu2) ...
+Setting up libpam-modules-bin (1.4.0-11ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpam-modules_1.4.0-11ubuntu2.3_arm64.deb ...
+Unpacking libpam-modules:arm64 (1.4.0-11ubuntu2.3) over (1.4.0-11ubuntu2) ...
+Setting up libpam-modules:arm64 (1.4.0-11ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libcap2_1%3a2.44-1ubuntu0.22.04.1_arm64.deb ...
+Unpacking libcap2:arm64 (1:2.44-1ubuntu0.22.04.1) over (1:2.44-1build3) ...
+Setting up libcap2:arm64 (1:2.44-1ubuntu0.22.04.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpam-runtime_1.4.0-11ubuntu2.3_all.deb ...
+Unpacking libpam-runtime (1.4.0-11ubuntu2.3) over (1.4.0-11ubuntu2) ...
+Setting up libpam-runtime (1.4.0-11ubuntu2.3) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpcre2-8-0_10.39-3ubuntu0.1_arm64.deb ...
+Unpacking libpcre2-8-0:arm64 (10.39-3ubuntu0.1) over (10.39-3build1) ...
+Setting up libpcre2-8-0:arm64 (10.39-3ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libpcre3_2%3a8.39-13ubuntu0.22.04.1_arm64.deb ...
+Unpacking libpcre3:arm64 (2:8.39-13ubuntu0.22.04.1) over (2:8.39-13build5) ...
+Setting up libpcre3:arm64 (2:8.39-13ubuntu0.22.04.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../libtinfo6_6.3-2ubuntu0.1_arm64.deb ...
+Unpacking libtinfo6:arm64 (6.3-2ubuntu0.1) over (6.3-2) ...
+Setting up libtinfo6:arm64 (6.3-2ubuntu0.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../passwd_1%3a4.8.1-2ubuntu2.1_arm64.deb ...
+Unpacking passwd (1:4.8.1-2ubuntu2.1) over (1:4.8.1-2ubuntu2) ...
+Setting up passwd (1:4.8.1-2ubuntu2.1) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../00-libxml2_2.9.13+dfsg-1ubuntu0.3_arm64.deb ...
+Unpacking libxml2:arm64 (2.9.13+dfsg-1ubuntu0.3) over (2.9.13+dfsg-1build1) ...
+Preparing to unpack .../01-file_1%3a5.41-3ubuntu0.1_arm64.deb ...
+Unpacking file (1:5.41-3ubuntu0.1) over (1:5.41-3) ...
+Preparing to unpack .../02-libmagic1_1%3a5.41-3ubuntu0.1_arm64.deb ...
+Unpacking libmagic1:arm64 (1:5.41-3ubuntu0.1) over (1:5.41-3) ...
+Preparing to unpack .../03-libmagic-mgc_1%3a5.41-3ubuntu0.1_arm64.deb ...
+Unpacking libmagic-mgc (1:5.41-3ubuntu0.1) over (1:5.41-3) ...
+Preparing to unpack .../04-libctf-nobfd0_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking libctf-nobfd0:arm64 (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../05-libctf0_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking libctf0:arm64 (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../06-binutils-aarch64-linux-gnu_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking binutils-aarch64-linux-gnu (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../07-libbinutils_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking libbinutils:arm64 (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../08-binutils_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking binutils (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../09-binutils-common_2.38-4ubuntu2.3_arm64.deb ...
+Unpacking binutils-common:arm64 (2.38-4ubuntu2.3) over (2.38-3ubuntu1) ...
+Preparing to unpack .../10-g++-11_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking g++-11 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../11-libstdc++-11-dev_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libstdc++-11-dev:arm64 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../12-libasan6_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libasan6:arm64 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../13-gcc-11_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking gcc-11 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../14-libgcc-11-dev_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libgcc-11-dev:arm64 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../15-libtsan0_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking libtsan0:arm64 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../16-cpp-11_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking cpp-11 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../17-gcc-11-base_11.4.0-1ubuntu1~22.04_arm64.deb ...
+Unpacking gcc-11-base:arm64 (11.4.0-1ubuntu1~22.04) over (11.2.0-19ubuntu1) ...
+Preparing to unpack .../18-dpkg-dev_1.21.1ubuntu2.2_all.deb ...
+Unpacking dpkg-dev (1.21.1ubuntu2.2) over (1.21.1ubuntu2) ...
+Preparing to unpack .../19-libdpkg-perl_1.21.1ubuntu2.2_all.deb ...
+Unpacking libdpkg-perl (1.21.1ubuntu2.2) over (1.21.1ubuntu2) ...
+Setting up gcc-11-base:arm64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libmagic-mgc (1:5.41-3ubuntu0.1) ...
+Setting up binutils-common:arm64 (2.38-4ubuntu2.3) ...
+Setting up libmagic1:arm64 (1:5.41-3ubuntu0.1) ...
+Setting up linux-libc-dev:arm64 (5.15.0-86.96) ...
+Setting up libctf-nobfd0:arm64 (2.38-4ubuntu2.3) ...
+Setting up file (1:5.41-3ubuntu0.1) ...
+Setting up libgomp1:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up perl-modules-5.34 (5.34.0-3ubuntu1.2) ...
+Setting up libasan6:arm64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libtirpc-dev:arm64 (1.3.2-2ubuntu0.1) ...
+Setting up libatomic1:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libubsan1:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libhwasan0:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libbinutils:arm64 (2.38-4ubuntu2.3) ...
+Setting up libc-dev-bin (2.35-0ubuntu3.4) ...
+Setting up libxml2:arm64 (2.9.13+dfsg-1ubuntu0.3) ...
+Setting up libcc1-0:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up liblsan0:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libitm1:arm64 (12.3.0-1ubuntu1~22.04) ...
+Setting up libtsan0:arm64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libctf0:arm64 (2.38-4ubuntu2.3) ...
+Setting up cpp-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up libperl5.34:arm64 (5.34.0-3ubuntu1.2) ...
+Setting up binutils-aarch64-linux-gnu (2.38-4ubuntu2.3) ...
+Setting up binutils (2.38-4ubuntu2.3) ...
+Setting up perl (5.34.0-3ubuntu1.2) ...
+Setting up libdpkg-perl (1.21.1ubuntu2.2) ...
+Setting up libgcc-11-dev:arm64 (11.4.0-1ubuntu1~22.04) ...
+Setting up gcc-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up libc6-dev:arm64 (2.35-0ubuntu3.4) ...
+Setting up dpkg-dev (1.21.1ubuntu2.2) ...
+Setting up libstdc++-11-dev:arm64 (11.4.0-1ubuntu1~22.04) ...
+Setting up g++-11 (11.4.0-1ubuntu1~22.04) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-jammy2.dsc exists in /home/hibby/Dev/oarc/linbpq; copying to chroot
+I: NOTICE: Log filtering will replace 'build/linbpq-77jZE9/linbpq-6.0.24.15' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/linbpq-77jZE9' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
+Filtered Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [687 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [719 B]
+Fetched 2015 B in 0s (18.5 kB/s)
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libglib2.0-0
+  libminiupnpc-dev libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev
+  libssl-dev pkg-config zlib1g-dev
+Suggested packages:
+  minissdpd libssl-doc
+Recommended packages:
+  libconfig-doc dbus libglib2.0-data shared-mime-info xdg-user-dirs
+The following NEW packages will be installed:
+  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libglib2.0-0
+  libminiupnpc-dev libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev
+  libssl-dev pkg-config sbuild-build-depends-main-dummy zlib1g-dev
+0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4862 kB of archives.
+After this operation, 20.3 MB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [706 B]
+Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdbus-1-3 arm64 1.12.20-2ubuntu4.1 [187 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libglib2.0-0 arm64 2.72.4-0ubuntu2.2 [1432 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpcap0.8 arm64 1.10.1-4build1 [141 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libconfig9 arm64 1.5-0.4build1 [21.0 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 pkg-config arm64 0.29.2-1ubuntu3 [47.4 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libconfig-dev arm64 1.5-0.4build1 [50.5 kB]
+Get:8 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libdbus-1-dev arm64 1.12.20-2ubuntu4.1 [192 kB]
+Get:9 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libminiupnpc17 arm64 2.2.3-1build1 [27.6 kB]
+Get:10 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libminiupnpc-dev arm64 2.2.3-1build1 [37.0 kB]
+Get:11 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpcap0.8-dev arm64 1.10.1-4build1 [264 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports jammy/main arm64 libpcap-dev arm64 1.10.1-4build1 [3328 B]
+Get:13 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 libssl-dev arm64 3.0.2-0ubuntu1.10 [2294 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports jammy-updates/main arm64 zlib1g-dev arm64 1:1.2.11.dfsg-2ubuntu9.2 [163 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 4862 kB in 1s (6859 kB/s)
+Selecting previously unselected package libdbus-1-3:arm64.
+(Reading database ... 11498 files and directories currently installed.)
+Preparing to unpack .../00-libdbus-1-3_1.12.20-2ubuntu4.1_arm64.deb ...
+Unpacking libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+Selecting previously unselected package libglib2.0-0:arm64.
+Preparing to unpack .../01-libglib2.0-0_2.72.4-0ubuntu2.2_arm64.deb ...
+Unpacking libglib2.0-0:arm64 (2.72.4-0ubuntu2.2) ...
+Selecting previously unselected package libpcap0.8:arm64.
+Preparing to unpack .../02-libpcap0.8_1.10.1-4build1_arm64.deb ...
+Unpacking libpcap0.8:arm64 (1.10.1-4build1) ...
+Selecting previously unselected package libconfig9:arm64.
+Preparing to unpack .../03-libconfig9_1.5-0.4build1_arm64.deb ...
+Unpacking libconfig9:arm64 (1.5-0.4build1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../04-pkg-config_0.29.2-1ubuntu3_arm64.deb ...
+Unpacking pkg-config (0.29.2-1ubuntu3) ...
+Selecting previously unselected package libconfig-dev:arm64.
+Preparing to unpack .../05-libconfig-dev_1.5-0.4build1_arm64.deb ...
+Unpacking libconfig-dev:arm64 (1.5-0.4build1) ...
+Selecting previously unselected package libdbus-1-dev:arm64.
+Preparing to unpack .../06-libdbus-1-dev_1.12.20-2ubuntu4.1_arm64.deb ...
+Unpacking libdbus-1-dev:arm64 (1.12.20-2ubuntu4.1) ...
+Selecting previously unselected package libminiupnpc17:arm64.
+Preparing to unpack .../07-libminiupnpc17_2.2.3-1build1_arm64.deb ...
+Unpacking libminiupnpc17:arm64 (2.2.3-1build1) ...
+Selecting previously unselected package libminiupnpc-dev:arm64.
+Preparing to unpack .../08-libminiupnpc-dev_2.2.3-1build1_arm64.deb ...
+Unpacking libminiupnpc-dev:arm64 (2.2.3-1build1) ...
+Selecting previously unselected package libpcap0.8-dev:arm64.
+Preparing to unpack .../09-libpcap0.8-dev_1.10.1-4build1_arm64.deb ...
+Unpacking libpcap0.8-dev:arm64 (1.10.1-4build1) ...
+Selecting previously unselected package libpcap-dev:arm64.
+Preparing to unpack .../10-libpcap-dev_1.10.1-4build1_arm64.deb ...
+Unpacking libpcap-dev:arm64 (1.10.1-4build1) ...
+Selecting previously unselected package libssl-dev:arm64.
+Preparing to unpack .../11-libssl-dev_3.0.2-0ubuntu1.10_arm64.deb ...
+Unpacking libssl-dev:arm64 (3.0.2-0ubuntu1.10) ...
+Selecting previously unselected package zlib1g-dev:arm64.
+Preparing to unpack .../12-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu9.2_arm64.deb ...
+Unpacking zlib1g-dev:arm64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../13-sbuild-build-depends-main-dummy_0.invalid.0_arm64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up libconfig9:arm64 (1.5-0.4build1) ...
+Setting up libglib2.0-0:arm64 (2.72.4-0ubuntu2.2) ...
+No schema files found: doing nothing.
+Setting up libminiupnpc17:arm64 (2.2.3-1build1) ...
+Setting up libdbus-1-3:arm64 (1.12.20-2ubuntu4.1) ...
+Setting up libssl-dev:arm64 (3.0.2-0ubuntu1.10) ...
+Setting up pkg-config (0.29.2-1ubuntu3) ...
+Setting up zlib1g-dev:arm64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Setting up libconfig-dev:arm64 (1.5-0.4build1) ...
+Setting up libminiupnpc-dev:arm64 (2.2.3-1build1) ...
+Setting up libpcap0.8:arm64 (1.10.1-4build1) ...
+Setting up libdbus-1-dev:arm64 (1.12.20-2ubuntu4.1) ...
+Setting up libpcap0.8-dev:arm64 (1.10.1-4build1) ...
+Setting up libpcap-dev:arm64 (1.10.1-4build1) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                                                          |
++------------------------------------------------------------------------------+
+
+Arch check ok (arm64 included in linux-any)
+
++------------------------------------------------------------------------------+
+| Build environment                                                            |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.4.0-3-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.4.11-1 (2023-08-17) amd64 (x86_64)
+Toolchain package versions: binutils_2.38-4ubuntu2.3 dpkg-dev_1.21.1ubuntu2.2 g++-11_11.4.0-1ubuntu1~22.04 gcc-11_11.4.0-1ubuntu1~22.04 libc6-dev_2.35-0ubuntu3.4 libstdc++-11-dev_11.4.0-1ubuntu1~22.04 libstdc++6_12.3.0-1ubuntu1~22.04 linux-libc-dev_5.15.0-86.96
+Package versions: adduser_3.118ubuntu5 apt_2.4.10 autoconf_2.71-2 automake_1:1.16.5-1.3 autopoint_0.21-4ubuntu4 autotools-dev_20220109.1 base-files_12ubuntu4.4 base-passwd_3.5.52build1 bash_5.1-6ubuntu1 binutils_2.38-4ubuntu2.3 binutils-aarch64-linux-gnu_2.38-4ubuntu2.3 binutils-common_2.38-4ubuntu2.3 bsdextrautils_2.37.2-4ubuntu3 bsdutils_1:2.37.2-4ubuntu3 build-essential_12.9ubuntu3 bzip2_1.0.8-5build1 coreutils_8.32-4.1ubuntu1 cpp_4:11.2.0-1ubuntu1 cpp-11_11.4.0-1ubuntu1~22.04 dash_0.5.11+git20210903+057cd650a4ed-3build1 debconf_1.5.79ubuntu1 debhelper_13.6ubuntu1 debianutils_5.5-1ubuntu2 debugedit_1:5.0-4build1 dh-autoreconf_20 dh-strip-nondeterminism_1.13.0-1 diffutils_1:3.8-0ubuntu2 dpkg_1.21.1ubuntu2.2 dpkg-dev_1.21.1ubuntu2.2 dwz_0.14-1build2 eatmydata_130-2build1 fakeroot_1.28-1ubuntu1 file_1:5.41-3ubuntu0.1 findutils_4.8.0-1ubuntu3 g++_4:11.2.0-1ubuntu1 g++-11_11.4.0-1ubuntu1~22.04 gcc_4:11.2.0-1ubuntu1 gcc-11_11.4.0-1ubuntu1~22.04 gcc-11-base_11.4.0-1ubuntu1~22.04 gcc-12-base_12.3.0-1ubuntu1~22.04 gettext_0.21-4ubuntu4 gettext-base_0.21-4ubuntu4 gpgv_2.2.27-3ubuntu2.1 grep_3.7-1build1 groff-base_1.22.4-8build1 gzip_1.10-4ubuntu4.1 hostname_3.23ubuntu2 init-system-helpers_1.62 intltool-debian_0.35.0+20060710.5 libacl1_2.3.1-1 libapt-pkg6.0_2.4.10 libarchive-zip-perl_1.68-1 libasan6_11.4.0-1ubuntu1~22.04 libatomic1_12.3.0-1ubuntu1~22.04 libattr1_1:2.5.1-1build1 libaudit-common_1:3.0.7-1build1 libaudit1_1:3.0.7-1build1 libbinutils_2.38-4ubuntu2.3 libblkid1_2.37.2-4ubuntu3 libbz2-1.0_1.0.8-5build1 libc-bin_2.35-0ubuntu3.4 libc-dev-bin_2.35-0ubuntu3.4 libc6_2.35-0ubuntu3.4 libc6-dev_2.35-0ubuntu3.4 libcap-ng0_0.7.9-2.2build3 libcap2_1:2.44-1ubuntu0.22.04.1 libcc1-0_12.3.0-1ubuntu1~22.04 libcom-err2_1.46.5-2ubuntu1.1 libconfig-dev_1.5-0.4build1 libconfig9_1.5-0.4build1 libcrypt-dev_1:4.4.27-1 libcrypt1_1:4.4.27-1 libctf-nobfd0_2.38-4ubuntu2.3 libctf0_2.38-4ubuntu2.3 libdb5.3_5.3.28+dfsg1-0.8ubuntu3 libdbus-1-3_1.12.20-2ubuntu4.1 libdbus-1-dev_1.12.20-2ubuntu4.1 libdebconfclient0_0.261ubuntu1 libdebhelper-perl_13.6ubuntu1 libdpkg-perl_1.21.1ubuntu2.2 libdw1_0.186-1build1 libeatmydata1_130-2build1 libelf1_0.186-1build1 libfakeroot_1.28-1ubuntu1 libffi8_3.4.2-4 libfile-stripnondeterminism-perl_1.13.0-1 libgcc-11-dev_11.4.0-1ubuntu1~22.04 libgcc-s1_12.3.0-1ubuntu1~22.04 libgcrypt20_1.9.4-3ubuntu3 libgdbm-compat4_1.23-1 libgdbm6_1.23-1 libglib2.0-0_2.72.4-0ubuntu2.2 libgmp10_2:6.2.1+dfsg-3ubuntu1 libgnutls30_3.7.3-4ubuntu1.2 libgomp1_12.3.0-1ubuntu1~22.04 libgpg-error0_1.43-3 libgssapi-krb5-2_1.19.2-2ubuntu0.2 libhogweed6_3.7.3-1build2 libhwasan0_12.3.0-1ubuntu1~22.04 libicu70_70.1-2 libidn2-0_2.3.2-2build1 libisl23_0.24-2build1 libitm1_12.3.0-1ubuntu1~22.04 libk5crypto3_1.19.2-2ubuntu0.2 libkeyutils1_1.6.1-2ubuntu3 libkrb5-3_1.19.2-2ubuntu0.2 libkrb5support0_1.19.2-2ubuntu0.2 liblsan0_12.3.0-1ubuntu1~22.04 liblz4-1_1.9.3-2build2 liblzma5_5.2.5-2ubuntu1 libmagic-mgc_1:5.41-3ubuntu0.1 libmagic1_1:5.41-3ubuntu0.1 libminiupnpc-dev_2.2.3-1build1 libminiupnpc17_2.2.3-1build1 libmount1_2.37.2-4ubuntu3 libmpc3_1.2.1-2build1 libmpfr6_4.1.0-3build3 libnettle8_3.7.3-1build2 libnsl-dev_1.3.0-2build2 libnsl2_1.3.0-2build2 libp11-kit0_0.24.0-6build1 libpam-modules_1.4.0-11ubuntu2.3 libpam-modules-bin_1.4.0-11ubuntu2.3 libpam-runtime_1.4.0-11ubuntu2.3 libpam0g_1.4.0-11ubuntu2.3 libpcap-dev_1.10.1-4build1 libpcap0.8_1.10.1-4build1 libpcap0.8-dev_1.10.1-4build1 libpcre2-8-0_10.39-3ubuntu0.1 libpcre3_2:8.39-13ubuntu0.22.04.1 libperl5.34_5.34.0-3ubuntu1.2 libpipeline1_1.5.5-1 libseccomp2_2.5.3-2ubuntu2 libselinux1_3.3-1build2 libsemanage-common_3.3-1build2 libsemanage2_3.3-1build2 libsepol2_3.3-1build1 libsigsegv2_2.13-1ubuntu3 libsmartcols1_2.37.2-4ubuntu3 libssl-dev_3.0.2-0ubuntu1.10 libssl3_3.0.2-0ubuntu1.10 libstdc++-11-dev_11.4.0-1ubuntu1~22.04 libstdc++6_12.3.0-1ubuntu1~22.04 libsub-override-perl_0.09-2 libsystemd0_249.11-0ubuntu3.10 libtasn1-6_4.18.0-4build1 libtinfo6_6.3-2ubuntu0.1 libtirpc-common_1.3.2-2ubuntu0.1 libtirpc-dev_1.3.2-2ubuntu0.1 libtirpc3_1.3.2-2ubuntu0.1 libtool_2.4.6-15build2 libtsan0_11.4.0-1ubuntu1~22.04 libubsan1_12.3.0-1ubuntu1~22.04 libuchardet0_0.0.7-1build2 libudev1_249.11-0ubuntu3.10 libunistring2_1.0-1 libuuid1_2.37.2-4ubuntu3 libxml2_2.9.13+dfsg-1ubuntu0.3 libxxhash0_0.8.1-1 libzstd1_1.4.8+dfsg-3build1 linux-libc-dev_5.15.0-86.96 login_1:4.8.1-2ubuntu2.1 lsb-base_11.1.0ubuntu4 lto-disabled-list_24 m4_1.4.18-5ubuntu2 make_4.3-4.1build1 man-db_2.10.2-1 mawk_1.3.4.20200120-3 ncurses-base_6.3-2ubuntu0.1 ncurses-bin_6.3-2ubuntu0.1 passwd_1:4.8.1-2ubuntu2.1 patch_2.7.6-7build2 perl_5.34.0-3ubuntu1.2 perl-base_5.34.0-3ubuntu1.2 perl-modules-5.34_5.34.0-3ubuntu1.2 pkg-config_0.29.2-1ubuntu3 po-debconf_1.0.21+nmu1 rpcsvc-proto_1.4.2-0ubuntu6 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.8-1ubuntu2 sensible-utils_0.0.17 sysvinit-utils_3.01-1ubuntu1 tar_1.34+dfsg-1ubuntu0.1.22.04.1 ubuntu-keyring_2021.03.26 util-linux_2.37.2-4ubuntu3 xz-utils_5.2.5-2ubuntu1 zlib1g_1:1.2.11.dfsg-2ubuntu9.2 zlib1g-dev_1:1.2.11.dfsg-2ubuntu9.2
+
++------------------------------------------------------------------------------+
+| Build                                                                        |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 3.0 (quilt)
+Source: linbpq
+Binary: linbpq
+Architecture: linux-any
+Version: 6.0.24.15-jammy2
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Uploaders:  Dave Hibberd <d@vehibberd.com>,
+Homepage: http://users.telenet.be/on4qz
+Standards-Version: 4.6.1.0
+Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/linbpq
+Vcs-Git: https://salsa.debian.org/debian-hamradio-team/linbpq.git
+Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev
+Package-List:
+ linbpq deb hamradio optional arch=linux-any
+Checksums-Sha1:
+ e99317b77aac16795fce4f9fe9ff0c2f7e95df5f 7884841 linbpq_6.0.24.15.orig.tar.gz
+ bce3ff7cca60ac26963e98763528b9638b803569 7852 linbpq_6.0.24.15-jammy2.debian.tar.xz
+Checksums-Sha256:
+ 2ed3d67fbbd71c496805113e75ddce8368e0c7f12fd6e52b57115ae5c0d38fa4 7884841 linbpq_6.0.24.15.orig.tar.gz
+ 2502e855bc1a59e9ee034f2a417225ac17222e0b5669f6cdcccd41392450ca8b 7852 linbpq_6.0.24.15-jammy2.debian.tar.xz
+Files:
+ a8b80e15db391da057f9e93654a1d270 7884841 linbpq_6.0.24.15.orig.tar.gz
+ 445471c6ec745b04d141e2e6c21b853d 7852 linbpq_6.0.24.15-jammy2.debian.tar.xz
+
+dpkg-source: warning: extracting unsigned source package (linbpq_6.0.24.15-jammy2.dsc)
+dpkg-source: info: extracting linbpq in /<<PKGBUILDDIR>>
+dpkg-source: info: unpacking linbpq_6.0.24.15.orig.tar.gz
+dpkg-source: info: unpacking linbpq_6.0.24.15-jammy2.debian.tar.xz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying makefile
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+HOME=/sbuild-nonexistent
+LANG=en_GB.UTF-8
+LC_ALL=C.UTF-8
+LD_LIBRARY_PATH=/usr/lib/libeatmydata
+LD_PRELOAD=libeatmydata.so
+LOGNAME=hibby
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<PKGBUILDDIR>>
+SCHROOT_ALIAS_NAME=jammy-arm64-sbuild
+SCHROOT_CHROOT_NAME=jammy-arm64-sbuild
+SCHROOT_COMMAND=env
+SCHROOT_GID=1000
+SCHROOT_GROUP=hibby
+SCHROOT_SESSION_ID=jammy-arm64-sbuild-d4d68bbb-0435-4571-82ff-b2ce8f3d9fc7
+SCHROOT_UID=1000
+SCHROOT_USER=hibby
+SHELL=/bin/sh
+USER=hibby
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package linbpq
+dpkg-buildpackage: info: source version 6.0.24.15-jammy2
+dpkg-buildpackage: info: source distribution jammy
+dpkg-buildpackage: info: source changed by Dave Hibberd <d@vehibberd.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+ debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j16 clean
+make[1]: Entering directory '/<<PKGBUILDDIR>>'
+rm -f *.d
+rm -f linbpq pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o
+make[1]: Leaving directory '/<<PKGBUILDDIR>>'
+   dh_clean
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+   dh_auto_build
+	make -j16 "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/<<PKGBUILDDIR>>'
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwtran.o pngwtran.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrtran.o pngrtran.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngset.o pngset.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrio.o pngrio.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwio.o pngwio.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngtrans.o pngtrans.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrutil.o pngrutil.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwutil.o pngwutil.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngread.o pngread.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwrite.o pngwrite.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o png.o png.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngerror.o pngerror.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngget.o pngget.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngmem.o pngmem.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSIconData.o APRSIconData.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AISCommon.o AISCommon.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o upnp.o upnp.c
+AISCommon.c: In function ‘SaveVesselDataBase’:
+AISCommon.c:739:63: warning: format ‘%d’ expects argument of type ‘int’, but argument 11 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+  739 |                         sprintf(buf,"%d|%s|%s|%d|%d|%d|%d|%d|%d|%d|%d|%d\n",
+      |                                                              ~^
+      |                                                               |
+      |                                                               int
+      |                                                              %ld
+......
+  748 |                         ShipDataRec->TimeAdded,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~                 
+      |                                    |
+      |                                    time_t {aka long int}
+AISCommon.c:739:66: warning: format ‘%d’ expects argument of type ‘int’, but argument 12 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+  739 |                         sprintf(buf,"%d|%s|%s|%d|%d|%d|%d|%d|%d|%d|%d|%d\n",
+      |                                                                 ~^
+      |                                                                  |
+      |                                                                  int
+      |                                                                 %ld
+......
+  749 |                         ShipDataRec->TimeLastUpdated,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+      |                                    |
+      |                                    time_t {aka long int}
+AISCommon.c: In function ‘SaveNavAidDataBase’:
+AISCommon.c:853:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+  853 |                 fprintf(file, "%d|%s|%f|%f|%d|%d\n", navptr->ID, navptr->name, navptr->lat, navptr->Long, navptr->TimeAdded, navptr->TimeLastUpdated);
+      |                                            ~^                                                             ~~~~~~~~~~~~~~~~~
+      |                                             |                                                                   |
+      |                                             int                                                                 time_t {aka long int}
+      |                                            %ld
+AISCommon.c:853:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+  853 |                 fprintf(file, "%d|%s|%f|%f|%d|%d\n", navptr->ID, navptr->name, navptr->lat, navptr->Long, navptr->TimeAdded, navptr->TimeLastUpdated);
+      |                                               ~^                                                                             ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                |                                                                                   |
+      |                                                int                                                                                 time_t {aka long int}
+      |                                               %ld
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSStdPages.o APRSStdPages.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HSMODEM.o HSMODEM.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WinRPR.o WinRPR.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KISSHF.o KISSHF.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCEmulators.o TNCEmulators.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqhdlc.o bpqhdlc.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SerialPort.o SerialPort.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o adif.o adif.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WebMail.o WebMail.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o utf8Routines.o utf8Routines.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o VARA.o VARA.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzFind.o LzFind.c
+HSMODEM.c: In function ‘ExtProc’:
+HSMODEM.c:755:33: warning: ‘%s’ directive writing up to 255 bytes into a region of size 78 [-Wformat-overflow=]
+  755 |                         txlen = sprintf(Connect, "C %s\r", &buff->L2DATA[2]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HSMODEM.c:755:33: note: ‘sprintf’ output between 4 and 259 bytes into a destination of size 80
+HSMODEM.c:688:55: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  688 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                       ^~
+HSMODEM.c:688:25: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  688 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+KISSHF.c: In function ‘ExtProc’:
+KISSHF.c:456:55: warning: ‘%s’ directive writing up to 499 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  456 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &txbuff[6]);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+KISSHF.c:456:25: note: ‘sprintf’ output between 3 and 512 bytes into a destination of size 256
+  456 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &txbuff[6]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Alloc.o Alloc.c
+SerialPort.c: In function ‘SerialProcessTNCMessage’:
+SerialPort.c:988:24: warning: ‘%s’ directive writing up to 519 bytes into a region of size 256 [-Wformat-overflow=]
+  988 |         buffptr->Len = sprintf((UCHAR *)&buffptr->Data[0], "%s", TNC->RXBuffer);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SerialPort.c:988:24: note: ‘sprintf’ output between 1 and 520 bytes into a destination of size 256
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaDec.o LzmaDec.c
+adif.c: In function ‘WriteADIFRecord’:
+adif.c:412:28: warning: ‘%04d’ directive writing between 4 and 11 bytes into a region of size between 0 and 249 [-Wformat-overflow=]
+  412 |         sprintf(Value, "%s_%04d%02d.adi", Value,
+      |                            ^~~~
+adif.c:412:9: note: ‘sprintf’ output between 12 and 277 bytes into a destination of size 250
+  412 |         sprintf(Value, "%s_%04d%02d.adi", Value,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  413 |                                 tm->tm_year +1900, tm->tm_mon+1);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+adif.c:521:98: warning: ‘%s’ directive writing up to 6 bytes into a region of size between 0 and 220 [-Wformat-overflow=]
+  521 |         CommentLen = sprintf(Comment, "0|%s|%s|%s|%s|%s|%s|%s|%s|%lld|%d|%d|%s|%d|%d|%d|%d|%d|%s|%s",
+      |                                                                                                  ^~
+......
+  540 |                 LOC);
+      |                 ~~~                                                                               
+TNCEmulators.c: In function ‘STATUSPOLL’:
+adif.c:521:22: note: ‘sprintf’ output between 37 and 351 bytes into a destination of size 256
+  521 |         CommentLen = sprintf(Comment, "0|%s|%s|%s|%s|%s|%s|%s|%s|%lld|%d|%d|%s|%d|%d|%d|%d|%d|%s|%s",
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  522 |                 Date,
+      |                 ~~~~~ 
+  523 |                 "BPQ32",
+      |                 ~~~~~~~~
+  524 |                 TextVerstring,
+      |                 ~~~~~~~~~~~~~~
+  525 |                 "CMS",
+      |                 ~~~~~~
+  526 |                 ADIF->CMSCall,
+      |                 ~~~~~~~~~~~~~~
+  527 |                 ADIF->Call,
+      |                 ~~~~~~~~~~~
+  528 |                 ADIF->UserSID,
+      |                 ~~~~~~~~~~~~~~
+  529 |                 WL2KModes[ADIF->Mode],
+      |                 ~~~~~~~~~~~~~~~~~~~~~~
+  530 |                 ADIF->Freq,
+      |                 ~~~~~~~~~~~
+  531 |                 Dist,
+      |                 ~~~~~ 
+  532 |                 intBearing,
+      |                 ~~~~~~~~~~~
+  533 |                 ADIF->Termination,
+      |                 ~~~~~~~~~~~~~~~~~~
+  534 |                 ADIF->Sent,
+      |                 ~~~~~~~~~~~
+  535 |                 ADIF->Received,
+      |                 ~~~~~~~~~~~~~~~
+  536 |                 ADIF->BytesSent,
+      |                 ~~~~~~~~~~~~~~~~
+  537 |                 ADIF->BytesReceived,
+      |                 ~~~~~~~~~~~~~~~~~~~~
+  538 |                 (int)(T - ADIF->StartTime),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  539 |                 ADIF->LOC,
+      |                 ~~~~~~~~~~
+  540 |                 LOC);
+      |                 ~~~~  
+TNCEmulators.c:4953:59: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 0 and 1 [-Wformat-overflow=]
+ 4953 |                 i = sprintf(CONMSG, "\x3(%d) CONNECTED to %s\r", TNC->MSGCHANNEL, WorkString);
+      |                                                           ^~                      ~~~~~~~~~~
+TNCEmulators.c:4953:21: note: ‘sprintf’ output between 20 and 277 bytes into a destination of size 19
+ 4953 |                 i = sprintf(CONMSG, "\x3(%d) CONNECTED to %s\r", TNC->MSGCHANNEL, WorkString);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TNCEmulators.c:4944:60: warning: ‘) DISCONNECTED fm 0:SWITCH
+’ directive writing 27 bytes into a region of size between 14 and 16 [-Wformat-overflow=]
+ 4944 |                 i = sprintf(CONMSG, "\x3(%d) DISCONNECTED fm 0:SWITCH\r", TNC->MSGCHANNEL);
+      |                                            ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+TNCEmulators.c:4944:21: note: ‘sprintf’ output between 31 and 33 bytes into a destination of size 19
+ 4944 |                 i = sprintf(CONMSG, "\x3(%d) DISCONNECTED fm 0:SWITCH\r", TNC->MSGCHANNEL);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaEnc.o LzmaEnc.c
+VARA.c: In function ‘ExtProc’:
+VARA.c:700:62: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 62 and 71 [-Wformat-overflow=]
+  700 |                                 sprintf(Connect, "CONNECT %s %s\r", TNC->Streams[0].MyCall, &buff->L2DATA[2]);
+      |                                                              ^~
+VARA.c:700:33: note: ‘sprintf’ output between 11 and 275 bytes into a destination of size 80
+  700 |                                 sprintf(Connect, "CONNECT %s %s\r", TNC->Streams[0].MyCall, &buff->L2DATA[2]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VARA.c:616:59: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  616 |                                 sprintf(buff->L2DATA, "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                           ^~
+VARA.c:616:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  616 |                                 sprintf(buff->L2DATA, "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘GetHTMLFormSet’:
+WebMail.c:806:24: warning: ‘%s’ directive writing up to 259 bytes into a region of size 256 [-Wformat-overflow=]
+  806 |         sprintf(name, "%s/%s", BPQDirectory, FormSet);
+      |                        ^~      ~~~~~~~~~~~~
+WebMail.c:806:9: note: ‘sprintf’ output 2 or more bytes (assuming 261) into a destination of size 256
+  806 |         sprintf(name, "%s/%s", BPQDirectory, FormSet);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘ProcessWebMailMessage’:
+WebMail.c:2284:59: warning: ‘ <option value=’ directive writing 15 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2284 |                                         sprintf(popup, "%s <option value=%d,%d>%s", popup, DirNo, i, Name);
+      |                                                           ^~~~~~~~~~~~~~~
+WebMail.c:2284:41: note: ‘sprintf’ output 20 or more bytes (assuming 10019) into a destination of size 10000
+ 2284 |                                         sprintf(popup, "%s <option value=%d,%d>%s", popup, DirNo, i, Name);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2272:59: warning: ‘ <option value=’ directive writing 15 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2272 |                                         sprintf(popup, "%s <option value=%d:%d,%d>%s", popup, DirNo, SubDirNo, i, Name);
+      |                                                           ^~~~~~~~~~~~~~~
+WebMail.c:2272:41: note: ‘sprintf’ output 22 or more bytes (assuming 10021) into a destination of size 10000
+ 2272 |                                         sprintf(popup, "%s <option value=%d:%d,%d>%s", popup, DirNo, SubDirNo, i, Name);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2287:35: warning: ‘</select></p>’ directive writing 13 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2287 |                 sprintf(popup, "%s</select></p>", popup);
+      |                                   ^~~~~~~~~~~~~
+WebMail.c:2287:17: note: ‘sprintf’ output between 14 and 10013 bytes into a destination of size 10000
+ 2287 |                 sprintf(popup, "%s</select></p>", popup);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘SendTemplateSelectScreen’:
+WebMail.c:2428:27: warning: ‘</select></td></tr></table></p>’ directive writing 31 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2428 |         sprintf(popup, "%s</select></td></tr></table></p>", popup);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2428:9: note: ‘sprintf’ output between 32 and 10031 bytes into a destination of size 10000
+ 2428 |         sprintf(popup, "%s</select></td></tr></table></p>", popup);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2414:43: warning: ‘%s’ directive writing up to 95 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2414 |                         sprintf(popup, "%s%s", popup, NewGroup);
+      |                                           ^~          ~~~~~~~~
+WebMail.c:2414:25: note: ‘sprintf’ output between 1 and 10095 bytes into a destination of size 10000
+ 2414 |                         sprintf(popup, "%s%s", popup, NewGroup);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2417:35: warning: ‘ <option value=’ directive writing 15 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2417 |                 sprintf(popup, "%s <option value=%d>%s", popup, i, Dir->DirName);
+      |                                   ^~~~~~~~~~~~~~~
+WebMail.c:2417:17: note: ‘sprintf’ output 18 or more bytes (assuming 10017) into a destination of size 10000
+ 2417 |                 sprintf(popup, "%s <option value=%d>%s", popup, i, Dir->DirName);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:2424:43: warning: ‘ <option value=’ directive writing 15 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 2424 |                         sprintf(popup, "%s <option value=%d:%d>%s", popup, i, n, Dir->Dirs[n]->DirName);
+      |                                           ^~~~~~~~~~~~~~~
+WebMail.c:2424:25: note: ‘sprintf’ output 20 or more bytes (assuming 10019) into a destination of size 10000
+ 2424 |                         sprintf(popup, "%s <option value=%d:%d>%s", popup, i, n, Dir->Dirs[n]->DirName);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘xxReadTemplate’:
+WebMail.c:3106:24: warning: ‘%s’ directive writing up to 259 bytes into a region of size 256 [-Wformat-overflow=]
+ 3106 |         sprintf(name, "%s/%s/%s", BPQDirectory, FormSet, DirName);
+      |                        ^~         ~~~~~~~~~~~~
+WebMail.c:3106:9: note: ‘sprintf’ output 3 or more bytes (assuming 262) into a destination of size 256
+ 3106 |         sprintf(name, "%s/%s/%s", BPQDirectory, FormSet, DirName);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaLib.o LzmaLib.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Multicast.o Multicast.c
+WebMail.c: In function ‘CheckFile’:
+WebMail.c:5314:24: warning: ‘%s’ directive writing up to 259 bytes into a region of size 256 [-Wformat-overflow=]
+ 5314 |         sprintf(name, "%s/%s/%s", BPQDirectory, Dir->FormSet, Dir->DirName);
+      |                        ^~         ~~~~~~~~~~~~
+WebMail.c:5314:9: note: ‘sprintf’ output 3 or more bytes (assuming 262) into a destination of size 256
+ 5314 |         sprintf(name, "%s/%s/%s", BPQDirectory, Dir->FormSet, Dir->DirName);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:5329:52: warning: ‘%s’ directive writing up to 255 bytes into a region of size 247 [-Wformat-overflow=]
+ 5329 |                         sprintf(MsgFile, "%s/%s/%s/%s", GetBPQDirectory(), Dir->FormSet, Dir->DirName, entry->d_name);
+      |                                                    ^~
+WebMail.c:5329:25: note: ‘sprintf’ output 4 or more bytes (assuming 259) into a destination of size 250
+ 5329 |                         sprintf(MsgFile, "%s/%s/%s/%s", GetBPQDirectory(), Dir->FormSet, Dir->DirName, entry->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘DoSelectPrompt’:
+WebMail.c:5466:27: warning: ‘</select></td></tr></table><...’ directive writing 109 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 5466 |         sprintf(popup, "%s</select></td></tr></table><br><input onclick=window.history.back() value=Back type=button class='btn'></div>", popup);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:5466:9: note: ‘sprintf’ output between 110 and 10109 bytes into a destination of size 10000
+ 5466 |         sprintf(popup, "%s</select></td></tr></table><br><input onclick=window.history.back() value=Back type=button class='btn'></div>", popup);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:5464:35: warning: ‘ <option value='’ directive writing 16 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 5464 |                 sprintf(popup, "%s <option value='%s'>%s", popup, key, var[i]);
+      |                                   ^~~~~~~~~~~~~~~~
+WebMail.c:5464:17: note: ‘sprintf’ output 19 or more bytes (assuming 10018) into a destination of size 10000
+ 5464 |                 sprintf(popup, "%s <option value='%s'>%s", popup, key, var[i]);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘ParsetxtTemplate’:
+WebMail.c:5673:31: warning: ‘%s’ directive writing up to 31 bytes into a region of size between 0 and 31 [-Wformat-overflow=]
+ 5673 |         sprintf(GPSString,"%s %s", LatString, LonString);
+      |                               ^~              ~~~~~~~~~
+WebMail.c:5673:9: note: ‘sprintf’ output between 2 and 64 bytes into a destination of size 32
+ 5673 |         sprintf(GPSString,"%s %s", LatString, LonString);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c: In function ‘getAttachmentList’:
+WebMail.c:6034:27: warning: ‘</select></td></tr></table><...’ directive writing 109 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 6034 |         sprintf(popup, "%s</select></td></tr></table><br><input onclick=window.history.back() value=Back type=button class='btn'></div>", popup);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:6034:9: note: ‘sprintf’ output between 110 and 10109 bytes into a destination of size 10000
+ 6034 |         sprintf(popup, "%s</select></td></tr></table><br><input onclick=window.history.back() value=Back type=button class='btn'></div>", popup);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WebMail.c:6031:43: warning: ‘ <option value=’ directive writing 15 bytes into a region of size between 1 and 10000 [-Wformat-overflow=]
+ 6031 |                         sprintf(popup, "%s <option value=%d>%s (Len %d)", popup, i + 1, WebMail->FileName[i], WebMail->FileLen[i]);
+      |                                           ^~~~~~~~~~~~~~~
+WebMail.c:6031:25: note: ‘sprintf’ output 26 or more bytes (assuming 10025) into a destination of size 10000
+ 6031 |                         sprintf(popup, "%s <option value=%d>%s (Len %d)", popup, i + 1, WebMail->FileName[i], WebMail->FileLen[i]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ARDOP.o ARDOP.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o IPCode.o IPCode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FLDigi.o FLDigi.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o linether.o linether.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CMSAuth.o CMSAuth.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSCode.o APRSCode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQtoAGW.o BPQtoAGW.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KAMPactor.o KAMPactor.c
+Multicast.c: In function ‘LZUncompress’:
+Multicast.c:643:38: warning: passing argument 2 of ‘LzmaUncompress’ from incompatible pointer type [-Wincompatible-pointer-types]
+  643 |         if ((r = LzmaUncompress(buf, &outlen, (const unsigned char*)Decoded + Len - inlen, &inlen,
+      |                                      ^~~~~~~
+      |                                      |
+      |                                      unsigned int *
+In file included from Multicast.c:611:
+LzmaLib.h:132:55: note: expected ‘size_t *’ {aka ‘long unsigned int *’} but argument is of type ‘unsigned int *’
+  132 | MY_STDAPI LzmaUncompress(unsigned char *dest, size_t *destLen, const unsigned char *src, SizeT *srcLen,
+      |                                               ~~~~~~~~^~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AEAPactor.o AEAPactor.c
+Multicast.c: In function ‘MulticastStatusHTML’:
+Multicast.c:1615:30: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1615 |         Len = sprintf(Reply, StatusPage);
+      |                              ^~~~~~~~~~
+Multicast.c:1673:37: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1673 |         Len += sprintf(&Reply[Len], StatusTail);
+      |                                     ^~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HALDriver.o HALDriver.c
+ARDOP.c: In function ‘ExtProc’:
+ARDOP.c:1652:69: warning: ‘%s’ directive writing up to 255 bytes into a region of size 71 [-Wformat-overflow=]
+ 1652 |                                         sprintf(Connect, "%cPKTCALL %s %s", Stream, &buff->L2DATA[2], STREAM->MyCall);
+      |                                                                     ^~
+ARDOP.c:1652:41: note: ‘sprintf’ output between 11 and 275 bytes into a destination of size 80
+ 1652 |                                         sprintf(Connect, "%cPKTCALL %s %s", Stream, &buff->L2DATA[2], STREAM->MyCall);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ARDOP.c:1614:67: warning: ‘%s’ directive writing up to 255 bytes into a region of size 72 [-Wformat-overflow=]
+ 1614 |                                         sprintf(Connect, "ARQCALL %s %d", &buff->L2DATA[2], TNC->MaxConReq);
+      |                                                                   ^~
+ARDOP.c:1614:41: note: ‘sprintf’ output between 11 and 276 bytes into a destination of size 80
+ 1614 |                                         sprintf(Connect, "ARQCALL %s %d", &buff->L2DATA[2], TNC->MaxConReq);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ARDOP.c:1471:63: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+ 1471 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                               ^~
+ARDOP.c:1471:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+ 1471 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FLDigi.c: In function ‘ExtProc’:
+FLDigi.c:595:82: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  595 |                                         SendXMLCommand(TNC, "modem.set_carrier", (char *)atoi(&buff->L2DATA[5]), 'I');
+      |                                                                                  ^
+APRSCode.c:351:22: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  351 | static SOCKET sock = (SOCKET) NULL;
+      |                      ^
+linether.c: In function ‘ETHERExtInit’:
+linether.c:302:17: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  302 |         return ((int) ExtProc);
+      |                 ^
+FLDigi.c: In function ‘FLReleaseTNC’:
+FLDigi.c:3215:66: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 3215 |                         SendXMLCommand(TNC, "modem.set_carrier", (char *)TNC->FLInfo->DefaultFreq, 'I');
+      |                                                                  ^
+FLDigi.c: In function ‘SendXMLCommand’:
+FLDigi.c:3904:74: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+ 3904 |                         sprintf(ValueString, "<params><param><value><i4>%d</i4></value></param></params\r\n>", Value);
+      |                                                                         ~^                                     ~~~~~
+      |                                                                          |                                     |
+      |                                                                          int                                   char *
+      |                                                                         %s
+APRSCode.c: In function ‘Init_APRS’:
+APRSCode.c:757:78: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char *’ [-Wformat=]
+  757 |                                 printf("Map APRS Shared Memory Allocated at %x\n", Shared);
+      |                                                                             ~^     ~~~~~~
+      |                                                                              |     |
+      |                                                                              |     unsigned char *
+      |                                                                              unsigned int
+      |                                                                             %hhn
+IPCode.c: In function ‘Init_IP’:
+linether.c:269:30: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+  269 |         n=sprintf(buf,"Using %s = Interface %d\n", Adapter, ifr.ifr_ifindex);
+      |                              ^~                    ~~~~~~~
+APRSCode.c:772:62: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘unsigned char *’ [-Wformat=]
+  772 |                 printf("APRS Non-Shared Memory Allocated at %x\n", Shared);
+      |                                                             ~^     ~~~~~~
+      |                                                              |     |
+      |                                                              |     unsigned char *
+      |                                                              unsigned int
+      |                                                             %hhn
+linether.c:269:11: note: ‘sprintf’ output between 22 and 287 bytes into a destination of size 256
+  269 |         n=sprintf(buf,"Using %s = Interface %d\n", Adapter, ifr.ifr_ifindex);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IPCode.c:640:57: warning: ‘%s’ directive writing up to 255 bytes into a region of size 61 [-Wformat-overflow=]
+  640 |                         sprintf(buf," IP Unable to open %s\n", Adapter);
+      |                                                         ^~     ~~~~~~~
+IPCode.c:640:25: note: ‘sprintf’ output between 21 and 276 bytes into a destination of size 80
+  640 |                         sprintf(buf," IP Unable to open %s\n", Adapter);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IPCode.c:638:47: warning: ‘%s’ directive writing up to 255 bytes into a region of size 71 [-Wformat-overflow=]
+  638 |                         sprintf(buf,"IP Using %s\n", Adapter);
+      |                                               ^~     ~~~~~~~
+IPCode.c:638:25: note: ‘sprintf’ output between 11 and 266 bytes into a destination of size 80
+  638 |                         sprintf(buf,"IP Using %s\n", Adapter);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MULTIPSK.o MULTIPSK.c
+FLDigi.c: In function ‘ExtProc’:
+FLDigi.c:542:63: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  542 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                               ^~
+FLDigi.c:542:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  542 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSHTMLConfig.o BBSHTMLConfig.c
+FLDigi.c: In function ‘FLReleaseTNC’:
+FLDigi.c:3209:57: warning: ‘ MODEM: WFF:’ directive writing 12 bytes into a region of size between 0 and 68 [-Wformat-overflow=]
+ 3209 |                         sprintf(txbuff, "WFF:%d MODEM:%s MODEM: WFF:", TNC->FLInfo->DefaultFreq, TNC->FLInfo->DefaultMode);
+      |                                                         ^~~~~~~~~~~~
+FLDigi.c:3209:25: note: ‘sprintf’ output between 25 and 98 bytes into a destination of size 80
+ 3209 |                         sprintf(txbuff, "WFF:%d MODEM:%s MODEM: WFF:", TNC->FLInfo->DefaultFreq, TNC->FLInfo->DefaultMode);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ChatHTMLConfig.o ChatHTMLConfig.c
+APRSCode.c: In function ‘APRSProcessHTTPMessage’:
+APRSCode.c:7658:69: warning: format not a string literal and no format arguments [-Wformat-security]
+ 7658 |                         OutputLen += sprintf(&OutBuffer[OutputLen], WebTrailer);
+      |                                                                     ^~~~~~~~~~
+APRSCode.c:7703:69: warning: format not a string literal and no format arguments [-Wformat-security]
+ 7703 |                         OutputLen += sprintf(&OutBuffer[OutputLen], WebTrailer);
+      |                                                                     ^~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSUtilities.o BBSUtilities.c
+APRSCode.c: In function ‘GetAPRSPageInfo’:
+APRSCode.c:8829:84: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+ 8829 |                                 Len += sprintf(&Buffer[Len],"A,%.4f,%.4f,%s,%s,%s,%d\r\n|",
+      |                                                                                   ~^
+      |                                                                                    |
+      |                                                                                    int
+      |                                                                                   %ld
+ 8830 |                                         ptr->Lat, ptr->Lon, ptr->Callsign, popup, IconKey,
+ 8831 |                                         NOW - ptr->TimeLastUpdated);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~                  
+      |                                             |
+      |                                             time_t {aka long int}
+APRSCode.c: In function ‘SaveAPRSMessage’:
+APRSCode.c:9107:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+ 9107 |         fprintf(file, "%d %s,%s,%s,%s,%s\n", time(NULL), ptr->FromCall, ptr->ToCall, ptr->Seq, ptr->Time, ptr->Text);
+      |                        ~^                    ~~~~~~~~~~
+      |                         |                    |
+      |                         int                  time_t {aka long int}
+      |                        %ld
+APRSCode.c: In function ‘DeleteAPRSLogFiles’:
+APRSCode.c:532:43: warning: ‘%s’ directive writing up to 255 bytes into a region of size 251 [-Wformat-overflow=]
+  532 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                                           ^~
+APRSCode.c:532:25: note: ‘sprintf’ output between 6 and 261 bytes into a destination of size 256
+  532 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c: In function ‘APRSWriteLog’:
+APRSCode.c:578:27: warning: ‘%02d’ directive writing between 2 and 11 bytes into a region of size between 1 and 250 [-Wformat-overflow=]
+  578 |         sprintf(Value, "%s%02d%02d%02d.log", Value,
+      |                           ^~~~
+APRSCode.c:578:9: note: ‘sprintf’ output between 11 and 287 bytes into a destination of size 250
+  578 |         sprintf(Value, "%s%02d%02d%02d.log", Value,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  579 |                                 tm->tm_year - 100, tm->tm_mon+1, tm->tm_mday);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c: In function ‘ProcessSpecificQuery’:
+APRSCode.c:2599:41: warning: ‘%s’ directive writing up to 255 bytes into a region of size 244 [-Wformat-overflow=]
+ 2599 |                 sprintf(Message, ":%-9s:%s", Origin, StatusMsg);
+      |                                         ^~           ~~~~~~~~~
+APRSCode.c:2599:17: note: ‘sprintf’ output 12 or more bytes (assuming 267) into a destination of size 255
+ 2599 |                 sprintf(Message, ":%-9s:%s", Origin, StatusMsg);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c: In function ‘APRSISThread’:
+APRSCode.c:3118:71: warning: ‘%s’ directive writing up to 999 bytes into a region of size between 459 and 468 [-Wformat-overflow=]
+ 3118 |                 sprintf(Signon, "user %s pass %d vers BPQ32 %s filter %s\r\n",
+      |                                                                       ^~
+ 3119 |                         APRSCall, ISPasscode, TextVerstring, ISFilter);
+      |                                                              ~~~~~~~~  
+APRSCode.c:3118:17: note: ‘sprintf’ output 35 or more bytes (assuming 1043) into a destination of size 500
+ 3118 |                 sprintf(Signon, "user %s pass %d vers BPQ32 %s filter %s\r\n",
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3119 |                         APRSCall, ISPasscode, TextVerstring, ISFilter);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c:3134:61: warning: ‘%s’ directive writing up to 255 bytes into a region of size 76 [-Wformat-overflow=]
+ 3134 |         InputLen = sprintf(errmsg, "Connecting to APRS Host %s\r\n", ISHost);
+      |                                                             ^~       ~~~~~~
+APRSCode.c:3134:20: note: ‘sprintf’ output between 27 and 282 bytes into a destination of size 100
+ 3134 |         InputLen = sprintf(errmsg, "Connecting to APRS Host %s\r\n", ISHost);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c:3200:60: warning: ‘%s’ directive writing up to 255 bytes into a region of size 85 [-Wformat-overflow=]
+ 3200 |                 InputLen = sprintf(errmsg, "Connect Failed %s af %d Error %d \r\n", RealISHost, res->ai_family, err);
+      |                                                            ^~                       ~~~~~~~~~~
+APRSCode.c:3200:28: note: ‘sprintf’ output between 32 and 307 bytes into a destination of size 100
+ 3200 |                 InputLen = sprintf(errmsg, "Connect Failed %s af %d Error %d \r\n", RealISHost, res->ai_family, err);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c:3140:61: warning: ‘%s’ directive writing up to 255 bytes into a region of size 84 [-Wformat-overflow=]
+ 3140 |                 InputLen = sprintf(errmsg, "APRS IS Resolve %s Failed Error %d\r\n", ISHost, err);
+      |                                                             ^~                       ~~~~~~
+APRSCode.c:3140:28: note: ‘sprintf’ output between 34 and 299 bytes into a destination of size 100
+ 3140 |                 InputLen = sprintf(errmsg, "APRS IS Resolve %s Failed Error %d\r\n", ISHost, err);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqaxip.o bpqaxip.c
+MULTIPSK.c: In function ‘ExtProc’:
+MULTIPSK.c:505:57: warning: too many arguments for format [-Wformat-extra-args]
+  505 |                                                         "MPSK} Error - Call missing from C command\r", STREAM->MyCall, STREAM->RemoteCall);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c: In function ‘DoSummaryLine’:
+APRSCode.c:6558:24: warning: ‘%s’ directive writing up to 255 bytes into a region of size 54 [-Wformat-overflow=]
+ 6558 |         sprintf(Line2, "<td><a href=""find.cgi?call=%s"">%s</a></td>",
+      |                        ^~~~~~~~~~~~~~
+ 6559 |                 XCall, ptr->Callsign);
+      |                 ~~~~~   
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQINP3.o BPQINP3.c
+APRSCode.c:6558:53: note: format string is defined here
+ 6558 |         sprintf(Line2, "<td><a href=""find.cgi?call=%s"">%s</a></td>",
+      |                                                     ^~
+APRSCode.c:6558:9: note: ‘sprintf’ output between 37 and 303 bytes into a destination of size 80
+ 6558 |         sprintf(Line2, "<td><a href=""find.cgi?call=%s"">%s</a></td>",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6559 |                 XCall, ptr->Callsign);
+      |                 ~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c: In function ‘DoDetailLine’:
+APRSCode.c:6645:23: warning: ‘</td><td align=left>’ directive writing 20 bytes into a region of size between 13 and 374 [-Wformat-overflow=]
+ 6645 |         sprintf(Line, "<tr><td align=""left""><a href=""find.cgi?call=%s"">&nbsp;%s%s</a></td><td align=""left"">%s</td><td align=""center"">%s  %s</td><td align=""right"">%s</td><td align=""right"">%s</td><td align=""left"">%s</td></tr>\r\n",
+      |                       ^~~~~~~~~~~~~~~~
+APRSCode.c:6645:202: note: format string is defined here
+ 6645 |         sprintf(Line, "<tr><td align=""left""><a href=""find.cgi?call=%s"">&nbsp;%s%s</a></td><td align=""left"">%s</td><td align=""center"">%s  %s</td><td align=""right"">%s</td><td align=""right"">%s</td><td align=""left"">%s</td></tr>\r\n",
+      |                                                                                                                                                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c:6645:9: note: ‘sprintf’ output 171 or more bytes (assuming 611) into a destination of size 512
+ 6645 |         sprintf(Line, "<tr><td align=""left""><a href=""find.cgi?call=%s"">&nbsp;%s%s</a></td><td align=""left"">%s</td><td align=""center"">%s  %s</td><td align=""right"">%s</td><td align=""right"">%s</td><td align=""left"">%s</td></tr>\r\n",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6646 |                         XCall, ptr->Callsign,
+      |                         ~~~~~~~~~~~~~~~~~~~~~
+ 6647 |                         (strchr(ptr->Path, '*'))?  "*": "", &SymbolText[ptr->iconRow << 4 | ptr->iconCol][0], LatString, LongString, DistString, BearingString, Time);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQNRR.o BPQNRR.c
+MULTIPSK.c:537:50: warning: ‘%s’ directive writing up to 255 bytes into a region of size 79 [-Wformat-overflow=]
+  537 |                         len = sprintf(Command,"%c%s\x1b", '\x1a', buff->L2DATA);
+      |                                                  ^~
+MULTIPSK.c:537:31: note: ‘sprintf’ output between 3 and 258 bytes into a destination of size 80
+  537 |                         len = sprintf(Command,"%c%s\x1b", '\x1a', buff->L2DATA);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MULTIPSK.c:446:71: warning: ‘%s’ directive writing up to 255 bytes into a region of size 66 [-Wformat-overflow=]
+  446 |                                 len = sprintf(Command,"%cDIGITAL MODE %s\x1b", '\x1a', &buff->L2DATA[5]);
+      |                                                                       ^~
+MULTIPSK.c:446:39: note: ‘sprintf’ output between 16 and 271 bytes into a destination of size 80
+  446 |                                 len = sprintf(Command,"%cDIGITAL MODE %s\x1b", '\x1a', &buff->L2DATA[5]);
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MULTIPSK.c:412:59: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  412 |                                 sprintf(buff->L2DATA, "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                           ^~
+MULTIPSK.c:412:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  412 |                                 sprintf(buff->L2DATA, "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o cMain.o cMain.c
+MULTIPSK.c: In function ‘ProcessMSPKCmd’:
+MULTIPSK.c:1210:55: warning: ‘%s’ directive writing up to 499 bytes into a region of size 250 [-Wformat-overflow=]
+ 1210 |                                         buffptr->Len= sprintf(buffptr->Data, "MPSK} %s\r", TNC->CmdBuffer);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MULTIPSK.c:1210:55: note: ‘sprintf’ output between 8 and 507 bytes into a destination of size 256
+MULTIPSK.c: In function ‘CloseComplete’:
+MULTIPSK.c:1544:35: warning: ‘BEACON_ARQ_FAE’ directive writing 15 bytes into a region of size between 0 and 79 [-Wformat-overflow=]
+ 1544 |                 sprintf(Cmd, "%s%cBEACON_ARQ_FAE\x1b", Cmd, '\x1a');
+      |                                   ^~~~~~~~~~~~~~~~~~
+MULTIPSK.c:1544:17: note: ‘sprintf’ output between 17 and 96 bytes into a destination of size 80
+ 1544 |                 sprintf(Cmd, "%s%cBEACON_ARQ_FAE\x1b", Cmd, '\x1a');
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘SaveConfig’:
+BBSUtilities.c:9882:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 11 has type ‘long unsigned int’ [-Wformat=]
+ 9882 |                 sprintf(Line,"%s^%s^%s^%s^%s^%s^%s^%d^%d^%d^%d^%d^%d^%lld^%s^%s",
+      |                                                       ~^
+      |                                                        |
+      |                                                        int
+      |                                                       %ld
+ 9883 |                         user->Name, user->Address, user->HomeBBS, user->QRA, user->pass, user->ZIP, user->CMSPass,
+ 9884 |                         user->lastmsg, user->flags, user->PageLen, user->BBSNumber, user->RMSSSIDBits, user->WebSeqNo,
+      |                                        ~~~~~~~~~~~      
+      |                                            |
+      |                                            long unsigned int
+BBSUtilities.c: In function ‘GetConfig’:
+BBSUtilities.c:10308:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+10308 |                 ptr = strlop(ptr, '|');
+      |                              ^~~
+In file included from bpqmail.h:36,
+                 from BBSUtilities.c:24:
+CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   96 | char * strlop(char * buf, char delim);
+      |               ~~~~~~~^~~
+BBSUtilities.c:10312:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+10312 |                 ptr = strlop(ptr, '|');
+      |                              ^~~
+In file included from bpqmail.h:36,
+                 from BBSUtilities.c:24:
+CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   96 | char * strlop(char * buf, char delim);
+      |               ~~~~~~~^~~
+BBSUtilities.c:10316:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+10316 |                 ptr = strlop(ptr, '|');
+      |                              ^~~
+In file included from bpqmail.h:36,
+                 from BBSUtilities.c:24:
+CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   96 | char * strlop(char * buf, char delim);
+      |               ~~~~~~~^~~
+BBSUtilities.c:10320:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+10320 |                 ptr = strlop(ptr, '|');
+      |                              ^~~
+In file included from bpqmail.h:36,
+                 from BBSUtilities.c:24:
+CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   96 | char * strlop(char * buf, char delim);
+      |               ~~~~~~~^~~
+BBSUtilities.c:10344:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+10344 |                 ptr = strlop(ptr, '|');
+      |                              ^~~
+In file included from bpqmail.h:36,
+                 from BBSUtilities.c:24:
+CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
+   96 | char * strlop(char * buf, char delim);
+      |               ~~~~~~~^~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Cmd.o Cmd.c
+BBSUtilities.c: In function ‘my_popen’:
+BPQINP3.c: In function ‘SendRTTMsg’:
+BBSUtilities.c:11833:63: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+11833 |        _beginthread((void (*)(void *))run_pgTimeoutThread, 0, (VOID *) pid );
+      |                                                               ^
+BBSUtilities.c: In function ‘run_server’:
+BPQINP3.c:777:30: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘uint64_t’ {aka ‘long unsigned int’} [-Wformat=]
+  777 |         sprintf(Stamp, "%10llu %10d %10d %10d ", (GetTickCount() - timeLoadedMS), Route->SRTT/10, Route->RTT/10, 0);
+      |                         ~~~~~^                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              |                                   |
+      |                              long long unsigned int              uint64_t {aka long unsigned int}
+      |                         %10lu
+BBSUtilities.c:11903:31: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+11903 |                 sprintf(file, "" );
+      |                               ^~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CommonCode.o CommonCode.c
+BBSUtilities.c: In function ‘CreateUserReport’:
+BBSUtilities.c:13682:48: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 6 has type ‘long unsigned int’ [-Wformat=]
+13682 |                 len = sprintf(Line, "%s,%d,%s,%x,%s,\"%s\",%x,%s,%s,%s\r\n",
+      |                                               ~^
+      |                                                |
+      |                                                unsigned int
+      |                                               %lx
+......
+13686 |                         User->flags,
+      |                         ~~~~~~~~~~~             
+      |                             |
+      |                             long unsigned int
+BBSUtilities.c: In function ‘ProcessReqDir’:
+BBSUtilities.c:14496:75: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘__off_t’ {aka ‘long int’} [-Wformat=]
+14496 |                                         Len += sprintf(&Buffer[Len], "%s %d\r", namelist[i]->d_name, STAT.st_size);
+      |                                                                          ~^                          ~~~~~~~~~~~~
+      |                                                                           |                              |
+      |                                                                           int                            __off_t {aka long int}
+      |                                                                          %ld
+cMain.c: In function ‘Start’:
+cMain.c:945:42: warning: implicit declaration of function ‘CanPortDigi’ [-Wimplicit-function-declaration]
+  945 |                 if (PortRec->DIGIPORT && CanPortDigi(PortRec->DIGIPORT))
+      |                                          ^~~~~~~~~~~
+BBSUtilities.c: In function ‘SendRequestSync’:
+BBSUtilities.c:15025:42: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+15025 |         sprintf(Buffer, "TR RequestSync_%s_%d %d %d 0 True\r",          // The True on end indicates compressed
+      |                                         ~^
+      |                                          |
+      |                                          char *
+      |                                         %d
+15026 |                                 50, conn->SyncCompressedLen, conn->SyncXMLLen);
+      |                                 ~~        
+      |                                 |
+      |                                 int
+cMain.c:1077:44: warning: implicit declaration of function ‘KissEncode’ [-Wimplicit-function-declaration]
+ 1077 |                         KISS->KISSCMDLEN = KissEncode(KissString, KISS->KISSCMD, KissLen);
+      |                                            ^~~~~~~~~~
+BBSUtilities.c:15025:51: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+15025 |         sprintf(Buffer, "TR RequestSync_%s_%d %d %d 0 True\r",          // The True on end indicates compressed
+      |                                                  ~^
+      |                                                   |
+      |                                                   int
+BBSUtilities.c: In function ‘ReformatSyncMessage’:
+BBSUtilities.c:15302:42: warning: format ‘%s’ expects argument of type ‘char *’, but argument 4 has type ‘char (*)[80]’ [-Wformat=]
+15302 |                 sscanf(&ptr1[11], "%02d %s %04d %02d:%02d:%02d",
+      |                                         ~^
+      |                                          |
+      |                                          char *
+15303 |                         &rtime.tm_mday, &Mon, &rtime.tm_year, &rtime.tm_hour, &rtime.tm_min, &rtime.tm_sec);
+      |                                         ~~~~
+      |                                         |
+      |                                         char (*)[80]
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTMLCommonCode.o HTMLCommonCode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compatbits.o compatbits.c
+BBSUtilities.c: In function ‘WriteLogLine’:
+BBSUtilities.c:424:44: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+  424 |                 sprintf(call, "%s          ", conn->Callsign);
+      |                                            ^
+BBSUtilities.c:424:17: note: ‘sprintf’ output between 11 and 21 bytes into a destination of size 20
+  424 |                 sprintf(call, "%s          ", conn->Callsign);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o config.o config.c
+cMain.c: In function ‘WriteConnectLog’:
+cMain.c:2715:21: warning: ‘%s’ directive writing up to 259 bytes into a region of size 250 [-Wformat-overflow=]
+ 2715 |         sprintf(FN,"%s/logs/ConnectLog_%02d%02d%02d.log", LogDirectory, tm->tm_year - 100, tm->tm_mon + 1, tm->tm_mday);
+      |                     ^~                                    ~~~~~~~~~~~~
+cMain.c:2715:9: note: ‘sprintf’ output between 28 and 314 bytes into a destination of size 250
+ 2715 |         sprintf(FN,"%s/logs/ConnectLog_%02d%02d%02d.log", LogDirectory, tm->tm_year - 100, tm->tm_mon + 1, tm->tm_mday);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o datadefs.o datadefs.c
+BBSUtilities.c: In function ‘run_server’:
+BBSUtilities.c:11939:36: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 1 and 256 [-Wformat-overflow=]
+11939 |                 sprintf (buf, "%s%s%s%s", dir, cmd[i], arg, file);
+      |                                    ^~                  ~~~
+BBSUtilities.c:11939:17: note: ‘sprintf’ output 1 or more bytes (assuming 766) into a destination of size 256
+11939 |                 sprintf (buf, "%s%s%s%s", dir, cmd[i], arg, file);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘startrun_pgThread’:
+BBSUtilities.c:12021:29: warning: ‘%s’ directive writing up to 79 bytes into a region of size between 58 and 73 [-Wformat-overflow=]
+12021 |   sprintf( data, "%s %d 0 0 %s", call, index, line);
+      |                             ^~                ~~~~
+BBSUtilities.c:12021:3: note: ‘sprintf’ output between 8 and 102 bytes into a destination of size 80
+12021 |   sprintf( data, "%s %d 0 0 %s", call, index, line);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘DeleteRedundantMessages’:
+BBSUtilities.c:13238:61: warning: ‘%s’ directive writing up to 255 bytes into a region of size 95 [-Wformat-overflow=]
+13238 |                                         sprintf(File, "Mail/%s", namelist[n]->d_name);
+      |                                                             ^~
+BBSUtilities.c:13238:41: note: ‘sprintf’ output between 6 and 261 bytes into a destination of size 100
+13238 |                                         sprintf(File, "Mail/%s", namelist[n]->d_name);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘ListFiles’:
+BBSUtilities.c:13474:44: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+13474 |                         sprintf(FN, "Files/%s", namelist[i]->d_name);
+      |                                            ^~
+BBSUtilities.c:13474:25: note: ‘sprintf’ output between 7 and 262 bytes into a destination of size 256
+13474 |                         sprintf(FN, "Files/%s", namelist[i]->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘CreateUserReport’:
+BBSUtilities.c:13668:26: warning: ‘/UserList.csv’ directive writing 13 bytes into a region of size between 1 and 250 [-Wformat-overflow=]
+13668 |         sprintf(File, "%s/UserList.csv", BaseDir);
+      |                          ^~~~~~~~~~~~~
+BBSUtilities.c:13668:9: note: ‘sprintf’ output between 14 and 263 bytes into a destination of size 250
+13668 |         sprintf(File, "%s/UserList.csv", BaseDir);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c: In function ‘ProcessYAPPMessage’:
+BBSUtilities.c:13811:35: warning: ‘%s’ directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
+13811 |                         Mess[1] = sprintf(&Mess[2], "YAPP File %s already exists\r", conn->ARQFilename);;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c:13811:35: note: ‘sprintf’ output between 27 and 282 bytes into a destination of size 253
+BBSUtilities.c:13785:35: warning: ‘%s’ directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
+13785 |                         Mess[1] = sprintf(&Mess[2], "YAPP File %s size %d larger than limit %d\r", conn->ARQFilename, FileSize, MaxRXSize);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BBSUtilities.c:13785:35: note: ‘sprintf’ output between 39 and 314 bytes into a destination of size 253
+BBSUtilities.c: In function ‘ProcessReqDir’:
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FBBRoutines.o FBBRoutines.c
+BBSUtilities.c:14492:44: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
+14492 |                         sprintf(FN, "Files/%s", namelist[i]->d_name);
+      |                                            ^~
+BBSUtilities.c:14492:25: note: ‘sprintf’ output between 7 and 262 bytes into a destination of size 256
+14492 |                         sprintf(FN, "Files/%s", namelist[i]->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CommonCode.c: In function ‘ProcessIncommingConnectEx’:
+CommonCode.c:920:37: warning: initialization of ‘struct PORTCONTROL *’ from incompatible pointer type ‘struct _EXTPORTDATA *’ [-Wincompatible-pointer-types]
+  920 |         struct PORTCONTROL * PORT = TNC->PortRecord;
+      |                                     ^~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HFCommon.o HFCommon.c
+CommonCode.c: In function ‘OpenCOMPort’:
+CommonCode.c:2458:13: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2458 |         if ((UINT)pPort < 256)
+      |             ^
+CommonCode.c:2459:57: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2459 |                 sprintf(Port, "%s/com%d", BPQDirectory, (int)pPort);
+      |                                                         ^
+CommonCode.c: In function ‘SendDataToPktMap’:
+CommonCode.c:5260:45: warning: format ‘%lld’ expects argument of type ‘long long int’, but argument 5 has type ‘uint64_t’ {aka ‘long unsigned int’} [-Wformat=]
+ 5260 |                         ptr += sprintf(ptr, "{\"id\": \"%d\",\"linkType\": \"%s\","
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+......
+ 5264 |                         Freq, Mode, Modulation,
+      |                         ~~~~                 
+      |                         |
+      |                         uint64_t {aka long unsigned int}
+CommonCode.c:5261:41: note: format string is defined here
+ 5261 |                         "\"freq\": \"%lld\",\"mode\": \"%s\",\"modulation\": \"%s\","
+      |                                      ~~~^
+      |                                         |
+      |                                         long long int
+      |                                      %ld
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Housekeeping.o Housekeeping.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTTPcode.o HTTPcode.c
+Cmd.c: In function ‘LISTENCMD’:
+Cmd.c:1927:45: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+ 1927 |                 sprintf(ListenPortList, "%s %d", ListenPortList, Port);
+      |                                             ^~
+Cmd.c:1927:17: note: ‘sprintf’ output between 3 and 140 bytes into a destination of size 128
+ 1927 |                 sprintf(ListenPortList, "%s %d", ListenPortList, Port);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CommonCode.c: In function ‘OpenCOMPort’:
+CommonCode.c:2468:39: warning: ‘%s’ directive writing up to 255 bytes into a region of size 99 [-Wformat-overflow=]
+ 2468 |                         sprintf(buf," %s could not be opened \n", Port);
+      |                                       ^~                          ~~~~
+CommonCode.c:2468:25: note: ‘sprintf’ output between 24 and 279 bytes into a destination of size 100
+ 2468 |                         sprintf(buf," %s could not be opened \n", Port);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cmd.c: In function ‘CMDC00’:
+Cmd.c:2681:69: warning: ‘%s’ directive writing up to 255 bytes into a region of size 78 [-Wformat-overflow=]
+ 2681 |                                         len = sprintf(Callstring,"C %s", cmdCopy);
+      |                                                                     ^~   ~~~~~~~
+Cmd.c:2681:47: note: ‘sprintf’ output between 3 and 258 bytes into a destination of size 80
+ 2681 |                                         len = sprintf(Callstring,"C %s", cmdCopy);
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CommonCode.c: In function ‘GetPortCTEXT’:
+CommonCode.c:4805:47: warning: ‘%d’ directive writing between 1 and 3 bytes into a region of size between 0 and 255 [-Wformat-overflow=]
+ 4805 |                         sprintf(PortList, "%s,%d", PortList, PORT->PORTNUMBER);
+      |                                               ^~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o kiss.o kiss.c
+CommonCode.c:4805:25: note: ‘sprintf’ output between 3 and 260 bytes into a destination of size 256
+ 4805 |                         sprintf(PortList, "%s,%d", PortList, PORT->PORTNUMBER);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L2Code.o L2Code.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L3Code.o L3Code.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L4Code.o L4Code.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o lzhuf32.o lzhuf32.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailCommands.o MailCommands.c
+HFCommon.c: In function ‘sendFreqReport’:
+HFCommon.c:2133:87: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+ 2133 |                                                         Len += sprintf(&Msg[Len], "%02d:%02d/", Band->Start / 3600, Band->Start % 3600);
+      |                                                                                    ~~~^         ~~~~~~~~~~~~~~~~~~
+      |                                                                                       |                     |
+      |                                                                                       int                   time_t {aka long int}
+      |                                                                                    %02ld
+HFCommon.c:2133:92: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘time_t’ {aka ‘long int’} [-Wformat=]
+ 2133 |                                                         Len += sprintf(&Msg[Len], "%02d:%02d/", Band->Start / 3600, Band->Start % 3600);
+      |                                                                                         ~~~^                        ~~~~~~~~~~~~~~~~~~
+      |                                                                                            |                                    |
+      |                                                                                            int                                  time_t {aka long int}
+      |                                                                                         %02ld
+HTTPcode.c: In function ‘InnerProcessHTTPMessage’:
+HTTPcode.c:2066:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2066 |                         Session->TNC = (void *)LOCAL;           // TNC only used for Web Terminal Sessions
+      |                                        ^
+Housekeeping.c: In function ‘DeleteLogFiles’:
+Housekeeping.c:890:43: warning: ‘%s’ directive writing up to 255 bytes into a region of size 251 [-Wformat-overflow=]
+  890 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                                           ^~
+Housekeeping.c:890:25: note: ‘sprintf’ output between 6 and 261 bytes into a destination of size 256
+  890 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+kiss.c:115:65: warning: ‘struct ConnectionInfo’ declared inside parameter list will not be visible outside of this definition or declaration
+  115 | void processDRATSFrame(unsigned char * Message, int Len, struct ConnectionInfo * sockptr);
+      |                                                                 ^~~~~~~~~~~~~~
+Housekeeping.c: In function ‘CreateBBSTrafficReport’:
+Housekeeping.c:1174:69: warning: ‘ Messages Out       ’ directive writing 20 bytes into a region of size between 9 and 167 [-Wformat-overflow=]
+ 1174 |         len = sprintf(Line, "\r\n Totals    %s Messages In        %s Messages Out       %s"
+      |                                                                     ^~~~~~~~~~~~~~~~~~~~
+Housekeeping.c:1174:15: note: ‘sprintf’ output between 83 and 399 bytes into a destination of size 200
+ 1174 |         len = sprintf(Line, "\r\n Totals    %s Messages In        %s Messages Out       %s"
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1175 |                                                 " Bytes In        %s Bytes Out\r\n", MsgsIn, MsgsOut, BytesIn, BytesOut);
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Housekeeping.c:1138:61: warning: ‘%16s’ directive writing between 16 and 79 bytes into a region of size between 17 and 145 [-Wformat-overflow=]
+ 1138 |                 len = sprintf(Line, "%s %-7s %5d %8d%16s%16s%16s%16s%16s%16s\r\n",
+      |                                                             ^~~~
+......
+ 1144 |                         BytesIn,
+      |                         ~~~~~~~                              
+Housekeeping.c:1138:23: note: ‘sprintf’ output 122 or more bytes (assuming 502) into a destination of size 200
+ 1138 |                 len = sprintf(Line, "%s %-7s %5d %8d%16s%16s%16s%16s%16s%16s\r\n",
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1139 |                         (User->flags & F_BBS)? "(B)": "   ",
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1140 |                         User->Call, ConnectsIn,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~
+ 1141 |                         ConnectsOut,
+      |                         ~~~~~~~~~~~~
+ 1142 |                         MsgsIn,
+      |                         ~~~~~~~
+ 1143 |                         MsgsOut,
+      |                         ~~~~~~~~
+ 1144 |                         BytesIn,
+      |                         ~~~~~~~~
+ 1145 |                         BytesOut,
+      |                         ~~~~~~~~~
+ 1146 |                         RejIn,
+      |                         ~~~~~~
+ 1147 |                         RejOut);
+      |                         ~~~~~~~
+APRSCode.c: In function ‘GetSavedAPRSMessages’:
+APRSCode.c:9170:16: warning: ‘fgets’ writing 512 bytes into a region of size 256 overflows the destination [-Wstringop-overflow=]
+ 9170 |         while (fgets(Line, 512, file))
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+APRSCode.c:9146:14: note: destination object ‘Line’ of size 256
+ 9146 |         char Line[256];
+      |              ^~~~
+In file included from APRSCode.c:28:
+/usr/include/stdio.h:592:14: note: in a call to function ‘fgets’ declared with attribute ‘access (write_only, 1, 2)’
+  592 | extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+      |              ^~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailDataDefs.o MailDataDefs.c
+HTTPcode.c: In function ‘SendMessageFile’:
+HTTPcode.c:1170:45: warning: ‘%s’ directive writing up to 27 bytes into a region of size between 0 and 195 [-Wformat-overflow=]
+ 1170 |                 HeaderLen = sprintf(Header, "HTTP/1.1 200 OK\r\nContent-Length: %d\r\n"
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+......
+ 1174 |                                 "\r\n", FileSize, TimeString, FileTimeString, Type, Encoding);
+      |                                                                                     ~~~~~~~~
+HTTPcode.c:1173:36: note: format string is defined here
+ 1173 |                                 "%s%s"
+      |                                    ^~
+HTTPcode.c:1170:29: note: ‘sprintf’ output between 64 and 290 bytes into a destination of size 256
+ 1170 |                 HeaderLen = sprintf(Header, "HTTP/1.1 200 OK\r\nContent-Length: %d\r\n"
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1171 |                                 "Date: %s\r\n"
+      |                                 ~~~~~~~~~~~~~~
+ 1172 |                                 "Last-Modified: %s\r\n"
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~
+ 1173 |                                 "%s%s"
+      |                                 ~~~~~~
+ 1174 |                                 "\r\n", FileSize, TimeString, FileTimeString, Type, Encoding);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MailCommands.c: In function ‘DoPollRMSCmd’:
+MailCommands.c:303:70: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size between 0 and 9 [-Wformat-overflow=]
+  303 |                                                 sprintf(RMSCall, "%s-%d", RMSUser->Call, s);
+      |                                                                      ^~
+MailCommands.c:303:49: note: ‘sprintf’ output between 3 and 22 bytes into a destination of size 10
+  303 |                                                 sprintf(RMSCall, "%s-%d", RMSUser->Call, s);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LinBPQ.o LinBPQ.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailRouting.o MailRouting.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailTCP.o MailTCP.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MBLRoutines.o MBLRoutines.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o md5.o md5.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Moncode.o Moncode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o NNTPRoutines.o NNTPRoutines.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o RigControl.o RigControl.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TelnetV6.o TelnetV6.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WINMOR.o WINMOR.c
+LinBPQ.c: In function ‘ConTermPoll’:
+LinBPQ.c:668:25: warning: format not a string literal and no format arguments [-Wformat-security]
+  668 |                         printf(ptr);
+      |                         ^~~~~~
+LinBPQ.c: In function ‘main’:
+LinBPQ.c:817:41: warning: format not a string literal and no format arguments [-Wformat-security]
+  817 |                                  printf(HelpScreen);
+      |                                         ^~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCCode.o TNCCode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UZ7HODrv.o UZ7HODrv.c
+LinBPQ.c:896:28: warning: ‘/logs’ directive writing 5 bytes into a region of size between 1 and 260 [-Wformat-overflow=]
+  896 |         sprintf(LogDir, "%s/logs", LogDirectory);
+      |                            ^~~~~
+LinBPQ.c:896:9: note: ‘sprintf’ output between 6 and 265 bytes into a destination of size 260
+  896 |         sprintf(LogDir, "%s/logs", LogDirectory);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LinBPQ.c:917:23: warning: ‘ for Linux (’ directive writing 12 bytes into a region of size between 10 and 59 [-Wformat-overflow=]
+  917 |         SESSHDDRLEN = sprintf(SESSIONHDDR, "G8BPQ Network System %s for Linux (", TextVerstring);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LinBPQ.c:917:23: note: ‘sprintf’ output between 34 and 83 bytes into a destination of size 80
+LinBPQ.c:1003:43: warning: ‘%s’ directive writing up to 259 bytes into a region of size 250 [-Wformat-overflow=]
+ 1003 |                 sprintf (ChatConfigName, "%s/chatconfig.cfg", BPQDirectory);
+      |                                           ^~                  ~~~~~~~~~~~~
+LinBPQ.c:1003:17: note: ‘sprintf’ output between 16 and 275 bytes into a destination of size 250
+ 1003 |                 sprintf (ChatConfigName, "%s/chatconfig.cfg", BPQDirectory);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LinBPQ.c:1055:39: warning: ‘%s’ directive writing up to 259 bytes into a region of size 250 [-Wformat-overflow=]
+ 1055 |                 sprintf (ConfigName, "%s/linmail.cfg", BPQDirectory);
+      |                                       ^~               ~~~~~~~~~~~~
+LinBPQ.c:1055:17: note: ‘sprintf’ output between 13 and 272 bytes into a destination of size 250
+ 1055 |                 sprintf (ConfigName, "%s/linmail.cfg", BPQDirectory);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LinBPQ.c:1081:27: warning: ‘%s’ directive writing up to 259 bytes into a region of size 250 [-Wformat-overflow=]
+ 1081 |         sprintf(BaseDir, "%s", BPQDirectory);
+      |                           ^~   ~~~~~~~~~~~~
+LinBPQ.c:1081:9: note: ‘sprintf’ output between 1 and 260 bytes into a destination of size 250
+ 1081 |         sprintf(BaseDir, "%s", BPQDirectory);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MailTCP.c: In function ‘ProcessPOP3ServerMessage’:
+RigControl.c: In function ‘Rig_PTTEx’:
+MailTCP.c:2474:90: warning: ‘ messages in maildrop’ directive writing 21 bytes into a region of size between 2 and 12 [-Wformat-overflow=]
+ 2474 |                                 sprintf(reply, "-ERR no such message, only %d messages in maildrop", sockptr->POP3MsgCount);
+      |                                                                              ~~~~~~~~~~~~^~~~~~~~~
+MailTCP.c:2474:33: note: ‘sprintf’ output between 50 and 60 bytes into a destination of size 40
+ 2474 |                                 sprintf(reply, "-ERR no such message, only %d messages in maildrop", sockptr->POP3MsgCount);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c:326:74: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long long int’ [-Wformat=]
+  326 |                                                 sprintf(FreqString, "%012d", txfreq);
+      |                                                                      ~~~~^   ~~~~~~
+      |                                                                          |   |
+      |                                                                          int long long int
+      |                                                                      %012lld
+RigControl.c:457:66: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long long int’ [-Wformat=]
+  457 |                                         sprintf(FreqString, "%012d", txfreq);
+      |                                                              ~~~~^   ~~~~~~
+      |                                                                  |   |
+      |                                                                  int long long int
+      |                                                              %012lld
+RigControl.c: In function ‘Rig_CommandEx’:
+RigControl.c:897:38: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[80]’ [-Wformat=]
+  897 |                 n = sscanf(Command,"%s %s %s %s %s", &Dummy, &FreqString[0], &Mode[0], &FilterString[0], &Data[0]);
+      |                                     ~^               ~~~~~~
+      |                                      |               |
+      |                                      char *          char (*)[80]
+RigControl.c:1293:25: warning: format not a string literal and no format arguments [-Wformat-security]
+ 1293 |                         Len = sprintf(CmdPtr, ptr1);
+      |                         ^~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WPRoutines.o WPRoutines.c
+RigControl.c:1929:62: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[80]’ [-Wformat=]
+ 1929 |                         FreqPtr->Cmd1Len = sprintf(Poll, "FA%s;MD0%X;FA;MD;", &FreqString, ModeNo);
+      |                                                             ~^                ~~~~~~~~~~~
+      |                                                              |                |
+      |                                                              char *           char (*)[80]
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTrackeMulti.o SCSTrackeMulti.c
+TelnetV6.c: In function ‘SaveCMSHostInfo’:
+WINMOR.c: In function ‘ExtProc’:
+TelnetV6.c:6133:40: warning: format ‘%lld’ expects argument of type ‘long long int *’, but argument 4 has type ‘time_t *’ {aka ‘long int *’} [-Wformat=]
+ 6133 |                 n = sscanf(buf, "%s %lld %s", addr, &t, ip);
+      |                                     ~~~^            ~~
+      |                                        |            |
+      |                                        |            time_t * {aka long int *}
+      |                                        long long int *
+      |                                     %ld
+WINMOR.c:964:63: warning: format ‘%s’ expects argument of type ‘char *’, but argument 4 has type ‘unsigned char (*)[256]’ [-Wformat=]
+  964 |                                 len = sprintf(Buffer, "%-9s: %s", TNC->Streams[0].MyCall, &buff->L2DATA);
+      |                                                              ~^                           ~~~~~~~~~~~~~
+      |                                                               |                           |
+      |                                                               char *                      unsigned char (*)[256]
+RigControl.c: In function ‘RigConfig’:
+RigControl.c:7169:67: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[80]’ [-Wformat=]
+ 7169 |                         FreqPtr[0]->Cmd1Len = sprintf(CmdPtr, "FA%s;MD0%X;FA;MD0;", &FreqString, ModeNo);
+      |                                                                  ~^                 ~~~~~~~~~~~
+      |                                                                   |                 |
+      |                                                                   char *            char (*)[80]
+TelnetV6.c: In function ‘DeleteTelnetLogFiles’:
+TelnetV6.c:273:43: warning: ‘%s’ directive writing up to 255 bytes into a region of size 251 [-Wformat-overflow=]
+  273 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                                           ^~
+TelnetV6.c:273:25: note: ‘sprintf’ output between 6 and 261 bytes into a destination of size 256
+  273 |                         sprintf(FN, "logs/%s", namelist[n]->d_name);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘WritetoTrace’:
+TelnetV6.c:857:52: warning: ‘%s’ directive writing up to 999 bytes into a region of size between 188 and 198 [-Wformat-overflow=]
+  857 |                                 sprintf(logmsg,"%d %s\r\n", Stream, Line);
+      |                                                    ^~               ~~~~
+TelnetV6.c:857:33: note: ‘sprintf’ output between 5 and 1014 bytes into a destination of size 200
+  857 |                                 sprintf(logmsg,"%d %s\r\n", Stream, Line);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSPactor.o SCSPactor.c
+UZ7HODrv.c: In function ‘ExtProc’:
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTracker.o SCSTracker.c
+UZ7HODrv.c:1011:57: warning: too many arguments for format [-Wformat-extra-args]
+ 1011 |                                                         "UZ7HO} Error - Call missing from C command\r", STREAM->MyCall, STREAM->RemoteCall);
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘TelnetPoll’:
+TelnetV6.c:2685:134: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2685 |                                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r", P3);
+      |                                                                                                                                      ^
+TelnetV6.c:2685:89: note: ‘sprintf’ output between 2 and 101 bytes into a destination of size 100
+ 2685 |                                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r", P3);
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:2682:126: warning: ‘%s’ directive writing up to 99 bytes into a region of size between 0 and 99 [-Wformat-overflow=]
+ 2682 |                                                                                 sprintf(STREAM->ConnectionInfo->Signon, "%s\r%s\r", P3, P4);
+      |                                                                                                                              ^~         ~~
+TelnetV6.c:2682:81: note: ‘sprintf’ output between 3 and 201 bytes into a destination of size 100
+ 2682 |                                                                                 sprintf(STREAM->ConnectionInfo->Signon, "%s\r%s\r", P3, P4);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:2679:118: warning: ‘%s’ directive writing up to 99 bytes into a region of size between 0 and 99 [-Wformat-overflow=]
+ 2679 |                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r%s\r%s\r", P3, P4, P5);
+      |                                                                                                                      ^~             ~~
+TelnetV6.c:2679:73: note: ‘sprintf’ output between 4 and 301 bytes into a destination of size 100
+ 2679 |                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r%s\r%s\r", P3, P4, P5);
+      |                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:2674:132: warning: ‘
+
+   ’ directive writing 2 bytes into a region of size between 1 and 100 [-Wformat-overflow=]
+ 2674 |                                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n", P4);
+      |                                                                                                                                    ^~~~
+TelnetV6.c:2674:89: note: ‘sprintf’ output between 3 and 102 bytes into a destination of size 100
+ 2674 |                                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n", P4);
+      |                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:2671:124: warning: ‘
+
+   ’ directive writing 2 bytes into a region of size between 1 and 100 [-Wformat-overflow=]
+ 2671 |                                                                                 sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n%s\r\n", P4, P5);
+      |                                                                                                                            ^~~~
+TelnetV6.c:2671:81: note: ‘sprintf’ output between 5 and 203 bytes into a destination of size 100
+ 2671 |                                                                                 sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n%s\r\n", P4, P5);
+      |                                                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:2668:116: warning: ‘
+
+   ’ directive writing 2 bytes into a region of size between 1 and 100 [-Wformat-overflow=]
+ 2668 |                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n%s\r\n%s\r\n", P4, P5, P6);
+      |                                                                                                                    ^~~~
+TelnetV6.c:2668:73: note: ‘sprintf’ output between 7 and 304 bytes into a destination of size 100
+ 2668 |                                                                         sprintf(STREAM->ConnectionInfo->Signon, "%s\r\n%s\r\n%s\r\n", P4, P5, P6);
+      |                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WINMOR.c:987:63: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  987 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                               ^~
+WINMOR.c:987:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  987 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘WriteLog’:
+TelnetV6.c:5295:27: warning: ‘%02d’ directive writing between 2 and 11 bytes into a region of size between 1 and 250 [-Wformat-overflow=]
+ 5295 |         sprintf(Value, "%s%02d%02d%02d.log", Value,
+      |                           ^~~~
+TelnetV6.c:5295:9: note: ‘sprintf’ output between 11 and 287 bytes into a destination of size 250
+ 5295 |         sprintf(Value, "%s%02d%02d%02d.log", Value,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5296 |                                 tm->tm_year - 100, tm->tm_mon+1, tm->tm_mday);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘WriteCMSLog’:
+TelnetV6.c:5351:28: warning: ‘%04d’ directive writing between 4 and 11 bytes into a region of size between 0 and 249 [-Wformat-overflow=]
+ 5351 |         sprintf(Value, "%s_%04d%02d%02d.log", Value,
+      |                            ^~~~
+TelnetV6.c:5351:9: note: ‘sprintf’ output between 14 and 288 bytes into a destination of size 250
+ 5351 |         sprintf(Value, "%s_%04d%02d%02d.log", Value,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5352 |                                 tm->tm_year +1900, tm->tm_mon+1, tm->tm_mday);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘Telnet_Connected’:
+TelnetV6.c:5498:41: warning: ‘%s’ directive writing up to 255 bytes into a region of size 234 [-Wformat-overflow=]
+ 5498 |                         buffptr->Len  = sprintf(&buffptr->Data[0], "*** Connected to SYNC %s:%d\r", Addr, htons(sockptr->sin.sin_port));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:5498:41: note: ‘sprintf’ output between 26 and 285 bytes into a destination of size 256
+RigControl.c: In function ‘Rig_CommandEx’:
+RigControl.c:2036:43: warning: ‘%s’ directive writing up to 79 bytes into a region of size 78 [-Wformat-overflow=]
+ 2036 |                 int len = sprintf(cmd, "F %s\n+f\nM %s %d\n+m\n",
+      |                                           ^~
+ 2037 |                         FreqString, Mode, atoi(Data));
+      |                         ~~~~~~~~~~         
+RigControl.c:2036:27: note: ‘sprintf’ output between 15 and 183 bytes into a destination of size 80
+ 2036 |                 int len = sprintf(cmd, "F %s\n+f\nM %s %d\n+m\n",
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2037 |                         FreqString, Mode, atoi(Data));
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c: In function ‘SHOWTELNET’:
+TelnetV6.c:6914:66: warning: ‘%s’ directive writing up to 99 bytes into a region of size 69 [-Wformat-overflow=]
+ 6914 |                                         sprintf(msg, "DRATS From %s", Addr);
+      |                                                                  ^~   ~~~~
+TelnetV6.c:6914:41: note: ‘sprintf’ output between 12 and 111 bytes into a destination of size 80
+ 6914 |                                         sprintf(msg, "DRATS From %s", Addr);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:6907:73: warning: ‘%s’ directive writing up to 99 bytes into a region of size 70 [-Wformat-overflow=]
+ 6907 |                                                 sprintf(msg, "HTTP From %s", Addr);
+      |                                                                         ^~   ~~~~
+TelnetV6.c:6907:49: note: ‘sprintf’ output between 11 and 110 bytes into a destination of size 80
+ 6907 |                                                 sprintf(msg, "HTTP From %s", Addr);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TelnetV6.c:6905:76: warning: ‘%s’ directive writing up to 99 bytes into a region of size 67 [-Wformat-overflow=]
+ 6905 |                                                 sprintf(msg, "Websock From %s", Addr);
+      |                                                                            ^~   ~~~~
+TelnetV6.c:6905:49: note: ‘sprintf’ output between 14 and 113 bytes into a destination of size 80
+ 6905 |                                                 sprintf(msg, "Websock From %s", Addr);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HanksRT.o HanksRT.c
+UZ7HODrv.c:902:63: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  902 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                               ^~
+UZ7HODrv.c:902:33: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  902 |                                 sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c: In function ‘SetupScanInterLockGroups’:
+RigControl.c:7326:49: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+ 7326 |                         sprintf(PortString, "%s,%d", PortString, p);
+      |                                                 ^~
+RigControl.c:7326:25: note: ‘sprintf’ output between 3 and 140 bytes into a destination of size 128
+ 7326 |                         sprintf(PortString, "%s,%d", PortString, p);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c:7336:51: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size between 0 and 127 [-Wformat-overflow=]
+ 7336 |                         sprintf(TxPortString, "%s,%d", TxPortString, p);
+      |                                                   ^~
+RigControl.c:7336:25: note: ‘sprintf’ output between 3 and 140 bytes into a destination of size 128
+ 7336 |                         sprintf(TxPortString, "%s,%d", TxPortString, p);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c: In function ‘HLSetMode’:
+RigControl.c:8063:38: warning: ‘%s’ directive writing up to 79 bytes into a region of size between 63 and 77 [-Wformat-overflow=]
+ 8063 |                 sprintf(Resp, "%d %s %s\n", 0, RIG->Valchar, mode);
+      |                                      ^~                      ~~~~
+RigControl.c:8063:17: note: ‘sprintf’ output between 5 and 98 bytes into a destination of size 80
+ 8063 |                 sprintf(Resp, "%d %s %s\n", 0, RIG->Valchar, mode);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c:8061:38: warning: ‘%s’ directive writing up to 79 bytes into a region of size between 63 and 77 [-Wformat-overflow=]
+ 8061 |                 sprintf(Resp, "%d %s %s 1\n", 0, RIG->Valchar, mode);
+      |                                      ^~                        ~~~~
+RigControl.c:8061:17: note: ‘sprintf’ output between 7 and 100 bytes into a destination of size 80
+ 8061 |                 sprintf(Resp, "%d %s %s 1\n", 0, RIG->Valchar, mode);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UIRoutines.o UIRoutines.c
+RigControl.c:8070:48: warning: ‘%s’ directive writing up to 79 bytes into a region of size 70 [-Wformat-overflow=]
+ 8070 |                 Len = sprintf(Resp, "set_mode: %s %d%cRPRT 0\n", mode, filter, sep);
+      |                                                ^~                ~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWAPI.o AGWAPI.c
+RigControl.c:8070:23: note: ‘sprintf’ output between 21 and 110 bytes into a destination of size 80
+ 8070 |                 Len = sprintf(Resp, "set_mode: %s %d%cRPRT 0\n", mode, filter, sep);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RigControl.c: In function ‘HLGetFreq’:
+RigControl.c:8161:60: warning: ‘%s’ directive writing up to 63 bytes into a region of size 59 [-Wformat-overflow=]
+ 8161 |                 Len = sprintf(Resp, "get_freq:%cFrequency: %s%cRPRT 0\n", sep, freqval, sep);
+      |                                                            ^~                  ~~~~~~~
+WPRoutines.c: In function ‘CreateWPMessage’:
+RigControl.c:8161:23: note: ‘sprintf’ output between 30 and 93 bytes into a destination of size 80
+ 8161 |                 Len = sprintf(Resp, "get_freq:%cFrequency: %s%cRPRT 0\n", sep, freqval, sep);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WPRoutines.c:1419:37: warning: passing argument 1 of ‘gmtime’ from incompatible pointer type [-Wincompatible-pointer-types]
+ 1419 |                         tm = gmtime(&ptr->last_modif);
+      |                                     ^~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     long long int *
+In file included from compatbits.h:13,
+                 from bpqmail.h:29,
+                 from WPRoutines.c:24:
+/usr/include/time.h:132:41: note: expected ‘const time_t *’ {aka ‘const long int *’} but argument is of type ‘long long int *’
+  132 | extern struct tm *gmtime (const time_t *__timer) __THROW;
+      |                           ~~~~~~~~~~~~~~^~~~~~~
+RigControl.c: In function ‘FLRIGPoll’:
+RigControl.c:8708:55: warning: ‘%s’ directive writing up to 99 bytes into a region of size 72 [-Wformat-overflow=]
+ 8708 |                                 sprintf(cmd, "<double>%s</double>", PORT->FreqPtr->Cmd1Msg);
+      |                                                       ^~
+RigControl.c:8708:33: note: ‘sprintf’ output between 18 and 117 bytes into a destination of size 80
+ 8708 |                                 sprintf(cmd, "<double>%s</double>", PORT->FreqPtr->Cmd1Msg);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWMoncode.o AGWMoncode.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o DRATS.o DRATS.c
+WPRoutines.c: In function ‘GetWPDatabase’:
+WPRoutines.c:240:43: warning: ‘%s’ directive writing up to 249 bytes into a region of size 244 [-Wformat-overflow=]
+  240 |                 sprintf(Msg, "Config File %s Line %d - %s\n", CfgName,
+      |                                           ^~                  ~~~~~~~
+WPRoutines.c:240:17: note: ‘sprintf’ output 24 or more bytes (assuming 273) into a destination of size 256
+  240 |                 sprintf(Msg, "Config File %s Line %d - %s\n", CfgName,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  241 |                         config_error_line(&wpcfg), config_error_text(&wpcfg));
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FreeDATA.o FreeDATA.c
+SCSPactor.c: In function ‘SCSPoll’:
+SCSPactor.c:2083:48: warning: ‘%s’ directive writing up to 519 bytes into a region of size 256 [-Wformat-overflow=]
+ 2083 |                                 buffptr->Len = sprintf(buffptr->Data, "%s\r", &TNC->RXBuffer[2]);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SCSPactor.c:2083:48: note: ‘sprintf’ output between 2 and 521 bytes into a destination of size 256
+HanksRT.c: In function ‘show_circuits’:
+HanksRT.c:2896:75: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2896 |                                                 len = sprintf(line, "%s %s", line, cn->node->alias);
+      |                                                                           ^
+HanksRT.c:2896:55: note: ‘sprintf’ output 2 or more bytes (assuming 1001) into a destination of size 1000
+ 2896 |                                                 len = sprintf(line, "%s %s", line, cn->node->alias);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HanksRT.c:2894:75: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2894 |                                                 len = sprintf(line, "%s %s", line, cn->node->call);
+      |                                                                           ^
+HanksRT.c:2894:55: note: ‘sprintf’ output 2 or more bytes (assuming 1001) into a destination of size 1000
+ 2894 |                                                 len = sprintf(line, "%s %s", line, cn->node->call);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HanksRT.c:2904:64: warning: ‘ Corrupt Rec ’ directive writing 13 bytes into a region of size between 1 and 1000 [-Wformat-overflow=]
+ 2904 |                                         len = sprintf(line, "%s Corrupt Rec %p %p ", line, cn, cn->node);
+      |                                                                ^~~~~~~~~~~~~
+HanksRT.c:2842:51: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2842 |                         len = sprintf(line, "%s %s", line, node->alias);
+      |                                                   ^
+HanksRT.c:2842:31: note: ‘sprintf’ output 2 or more bytes (assuming 1001) into a destination of size 1000
+ 2842 |                         len = sprintf(line, "%s %s", line, node->alias);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HanksRT.c:2840:51: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 2840 |                         len = sprintf(line, "%s %s", line, node->call);
+      |                                                   ^
+HanksRT.c:2840:31: note: ‘sprintf’ output 2 or more bytes (assuming 1001) into a destination of size 1000
+ 2840 |                         len = sprintf(line, "%s %s", line, node->call);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HanksRT.c: In function ‘SendChatLinkStatus’:
+HanksRT.c:3679:42: warning: ‘%c’ directive writing 1 byte into a region of size between 0 and 255 [-Wformat-overflow=]
+ 3679 |                 len = sprintf(Msg, "%s%s %c ", Msg, link->call, '0' + link->flags);
+      |                                          ^~
+HanksRT.c:3679:23: note: ‘sprintf’ output 4 or more bytes (assuming 259) into a destination of size 256
+ 3679 |                 len = sprintf(Msg, "%s%s %c ", Msg, link->call, '0' + link->flags);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HanksRT.c: In function ‘ChatWriteLogLine’:
+HanksRT.c:4526:44: warning: ‘sprintf’ may write a terminating nul past the end of the destination [-Wformat-overflow=]
+ 4526 |                 sprintf(call, "%s          ", conn->Callsign);
+      |                                            ^
+HanksRT.c:4526:17: note: ‘sprintf’ output between 11 and 21 bytes into a destination of size 20
+ 4526 |                 sprintf(call, "%s          ", conn->Callsign);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+AGWAPI.c: In function ‘ProcessAGWCommand’:
+AGWAPI.c:1178:64: warning: ‘, ’ directive writing 2 bytes into a region of size between 1 and 128 [-Wformat-overflow=]
+ 1178 |                                         sprintf(ConnectMsg, "%s, %s", ConnectMsg, Digis);
+      |                                                                ^~
+AGWAPI.c:1178:41: note: ‘sprintf’ output 3 or more bytes (assuming 130) into a destination of size 128
+ 1178 |                                         sprintf(ConnectMsg, "%s, %s", ConnectMsg, Digis);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FreeDATA.c: In function ‘ExtProc’:
+FreeDATA.c:871:48: warning: format not a string literal and no format arguments [-Wformat-security]
+  871 |                         Len = sprintf(Message, TXF);
+      |                                                ^~~
+FreeDATA.c: In function ‘SendCQ’:
+FreeDATA.c:2493:32: warning: format not a string literal and no format arguments [-Wformat-security]
+ 2493 |         Len = sprintf(Message, CQ);
+      |                                ^~
+FreeDATA.c: In function ‘SendBeacon’:
+FreeDATA.c:2508:40: warning: format not a string literal and no format arguments [-Wformat-security]
+ 2508 |                 Len = sprintf(Message, Template2);
+      |                                        ^~~~~~~~~
+FreeDATA.c: In function ‘FreeDataDisconnect’:
+FreeDATA.c:3726:28: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3726 |         Len = sprintf(Msg, Disconnect);
+      |                            ^~~~~~~~~~
+FreeDATA.c: In function ‘FreeGetData’:
+FreeDATA.c:3738:28: warning: format not a string literal and no format arguments [-Wformat-security]
+ 3738 |         Len = sprintf(Msg, GetData);
+      |                            ^~~~~~~
+FreeDATA.c: In function ‘ExtProc’:
+FreeDATA.c:949:33: warning: ‘%s’ directive writing up to 255 bytes into a region of size 78 [-Wformat-overflow=]
+  949 |                         txlen = sprintf(Connect, "C %s %s %s ", &buff->L2DATA[2], STREAM->MyCall, TNC->FreeDataInfo->ourCall);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FreeDATA.c:949:33: note: ‘sprintf’ output between 6 and 279 bytes into a destination of size 80
+FreeDATA.c:779:55: warning: ‘%s’ directive writing up to 255 bytes into a region of size between 244 and 254 [-Wformat-overflow=]
+  779 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                                                       ^~
+FreeDATA.c:779:25: note: ‘sprintf’ output between 3 and 268 bytes into a destination of size 256
+  779 |                         sprintf(&buff->L2DATA[0], "%d %s", TNC->Port, &buff->L2DATA[6]);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o base64.o base64.c
+gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Events.o Events.c
+gcc pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o -Xlinker -Map=output.map -l:libminiupnpc.a -lrt -lm -lz -lpthread -lconfig -lpcap -o linbpq
+make[1]: Leaving directory '/<<PKGBUILDDIR>>'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_installdirs
+   dh_auto_install --destdir=debian/linbpq/
+	make -j16 install DESTDIR=/<<PKGBUILDDIR>>/debian/linbpq AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[1]: Entering directory '/<<PKGBUILDDIR>>'
+install -b -m 755  -D -d		debian/linbpq/opt/oarc/bpq
+install -b -m 755  -s -p linbpq		debian/linbpq/opt/oarc/bpq
+make[1]: Leaving directory '/<<PKGBUILDDIR>>'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installinit
+   dh_installsystemd
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+dwz: debian/linbpq/opt/oarc/bpq/linbpq: .debug_info section not present
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'linbpq' in '../linbpq_6.0.24.15-jammy2_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../linbpq_6.0.24.15-jammy2_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../linbpq_6.0.24.15-jammy2_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2023-10-15T21:05:22Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                                                      |
++------------------------------------------------------------------------------+
+
+
+linbpq_6.0.24.15-jammy2_arm64.changes:
+--------------------------------------
+
+Format: 1.8
+Date: Sun, 15 Oct 2023 21:45:24 +0100
+Source: linbpq
+Binary: linbpq
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 6.0.24.15-jammy2
+Distribution: jammy
+Urgency: medium
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Changed-By: Dave Hibberd <d@vehibberd.com>
+Description:
+ linbpq     - Packet node and ax25 stack
+Changes:
+ linbpq (6.0.24.15-jammy2) jammy; urgency=medium
+ .
+   * debian/conffiles introduced to stop linbpq overwriting config files
+     - Thanks to Mark 2M0IIG for raising concern about this bug!
+Checksums-Sha1:
+ ee20b265ee47a87b4fc5a09d59c8174501c0468b 6264 linbpq_6.0.24.15-jammy2_arm64.buildinfo
+ 90583bc9457b71424a31a9f7dee36af3d4aad68f 686706 linbpq_6.0.24.15-jammy2_arm64.deb
+Checksums-Sha256:
+ 31fac22c48852281c4ac3d23bed902e6a6cca48f59e130c4c29d00c0f7d472a1 6264 linbpq_6.0.24.15-jammy2_arm64.buildinfo
+ 4754f51bc7e1801cf275e8cfff2b530d5afd8970292339d10548c73c1d60b34b 686706 linbpq_6.0.24.15-jammy2_arm64.deb
+Files:
+ 5c8741ac7cf94240f35dcc267b7b9a3c 6264 hamradio optional linbpq_6.0.24.15-jammy2_arm64.buildinfo
+ e8b01be36da82a58535f20bdf07aadc9 686706 hamradio optional linbpq_6.0.24.15-jammy2_arm64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                                                    |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: linbpq
+Binary: linbpq
+Architecture: arm64
+Version: 6.0.24.15-jammy2
+Checksums-Md5:
+ e8b01be36da82a58535f20bdf07aadc9 686706 linbpq_6.0.24.15-jammy2_arm64.deb
+Checksums-Sha1:
+ 90583bc9457b71424a31a9f7dee36af3d4aad68f 686706 linbpq_6.0.24.15-jammy2_arm64.deb
+Checksums-Sha256:
+ 4754f51bc7e1801cf275e8cfff2b530d5afd8970292339d10548c73c1d60b34b 686706 linbpq_6.0.24.15-jammy2_arm64.deb
+Build-Origin: Ubuntu
+Build-Architecture: arm64
+Build-Date: Sun, 15 Oct 2023 21:05:20 +0000
+Build-Path: /<<PKGBUILDDIR>>
+Installed-Build-Depends:
+ autoconf (= 2.71-2),
+ automake (= 1:1.16.5-1.3),
+ autopoint (= 0.21-4ubuntu4),
+ autotools-dev (= 20220109.1),
+ base-files (= 12ubuntu4.4),
+ base-passwd (= 3.5.52build1),
+ bash (= 5.1-6ubuntu1),
+ binutils (= 2.38-4ubuntu2.3),
+ binutils-aarch64-linux-gnu (= 2.38-4ubuntu2.3),
+ binutils-common (= 2.38-4ubuntu2.3),
+ bsdextrautils (= 2.37.2-4ubuntu3),
+ bsdutils (= 1:2.37.2-4ubuntu3),
+ build-essential (= 12.9ubuntu3),
+ bzip2 (= 1.0.8-5build1),
+ coreutils (= 8.32-4.1ubuntu1),
+ cpp (= 4:11.2.0-1ubuntu1),
+ cpp-11 (= 11.4.0-1ubuntu1~22.04),
+ dash (= 0.5.11+git20210903+057cd650a4ed-3build1),
+ debconf (= 1.5.79ubuntu1),
+ debhelper (= 13.6ubuntu1),
+ debianutils (= 5.5-1ubuntu2),
+ debugedit (= 1:5.0-4build1),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.13.0-1),
+ diffutils (= 1:3.8-0ubuntu2),
+ dpkg (= 1.21.1ubuntu2.2),
+ dpkg-dev (= 1.21.1ubuntu2.2),
+ dwz (= 0.14-1build2),
+ file (= 1:5.41-3ubuntu0.1),
+ findutils (= 4.8.0-1ubuntu3),
+ g++ (= 4:11.2.0-1ubuntu1),
+ g++-11 (= 11.4.0-1ubuntu1~22.04),
+ gcc (= 4:11.2.0-1ubuntu1),
+ gcc-11 (= 11.4.0-1ubuntu1~22.04),
+ gcc-11-base (= 11.4.0-1ubuntu1~22.04),
+ gcc-12-base (= 12.3.0-1ubuntu1~22.04),
+ gettext (= 0.21-4ubuntu4),
+ gettext-base (= 0.21-4ubuntu4),
+ grep (= 3.7-1build1),
+ groff-base (= 1.22.4-8build1),
+ gzip (= 1.10-4ubuntu4.1),
+ hostname (= 3.23ubuntu2),
+ init-system-helpers (= 1.62),
+ intltool-debian (= 0.35.0+20060710.5),
+ libacl1 (= 2.3.1-1),
+ libarchive-zip-perl (= 1.68-1),
+ libasan6 (= 11.4.0-1ubuntu1~22.04),
+ libatomic1 (= 12.3.0-1ubuntu1~22.04),
+ libattr1 (= 1:2.5.1-1build1),
+ libaudit-common (= 1:3.0.7-1build1),
+ libaudit1 (= 1:3.0.7-1build1),
+ libbinutils (= 2.38-4ubuntu2.3),
+ libblkid1 (= 2.37.2-4ubuntu3),
+ libbz2-1.0 (= 1.0.8-5build1),
+ libc-bin (= 2.35-0ubuntu3.4),
+ libc-dev-bin (= 2.35-0ubuntu3.4),
+ libc6 (= 2.35-0ubuntu3.4),
+ libc6-dev (= 2.35-0ubuntu3.4),
+ libcap-ng0 (= 0.7.9-2.2build3),
+ libcap2 (= 1:2.44-1ubuntu0.22.04.1),
+ libcc1-0 (= 12.3.0-1ubuntu1~22.04),
+ libcom-err2 (= 1.46.5-2ubuntu1.1),
+ libconfig-dev (= 1.5-0.4build1),
+ libconfig9 (= 1.5-0.4build1),
+ libcrypt-dev (= 1:4.4.27-1),
+ libcrypt1 (= 1:4.4.27-1),
+ libctf-nobfd0 (= 2.38-4ubuntu2.3),
+ libctf0 (= 2.38-4ubuntu2.3),
+ libdb5.3 (= 5.3.28+dfsg1-0.8ubuntu3),
+ libdbus-1-3 (= 1.12.20-2ubuntu4.1),
+ libdbus-1-dev (= 1.12.20-2ubuntu4.1),
+ libdebconfclient0 (= 0.261ubuntu1),
+ libdebhelper-perl (= 13.6ubuntu1),
+ libdpkg-perl (= 1.21.1ubuntu2.2),
+ libdw1 (= 0.186-1build1),
+ libelf1 (= 0.186-1build1),
+ libffi8 (= 3.4.2-4),
+ libfile-stripnondeterminism-perl (= 1.13.0-1),
+ libgcc-11-dev (= 11.4.0-1ubuntu1~22.04),
+ libgcc-s1 (= 12.3.0-1ubuntu1~22.04),
+ libgcrypt20 (= 1.9.4-3ubuntu3),
+ libgdbm-compat4 (= 1.23-1),
+ libgdbm6 (= 1.23-1),
+ libglib2.0-0 (= 2.72.4-0ubuntu2.2),
+ libgmp10 (= 2:6.2.1+dfsg-3ubuntu1),
+ libgomp1 (= 12.3.0-1ubuntu1~22.04),
+ libgpg-error0 (= 1.43-3),
+ libgssapi-krb5-2 (= 1.19.2-2ubuntu0.2),
+ libhwasan0 (= 12.3.0-1ubuntu1~22.04),
+ libicu70 (= 70.1-2),
+ libisl23 (= 0.24-2build1),
+ libitm1 (= 12.3.0-1ubuntu1~22.04),
+ libk5crypto3 (= 1.19.2-2ubuntu0.2),
+ libkeyutils1 (= 1.6.1-2ubuntu3),
+ libkrb5-3 (= 1.19.2-2ubuntu0.2),
+ libkrb5support0 (= 1.19.2-2ubuntu0.2),
+ liblsan0 (= 12.3.0-1ubuntu1~22.04),
+ liblz4-1 (= 1.9.3-2build2),
+ liblzma5 (= 5.2.5-2ubuntu1),
+ libmagic-mgc (= 1:5.41-3ubuntu0.1),
+ libmagic1 (= 1:5.41-3ubuntu0.1),
+ libminiupnpc-dev (= 2.2.3-1build1),
+ libminiupnpc17 (= 2.2.3-1build1),
+ libmount1 (= 2.37.2-4ubuntu3),
+ libmpc3 (= 1.2.1-2build1),
+ libmpfr6 (= 4.1.0-3build3),
+ libnsl-dev (= 1.3.0-2build2),
+ libnsl2 (= 1.3.0-2build2),
+ libpam-modules (= 1.4.0-11ubuntu2.3),
+ libpam-modules-bin (= 1.4.0-11ubuntu2.3),
+ libpam-runtime (= 1.4.0-11ubuntu2.3),
+ libpam0g (= 1.4.0-11ubuntu2.3),
+ libpcap-dev (= 1.10.1-4build1),
+ libpcap0.8 (= 1.10.1-4build1),
+ libpcap0.8-dev (= 1.10.1-4build1),
+ libpcre2-8-0 (= 10.39-3ubuntu0.1),
+ libpcre3 (= 2:8.39-13ubuntu0.22.04.1),
+ libperl5.34 (= 5.34.0-3ubuntu1.2),
+ libpipeline1 (= 1.5.5-1),
+ libseccomp2 (= 2.5.3-2ubuntu2),
+ libselinux1 (= 3.3-1build2),
+ libsigsegv2 (= 2.13-1ubuntu3),
+ libsmartcols1 (= 2.37.2-4ubuntu3),
+ libssl-dev (= 3.0.2-0ubuntu1.10),
+ libssl3 (= 3.0.2-0ubuntu1.10),
+ libstdc++-11-dev (= 11.4.0-1ubuntu1~22.04),
+ libstdc++6 (= 12.3.0-1ubuntu1~22.04),
+ libsub-override-perl (= 0.09-2),
+ libsystemd0 (= 249.11-0ubuntu3.10),
+ libtinfo6 (= 6.3-2ubuntu0.1),
+ libtirpc-common (= 1.3.2-2ubuntu0.1),
+ libtirpc-dev (= 1.3.2-2ubuntu0.1),
+ libtirpc3 (= 1.3.2-2ubuntu0.1),
+ libtool (= 2.4.6-15build2),
+ libtsan0 (= 11.4.0-1ubuntu1~22.04),
+ libubsan1 (= 12.3.0-1ubuntu1~22.04),
+ libuchardet0 (= 0.0.7-1build2),
+ libudev1 (= 249.11-0ubuntu3.10),
+ libunistring2 (= 1.0-1),
+ libuuid1 (= 2.37.2-4ubuntu3),
+ libxml2 (= 2.9.13+dfsg-1ubuntu0.3),
+ libzstd1 (= 1.4.8+dfsg-3build1),
+ linux-libc-dev (= 5.15.0-86.96),
+ login (= 1:4.8.1-2ubuntu2.1),
+ lsb-base (= 11.1.0ubuntu4),
+ lto-disabled-list (= 24),
+ m4 (= 1.4.18-5ubuntu2),
+ make (= 4.3-4.1build1),
+ man-db (= 2.10.2-1),
+ mawk (= 1.3.4.20200120-3),
+ ncurses-base (= 6.3-2ubuntu0.1),
+ ncurses-bin (= 6.3-2ubuntu0.1),
+ patch (= 2.7.6-7build2),
+ perl (= 5.34.0-3ubuntu1.2),
+ perl-base (= 5.34.0-3ubuntu1.2),
+ perl-modules-5.34 (= 5.34.0-3ubuntu1.2),
+ pkg-config (= 0.29.2-1ubuntu3),
+ po-debconf (= 1.0.21+nmu1),
+ rpcsvc-proto (= 1.4.2-0ubuntu6),
+ sed (= 4.8-1ubuntu2),
+ sensible-utils (= 0.0.17),
+ sysvinit-utils (= 3.01-1ubuntu1),
+ tar (= 1.34+dfsg-1ubuntu0.1.22.04.1),
+ util-linux (= 2.37.2-4ubuntu3),
+ xz-utils (= 5.2.5-2ubuntu1),
+ zlib1g (= 1:1.2.11.dfsg-2ubuntu9.2),
+ zlib1g-dev (= 1:1.2.11.dfsg-2ubuntu9.2)
+Environment:
+ DEB_BUILD_OPTIONS="parallel=16"
+ DEB_BUILD_PROFILES="noudeb"
+ LANG="en_GB.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ LD_LIBRARY_PATH="/usr/lib/libeatmydata"
+ SOURCE_DATE_EPOCH="1697402724"
+
+
++------------------------------------------------------------------------------+
+| Package contents                                                             |
++------------------------------------------------------------------------------+
+
+
+linbpq_6.0.24.15-jammy2_arm64.deb
+---------------------------------
+
+ new Debian package, version 2.0.
+ size 686706 bytes: control archive=1771 bytes.
+      24 bytes,     1 lines      conffiles            
+     430 bytes,    11 lines      control              
+     262 bytes,     4 lines      md5sums              
+    2527 bytes,    69 lines   *  postinst             #!/bin/sh
+     664 bytes,    21 lines   *  postrm               #!/bin/sh
+     255 bytes,     7 lines   *  prerm                #!/bin/sh
+ Package: linbpq
+ Version: 6.0.24.15-jammy2
+ Architecture: arm64
+ Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+ Installed-Size: 2376
+ Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
+ Section: hamradio
+ Priority: optional
+ Homepage: http://users.telenet.be/on4qz
+ Description: Packet node and ax25 stack
+  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
+
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./etc/
+lrwxrwxrwx root/root         0 2023-10-15 20:45 ./etc/bpq32.cfg -> /opt/oarc/bpq/bpq32.cfg
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/systemd/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/systemd/system/
+-rw-r--r-- root/root       179 2023-08-31 23:14 ./lib/systemd/system/linbpq.service
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/oarc/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/oarc/bpq/
+-rw-r--r-- root/root     10976 2023-08-31 23:14 ./opt/oarc/bpq/bpq32.cfg
+-rwxr-xr-x root/root   2396168 2023-10-15 20:45 ./opt/oarc/bpq/linbpq
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/doc/
+drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/doc/linbpq/
+-rw-r--r-- root/root       299 2023-10-15 20:45 ./usr/share/doc/linbpq/changelog.Debian.gz
+-rw-r--r-- root/root      1161 2023-08-31 23:14 ./usr/share/doc/linbpq/copyright
+
+
++------------------------------------------------------------------------------+
+| Post Build                                                                   |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: arm64
+Build Type: binary
+Build-Space: 43216
+Build-Time: 46
+Distribution: jammy
+Host Architecture: arm64
+Install-Time: 17
+Job: /home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-jammy2.dsc
+Machine Architecture: amd64
+Package: linbpq
+Package-Time: 141
+Source-Version: 6.0.24.15-jammy2
+Space: 43216
+Status: successful
+Version: 6.0.24.15-jammy2
+--------------------------------------------------------------------------------
+Finished at 2023-10-15T21:05:22Z
+Build needed 00:02:21, 43216k disk space
