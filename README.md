@@ -21,7 +21,7 @@ You can learn more about our packet project on [our wiki](https://wiki.oarc.uk/p
 
 OARC-PRR is a collection of packages for Debian and some common derivatives, and will occasionally be shipped with opinionated patches by Hibby. Some of the packets are backports from Debian Unstable, some of them are new uploads that won't necessarily benefit the wider userbase of Debian.
 
-We currently Support the arm64 distributions of Debian Unstable/Testing, Debian Stable, Ubuntu 22.04 LTS. We also support Raspberry Pi OS Stable on armhf/armv7 and arm64.  
+We currently Support the amd64 distributions of Debian Unstable/Testing, Debian Stable, Ubuntu 22.04 LTS (with bonus arm64 for Ubuntu). We also support Raspberry Pi OS Stable 'bookworm'/12 and Oldstable 'bullseye'/11 on armhf/armv7 and arm64.  
 
 ### Software Improvements
 
