@@ -85,19 +85,19 @@ Description: debug symbols for fbb
 Build-Ids: 0b1282093f21371b76c862829f06372d4dcf8a8b 213830c9c5537b3fdb01fd93bd29aaa2b6d2b588 343952c5864c74d4cb0f108c89f6c0453409c03d 5635a7b0509f7a37b44700192444d544c3cad964 74dfa0751312b48355edef66da2ebe6945c7749d 8f6527c82aaac399ab03bb9549b06cf6df171350 a9a7faf3d9b31957472165544216b0b10959d9bb beabd4341b15f70559750c293d38b78ebb65f80b c0a3151f567eccfc8e3bb24a5ee79ea15839ac83 c9ed1b7c6eb407d7f6259cf70365cd45c3a58c5f dcb763137a6f5cad248845180b93b96d0dbf7abd
 
 Package: linbpq
-Version: 6.0.24.15-2~bpo12+1
+Version: 6.0.24.22-1~bpo12+1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2284
+Installed-Size: 2289
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
-Homepage: http://users.telenet.be/on4qz
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.15-2~bpo12+1_amd64.deb
-Size: 665508
-SHA256: 4515bee06e8bbe430dfbf8a87ba216b52696de9bf46183889f055b522a261530
-SHA1: f9ccffde3d570bcd34128aa96e77b4e86f7c349c
-MD5sum: 2b6ac930e1fbda278124ba85199dbe64
+Filename: pool/main/l/linbpq/linbpq_6.0.24.22-1~bpo12+1_amd64.deb
+Size: 666856
+SHA256: d134b03100ef3c240e554806c33734460750191f65739c50a39526debdb3b26f
+SHA1: 19c92e58b3ddf707a6bd990381791ff35cacec3c
+MD5sum: 3df7d491b470250800eb19a3c2ed68f9
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
@@ -138,40 +138,40 @@ Description: debug symbols for qtsoundmodem
 Build-Ids: 844068ef582107616092afc1108622abc4f8420d
 
 Package: qttermtcp
-Version: 0.0.0.69-2~bpo12+1
+Version: 0.0.0.73-1~bpo12+1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 543
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Installed-Size: 770
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5multimedia5 (>= 5.6.0~beta), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-2~bpo12+1_amd64.deb
-Size: 161852
-SHA256: 5abce23b062f28808ce8cac467e83c616d2adb3f9ab8ae84fc0c145bb83ba7d1
-SHA1: c0acfa241f01dfe412737152e02d6753b2e8e58c
-MD5sum: 7cc612a79b5fb699f8d5ff9c454999d5
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.73-1~bpo12+1_amd64.deb
+Size: 308888
+SHA256: 572fa74f4a6a3c2dedd42905c25c8a8c28a0f706c83466f2e225e91954174772
+SHA1: b9d8a29af3f08add3c63a90bfb605c2dccbbc7bf
+MD5sum: f3d645ff4f73f8a1563457ec1182ab8c
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity
 
 Package: qttermtcp-dbgsym
 Source: qttermtcp
-Version: 0.0.0.69-2~bpo12+1
+Version: 0.0.0.73-1~bpo12+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 1577
-Depends: qttermtcp (= 0.0.0.69-2~bpo12+1)
+Installed-Size: 1655
+Depends: qttermtcp (= 0.0.0.73-1~bpo12+1)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.69-2~bpo12+1_amd64.deb
-Size: 1536684
-SHA256: 13a34fac99530e2b9bd14ca545a890891936e19c8546c0225727a8231883d786
-SHA1: db5792970a13ee9863c672fc09d12df5e7802a97
-MD5sum: 43d1509e5810a6ef947bb6187d3ae869
+Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.73-1~bpo12+1_amd64.deb
+Size: 1610676
+SHA256: 4094155bfc6ccb56f34bc87fa19f599162261145fb644ad76f0388f60d52268c
+SHA1: ff1fecb18dc74043d64da6e7815c67e5cfb4206e
+MD5sum: 0f6ab8b8ae11e2591b885682f4d12d60
 Description: debug symbols for qttermtcp
-Build-Ids: 069a59464024dab4fc39d17d14c76118caf68848
+Build-Ids: 61f1b6a76b0503b3ea203273aa8e9926b3c946b3
 
 Package: uronode
 Version: 2.15-3~bpo12+1

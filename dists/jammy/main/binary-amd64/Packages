@@ -49,19 +49,19 @@ Description: Packet radio mailbox and utilities
   * xfbbC: B/W Ncurses console for xfbbd.
 
 Package: linbpq
-Version: 6.0.24.15-jammy2
+Version: 6.0.24.22-jammy1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2451
+Installed-Size: 2455
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
-Homepage: http://users.telenet.be/on4qz
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.15-jammy2_amd64.deb
-Size: 739824
-SHA256: 6dda6166ee06e665d647271756731ab6a6ac4d8cdcf98d3ff43b7d3ef8c41f8d
-SHA1: b86605ec943ac12c9b9bad64c65277b93be46960
-MD5sum: 1050475bbbf52685d4b27058ba854b47
+Filename: pool/main/l/linbpq/linbpq_6.0.24.22-jammy1_amd64.deb
+Size: 741316
+SHA256: 0e3ede03aa487d27117c0ac5a33d43f8d8dec3b61366f9ec056832e10905c0c3
+SHA1: 44d4003688c5d3965072015b2074d3eb24fa87fb
+MD5sum: 5ecf8024a9ea3091d1a8ac07ad6cac30
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
@@ -102,19 +102,19 @@ Description: debug symbols for qtsoundmodem
 Build-Ids: ccc12e614be395f8e7e41de46210489c4f2f6995
 
 Package: qttermtcp
-Version: 0.0.0.69-jammy2
+Version: 0.0.0.73-jammy1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 556
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Installed-Size: 780
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5multimedia5 (>= 5.6.0~beta), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-jammy2_amd64.deb
-Size: 180244
-SHA256: 63819685e6e5eb2f6be27d2884d5abb8738a57ca41bb829a429145f637ca2026
-SHA1: 88ec32928a57a5e97801a321613fbeba22c0f510
-MD5sum: 8efd3ce97d1e793bf881317d651027fc
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.73-jammy1_amd64.deb
+Size: 348730
+SHA256: 8ca8724edcea764c0cdae8ccacedfbc0b1cbc07a9147947cf17df30e95f82c90
+SHA1: ea301f3387ef6b815263952117aec121bcbe324a
+MD5sum: c627fda8ad58c3a0a7ef158e5b1a4ced
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity

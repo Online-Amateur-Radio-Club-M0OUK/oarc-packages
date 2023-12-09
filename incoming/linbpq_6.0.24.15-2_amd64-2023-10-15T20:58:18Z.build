@@ -1,1146 +1,0 @@
-sbuild (Debian sbuild) 0.85.2 (11 March 2023) on fennec.foxk.it
-
-+==============================================================================+
-| linbpq 6.0.24.15-2 (amd64)                   Sun, 15 Oct 2023 20:58:18 +0000 |
-+==============================================================================+
-
-Package: linbpq
-Version: 6.0.24.15-2
-Source Version: 6.0.24.15-2
-Distribution: testing
-Machine Architecture: amd64
-Host Architecture: amd64
-Build Architecture: amd64
-Build Type: binary
-
-I: NOTICE: Log filtering will replace 'var/run/schroot/mount/sid-amd64-sbuild-ef56a719-facc-401c-8554-b0974e3e5174' with '<<CHROOT>>'
-I: NOTICE: Log filtering will replace 'build/linbpq-krJgeG/resolver-aamk5t' with '<<RESOLVERDIR>>'
-
-+------------------------------------------------------------------------------+
-| Update chroot                                                                |
-+------------------------------------------------------------------------------+
-
-Get:1 http://localhost:3142/debian sid InRelease [198 kB]
-Get:2 http://localhost:3142/debian sid/main Sources.diff/Index [63.6 kB]
-Ign:2 http://localhost:3142/debian sid/main Sources.diff/Index
-Get:3 http://localhost:3142/debian sid/contrib Sources.diff/Index [63.3 kB]
-Get:4 http://localhost:3142/debian sid/non-free Sources.diff/Index [63.3 kB]
-Get:5 http://localhost:3142/debian sid/non-free amd64 Packages.diff/Index [63.3 kB]
-Get:6 http://localhost:3142/debian sid/contrib amd64 Packages.diff/Index [63.3 kB]
-Get:7 http://localhost:3142/debian sid/main amd64 Packages.diff/Index [63.6 kB]
-Ign:7 http://localhost:3142/debian sid/main amd64 Packages.diff/Index
-Get:8 http://localhost:3142/debian sid/contrib Sources T-2023-10-14-0203.40-F-2023-09-27-2004.16.pdiff [4231 B]
-Get:8 http://localhost:3142/debian sid/contrib Sources T-2023-10-14-0203.40-F-2023-09-27-2004.16.pdiff [4231 B]
-Get:9 http://localhost:3142/debian sid/non-free Sources T-2023-10-08-0203.51-F-2023-09-28-2010.29.pdiff [4152 B]
-Get:10 http://localhost:3142/debian sid/non-free amd64 Packages T-2023-10-07-1407.18-F-2023-09-29-0218.58.pdiff [21.1 kB]
-Get:9 http://localhost:3142/debian sid/non-free Sources T-2023-10-08-0203.51-F-2023-09-28-2010.29.pdiff [4152 B]
-Get:11 http://localhost:3142/debian sid/contrib amd64 Packages T-2023-10-10-1405.42-F-2023-09-27-2004.16.pdiff [8316 B]
-Get:10 http://localhost:3142/debian sid/non-free amd64 Packages T-2023-10-07-1407.18-F-2023-09-29-0218.58.pdiff [21.1 kB]
-Get:11 http://localhost:3142/debian sid/contrib amd64 Packages T-2023-10-10-1405.42-F-2023-09-27-2004.16.pdiff [8316 B]
-Get:12 http://localhost:3142/debian sid/main Sources [10.2 MB]
-Get:13 http://localhost:3142/debian sid/main amd64 Packages [9513 kB]
-Fetched 20.4 MB in 2s (12.2 MB/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Calculating upgrade...
-The following packages will be upgraded:
-  bash binutils binutils-common binutils-x86-64-linux-gnu bsdextrautils
-  bsdutils cpp-13 debianutils g++-13 gcc-13 gcc-13-base libasan8 libatomic1
-  libbinutils libblkid1 libc-bin libc-dev-bin libc6 libc6-dev libcc1-0
-  libctf-nobfd0 libctf0 libgcc-13-dev libgcc-s1 libgomp1 libgprofng0
-  libhwasan0 libitm1 liblsan0 libmount1 libp11-kit0 libquadmath0 libsframe1
-  libsmartcols1 libstdc++-13-dev libstdc++6 libsystemd0 libtinfo6 libtsan2
-  libubsan1 libudev1 libuuid1 linux-libc-dev login mount ncurses-base
-  ncurses-bin passwd sysvinit-utils util-linux
-50 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 75.4 MB of archives.
-After this operation, 115 kB of additional disk space will be used.
-Get:1 http://localhost:3142/debian sid/main amd64 debianutils amd64 5.14 [88.3 kB]
-Get:2 http://localhost:3142/debian sid/main amd64 bash amd64 5.2.15-2+b6 [1493 kB]
-Get:3 http://localhost:3142/debian sid/main amd64 bsdutils amd64 1:2.39.2-2.2 [96.5 kB]
-Get:4 http://localhost:3142/debian sid/main amd64 login amd64 1:4.13+dfsg1-3 [616 kB]
-Get:5 http://localhost:3142/debian sid/main amd64 ncurses-bin amd64 6.4+20231007-1 [428 kB]
-Get:6 http://localhost:3142/debian sid/main amd64 util-linux amd64 2.39.2-2.2 [1225 kB]
-Get:7 http://localhost:3142/debian sid/main amd64 libc6-dev amd64 2.37-12 [1905 kB]
-Get:8 http://localhost:3142/debian sid/main amd64 libc-dev-bin amd64 2.37-12 [46.3 kB]
-Get:9 http://localhost:3142/debian sid/main amd64 linux-libc-dev amd64 6.5.6-1 [2001 kB]
-Get:10 http://localhost:3142/debian sid/main amd64 libcc1-0 amd64 13.2.0-5 [43.1 kB]
-Get:11 http://localhost:3142/debian sid/main amd64 gcc-13-base amd64 13.2.0-5 [40.4 kB]
-Get:12 http://localhost:3142/debian sid/main amd64 libgcc-s1 amd64 13.2.0-5 [57.7 kB]
-Get:13 http://localhost:3142/debian sid/main amd64 libgomp1 amd64 13.2.0-5 [131 kB]
-Get:14 http://localhost:3142/debian sid/main amd64 libitm1 amd64 13.2.0-5 [26.1 kB]
-Get:15 http://localhost:3142/debian sid/main amd64 libatomic1 amd64 13.2.0-5 [9288 B]
-Get:16 http://localhost:3142/debian sid/main amd64 libasan8 amd64 13.2.0-5 [2557 kB]
-Get:17 http://localhost:3142/debian sid/main amd64 liblsan0 amd64 13.2.0-5 [1102 kB]
-Get:18 http://localhost:3142/debian sid/main amd64 libtsan2 amd64 13.2.0-5 [2334 kB]
-Get:19 http://localhost:3142/debian sid/main amd64 libubsan1 amd64 13.2.0-5 [1010 kB]
-Get:20 http://localhost:3142/debian sid/main amd64 libhwasan0 amd64 13.2.0-5 [1154 kB]
-Get:21 http://localhost:3142/debian sid/main amd64 libquadmath0 amd64 13.2.0-5 [145 kB]
-Get:22 http://localhost:3142/debian sid/main amd64 g++-13 amd64 13.2.0-5 [10.9 MB]
-Get:23 http://localhost:3142/debian sid/main amd64 libstdc++-13-dev amd64 13.2.0-5 [2223 kB]
-Get:24 http://localhost:3142/debian sid/main amd64 libgcc-13-dev amd64 13.2.0-5 [2543 kB]
-Get:25 http://localhost:3142/debian sid/main amd64 gcc-13 amd64 13.2.0-5 [19.6 MB]
-Get:26 http://localhost:3142/debian sid/main amd64 cpp-13 amd64 13.2.0-5 [9917 kB]
-Get:27 http://localhost:3142/debian sid/main amd64 libstdc++6 amd64 13.2.0-5 [694 kB]
-Get:28 http://localhost:3142/debian sid/main amd64 libgprofng0 amd64 2.41-6 [766 kB]
-Get:29 http://localhost:3142/debian sid/main amd64 libctf0 amd64 2.41-6 [86.9 kB]
-Get:30 http://localhost:3142/debian sid/main amd64 libctf-nobfd0 amd64 2.41-6 [151 kB]
-Get:31 http://localhost:3142/debian sid/main amd64 libsframe1 amd64 2.41-6 [75.2 kB]
-Get:32 http://localhost:3142/debian sid/main amd64 libbinutils amd64 2.41-6 [512 kB]
-Get:33 http://localhost:3142/debian sid/main amd64 binutils-common amd64 2.41-6 [2504 kB]
-Get:34 http://localhost:3142/debian sid/main amd64 binutils amd64 2.41-6 [80.2 kB]
-Get:35 http://localhost:3142/debian sid/main amd64 binutils-x86-64-linux-gnu amd64 2.41-6 [2216 kB]
-Get:36 http://localhost:3142/debian sid/main amd64 libc6 amd64 2.37-12 [2753 kB]
-Get:37 http://localhost:3142/debian sid/main amd64 libc-bin amd64 2.37-12 [601 kB]
-Get:38 http://localhost:3142/debian sid/main amd64 ncurses-base all 6.4+20231007-1 [266 kB]
-Get:39 http://localhost:3142/debian sid/main amd64 sysvinit-utils amd64 3.08-3 [31.8 kB]
-Get:40 http://localhost:3142/debian sid/main amd64 mount amd64 2.39.2-2.2 [142 kB]
-Get:41 http://localhost:3142/debian sid/main amd64 libblkid1 amd64 2.39.2-2.2 [159 kB]
-Get:42 http://localhost:3142/debian sid/main amd64 libmount1 amd64 2.39.2-2.2 [190 kB]
-Get:43 http://localhost:3142/debian sid/main amd64 libp11-kit0 amd64 0.25.0-5 [417 kB]
-Get:44 http://localhost:3142/debian sid/main amd64 libsmartcols1 amd64 2.39.2-2.2 [116 kB]
-Get:45 http://localhost:3142/debian sid/main amd64 libsystemd0 amd64 254.5-1 [357 kB]
-Get:46 http://localhost:3142/debian sid/main amd64 libtinfo6 amd64 6.4+20231007-1 [341 kB]
-Get:47 http://localhost:3142/debian sid/main amd64 libudev1 amd64 254.5-1 [120 kB]
-Get:48 http://localhost:3142/debian sid/main amd64 libuuid1 amd64 2.39.2-2.2 [29.4 kB]
-Get:49 http://localhost:3142/debian sid/main amd64 passwd amd64 1:4.13+dfsg1-3 [972 kB]
-Get:50 http://localhost:3142/debian sid/main amd64 bsdextrautils amd64 2.39.2-2.2 [89.0 kB]
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 75.4 MB in 0s (288 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13399 files and directories currently installed.)
-Preparing to unpack .../debianutils_5.14_amd64.deb ...
-Unpacking debianutils (5.14) over (5.13) ...
-Setting up debianutils (5.14) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13398 files and directories currently installed.)
-Preparing to unpack .../bash_5.2.15-2+b6_amd64.deb ...
-Unpacking bash (5.2.15-2+b6) over (5.2.15-2+b5) ...
-Setting up bash (5.2.15-2+b6) ...
-update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13398 files and directories currently installed.)
-Preparing to unpack .../bsdutils_1%3a2.39.2-2.2_amd64.deb ...
-Unpacking bsdutils (1:2.39.2-2.2) over (1:2.39.2-1) ...
-Setting up bsdutils (1:2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13398 files and directories currently installed.)
-Preparing to unpack .../login_1%3a4.13+dfsg1-3_amd64.deb ...
-Unpacking login (1:4.13+dfsg1-3) over (1:4.13+dfsg1-1+b1) ...
-Setting up login (1:4.13+dfsg1-3) ...
-Installing new version of config file /etc/login.defs ...
-Installing new version of config file /etc/pam.d/login ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../ncurses-bin_6.4+20231007-1_amd64.deb ...
-Unpacking ncurses-bin (6.4+20231007-1) over (6.4+20230625-2) ...
-Setting up ncurses-bin (6.4+20231007-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../util-linux_2.39.2-2.2_amd64.deb ...
-Unpacking util-linux (2.39.2-2.2) over (2.39.2-1) ...
-Setting up util-linux (2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libc6-dev_2.37-12_amd64.deb ...
-Unpacking libc6-dev:amd64 (2.37-12) over (2.37-10) ...
-Preparing to unpack .../libc-dev-bin_2.37-12_amd64.deb ...
-Unpacking libc-dev-bin (2.37-12) over (2.37-10) ...
-Preparing to unpack .../linux-libc-dev_6.5.6-1_amd64.deb ...
-Unpacking linux-libc-dev:amd64 (6.5.6-1) over (6.5.3-1) ...
-Preparing to unpack .../libcc1-0_13.2.0-5_amd64.deb ...
-Unpacking libcc1-0:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../gcc-13-base_13.2.0-5_amd64.deb ...
-Unpacking gcc-13-base:amd64 (13.2.0-5) over (13.2.0-4) ...
-Setting up gcc-13-base:amd64 (13.2.0-5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libgcc-s1_13.2.0-5_amd64.deb ...
-Unpacking libgcc-s1:amd64 (13.2.0-5) over (13.2.0-4) ...
-Setting up libgcc-s1:amd64 (13.2.0-5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../00-libgomp1_13.2.0-5_amd64.deb ...
-Unpacking libgomp1:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../01-libitm1_13.2.0-5_amd64.deb ...
-Unpacking libitm1:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../02-libatomic1_13.2.0-5_amd64.deb ...
-Unpacking libatomic1:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../03-libasan8_13.2.0-5_amd64.deb ...
-Unpacking libasan8:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../04-liblsan0_13.2.0-5_amd64.deb ...
-Unpacking liblsan0:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../05-libtsan2_13.2.0-5_amd64.deb ...
-Unpacking libtsan2:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../06-libubsan1_13.2.0-5_amd64.deb ...
-Unpacking libubsan1:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../07-libhwasan0_13.2.0-5_amd64.deb ...
-Unpacking libhwasan0:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../08-libquadmath0_13.2.0-5_amd64.deb ...
-Unpacking libquadmath0:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../09-g++-13_13.2.0-5_amd64.deb ...
-Unpacking g++-13 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../10-libstdc++-13-dev_13.2.0-5_amd64.deb ...
-Unpacking libstdc++-13-dev:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../11-libgcc-13-dev_13.2.0-5_amd64.deb ...
-Unpacking libgcc-13-dev:amd64 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../12-gcc-13_13.2.0-5_amd64.deb ...
-Unpacking gcc-13 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../13-cpp-13_13.2.0-5_amd64.deb ...
-Unpacking cpp-13 (13.2.0-5) over (13.2.0-4) ...
-Preparing to unpack .../14-libstdc++6_13.2.0-5_amd64.deb ...
-Unpacking libstdc++6:amd64 (13.2.0-5) over (13.2.0-4) ...
-Setting up libstdc++6:amd64 (13.2.0-5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../0-libgprofng0_2.41-6_amd64.deb ...
-Unpacking libgprofng0:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../1-libctf0_2.41-6_amd64.deb ...
-Unpacking libctf0:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../2-libctf-nobfd0_2.41-6_amd64.deb ...
-Unpacking libctf-nobfd0:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../3-libsframe1_2.41-6_amd64.deb ...
-Unpacking libsframe1:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../4-libbinutils_2.41-6_amd64.deb ...
-Unpacking libbinutils:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../5-binutils-common_2.41-6_amd64.deb ...
-Unpacking binutils-common:amd64 (2.41-6) over (2.41-5) ...
-Preparing to unpack .../6-binutils_2.41-6_amd64.deb ...
-Unpacking binutils (2.41-6) over (2.41-5) ...
-Preparing to unpack .../7-binutils-x86-64-linux-gnu_2.41-6_amd64.deb ...
-Unpacking binutils-x86-64-linux-gnu (2.41-6) over (2.41-5) ...
-Preparing to unpack .../8-libc6_2.37-12_amd64.deb ...
-Unpacking libc6:amd64 (2.37-12) over (2.37-10) ...
-Setting up libc6:amd64 (2.37-12) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libc-bin_2.37-12_amd64.deb ...
-Unpacking libc-bin (2.37-12) over (2.37-10) ...
-Setting up libc-bin (2.37-12) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../ncurses-base_6.4+20231007-1_all.deb ...
-Unpacking ncurses-base (6.4+20231007-1) over (6.4+20230625-2) ...
-Setting up ncurses-base (6.4+20231007-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../sysvinit-utils_3.08-3_amd64.deb ...
-Unpacking sysvinit-utils (3.08-3) over (3.08-1) ...
-Setting up sysvinit-utils (3.08-3) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../mount_2.39.2-2.2_amd64.deb ...
-Unpacking mount (2.39.2-2.2) over (2.39.2-1) ...
-Preparing to unpack .../libblkid1_2.39.2-2.2_amd64.deb ...
-Unpacking libblkid1:amd64 (2.39.2-2.2) over (2.39.2-1) ...
-Setting up libblkid1:amd64 (2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libmount1_2.39.2-2.2_amd64.deb ...
-Unpacking libmount1:amd64 (2.39.2-2.2) over (2.39.2-1) ...
-Setting up libmount1:amd64 (2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libp11-kit0_0.25.0-5_amd64.deb ...
-Unpacking libp11-kit0:amd64 (0.25.0-5) over (0.25.0-4) ...
-Setting up libp11-kit0:amd64 (0.25.0-5) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libsmartcols1_2.39.2-2.2_amd64.deb ...
-Unpacking libsmartcols1:amd64 (2.39.2-2.2) over (2.39.2-1) ...
-Setting up libsmartcols1:amd64 (2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libsystemd0_254.5-1_amd64.deb ...
-Unpacking libsystemd0:amd64 (254.5-1) over (254.4-1) ...
-Setting up libsystemd0:amd64 (254.5-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libtinfo6_6.4+20231007-1_amd64.deb ...
-Unpacking libtinfo6:amd64 (6.4+20231007-1) over (6.4+20230625-2) ...
-Setting up libtinfo6:amd64 (6.4+20231007-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libudev1_254.5-1_amd64.deb ...
-Unpacking libudev1:amd64 (254.5-1) over (254.4-1) ...
-Setting up libudev1:amd64 (254.5-1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../libuuid1_2.39.2-2.2_amd64.deb ...
-Unpacking libuuid1:amd64 (2.39.2-2.2) over (2.39.2-1) ...
-Setting up libuuid1:amd64 (2.39.2-2.2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 13397 files and directories currently installed.)
-Preparing to unpack .../passwd_1%3a4.13+dfsg1-3_amd64.deb ...
-Unpacking passwd (1:4.13+dfsg1-3) over (1:4.13+dfsg1-1+b1) ...
-Preparing to unpack .../bsdextrautils_2.39.2-2.2_amd64.deb ...
-Unpacking bsdextrautils (2.39.2-2.2) over (2.39.2-1) ...
-Setting up bsdextrautils (2.39.2-2.2) ...
-Setting up cpp-13 (13.2.0-5) ...
-Setting up binutils-common:amd64 (2.41-6) ...
-Setting up linux-libc-dev:amd64 (6.5.6-1) ...
-Setting up libctf-nobfd0:amd64 (2.41-6) ...
-Setting up libgomp1:amd64 (13.2.0-5) ...
-Setting up libsframe1:amd64 (2.41-6) ...
-Setting up libquadmath0:amd64 (13.2.0-5) ...
-Setting up libatomic1:amd64 (13.2.0-5) ...
-Setting up libubsan1:amd64 (13.2.0-5) ...
-Setting up passwd (1:4.13+dfsg1-3) ...
-Setting up mount (2.39.2-2.2) ...
-Setting up libhwasan0:amd64 (13.2.0-5) ...
-Setting up libasan8:amd64 (13.2.0-5) ...
-Setting up libtsan2:amd64 (13.2.0-5) ...
-Setting up libbinutils:amd64 (2.41-6) ...
-Setting up libc-dev-bin (2.37-12) ...
-Setting up libcc1-0:amd64 (13.2.0-5) ...
-Setting up liblsan0:amd64 (13.2.0-5) ...
-Setting up libitm1:amd64 (13.2.0-5) ...
-Setting up libctf0:amd64 (2.41-6) ...
-Setting up libgprofng0:amd64 (2.41-6) ...
-Setting up libgcc-13-dev:amd64 (13.2.0-5) ...
-Setting up libc6-dev:amd64 (2.37-12) ...
-Setting up libstdc++-13-dev:amd64 (13.2.0-5) ...
-Setting up binutils-x86-64-linux-gnu (2.41-6) ...
-Setting up binutils (2.41-6) ...
-Setting up gcc-13 (13.2.0-5) ...
-Setting up g++-13 (13.2.0-5) ...
-Processing triggers for man-db (2.12.0-1) ...
-Not building database; man-db/auto-update is not 'true'.
-Processing triggers for debianutils (5.14) ...
-Processing triggers for libc-bin (2.37-12) ...
-
-+------------------------------------------------------------------------------+
-| Fetch source files                                                           |
-+------------------------------------------------------------------------------+
-
-
-Local sources
--------------
-
-/home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-2.dsc exists in /home/hibby/Dev/oarc/linbpq; copying to chroot
-I: NOTICE: Log filtering will replace 'build/linbpq-krJgeG/linbpq-6.0.24.15' with '<<PKGBUILDDIR>>'
-I: NOTICE: Log filtering will replace 'build/linbpq-krJgeG' with '<<BUILDDIR>>'
-
-+------------------------------------------------------------------------------+
-| Install package build dependencies                                           |
-+------------------------------------------------------------------------------+
-
-
-Setup apt archive
------------------
-
-Merged Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
-Filtered Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
-dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
-Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
-Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
-Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
-Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [687 B]
-Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [719 B]
-Fetched 2015 B in 0s (0 B/s)
-Reading package lists...
-Reading package lists...
-
-Install main build dependencies (apt-based resolver)
-----------------------------------------------------
-
-Installing build dependencies
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libminiupnpc-dev
-  libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev libpkgconf3 libssl-dev
-  pkg-config pkgconf pkgconf-bin sgml-base xml-core zlib1g-dev
-Suggested packages:
-  minissdpd libssl-doc sgml-base-doc
-Recommended packages:
-  libconfig-doc dbus
-The following NEW packages will be installed:
-  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libminiupnpc-dev
-  libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev libpkgconf3 libssl-dev
-  pkg-config pkgconf pkgconf-bin sbuild-build-depends-main-dummy sgml-base
-  xml-core zlib1g-dev
-0 upgraded, 18 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4568 kB of archives.
-After this operation, 17.8 MB of additional disk space will be used.
-Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [908 B]
-Get:2 http://localhost:3142/debian sid/main amd64 sgml-base all 1.31 [15.4 kB]
-Get:3 http://localhost:3142/debian sid/main amd64 libconfig9 amd64 1.5-0.4 [29.9 kB]
-Get:4 http://localhost:3142/debian sid/main amd64 libpkgconf3 amd64 1.8.1-1 [36.1 kB]
-Get:5 http://localhost:3142/debian sid/main amd64 pkgconf-bin amd64 1.8.1-1 [29.5 kB]
-Get:6 http://localhost:3142/debian sid/main amd64 pkgconf amd64 1.8.1-1 [25.9 kB]
-Get:7 http://localhost:3142/debian sid/main amd64 pkg-config amd64 1.8.1-1 [13.7 kB]
-Get:8 http://localhost:3142/debian sid/main amd64 libconfig-dev amd64 1.5-0.4 [60.8 kB]
-Get:9 http://localhost:3142/debian sid/main amd64 libdbus-1-3 amd64 1.14.10-1 [202 kB]
-Get:10 http://localhost:3142/debian sid/main amd64 xml-core all 0.18+nmu1 [23.8 kB]
-Get:11 http://localhost:3142/debian sid/main amd64 libdbus-1-dev amd64 1.14.10-1 [241 kB]
-Get:12 http://localhost:3142/debian sid/main amd64 libminiupnpc17 amd64 2.2.5-1 [33.5 kB]
-Get:13 http://localhost:3142/debian sid/main amd64 libminiupnpc-dev amd64 2.2.5-1 [41.5 kB]
-Get:14 http://localhost:3142/debian sid/main amd64 libpcap0.8 amd64 1.10.4-4 [163 kB]
-Get:15 http://localhost:3142/debian sid/main amd64 libpcap0.8-dev amd64 1.10.4-4 [276 kB]
-Get:16 http://localhost:3142/debian sid/main amd64 libpcap-dev amd64 1.10.4-4 [28.7 kB]
-Get:17 http://localhost:3142/debian sid/main amd64 libssl-dev amd64 3.0.11-1 [2431 kB]
-Get:18 http://localhost:3142/debian sid/main amd64 zlib1g-dev amd64 1:1.2.13.dfsg-3 [917 kB]
-debconf: delaying package configuration, since apt-utils is not installed
-Fetched 4568 kB in 0s (173 MB/s)
-Selecting previously unselected package sgml-base.
-(Reading database ... 13396 files and directories currently installed.)
-Preparing to unpack .../00-sgml-base_1.31_all.deb ...
-Unpacking sgml-base (1.31) ...
-Selecting previously unselected package libconfig9:amd64.
-Preparing to unpack .../01-libconfig9_1.5-0.4_amd64.deb ...
-Unpacking libconfig9:amd64 (1.5-0.4) ...
-Selecting previously unselected package libpkgconf3:amd64.
-Preparing to unpack .../02-libpkgconf3_1.8.1-1_amd64.deb ...
-Unpacking libpkgconf3:amd64 (1.8.1-1) ...
-Selecting previously unselected package pkgconf-bin.
-Preparing to unpack .../03-pkgconf-bin_1.8.1-1_amd64.deb ...
-Unpacking pkgconf-bin (1.8.1-1) ...
-Selecting previously unselected package pkgconf:amd64.
-Preparing to unpack .../04-pkgconf_1.8.1-1_amd64.deb ...
-Unpacking pkgconf:amd64 (1.8.1-1) ...
-Selecting previously unselected package pkg-config:amd64.
-Preparing to unpack .../05-pkg-config_1.8.1-1_amd64.deb ...
-Unpacking pkg-config:amd64 (1.8.1-1) ...
-Selecting previously unselected package libconfig-dev:amd64.
-Preparing to unpack .../06-libconfig-dev_1.5-0.4_amd64.deb ...
-Unpacking libconfig-dev:amd64 (1.5-0.4) ...
-Selecting previously unselected package libdbus-1-3:amd64.
-Preparing to unpack .../07-libdbus-1-3_1.14.10-1_amd64.deb ...
-Unpacking libdbus-1-3:amd64 (1.14.10-1) ...
-Selecting previously unselected package xml-core.
-Preparing to unpack .../08-xml-core_0.18+nmu1_all.deb ...
-Unpacking xml-core (0.18+nmu1) ...
-Selecting previously unselected package libdbus-1-dev:amd64.
-Preparing to unpack .../09-libdbus-1-dev_1.14.10-1_amd64.deb ...
-Unpacking libdbus-1-dev:amd64 (1.14.10-1) ...
-Selecting previously unselected package libminiupnpc17:amd64.
-Preparing to unpack .../10-libminiupnpc17_2.2.5-1_amd64.deb ...
-Unpacking libminiupnpc17:amd64 (2.2.5-1) ...
-Selecting previously unselected package libminiupnpc-dev:amd64.
-Preparing to unpack .../11-libminiupnpc-dev_2.2.5-1_amd64.deb ...
-Unpacking libminiupnpc-dev:amd64 (2.2.5-1) ...
-Selecting previously unselected package libpcap0.8:amd64.
-Preparing to unpack .../12-libpcap0.8_1.10.4-4_amd64.deb ...
-Unpacking libpcap0.8:amd64 (1.10.4-4) ...
-Selecting previously unselected package libpcap0.8-dev:amd64.
-Preparing to unpack .../13-libpcap0.8-dev_1.10.4-4_amd64.deb ...
-Unpacking libpcap0.8-dev:amd64 (1.10.4-4) ...
-Selecting previously unselected package libpcap-dev:amd64.
-Preparing to unpack .../14-libpcap-dev_1.10.4-4_amd64.deb ...
-Unpacking libpcap-dev:amd64 (1.10.4-4) ...
-Selecting previously unselected package libssl-dev:amd64.
-Preparing to unpack .../15-libssl-dev_3.0.11-1_amd64.deb ...
-Unpacking libssl-dev:amd64 (3.0.11-1) ...
-Selecting previously unselected package zlib1g-dev:amd64.
-Preparing to unpack .../16-zlib1g-dev_1%3a1.2.13.dfsg-3_amd64.deb ...
-Unpacking zlib1g-dev:amd64 (1:1.2.13.dfsg-3) ...
-Selecting previously unselected package sbuild-build-depends-main-dummy.
-Preparing to unpack .../17-sbuild-build-depends-main-dummy_0.invalid.0_amd64.deb ...
-Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
-Setting up libconfig9:amd64 (1.5-0.4) ...
-Setting up libminiupnpc17:amd64 (2.2.5-1) ...
-Setting up libpkgconf3:amd64 (1.8.1-1) ...
-Setting up libdbus-1-3:amd64 (1.14.10-1) ...
-Setting up libssl-dev:amd64 (3.0.11-1) ...
-Setting up pkgconf-bin (1.8.1-1) ...
-Setting up zlib1g-dev:amd64 (1:1.2.13.dfsg-3) ...
-Setting up sgml-base (1.31) ...
-Setting up libminiupnpc-dev:amd64 (2.2.5-1) ...
-Setting up pkgconf:amd64 (1.8.1-1) ...
-Setting up libpcap0.8:amd64 (1.10.4-4) ...
-Setting up pkg-config:amd64 (1.8.1-1) ...
-Setting up xml-core (0.18+nmu1) ...
-Setting up libconfig-dev:amd64 (1.5-0.4) ...
-Processing triggers for libc-bin (2.37-12) ...
-Processing triggers for man-db (2.12.0-1) ...
-Not building database; man-db/auto-update is not 'true'.
-Processing triggers for sgml-base (1.31) ...
-Setting up libdbus-1-dev:amd64 (1.14.10-1) ...
-Setting up libpcap0.8-dev:amd64 (1.10.4-4) ...
-Setting up libpcap-dev:amd64 (1.10.4-4) ...
-Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
-
-+------------------------------------------------------------------------------+
-| Check architectures                                                          |
-+------------------------------------------------------------------------------+
-
-Arch check ok (amd64 included in linux-any)
-
-+------------------------------------------------------------------------------+
-| Build environment                                                            |
-+------------------------------------------------------------------------------+
-
-Kernel: Linux 6.4.0-3-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.4.11-1 (2023-08-17) amd64 (x86_64)
-Toolchain package versions: binutils_2.41-6 dpkg-dev_1.22.0 g++-13_13.2.0-5 gcc-13_13.2.0-5 libc6-dev_2.37-12 libstdc++-13-dev_13.2.0-5 libstdc++6_13.2.0-5 linux-libc-dev_6.5.6-1
-Package versions: apt_2.7.6 autoconf_2.71-3 automake_1:1.16.5-1.3 autopoint_0.21-13 autotools-dev_20220109.1 base-files_13 base-passwd_3.6.1 bash_5.2.15-2+b6 binutils_2.41-6 binutils-common_2.41-6 binutils-x86-64-linux-gnu_2.41-6 bsdextrautils_2.39.2-2.2 bsdutils_1:2.39.2-2.2 build-essential_12.10 bzip2_1.0.8-5+b1 coreutils_9.1-1 cpp_4:13.2.0-1 cpp-13_13.2.0-5 dash_0.5.12-6 debconf_1.5.82 debhelper_13.11.6 debian-archive-keyring_2023.4 debianutils_5.14 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.8-4 dpkg_1.22.0 dpkg-dev_1.22.0 dwz_0.15-1 e2fsprogs_1.47.0-2+b1 eatmydata_131-1 fakeroot_1.32.1-1 file_1:5.45-2 findutils_4.9.0-5 g++_4:13.2.0-1 g++-13_13.2.0-5 gcc_4:13.2.0-1 gcc-13_13.2.0-5 gcc-13-base_13.2.0-5 gettext_0.21-13+b1 gettext-base_0.21-13+b1 gpgv_2.2.40-1.1 grep_3.11-3 groff-base_1.23.0-2 gzip_1.12-1 hostname_3.23+nmu1 init-system-helpers_1.65.2 intltool-debian_0.35.0+20060710.6 libacl1_2.3.1-3 libapt-pkg6.0_2.7.6 libarchive-zip-perl_1.68-1 libasan8_13.2.0-5 libatomic1_13.2.0-5 libattr1_1:2.5.1-4 libaudit-common_1:3.1.1-1 libaudit1_1:3.1.1-1 libbinutils_2.41-6 libblkid1_2.39.2-2.2 libbz2-1.0_1.0.8-5+b1 libc-bin_2.37-12 libc-dev-bin_2.37-12 libc6_2.37-12 libc6-dev_2.37-12 libcap-ng0_0.8.3-1+b3 libcap2_1:2.66-4 libcc1-0_13.2.0-5 libcom-err2_1.47.0-2+b1 libconfig-dev_1.5-0.4 libconfig9_1.5-0.4 libcrypt-dev_1:4.4.36-2 libcrypt1_1:4.4.36-2 libctf-nobfd0_2.41-6 libctf0_2.41-6 libdb5.3_5.3.28+dfsg2-2 libdbus-1-3_1.14.10-1 libdbus-1-dev_1.14.10-1 libdebconfclient0_0.271 libdebhelper-perl_13.11.6 libdpkg-perl_1.22.0 libeatmydata1_131-1 libelf1_0.189-4 libext2fs2_1.47.0-2+b1 libfakeroot_1.32.1-1 libffi8_3.4.4-1 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-13-dev_13.2.0-5 libgcc-s1_13.2.0-5 libgcrypt20_1.10.2-3 libgdbm-compat4_1.23-3 libgdbm6_1.23-3 libgmp10_2:6.3.0+dfsg-2 libgnutls30_3.8.1-4+b1 libgomp1_13.2.0-5 libgpg-error0_1.47-2 libgprofng0_2.41-6 libgssapi-krb5-2_1.20.1-4 libhogweed6_3.9.1-2 libhwasan0_13.2.0-5 libicu72_72.1-3 libidn2-0_2.3.4-1+b1 libisl23_0.26-3 libitm1_13.2.0-5 libjansson4_2.14-2 libk5crypto3_1.20.1-4 libkeyutils1_1.6.3-2 libkrb5-3_1.20.1-4 libkrb5support0_1.20.1-4 liblsan0_13.2.0-5 liblz4-1_1.9.4-1 liblzma5_5.4.4-0.1 libmagic-mgc_1:5.45-2 libmagic1_1:5.45-2 libmd0_1.1.0-1 libminiupnpc-dev_2.2.5-1 libminiupnpc17_2.2.5-1 libmount1_2.39.2-2.2 libmpc3_1.3.1-1 libmpfr6_4.2.1-1 libnettle8_3.9.1-2 libnsl-dev_1.3.0-2 libnsl2_1.3.0-2 libp11-kit0_0.25.0-5 libpam-modules_1.5.2-7 libpam-modules-bin_1.5.2-7 libpam-runtime_1.5.2-7 libpam0g_1.5.2-7 libpcap-dev_1.10.4-4 libpcap0.8_1.10.4-4 libpcap0.8-dev_1.10.4-4 libpcre2-8-0_10.42-4 libperl5.36_5.36.0-9 libpipeline1_1.5.7-1 libpkgconf3_1.8.1-1 libquadmath0_13.2.0-5 libseccomp2_2.5.4-1+b3 libselinux1_3.5-1 libsemanage-common_3.5-1 libsemanage2_3.5-1 libsepol2_3.5-1 libsframe1_2.41-6 libsmartcols1_2.39.2-2.2 libss2_1.47.0-2+b1 libssl-dev_3.0.11-1 libssl3_3.0.11-1 libstdc++-13-dev_13.2.0-5 libstdc++6_13.2.0-5 libsub-override-perl_0.09-4 libsystemd0_254.5-1 libtasn1-6_4.19.0-3 libtinfo6_6.4+20231007-1 libtirpc-common_1.3.3+ds-1 libtirpc-dev_1.3.3+ds-1 libtirpc3_1.3.3+ds-1 libtool_2.4.7-7 libtsan2_13.2.0-5 libubsan1_13.2.0-5 libuchardet0_0.0.7-1 libudev1_254.5-1 libunistring2_1.0-2 libunistring5_1.1-2 libuuid1_2.39.2-2.2 libxml2_2.9.14+dfsg-1.3 libxxhash0_0.8.2-2 libzstd1_1.5.5+dfsg2-2 linux-libc-dev_6.5.6-1 login_1:4.13+dfsg1-3 logsave_1.47.0-2+b1 m4_1.4.19-4 make_4.3-4.1 man-db_2.12.0-1 mawk_1.3.4.20230808-1 mount_2.39.2-2.2 ncurses-base_6.4+20231007-1 ncurses-bin_6.4+20231007-1 passwd_1:4.13+dfsg1-3 patch_2.7.6-7 perl_5.36.0-9 perl-base_5.36.0-9 perl-modules-5.36_5.36.0-9 pkg-config_1.8.1-1 pkgconf_1.8.1-1 pkgconf-bin_1.8.1-1 po-debconf_1.0.21+nmu1 rpcsvc-proto_1.4.3-1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-1 sensible-utils_0.0.20 sgml-base_1.31 sysvinit-utils_3.08-3 tar_1.34+dfsg-1.2 tzdata_2023c-10 usr-is-merged_37 util-linux_2.39.2-2.2 xml-core_0.18+nmu1 xz-utils_5.4.4-0.1 zlib1g_1:1.2.13.dfsg-3 zlib1g-dev_1:1.2.13.dfsg-3
-
-+------------------------------------------------------------------------------+
-| Build                                                                        |
-+------------------------------------------------------------------------------+
-
-
-Unpack source
--------------
-
-Format: 3.0 (quilt)
-Source: linbpq
-Binary: linbpq
-Architecture: linux-any
-Version: 6.0.24.15-2
-Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Uploaders:  Dave Hibberd <d@vehibberd.com>,
-Homepage: http://users.telenet.be/on4qz
-Standards-Version: 4.6.1.0
-Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/linbpq
-Vcs-Git: https://salsa.debian.org/debian-hamradio-team/linbpq.git
-Build-Depends: debhelper-compat (= 13), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev
-Package-List:
- linbpq deb hamradio optional arch=linux-any
-Checksums-Sha1:
- e99317b77aac16795fce4f9fe9ff0c2f7e95df5f 7884841 linbpq_6.0.24.15.orig.tar.gz
- e76cf6d6718f85a7886c29c95d8209013125f6bf 7844 linbpq_6.0.24.15-2.debian.tar.xz
-Checksums-Sha256:
- 2ed3d67fbbd71c496805113e75ddce8368e0c7f12fd6e52b57115ae5c0d38fa4 7884841 linbpq_6.0.24.15.orig.tar.gz
- 612c16435bc1de0404e4c8eeb3d7ba2578bfb300d136ed55aafce78d5082a50a 7844 linbpq_6.0.24.15-2.debian.tar.xz
-Files:
- a8b80e15db391da057f9e93654a1d270 7884841 linbpq_6.0.24.15.orig.tar.gz
- 97f83043b3db639088168e85eb1ad468 7844 linbpq_6.0.24.15-2.debian.tar.xz
-
-dpkg-source: warning: extracting unsigned source package (linbpq_6.0.24.15-2.dsc)
-dpkg-source: info: extracting linbpq in /<<PKGBUILDDIR>>
-dpkg-source: info: unpacking linbpq_6.0.24.15.orig.tar.gz
-dpkg-source: info: unpacking linbpq_6.0.24.15-2.debian.tar.xz
-dpkg-source: info: using patch list from debian/patches/series
-dpkg-source: info: applying makefile
-
-Check disk space
-----------------
-
-Sufficient free space for build
-
-User Environment
-----------------
-
-APT_CONFIG=/var/lib/sbuild/apt.conf
-HOME=/sbuild-nonexistent
-LANG=en_GB.UTF-8
-LC_ALL=C.UTF-8
-LD_LIBRARY_PATH=/usr/lib/libeatmydata
-LD_PRELOAD=libeatmydata.so
-LOGNAME=hibby
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-PWD=/<<PKGBUILDDIR>>
-SCHROOT_ALIAS_NAME=sid
-SCHROOT_CHROOT_NAME=sid-amd64-sbuild
-SCHROOT_COMMAND=env
-SCHROOT_GID=1000
-SCHROOT_GROUP=hibby
-SCHROOT_SESSION_ID=sid-amd64-sbuild-ef56a719-facc-401c-8554-b0974e3e5174
-SCHROOT_UID=1000
-SCHROOT_USER=hibby
-SHELL=/bin/sh
-USER=hibby
-
-dpkg-buildpackage
------------------
-
-Command: dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
-dpkg-buildpackage: info: source package linbpq
-dpkg-buildpackage: info: source version 6.0.24.15-2
-dpkg-buildpackage: info: source distribution unstable
-dpkg-buildpackage: info: source changed by Dave Hibberd <d@vehibberd.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture amd64
- debian/rules clean
-dh clean
-   dh_auto_clean
-	make -j16 clean
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-rm -f *.d
-rm -f linbpq pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_clean
- debian/rules binary
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   dh_auto_configure
-   dh_auto_build
-	make -j16 "INSTALL=install --strip-program=true"
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwtran.o pngwtran.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrtran.o pngrtran.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngset.o pngset.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrio.o pngrio.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwio.o pngwio.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngtrans.o pngtrans.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrutil.o pngrutil.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwutil.o pngwutil.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngread.o pngread.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwrite.o pngwrite.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o png.o png.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngerror.o pngerror.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngget.o pngget.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngmem.o pngmem.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSIconData.o APRSIconData.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AISCommon.o AISCommon.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o upnp.o upnp.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSStdPages.o APRSStdPages.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HSMODEM.o HSMODEM.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WinRPR.o WinRPR.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KISSHF.o KISSHF.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCEmulators.o TNCEmulators.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqhdlc.o bpqhdlc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SerialPort.o SerialPort.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o adif.o adif.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WebMail.o WebMail.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o utf8Routines.o utf8Routines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o VARA.o VARA.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzFind.o LzFind.c
-HSMODEM.c: In function ‘ExtProc’:
-HSMODEM.c:643:25: warning: ‘memcpy’ reading 36 bytes from a region of size 22 [-Wstringop-overread]
-  643 |                         memcpy(&buffptr->Data[0], "No Connection to TNC\r", 36);
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SerialPort.c: In function ‘ExtProc’:
-SerialPort.c:456:25: warning: ‘memcpy’ reading 36 bytes from a region of size 22 [-Wstringop-overread]
-  456 |                         memcpy(&buffptr->Data[0], "No Connection to TNC\r", 36);
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Alloc.o Alloc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaDec.o LzmaDec.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaEnc.o LzmaEnc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaLib.o LzmaLib.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Multicast.o Multicast.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ARDOP.o ARDOP.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o IPCode.o IPCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FLDigi.o FLDigi.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o linether.o linether.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CMSAuth.o CMSAuth.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSCode.o APRSCode.c
-VARA.c: In function ‘ExtProc’:
-VARA.c:569:25: warning: ‘memcpy’ reading 36 bytes from a region of size 27 [-Wstringop-overread]
-  569 |                         memcpy(buffptr->Data,"No Connection to VARA TNC\r", 36);
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQtoAGW.o BPQtoAGW.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KAMPactor.o KAMPactor.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AEAPactor.o AEAPactor.c
-Multicast.c: In function ‘LZUncompress’:
-Multicast.c:643:38: warning: passing argument 2 of ‘LzmaUncompress’ from incompatible pointer type [-Wincompatible-pointer-types]
-  643 |         if ((r = LzmaUncompress(buf, &outlen, (const unsigned char*)Decoded + Len - inlen, &inlen,
-      |                                      ^~~~~~~
-      |                                      |
-      |                                      unsigned int *
-In file included from Multicast.c:611:
-LzmaLib.h:132:55: note: expected ‘size_t *’ {aka ‘long unsigned int *’} but argument is of type ‘unsigned int *’
-  132 | MY_STDAPI LzmaUncompress(unsigned char *dest, size_t *destLen, const unsigned char *src, SizeT *srcLen,
-      |                                               ~~~~~~~~^~~~~~~
-FLDigi.c: In function ‘ExtProc’:
-FLDigi.c:595:82: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
-  595 |                                         SendXMLCommand(TNC, "modem.set_carrier", (char *)atoi(&buff->L2DATA[5]), 'I');
-      |                                                                                  ^
-linether.c: In function ‘ETHERExtInit’:
-linether.c:302:17: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
-  302 |         return ((int) ExtProc);
-      |                 ^
-APRSCode.c:351:22: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
-  351 | static SOCKET sock = (SOCKET) NULL;
-      |                      ^
-FLDigi.c: In function ‘FLReleaseTNC’:
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HALDriver.o HALDriver.c
-FLDigi.c:3215:66: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
- 3215 |                         SendXMLCommand(TNC, "modem.set_carrier", (char *)TNC->FLInfo->DefaultFreq, 'I');
-      |                                                                  ^
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MULTIPSK.o MULTIPSK.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSHTMLConfig.o BBSHTMLConfig.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ChatHTMLConfig.o ChatHTMLConfig.c
-AEAPactor.c: In function ‘ExtProc’:
-AEAPactor.c:296:25: warning: ‘memcpy’ reading 36 bytes from a region of size 29 [-Wstringop-overread]
-  296 |                         memcpy(buffptr->Data, "No Connection to PACTOR TNC\r", 36);
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSUtilities.o BBSUtilities.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqaxip.o bpqaxip.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQINP3.o BPQINP3.c
-APRSCode.c: In function ‘GetSavedAPRSMessages’:
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQNRR.o BPQNRR.c
-APRSCode.c:9170:16: warning: ‘fgets’ writing 512 bytes into a region of size 256 overflows the destination [-Wstringop-overflow=]
- 9170 |         while (fgets(Line, 512, file))
-      |                ^~~~~~~~~~~~~~~~~~~~~~
-APRSCode.c:9146:14: note: destination object ‘Line’ of size 256
- 9146 |         char Line[256];
-      |              ^~~~
-In file included from APRSCode.c:28:
-/usr/include/stdio.h:592:14: note: in a call to function ‘fgets’ declared with attribute ‘access (write_only, 1, 2)’
-  592 | extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-      |              ^~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o cMain.o cMain.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Cmd.o Cmd.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CommonCode.o CommonCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTMLCommonCode.o HTMLCommonCode.c
-BBSUtilities.c: In function ‘GetConfig’:
-BBSUtilities.c:10308:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10308 |                 ptr = strlop(ptr, '|');
-      |                              ^~~
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10312:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10312 |                 ptr = strlop(ptr, '|');
-      |                              ^~~
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10316:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10316 |                 ptr = strlop(ptr, '|');
-      |                              ^~~
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10320:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10320 |                 ptr = strlop(ptr, '|');
-      |                              ^~~
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10344:30: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10344 |                 ptr = strlop(ptr, '|');
-      |                              ^~~
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c: In function ‘my_popen’:
-BBSUtilities.c:11833:63: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
-11833 |        _beginthread((void (*)(void *))run_pgTimeoutThread, 0, (VOID *) pid );
-      |                                                               ^
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compatbits.o compatbits.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o config.o config.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o datadefs.o datadefs.c
-cMain.c: In function ‘Start’:
-cMain.c:945:42: warning: implicit declaration of function ‘CanPortDigi’ [-Wimplicit-function-declaration]
-  945 |                 if (PortRec->DIGIPORT && CanPortDigi(PortRec->DIGIPORT))
-      |                                          ^~~~~~~~~~~
-cMain.c:1077:44: warning: implicit declaration of function ‘KissEncode’ [-Wimplicit-function-declaration]
- 1077 |                         KISS->KISSCMDLEN = KissEncode(KissString, KISS->KISSCMD, KissLen);
-      |                                            ^~~~~~~~~~
-CommonCode.c: In function ‘ProcessIncommingConnectEx’:
-CommonCode.c:920:37: warning: initialization of ‘struct PORTCONTROL *’ from incompatible pointer type ‘struct _EXTPORTDATA *’ [-Wincompatible-pointer-types]
-  920 |         struct PORTCONTROL * PORT = TNC->PortRecord;
-      |                                     ^~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FBBRoutines.o FBBRoutines.c
-CommonCode.c: In function ‘OpenCOMPort’:
-CommonCode.c:2458:13: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
- 2458 |         if ((UINT)pPort < 256)
-      |             ^
-CommonCode.c:2459:57: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
- 2459 |                 sprintf(Port, "%s/com%d", BPQDirectory, (int)pPort);
-      |                                                         ^
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HFCommon.o HFCommon.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Housekeeping.o Housekeeping.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTTPcode.o HTTPcode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o kiss.o kiss.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L2Code.o L2Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L3Code.o L3Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L4Code.o L4Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o lzhuf32.o lzhuf32.c
-kiss.c:115:65: warning: ‘struct ConnectionInfo’ declared inside parameter list will not be visible outside of this definition or declaration
-  115 | void processDRATSFrame(unsigned char * Message, int Len, struct ConnectionInfo * sockptr);
-      |                                                                 ^~~~~~~~~~~~~~
-HTTPcode.c: In function ‘InnerProcessHTTPMessage’:
-HTTPcode.c:2066:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
- 2066 |                         Session->TNC = (void *)LOCAL;           // TNC only used for Web Terminal Sessions
-      |                                        ^
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailCommands.o MailCommands.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailDataDefs.o MailDataDefs.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LinBPQ.o LinBPQ.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailRouting.o MailRouting.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailTCP.o MailTCP.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MBLRoutines.o MBLRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o md5.o md5.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Moncode.o Moncode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o NNTPRoutines.o NNTPRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o RigControl.o RigControl.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TelnetV6.o TelnetV6.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WINMOR.o WINMOR.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCCode.o TNCCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UZ7HODrv.o UZ7HODrv.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WPRoutines.o WPRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTrackeMulti.o SCSTrackeMulti.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSPactor.o SCSPactor.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTracker.o SCSTracker.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HanksRT.o HanksRT.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UIRoutines.o UIRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWAPI.o AGWAPI.c
-WPRoutines.c: In function ‘CreateWPMessage’:
-WPRoutines.c:1419:37: warning: passing argument 1 of ‘gmtime’ from incompatible pointer type [-Wincompatible-pointer-types]
- 1419 |                         tm = gmtime(&ptr->last_modif);
-      |                                     ^~~~~~~~~~~~~~~~
-      |                                     |
-      |                                     long long int *
-In file included from compatbits.h:13,
-                 from bpqmail.h:29,
-                 from WPRoutines.c:24:
-/usr/include/time.h:132:41: note: expected ‘const time_t *’ {aka ‘const long int *’} but argument is of type ‘long long int *’
-  132 | extern struct tm *gmtime (const time_t *__timer) __THROW;
-      |                           ~~~~~~~~~~~~~~^~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWMoncode.o AGWMoncode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o DRATS.o DRATS.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FreeDATA.o FreeDATA.c
-DRATS.c: In function ‘AllocateDRATSStream’:
-DRATS.c:171:13: warning: ‘memcmp’ specified bound 6 exceeds source size 5 [-Wstringop-overread]
-  171 |         if (memcmp(Sess->CallTo, "NODE", 6) == 0)
-      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o base64.o base64.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Events.o Events.c
-FreeDATA.c: In function ‘ExtProc’:
-FreeDATA.c:690:25: warning: ‘memcpy’ reading 36 bytes from a region of size 22 [-Wstringop-overread]
-  690 |                         memcpy(&buffptr->Data[0], "No Connection to TNC\r", 36);
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-FreeDATA.c: In function ‘ProcessTNCJSON’:
-FreeDATA.c:3218:42: warning: ‘memcmp’ specified bound 12 exceeds source size 6 [-Wstringop-overread]
- 3218 |                                 else if (memcmp(ptr, "close", 12) == 0)
-      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~
-gcc pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o -Xlinker -Map=output.map -l:libminiupnpc.a -lrt -lm -lz -lpthread -lconfig -lpcap -o linbpq
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_auto_test
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_installdirs
-   dh_auto_install --destdir=debian/linbpq/
-	make -j16 install DESTDIR=/<<PKGBUILDDIR>>/debian/linbpq AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-install -b -m 755  -D -d		debian/linbpq/opt/oarc/bpq
-install -b -m 755  -s -p linbpq		debian/linbpq/opt/oarc/bpq
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_installinit
-   dh_installsystemd
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_dwz -a
-dwz: debian/linbpq/opt/oarc/bpq/linbpq: .debug_info section not present
-   dh_strip -a
-   dh_makeshlibs -a
-   dh_shlibdeps -a
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'linbpq' in '../linbpq_6.0.24.15-2_amd64.deb'.
- dpkg-genbuildinfo --build=binary -O../linbpq_6.0.24.15-2_amd64.buildinfo
- dpkg-genchanges --build=binary -O../linbpq_6.0.24.15-2_amd64.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
---------------------------------------------------------------------------------
-Build finished at 2023-10-15T20:58:36Z
-
-Finished
---------
-
-I: Built successfully
-
-+------------------------------------------------------------------------------+
-| Changes                                                                      |
-+------------------------------------------------------------------------------+
-
-
-linbpq_6.0.24.15-2_amd64.changes:
----------------------------------
-
-Format: 1.8
-Date: Sun, 15 Oct 2023 21:45:24 +0100
-Source: linbpq
-Binary: linbpq
-Architecture: amd64
-Version: 6.0.24.15-2
-Distribution: testing
-Urgency: medium
-Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Changed-By: Dave Hibberd <d@vehibberd.com>
-Description:
- linbpq     - Packet node and ax25 stack
-Changes:
- linbpq (6.0.24.15-2) unstable; urgency=medium
- .
-   * debian/conffiles introduced to stop linbpq overwriting config files
-     - Thanks to Mark 2M0IIG for raising concern about this bug!
-Checksums-Sha1:
- e76eae0f18205e7caea8283d5b697000aa0d6cfc 5185 linbpq_6.0.24.15-2_amd64.buildinfo
- ca46f0ff26b27f4cdc83e11ad83a1fba3a6da5f2 665428 linbpq_6.0.24.15-2_amd64.deb
-Checksums-Sha256:
- 91aad68d9a887d8a654fdec2f2bd3aace293e47a357fda8f8d94978dbba0c541 5185 linbpq_6.0.24.15-2_amd64.buildinfo
- ff4001e5061db7ce3a168cd4d76c15dc872b01a743c55ce1b83078f367e6df95 665428 linbpq_6.0.24.15-2_amd64.deb
-Files:
- e7f38a13874781f8d3d6491b5cffb0f0 5185 hamradio optional linbpq_6.0.24.15-2_amd64.buildinfo
- 06ca0993871bf6ffa026d59a38ecdaf0 665428 hamradio optional linbpq_6.0.24.15-2_amd64.deb
-
-+------------------------------------------------------------------------------+
-| Buildinfo                                                                    |
-+------------------------------------------------------------------------------+
-
-Format: 1.0
-Source: linbpq
-Binary: linbpq
-Architecture: amd64
-Version: 6.0.24.15-2
-Checksums-Md5:
- 06ca0993871bf6ffa026d59a38ecdaf0 665428 linbpq_6.0.24.15-2_amd64.deb
-Checksums-Sha1:
- ca46f0ff26b27f4cdc83e11ad83a1fba3a6da5f2 665428 linbpq_6.0.24.15-2_amd64.deb
-Checksums-Sha256:
- ff4001e5061db7ce3a168cd4d76c15dc872b01a743c55ce1b83078f367e6df95 665428 linbpq_6.0.24.15-2_amd64.deb
-Build-Origin: Debian
-Build-Architecture: amd64
-Build-Date: Sun, 15 Oct 2023 20:58:36 +0000
-Build-Path: /<<PKGBUILDDIR>>
-Build-Tainted-By:
- merged-usr-via-aliased-dirs
-Installed-Build-Depends:
- autoconf (= 2.71-3),
- automake (= 1:1.16.5-1.3),
- autopoint (= 0.21-13),
- autotools-dev (= 20220109.1),
- base-files (= 13),
- base-passwd (= 3.6.1),
- bash (= 5.2.15-2+b6),
- binutils (= 2.41-6),
- binutils-common (= 2.41-6),
- binutils-x86-64-linux-gnu (= 2.41-6),
- bsdextrautils (= 2.39.2-2.2),
- bsdutils (= 1:2.39.2-2.2),
- build-essential (= 12.10),
- bzip2 (= 1.0.8-5+b1),
- coreutils (= 9.1-1),
- cpp (= 4:13.2.0-1),
- cpp-13 (= 13.2.0-5),
- dash (= 0.5.12-6),
- debconf (= 1.5.82),
- debhelper (= 13.11.6),
- debianutils (= 5.14),
- dh-autoreconf (= 20),
- dh-strip-nondeterminism (= 1.13.1-1),
- diffutils (= 1:3.8-4),
- dpkg (= 1.22.0),
- dpkg-dev (= 1.22.0),
- dwz (= 0.15-1),
- file (= 1:5.45-2),
- findutils (= 4.9.0-5),
- g++ (= 4:13.2.0-1),
- g++-13 (= 13.2.0-5),
- gcc (= 4:13.2.0-1),
- gcc-13 (= 13.2.0-5),
- gcc-13-base (= 13.2.0-5),
- gettext (= 0.21-13+b1),
- gettext-base (= 0.21-13+b1),
- grep (= 3.11-3),
- groff-base (= 1.23.0-2),
- gzip (= 1.12-1),
- hostname (= 3.23+nmu1),
- init-system-helpers (= 1.65.2),
- intltool-debian (= 0.35.0+20060710.6),
- libacl1 (= 2.3.1-3),
- libarchive-zip-perl (= 1.68-1),
- libasan8 (= 13.2.0-5),
- libatomic1 (= 13.2.0-5),
- libattr1 (= 1:2.5.1-4),
- libaudit-common (= 1:3.1.1-1),
- libaudit1 (= 1:3.1.1-1),
- libbinutils (= 2.41-6),
- libblkid1 (= 2.39.2-2.2),
- libbz2-1.0 (= 1.0.8-5+b1),
- libc-bin (= 2.37-12),
- libc-dev-bin (= 2.37-12),
- libc6 (= 2.37-12),
- libc6-dev (= 2.37-12),
- libcap-ng0 (= 0.8.3-1+b3),
- libcap2 (= 1:2.66-4),
- libcc1-0 (= 13.2.0-5),
- libcom-err2 (= 1.47.0-2+b1),
- libconfig-dev (= 1.5-0.4),
- libconfig9 (= 1.5-0.4),
- libcrypt-dev (= 1:4.4.36-2),
- libcrypt1 (= 1:4.4.36-2),
- libctf-nobfd0 (= 2.41-6),
- libctf0 (= 2.41-6),
- libdb5.3 (= 5.3.28+dfsg2-2),
- libdbus-1-3 (= 1.14.10-1),
- libdbus-1-dev (= 1.14.10-1),
- libdebconfclient0 (= 0.271),
- libdebhelper-perl (= 13.11.6),
- libdpkg-perl (= 1.22.0),
- libelf1 (= 0.189-4),
- libfile-stripnondeterminism-perl (= 1.13.1-1),
- libgcc-13-dev (= 13.2.0-5),
- libgcc-s1 (= 13.2.0-5),
- libgcrypt20 (= 1.10.2-3),
- libgdbm-compat4 (= 1.23-3),
- libgdbm6 (= 1.23-3),
- libgmp10 (= 2:6.3.0+dfsg-2),
- libgomp1 (= 13.2.0-5),
- libgpg-error0 (= 1.47-2),
- libgprofng0 (= 2.41-6),
- libgssapi-krb5-2 (= 1.20.1-4),
- libhwasan0 (= 13.2.0-5),
- libicu72 (= 72.1-3),
- libisl23 (= 0.26-3),
- libitm1 (= 13.2.0-5),
- libjansson4 (= 2.14-2),
- libk5crypto3 (= 1.20.1-4),
- libkeyutils1 (= 1.6.3-2),
- libkrb5-3 (= 1.20.1-4),
- libkrb5support0 (= 1.20.1-4),
- liblsan0 (= 13.2.0-5),
- liblz4-1 (= 1.9.4-1),
- liblzma5 (= 5.4.4-0.1),
- libmagic-mgc (= 1:5.45-2),
- libmagic1 (= 1:5.45-2),
- libmd0 (= 1.1.0-1),
- libminiupnpc-dev (= 2.2.5-1),
- libminiupnpc17 (= 2.2.5-1),
- libmount1 (= 2.39.2-2.2),
- libmpc3 (= 1.3.1-1),
- libmpfr6 (= 4.2.1-1),
- libnsl-dev (= 1.3.0-2),
- libnsl2 (= 1.3.0-2),
- libpam-modules (= 1.5.2-7),
- libpam-modules-bin (= 1.5.2-7),
- libpam-runtime (= 1.5.2-7),
- libpam0g (= 1.5.2-7),
- libpcap-dev (= 1.10.4-4),
- libpcap0.8 (= 1.10.4-4),
- libpcap0.8-dev (= 1.10.4-4),
- libpcre2-8-0 (= 10.42-4),
- libperl5.36 (= 5.36.0-9),
- libpipeline1 (= 1.5.7-1),
- libpkgconf3 (= 1.8.1-1),
- libquadmath0 (= 13.2.0-5),
- libseccomp2 (= 2.5.4-1+b3),
- libselinux1 (= 3.5-1),
- libsframe1 (= 2.41-6),
- libsmartcols1 (= 2.39.2-2.2),
- libssl-dev (= 3.0.11-1),
- libssl3 (= 3.0.11-1),
- libstdc++-13-dev (= 13.2.0-5),
- libstdc++6 (= 13.2.0-5),
- libsub-override-perl (= 0.09-4),
- libsystemd0 (= 254.5-1),
- libtinfo6 (= 6.4+20231007-1),
- libtirpc-common (= 1.3.3+ds-1),
- libtirpc-dev (= 1.3.3+ds-1),
- libtirpc3 (= 1.3.3+ds-1),
- libtool (= 2.4.7-7),
- libtsan2 (= 13.2.0-5),
- libubsan1 (= 13.2.0-5),
- libuchardet0 (= 0.0.7-1),
- libudev1 (= 254.5-1),
- libunistring5 (= 1.1-2),
- libuuid1 (= 2.39.2-2.2),
- libxml2 (= 2.9.14+dfsg-1.3),
- libzstd1 (= 1.5.5+dfsg2-2),
- linux-libc-dev (= 6.5.6-1),
- login (= 1:4.13+dfsg1-3),
- m4 (= 1.4.19-4),
- make (= 4.3-4.1),
- man-db (= 2.12.0-1),
- mawk (= 1.3.4.20230808-1),
- ncurses-base (= 6.4+20231007-1),
- ncurses-bin (= 6.4+20231007-1),
- patch (= 2.7.6-7),
- perl (= 5.36.0-9),
- perl-base (= 5.36.0-9),
- perl-modules-5.36 (= 5.36.0-9),
- pkg-config (= 1.8.1-1),
- pkgconf (= 1.8.1-1),
- pkgconf-bin (= 1.8.1-1),
- po-debconf (= 1.0.21+nmu1),
- rpcsvc-proto (= 1.4.3-1),
- sed (= 4.9-1),
- sensible-utils (= 0.0.20),
- sgml-base (= 1.31),
- sysvinit-utils (= 3.08-3),
- tar (= 1.34+dfsg-1.2),
- usr-is-merged (= 37),
- util-linux (= 2.39.2-2.2),
- xml-core (= 0.18+nmu1),
- xz-utils (= 5.4.4-0.1),
- zlib1g (= 1:1.2.13.dfsg-3),
- zlib1g-dev (= 1:1.2.13.dfsg-3)
-Environment:
- DEB_BUILD_OPTIONS="parallel=16"
- LANG="en_GB.UTF-8"
- LC_ALL="C.UTF-8"
- LC_COLLATE="C.UTF-8"
- LD_LIBRARY_PATH="/usr/lib/libeatmydata"
- SOURCE_DATE_EPOCH="1697402724"
-
-
-+------------------------------------------------------------------------------+
-| Package contents                                                             |
-+------------------------------------------------------------------------------+
-
-
-linbpq_6.0.24.15-2_amd64.deb
-----------------------------
-
- new Debian package, version 2.0.
- size 665428 bytes: control archive=1836 bytes.
-      24 bytes,     1 lines      conffiles
-     425 bytes,    11 lines      control
-     262 bytes,     4 lines      md5sums
-    2513 bytes,    69 lines   *  postinst             #!/bin/sh
-     446 bytes,    14 lines   *  postrm               #!/bin/sh
-     251 bytes,     7 lines   *  prerm                #!/bin/sh
- Package: linbpq
- Version: 6.0.24.15-2
- Architecture: amd64
- Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
- Installed-Size: 2284
- Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
- Section: hamradio
- Priority: optional
- Homepage: http://users.telenet.be/on4qz
- Description: Packet node and ax25 stack
-  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
-
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./etc/
-lrwxrwxrwx root/root         0 2023-10-15 20:45 ./etc/bpq32.cfg -> /opt/oarc/bpq/bpq32.cfg
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/systemd/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./lib/systemd/system/
--rw-r--r-- root/root       179 2023-08-31 23:14 ./lib/systemd/system/linbpq.service
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/oarc/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./opt/oarc/bpq/
--rw-r--r-- root/root     10976 2023-08-31 23:14 ./opt/oarc/bpq/bpq32.cfg
--rwxr-xr-x root/root   2302896 2023-10-15 20:45 ./opt/oarc/bpq/linbpq
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/doc/
-drwxr-xr-x root/root         0 2023-10-15 20:45 ./usr/share/doc/linbpq/
--rw-r--r-- root/root       291 2023-10-15 20:45 ./usr/share/doc/linbpq/changelog.Debian.gz
--rw-r--r-- root/root      1161 2023-08-31 23:14 ./usr/share/doc/linbpq/copyright
-
-
-+------------------------------------------------------------------------------+
-| Post Build                                                                   |
-+------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------+
-| Cleanup                                                                      |
-+------------------------------------------------------------------------------+
-
-Purging /<<BUILDDIR>>
-Not cleaning session: cloned chroot in use
-
-+------------------------------------------------------------------------------+
-| Summary                                                                      |
-+------------------------------------------------------------------------------+
-
-Build Architecture: amd64
-Build Type: binary
-Build-Space: 42468
-Build-Time: 4
-Distribution: testing
-Host Architecture: amd64
-Install-Time: 3
-Job: /home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-2.dsc
-Machine Architecture: amd64
-Package: linbpq
-Package-Time: 18
-Source-Version: 6.0.24.15-2
-Space: 42468
-Status: successful
-Version: 6.0.24.15-2
---------------------------------------------------------------------------------
-Finished at 2023-10-15T20:58:36Z
-Build needed 00:00:18, 42468k disk space

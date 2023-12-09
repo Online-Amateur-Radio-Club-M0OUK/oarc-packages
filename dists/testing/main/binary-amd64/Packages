@@ -85,19 +85,19 @@ Description: debug symbols for fbb
 Build-Ids: 0efbda369d47e736295e4f0700d95277f606139c 31487505c9ff5bcf95f04f327407fd014160c7cd 3e818c03a7b91819c7b3a196c09b79b265d37c10 467075f118b6eed1cbd0f6df0829c76e8729bd6a 67434a28c6a769ffdde37db67bbe27496330e8a9 68f68564d7979686668318c0ebb9be741a1072b9 793789cdaa9cf61a65e0cb62d16661fa76b61055 82e49537e68672b223ffb194f6afa2d49fff6515 8c6f9d978ec205f0c0b35d0671be652a13bd8a83 acd49038efacbb1f1a9092571b7ea2d03f7c5c99 d5dc6b82d6ea7d340ae82f49e324faeebf824a1c
 
 Package: linbpq
-Version: 6.0.24.15-2
+Version: 6.0.24.22-1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2284
+Installed-Size: 2285
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
-Homepage: http://users.telenet.be/on4qz
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.15-2_amd64.deb
-Size: 665428
-SHA256: ff4001e5061db7ce3a168cd4d76c15dc872b01a743c55ce1b83078f367e6df95
-SHA1: ca46f0ff26b27f4cdc83e11ad83a1fba3a6da5f2
-MD5sum: 06ca0993871bf6ffa026d59a38ecdaf0
+Filename: pool/main/l/linbpq/linbpq_6.0.24.22-1_amd64.deb
+Size: 666368
+SHA256: 50ab2fc23730321fce18bf4d0fe1cf4049436f19177a23a65cff06c9fcd4cf36
+SHA1: f0770f0de222b2d34290cc3c12d4de3d699deb82
+MD5sum: 0bae3658818b32feef1a653d86abebd5
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
@@ -138,40 +138,40 @@ Description: debug symbols for qtsoundmodem
 Build-Ids: ccc12e614be395f8e7e41de46210489c4f2f6995
 
 Package: qttermtcp
-Version: 0.0.0.69-2
+Version: 0.0.0.73-1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 543
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Installed-Size: 770
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5multimedia5 (>= 5.6.0~beta), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.69-2_amd64.deb
-Size: 161900
-SHA256: 5d48cf20963b35336a34c4053b891abd55a16341e4c5a9f7fa2bb6a54b3236df
-SHA1: 0bf7cf34ed5f9ec98d809c456126c9f61667f5a0
-MD5sum: f251008c7a68b8ee32ae00cb1dee636b
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.73-1_amd64.deb
+Size: 309312
+SHA256: bc59db8241910c4904e4d81e7f5b781206d4f4de6a1e7455ce6f32127f06303d
+SHA1: 133b3b9bd1b7a7437b029319076eb946d11e2ed7
+MD5sum: b0f0624a71c86b67517dc8a958a6a11d
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity
 
 Package: qttermtcp-dbgsym
 Source: qttermtcp
-Version: 0.0.0.69-2
+Version: 0.0.0.73-1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 1586
-Depends: qttermtcp (= 0.0.0.69-2)
+Installed-Size: 1662
+Depends: qttermtcp (= 0.0.0.73-1)
 Priority: optional
 Section: debug
-Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.69-2_amd64.deb
-Size: 1545552
-SHA256: 691beeccd3115618078e9478d8b8cedf3774ee2baaf9c8871ff3f603dcf5871a
-SHA1: e6284d5354bbf6f485d15d2aa1a14125d38617f2
-MD5sum: 89e6797b0e07ff9c983ba527ede19413
+Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.73-1_amd64.deb
+Size: 1618308
+SHA256: ae82e2758319601967bc7a63398b984083bbeba7579b357b622bd44ef4573518
+SHA1: 3eea740597292c19256cad6945767224f9974b53
+MD5sum: 92bbe1fbfbdeb6488a1360840f2b93b3
 Description: debug symbols for qttermtcp
-Build-Ids: 4bb5f3cd3e077ddf3ec712773be5861a728b63b5
+Build-Ids: 45e7549667a37e0ef3cd347a6d991d278c854f6f
 
 Package: uronode
 Version: 2.15-3

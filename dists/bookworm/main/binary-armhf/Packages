@@ -43,19 +43,19 @@ Description: debug symbols for fbb
 Build-Ids: 025adb4583e084b406cefe8921f5778049b621dd 2f8d74644c180b404becd82e6d1846cade8937ba 31c27d145a5dd0a3b6edfa723ee6bcfded72bf4b 4b36ff58b8a5af905561ce495aeb7f551636fc08 4e6de63a8ee9160ac9f2b75b4a292be3c50da588 5834622d43f8566c28270c6f203998abb9281f4f 61884084732c144f340dafa6362998ce70e55b20 9691ac370d8dd78824dd036486556ca168ac2ec0 c992a6ead22f2bdd0789cacf1d55a2013a39438f d90921eef89824ee1679a2fc1990ec8bedf73368 feb2b0e32e6d37fa77553ea2cb26ec9f561b6363
 
 Package: linbpq
-Version: 6.0.24.15-2~bpo12+1
+Version: 6.0.24.22-1~bpo12+1
 Architecture: armhf
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2343
+Installed-Size: 2351
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
-Homepage: http://users.telenet.be/on4qz
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.15-2~bpo12+1_armhf.deb
-Size: 565408
-SHA256: e38a464855de37f7e980270d6b6b06efeff32dd9b80466cc47f72659ed254f0d
-SHA1: 4dc8ca2c01a06e7afb7bb8108d7a8942acbfc193
-MD5sum: 2d7aac94f08673c6b8491e268a8b7170
+Filename: pool/main/l/linbpq/linbpq_6.0.24.22-1~bpo12+1_armhf.deb
+Size: 566692
+SHA256: b1a21f855e6706c29e7ef081df9504b045b61ce3a540280a9545c426cf0ceebb
+SHA1: c2b73ec403c259816e3c3cadc7524e514a9adb84
+MD5sum: b2729b223c6de282516f988a0ebfe266
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
@@ -94,4 +94,40 @@ SHA1: 87be33c11a279983610421a70a4dc87dc0ab61b5
 MD5sum: d55d815cca41edfd58d972b4f0e48c1e
 Description: debug symbols for qtsoundmodem
 Build-Ids: dd6dae2e56f7f401395f2ed5e6ad650589b88e35
+
+Package: qttermtcp
+Version: 0.0.0.73-1~bpo12+1
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 721
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5multimedia5 (>= 5.6.0~beta), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.2.0~alpha1), libstdc++6 (>= 5.2)
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtTermTCP.html
+Priority: optional
+Section: hamradio
+Filename: pool/main/q/qttermtcp/qttermtcp_0.0.0.73-1~bpo12+1_armhf.deb
+Size: 292604
+SHA256: 86a59ca01415fe984c6e0261cd4cb0e032a2654d04ad6f61503d96ef8dbb48e6
+SHA1: 483672dc4725e616d0426703544b7373e3512afb
+MD5sum: 8d572c1cca1ef5ada3bebea2d0b7979f
+Description: Qt-based Terminal for packet
+ QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
+ and other modes of connectivity
+
+Package: qttermtcp-dbgsym
+Source: qttermtcp
+Version: 0.0.0.73-1~bpo12+1
+Auto-Built-Package: debug-symbols
+Architecture: armhf
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1606
+Depends: qttermtcp (= 0.0.0.73-1~bpo12+1)
+Priority: optional
+Section: debug
+Filename: pool/main/q/qttermtcp/qttermtcp-dbgsym_0.0.0.73-1~bpo12+1_armhf.deb
+Size: 1569516
+SHA256: 255ffac18629a243a304633028e549023b8e659d732e70d2b437a99f101c0ba6
+SHA1: 19a0da1d509fa9315b761e9c7d526cdf486c04bc
+MD5sum: a77cf663142533bf93c023eea4e706ed
+Description: debug symbols for qttermtcp
+Build-Ids: 2e3fc0b82b3695b5f4063d4abbfb3049693137fe
 

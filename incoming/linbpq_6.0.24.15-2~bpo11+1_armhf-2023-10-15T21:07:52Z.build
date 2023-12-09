@@ -1,893 +1,0 @@
-sbuild (Debian sbuild) 0.85.2 (11 March 2023) on fennec.foxk.it
-
-+==============================================================================+
-| linbpq 6.0.24.15-2~bpo11+1 (armhf)           Sun, 15 Oct 2023 21:07:52 +0000 |
-+==============================================================================+
-
-Package: linbpq
-Version: 6.0.24.15-2~bpo11+1
-Source Version: 6.0.24.15-2~bpo11+1
-Distribution: bullseye
-Machine Architecture: amd64
-Host Architecture: armhf
-Build Architecture: armhf
-Build Type: binary
-
-I: NOTICE: Log filtering will replace 'var/run/schroot/mount/stable-armhf-sbuild-bb430cba-7c90-43ba-8089-0dc15aa027d9' with '<<CHROOT>>'
-I: NOTICE: Log filtering will replace 'build/linbpq-1xeHom/resolver-CNm3dt' with '<<RESOLVERDIR>>'
-
-+------------------------------------------------------------------------------+
-| Update chroot                                                                |
-+------------------------------------------------------------------------------+
-
-Get:1 http://localhost:3142/archive.raspbian.org/raspbian bullseye InRelease [15.0 kB]
-Get:2 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main Sources [12.2 MB]
-Get:3 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf Packages [13.2 MB]
-Fetched 25.5 MB in 11s (2232 kB/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-Calculating upgrade...
-The following packages will be upgraded:
-  adduser base-files cpio libbsd0 libc-bin libc-dev-bin libc6 libc6-dev
-  libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0 libncurses6
-  libncursesw6 libssl1.1 libtinfo5 libtinfo6 linux-libc-dev logrotate
-  ncurses-base ncurses-bin
-21 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-Need to get 10.9 MB of archives.
-After this operation, 24.6 kB of additional disk space will be used.
-Get:1 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf base-files armhf 11.1+rpi1+deb11u8 [70.4 kB]
-Get:2 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf ncurses-bin armhf 6.2+20201114-2+deb11u2 [421 kB]
-Get:3 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libc6-dev armhf 2.31-13+rpi1+deb11u7 [1813 kB]
-Get:4 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libc-dev-bin armhf 2.31-13+rpi1+deb11u7 [267 kB]
-Get:5 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf linux-libc-dev armhf 5.10.197-1+rpi1 [1636 kB]
-Get:6 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libc6 armhf 2.31-13+rpi1+deb11u7 [2297 kB]
-Get:7 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libc-bin armhf 2.31-13+rpi1+deb11u7 [681 kB]
-Get:8 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf ncurses-base all 6.2+20201114-2+deb11u2 [272 kB]
-Get:9 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf adduser all 3.118+deb11u1 [241 kB]
-Get:10 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libk5crypto3 armhf 1.18.3-6+deb11u4 [108 kB]
-Get:11 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libkrb5support0 armhf 1.18.3-6+deb11u4 [62.7 kB]
-Get:12 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libkrb5-3 armhf 1.18.3-6+deb11u4 [316 kB]
-Get:13 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libgssapi-krb5-2 armhf 1.18.3-6+deb11u4 [143 kB]
-Get:14 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libssl1.1 armhf 1.1.1w-0+deb11u1 [1285 kB]
-Get:15 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libncurses6 armhf 6.2+20201114-2+deb11u2 [79.5 kB]
-Get:16 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libtinfo6 armhf 6.2+20201114-2+deb11u2 [329 kB]
-Get:17 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libncursesw6 armhf 6.2+20201114-2+deb11u2 [105 kB]
-Get:18 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf cpio armhf 2.13+dfsg-7.1~deb11u1 [229 kB]
-Get:19 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf logrotate armhf 3.18.0-2+deb11u2 [67.5 kB]
-Get:20 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libbsd0 armhf 0.11.3-1+deb11u1 [103 kB]
-Get:21 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libtinfo5 armhf 6.2+20201114-2+deb11u2 [325 kB]
-Preconfiguring packages ...
-Fetched 10.9 MB in 0s (30.3 MB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../base-files_11.1+rpi1+deb11u8_armhf.deb ...
-Unpacking base-files (11.1+rpi1+deb11u8) over (11.1+rpi1+deb11u7) ...
-Setting up base-files (11.1+rpi1+deb11u8) ...
-Installing new version of config file /etc/debian_version ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../ncurses-bin_6.2+20201114-2+deb11u2_armhf.deb ...
-Unpacking ncurses-bin (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Setting up ncurses-bin (6.2+20201114-2+deb11u2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libc6-dev_2.31-13+rpi1+deb11u7_armhf.deb ...
-Unpacking libc6-dev:armhf (2.31-13+rpi1+deb11u7) over (2.31-13+rpi1+deb11u6) ...
-Preparing to unpack .../libc-dev-bin_2.31-13+rpi1+deb11u7_armhf.deb ...
-Unpacking libc-dev-bin (2.31-13+rpi1+deb11u7) over (2.31-13+rpi1+deb11u6) ...
-Preparing to unpack .../linux-libc-dev_5.10.197-1+rpi1_armhf.deb ...
-Unpacking linux-libc-dev:armhf (5.10.197-1+rpi1) over (5.10.191-1+rpi1) ...
-Preparing to unpack .../libc6_2.31-13+rpi1+deb11u7_armhf.deb ...
-Unpacking libc6:armhf (2.31-13+rpi1+deb11u7) over (2.31-13+rpi1+deb11u6) ...
-Setting up libc6:armhf (2.31-13+rpi1+deb11u7) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libc-bin_2.31-13+rpi1+deb11u7_armhf.deb ...
-Unpacking libc-bin (2.31-13+rpi1+deb11u7) over (2.31-13+rpi1+deb11u6) ...
-Setting up libc-bin (2.31-13+rpi1+deb11u7) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../ncurses-base_6.2+20201114-2+deb11u2_all.deb ...
-Unpacking ncurses-base (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Setting up ncurses-base (6.2+20201114-2+deb11u2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../adduser_3.118+deb11u1_all.deb ...
-Unpacking adduser (3.118+deb11u1) over (3.118) ...
-Setting up adduser (3.118+deb11u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libk5crypto3_1.18.3-6+deb11u4_armhf.deb ...
-Unpacking libk5crypto3:armhf (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...
-Setting up libk5crypto3:armhf (1.18.3-6+deb11u4) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libkrb5support0_1.18.3-6+deb11u4_armhf.deb ...
-Unpacking libkrb5support0:armhf (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...
-Setting up libkrb5support0:armhf (1.18.3-6+deb11u4) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libkrb5-3_1.18.3-6+deb11u4_armhf.deb ...
-Unpacking libkrb5-3:armhf (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...
-Setting up libkrb5-3:armhf (1.18.3-6+deb11u4) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libgssapi-krb5-2_1.18.3-6+deb11u4_armhf.deb ...
-Unpacking libgssapi-krb5-2:armhf (1.18.3-6+deb11u4) over (1.18.3-6+deb11u3) ...
-Setting up libgssapi-krb5-2:armhf (1.18.3-6+deb11u4) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libssl1.1_1.1.1w-0+deb11u1_armhf.deb ...
-Unpacking libssl1.1:armhf (1.1.1w-0+deb11u1) over (1.1.1n-0+deb11u4) ...
-Setting up libssl1.1:armhf (1.1.1w-0+deb11u1) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libncurses6_6.2+20201114-2+deb11u2_armhf.deb ...
-Unpacking libncurses6:armhf (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Preparing to unpack .../libtinfo6_6.2+20201114-2+deb11u2_armhf.deb ...
-Unpacking libtinfo6:armhf (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Setting up libtinfo6:armhf (6.2+20201114-2+deb11u2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../libncursesw6_6.2+20201114-2+deb11u2_armhf.deb ...
-Unpacking libncursesw6:armhf (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Setting up libncursesw6:armhf (6.2+20201114-2+deb11u2) ...
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../cpio_2.13+dfsg-7.1~deb11u1_armhf.deb ...
-Unpacking cpio (2.13+dfsg-7.1~deb11u1) over (2.13+dfsg-4) ...
-Preparing to unpack .../logrotate_3.18.0-2+deb11u2_armhf.deb ...
-Unpacking logrotate (3.18.0-2+deb11u2) over (3.18.0-2+deb11u1) ...
-Preparing to unpack .../libbsd0_0.11.3-1+deb11u1_armhf.deb ...
-Unpacking libbsd0:armhf (0.11.3-1+deb11u1) over (0.11.3-1) ...
-Preparing to unpack .../libtinfo5_6.2+20201114-2+deb11u2_armhf.deb ...
-Unpacking libtinfo5:armhf (6.2+20201114-2+deb11u2) over (6.2+20201114-2+deb11u1) ...
-Setting up logrotate (3.18.0-2+deb11u2) ...
-Setting up cpio (2.13+dfsg-7.1~deb11u1) ...
-Setting up linux-libc-dev:armhf (5.10.197-1+rpi1) ...
-Setting up libncurses6:armhf (6.2+20201114-2+deb11u2) ...
-Setting up libc-dev-bin (2.31-13+rpi1+deb11u7) ...
-Setting up libbsd0:armhf (0.11.3-1+deb11u1) ...
-Setting up libtinfo5:armhf (6.2+20201114-2+deb11u2) ...
-Setting up libc6-dev:armhf (2.31-13+rpi1+deb11u7) ...
-Processing triggers for libc-bin (2.31-13+rpi1+deb11u7) ...
-Processing triggers for man-db (2.9.4-2) ...
-Processing triggers for install-info (6.7.0.dfsg.2-6) ...
-
-+------------------------------------------------------------------------------+
-| Fetch source files                                                           |
-+------------------------------------------------------------------------------+
-
-
-Local sources
--------------
-
-/home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-2~bpo11+1.dsc exists in /home/hibby/Dev/oarc/linbpq; copying to chroot
-I: NOTICE: Log filtering will replace 'build/linbpq-1xeHom/linbpq-6.0.24.15' with '<<PKGBUILDDIR>>'
-I: NOTICE: Log filtering will replace 'build/linbpq-1xeHom' with '<<BUILDDIR>>'
-
-+------------------------------------------------------------------------------+
-| Install package build dependencies                                           |
-+------------------------------------------------------------------------------+
-
-
-Setup apt archive
------------------
-
-Merged Build-Depends: debhelper-compat (= 12), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
-Filtered Build-Depends: debhelper-compat (= 12), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev, build-essential, fakeroot
-dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
-Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
-Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [609 B]
-Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
-Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [687 B]
-Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [719 B]
-Fetched 2015 B in 0s (16.4 kB/s)
-Reading package lists...
-Reading package lists...
-
-Install main build dependencies (apt-based resolver)
-----------------------------------------------------
-
-Installing build dependencies
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libglib2.0-0
-  libminiupnpc-dev libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev
-  libssl-dev pkg-config zlib1g-dev
-Suggested packages:
-  minissdpd libssl-doc
-Recommended packages:
-  libconfig-doc dbus libglib2.0-data shared-mime-info xdg-user-dirs
-The following NEW packages will be installed:
-  libconfig-dev libconfig9 libdbus-1-3 libdbus-1-dev libglib2.0-0
-  libminiupnpc-dev libminiupnpc17 libpcap-dev libpcap0.8 libpcap0.8-dev
-  libssl-dev pkg-config sbuild-build-depends-main-dummy zlib1g-dev
-0 upgraded, 14 newly installed, 0 to remove and 0 not upgraded.
-Need to get 4033 kB of archives.
-After this operation, 13.0 MB of additional disk space will be used.
-Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [908 B]
-Get:2 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libconfig9 armhf 1.5-0.4 [27.7 kB]
-Get:3 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libglib2.0-0 armhf 2.66.8-1 [1183 kB]
-Get:4 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf pkg-config armhf 0.29.2-1 [61.5 kB]
-Get:5 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libconfig-dev armhf 1.5-0.4 [57.6 kB]
-Get:6 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libdbus-1-3 armhf 1.12.28-0+deb11u1 [198 kB]
-Get:7 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libdbus-1-dev armhf 1.12.28-0+deb11u1 [229 kB]
-Get:8 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libminiupnpc17 armhf 2.2.1-1 [30.4 kB]
-Get:9 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libminiupnpc-dev armhf 2.2.1-1 [39.7 kB]
-Get:10 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libpcap0.8 armhf 1.10.0-2 [143 kB]
-Get:11 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libpcap0.8-dev armhf 1.10.0-2 [258 kB]
-Get:12 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libpcap-dev armhf 1.10.0-2 [31.1 kB]
-Get:13 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf libssl-dev armhf 1.1.1w-0+deb11u1 [1589 kB]
-Get:14 http://localhost:3142/archive.raspbian.org/raspbian bullseye/main armhf zlib1g-dev armhf 1:1.2.11.dfsg-2+deb11u2 [184 kB]
-Fetched 4033 kB in 0s (15.3 MB/s)
-Selecting previously unselected package libconfig9:armhf.
-(Reading database ... 16964 files and directories currently installed.)
-Preparing to unpack .../00-libconfig9_1.5-0.4_armhf.deb ...
-Unpacking libconfig9:armhf (1.5-0.4) ...
-Selecting previously unselected package libglib2.0-0:armhf.
-Preparing to unpack .../01-libglib2.0-0_2.66.8-1_armhf.deb ...
-Unpacking libglib2.0-0:armhf (2.66.8-1) ...
-Selecting previously unselected package pkg-config.
-Preparing to unpack .../02-pkg-config_0.29.2-1_armhf.deb ...
-Unpacking pkg-config (0.29.2-1) ...
-Selecting previously unselected package libconfig-dev:armhf.
-Preparing to unpack .../03-libconfig-dev_1.5-0.4_armhf.deb ...
-Unpacking libconfig-dev:armhf (1.5-0.4) ...
-Selecting previously unselected package libdbus-1-3:armhf.
-Preparing to unpack .../04-libdbus-1-3_1.12.28-0+deb11u1_armhf.deb ...
-Unpacking libdbus-1-3:armhf (1.12.28-0+deb11u1) ...
-Selecting previously unselected package libdbus-1-dev:armhf.
-Preparing to unpack .../05-libdbus-1-dev_1.12.28-0+deb11u1_armhf.deb ...
-Unpacking libdbus-1-dev:armhf (1.12.28-0+deb11u1) ...
-Selecting previously unselected package libminiupnpc17:armhf.
-Preparing to unpack .../06-libminiupnpc17_2.2.1-1_armhf.deb ...
-Unpacking libminiupnpc17:armhf (2.2.1-1) ...
-Selecting previously unselected package libminiupnpc-dev:armhf.
-Preparing to unpack .../07-libminiupnpc-dev_2.2.1-1_armhf.deb ...
-Unpacking libminiupnpc-dev:armhf (2.2.1-1) ...
-Selecting previously unselected package libpcap0.8:armhf.
-Preparing to unpack .../08-libpcap0.8_1.10.0-2_armhf.deb ...
-Unpacking libpcap0.8:armhf (1.10.0-2) ...
-Selecting previously unselected package libpcap0.8-dev:armhf.
-Preparing to unpack .../09-libpcap0.8-dev_1.10.0-2_armhf.deb ...
-Unpacking libpcap0.8-dev:armhf (1.10.0-2) ...
-Selecting previously unselected package libpcap-dev:armhf.
-Preparing to unpack .../10-libpcap-dev_1.10.0-2_armhf.deb ...
-Unpacking libpcap-dev:armhf (1.10.0-2) ...
-Selecting previously unselected package libssl-dev:armhf.
-Preparing to unpack .../11-libssl-dev_1.1.1w-0+deb11u1_armhf.deb ...
-Unpacking libssl-dev:armhf (1.1.1w-0+deb11u1) ...
-Selecting previously unselected package zlib1g-dev:armhf.
-Preparing to unpack .../12-zlib1g-dev_1%3a1.2.11.dfsg-2+deb11u2_armhf.deb ...
-Unpacking zlib1g-dev:armhf (1:1.2.11.dfsg-2+deb11u2) ...
-Selecting previously unselected package sbuild-build-depends-main-dummy.
-Preparing to unpack .../13-sbuild-build-depends-main-dummy_0.invalid.0_armhf.deb ...
-Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
-Setting up libconfig9:armhf (1.5-0.4) ...
-Setting up libglib2.0-0:armhf (2.66.8-1) ...
-No schema files found: doing nothing.
-Setting up libminiupnpc17:armhf (2.2.1-1) ...
-Setting up libdbus-1-3:armhf (1.12.28-0+deb11u1) ...
-Setting up libssl-dev:armhf (1.1.1w-0+deb11u1) ...
-Setting up pkg-config (0.29.2-1) ...
-Setting up zlib1g-dev:armhf (1:1.2.11.dfsg-2+deb11u2) ...
-Setting up libconfig-dev:armhf (1.5-0.4) ...
-Setting up libminiupnpc-dev:armhf (2.2.1-1) ...
-Setting up libpcap0.8:armhf (1.10.0-2) ...
-Setting up libdbus-1-dev:armhf (1.12.28-0+deb11u1) ...
-Setting up libpcap0.8-dev:armhf (1.10.0-2) ...
-Setting up libpcap-dev:armhf (1.10.0-2) ...
-Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
-Processing triggers for libc-bin (2.31-13+rpi1+deb11u7) ...
-Processing triggers for man-db (2.9.4-2) ...
-Processing triggers for install-info (6.7.0.dfsg.2-6) ...
-
-+------------------------------------------------------------------------------+
-| Check architectures                                                          |
-+------------------------------------------------------------------------------+
-
-Arch check ok (armhf included in linux-any)
-
-+------------------------------------------------------------------------------+
-| Build environment                                                            |
-+------------------------------------------------------------------------------+
-
-Kernel: Linux 6.4.0-3-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.4.11-1 (2023-08-17) amd64 (x86_64)
-Toolchain package versions: binutils_2.35.2-2+rpi1 dpkg-dev_1.20.12+rpi1 g++-10_10.2.1-6+rpi1 gcc-10_10.2.1-6+rpi1 libc6-dev_2.31-13+rpi1+deb11u7 libstdc++-10-dev_10.2.1-6+rpi1 libstdc++6_10.2.1-6+rpi1 linux-libc-dev_5.10.197-1+rpi1
-Package versions: adduser_3.118+deb11u1 apt_2.2.4 apt-utils_2.2.4 autoconf_2.69-14 automake_1:1.16.3-2 autopoint_0.21-4 autotools-dev_20180224.1+nmu1 base-files_11.1+rpi1+deb11u8 base-passwd_3.5.51 bash_5.1-2+deb11u1 binutils_2.35.2-2+rpi1 binutils-arm-linux-gnueabihf_2.35.2-2+rpi1 binutils-common_2.35.2-2+rpi1 bsdextrautils_2.36.1-8+deb11u1 bsdutils_1:2.36.1-8+deb11u1 build-essential_12.9 bzip2_1.0.8-4 coreutils_8.32-4 cpio_2.13+dfsg-7.1~deb11u1 cpp_4:10.2.1-1+rpi1 cpp-10_10.2.1-6+rpi1 cron_3.0pl1-137 dash_0.5.11+git20200708+dd9ef66-5 debconf_1.5.77 debconf-i18n_1.5.77 debhelper_13.3.4 debianutils_4.11.2 dh-autoreconf_20 dh-strip-nondeterminism_1.12.0-1 diffutils_1:3.7-5 dirmngr_2.2.27-2+deb11u2 dmidecode_3.3-2 dmsetup_2:1.02.175-2.1 dpkg_1.20.12+rpi1 dpkg-dev_1.20.12+rpi1 dwz_0.13+20210201-1 e2fsprogs_1.46.2-2 eatmydata_105-9 fakeroot_1.25.3-1.1 fdisk_2.36.1-8+deb11u1 file_1:5.39-3+deb11u1 findutils_4.8.0-1 g++_4:10.2.1-1+rpi1 g++-10_10.2.1-6+rpi1 gcc_4:10.2.1-1+rpi1 gcc-10_10.2.1-6+rpi1 gcc-10-base_10.2.1-6+rpi1 gcc-7-base_7.5.0-6+rpi1+b2 gcc-8-base_8.4.0-7+rpi1 gcc-9-base_9.3.0-22+rpi1 gettext_0.21-4 gettext-base_0.21-4 gnupg_2.2.27-2+deb11u2 gnupg-l10n_2.2.27-2+deb11u2 gnupg-utils_2.2.27-2+deb11u2 gpg_2.2.27-2+deb11u2 gpg-agent_2.2.27-2+deb11u2 gpg-wks-client_2.2.27-2+deb11u2 gpg-wks-server_2.2.27-2+deb11u2 gpgconf_2.2.27-2+deb11u2 gpgsm_2.2.27-2+deb11u2 gpgv_2.2.27-2+deb11u2 grep_3.6-1+deb11u1 groff-base_1.22.4-6 gzip_1.10-4+deb11u1 hostname_3.23 ifupdown_0.8.36 info_6.7.0.dfsg.2-6 init_1.60 init-system-helpers_1.60 install-info_6.7.0.dfsg.2-6 intltool-debian_0.35.0+20060710.5 iproute2_5.10.0-4 iputils-ping_3:20210202-1 isc-dhcp-client_4.4.1-2.3+deb11u2 isc-dhcp-common_4.4.1-2.3+deb11u2 kmod_28-1 less_551-2 libacl1_2.2.53-10 libapparmor1_2.13.6-10 libapt-pkg6.0_2.2.4 libarchive-zip-perl_1.68-1 libargon2-1_0~20171227-0.2 libasan6_10.2.1-6+rpi1 libassuan0_2.5.3-7.1 libatomic1_10.2.1-6+rpi1 libattr1_1:2.4.48-6 libaudit-common_1:3.0-2 libaudit1_1:3.0-2 libbinutils_2.35.2-2+rpi1 libblkid1_2.36.1-8+deb11u1 libbpf0_1:0.3-2+rpi1 libbsd0_0.11.3-1+deb11u1 libbz2-1.0_1.0.8-4 libc-bin_2.31-13+rpi1+deb11u7 libc-dev-bin_2.31-13+rpi1+deb11u7 libc6_2.31-13+rpi1+deb11u7 libc6-dev_2.31-13+rpi1+deb11u7 libcap-ng0_0.7.9-2.2+b1 libcap2_1:2.44-1 libcap2-bin_1:2.44-1 libcc1-0_10.2.1-6+rpi1 libcom-err2_1.46.2-2 libconfig-dev_1.5-0.4 libconfig9_1.5-0.4 libcrypt-dev_1:4.4.18-4 libcrypt1_1:4.4.18-4 libcryptsetup12_2:2.3.7-1+deb11u1 libctf-nobfd0_2.35.2-2+rpi1 libctf0_2.35.2-2+rpi1 libdb5.3_5.3.28+dfsg1-0.8 libdbus-1-3_1.12.28-0+deb11u1 libdbus-1-dev_1.12.28-0+deb11u1 libdebconfclient0_0.260 libdebhelper-perl_13.3.4 libdevmapper1.02.1_2:1.02.175-2.1 libdns-export1110_1:9.11.19+dfsg-2.1 libdpkg-perl_1.20.12+rpi1 libeatmydata1_105-9 libedit2_3.1-20191231-2 libelf1_0.183-1 libestr0_0.1.10-2.1 libext2fs2_1.46.2-2 libfakeroot_1.25.3-1.1 libfastjson4_0.99.9-1 libfdisk1_2.36.1-8+deb11u1 libffi7_3.3-6 libfile-stripnondeterminism-perl_1.12.0-1 libgcc-10-dev_10.2.1-6+rpi1 libgcc-s1_10.2.1-6+rpi1 libgcrypt20_1.8.7-6 libgdbm-compat4_1.19-2 libgdbm6_1.19-2 libglib2.0-0_2.66.8-1 libgmp10_2:6.2.1+dfsg-1+deb11u1 libgnutls30_3.7.1-5+deb11u3 libgomp1_10.2.1-6+rpi1 libgpg-error0_1.38-2 libgssapi-krb5-2_1.18.3-6+deb11u4 libhogweed6_3.7.3-1 libicu67_67.1-7 libident_0.22-3.1 libidn2-0_2.3.0-5 libip4tc2_1.8.7-1 libisc-export1105_1:9.11.19+dfsg-2.1 libisl23_0.23-1 libjansson4_2.13.1-1.1 libjson-c5_0.15-2+deb11u1 libk5crypto3_1.18.3-6+deb11u4 libkeyutils1_1.6.1-2 libkmod2_28-1 libkrb5-3_1.18.3-6+deb11u4 libkrb5support0_1.18.3-6+deb11u4 libksba8_1.5.0-3+deb11u2 libldap-2.4-2_2.4.57+dfsg-3+deb11u1 liblocale-gettext-perl_1.07-4+b1 liblognorm5_2.0.5-1.1 liblz4-1_1.9.3-2 liblzma5_5.2.5-2.1~deb11u1 libmagic-mgc_1:5.39-3+deb11u1 libmagic1_1:5.39-3+deb11u1 libmd0_1.0.3-3 libminiupnpc-dev_2.2.1-1 libminiupnpc17_2.2.1-1 libmnl0_1.0.4-3 libmount1_2.36.1-8+deb11u1 libmpc3_1.2.0-1 libmpfr6_4.1.0-3 libncurses6_6.2+20201114-2+deb11u2 libncursesw6_6.2+20201114-2+deb11u2 libnettle8_3.7.3-1 libnftables1_0.9.8-3.1+deb11u1 libnftnl11_1.1.9-1 libnpth0_1.6-3 libnsl-dev_1.3.0-2 libnsl2_1.3.0-2 libp11-kit0_0.23.22-1 libpam-modules_1.4.0-9+deb11u1 libpam-modules-bin_1.4.0-9+deb11u1 libpam-runtime_1.4.0-9+deb11u1 libpam0g_1.4.0-9+deb11u1 libpcap-dev_1.10.0-2 libpcap0.8_1.10.0-2 libpcap0.8-dev_1.10.0-2 libpcre2-8-0_10.36-2+deb11u1 libpcre3_2:8.39-13 libperl5.32_5.32.1-4+deb11u2 libpipeline1_1.5.3-1 libpopt0_1.18-2 libprocps8_2:3.3.17-5 libreadline6_6.3-9 libreadline8_8.1-1 libsasl2-2_2.1.27+dfsg-2.1+deb11u1 libsasl2-modules-db_2.1.27+dfsg-2.1+deb11u1 libseccomp2_2.5.1-1+rpi1+deb11u1 libselinux1_3.1-3 libsemanage-common_3.1-1 libsemanage1_3.1-1+b1 libsepol1_3.1-1 libsigc++-1.2-5c2_1.2.7-2+b1 libsigsegv2_2.13-1 libsmartcols1_2.36.1-8+deb11u1 libsqlite3-0_3.34.1-3 libss2_1.46.2-2 libssl-dev_1.1.1w-0+deb11u1 libssl1.1_1.1.1w-0+deb11u1 libstdc++-10-dev_10.2.1-6+rpi1 libstdc++6_10.2.1-6+rpi1 libsub-override-perl_0.09-2 libsystemd0_247.3-7+rpi1+deb11u2 libtasn1-6_4.16.0-2+deb11u1 libtext-charwidth-perl_0.04-10+b1 libtext-iconv-perl_1.7-7+b1 libtext-wrapi18n-perl_0.06-9 libtinfo5_6.2+20201114-2+deb11u2 libtinfo6_6.2+20201114-2+deb11u2 libtirpc-common_1.3.1-1+deb11u1 libtirpc-dev_1.3.1-1+deb11u1 libtirpc3_1.3.1-1+deb11u1 libtool_2.4.6-15 libubsan1_10.2.1-6+rpi1 libuchardet0_0.0.7-1 libudev1_247.3-7+rpi1+deb11u2 libunistring2_0.9.10-4 libuuid1_2.36.1-8+deb11u1 libxml2_2.9.10+dfsg-6.7+deb11u4 libxtables12_1.8.7-1 libxxhash0_0.8.0-2+rpi1 libzstd1_1.4.8+dfsg-2.1+rpi1 linux-libc-dev_5.10.197-1+rpi1 login_1:4.8.1-1 logrotate_3.18.0-2+deb11u2 logsave_1.46.2-2 lsb-base_11.1.0+rpi1 m4_1.4.18-5 make_4.3-4.1 man-db_2.9.4-2 mawk_1.3.4.20200120-2 mount_2.36.1-8+deb11u1 nano_5.4-2+deb11u2 ncurses-base_6.2+20201114-2+deb11u2 ncurses-bin_6.2+20201114-2+deb11u2 net-tools_1.60+git20181103.0eebece-1 netbase_6.3 netcat-openbsd_1.217-3 nftables_0.9.8-3.1+deb11u1 passwd_1:4.8.1-1 patch_2.7.6-7 paxctld_1.2.1-1 perl_5.32.1-4+deb11u2 perl-base_5.32.1-4+deb11u2 perl-modules-5.32_5.32.1-4+deb11u2 pinentry-curses_1.1.0-4 pkg-config_0.29.2-1 po-debconf_1.0.21+nmu1 procps_2:3.3.17-5 raspbian-archive-keyring_20120528.2 readline-common_8.1-1 rsyslog_8.2102.0-2+deb11u1 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.7-1 sensible-utils_0.0.14 systemd_247.3-7+rpi1+deb11u2 systemd-sysv_247.3-7+rpi1+deb11u2 sysvinit-utils_2.96-7+deb11u1 tar_1.34+dfsg-1 tasksel_3.68+deb11u1 tasksel-data_3.68+deb11u1 traceroute_1:2.1.0-2+deb11u1 tzdata_2021a-1+deb11u10 udev_247.3-7+rpi1+deb11u2 util-linux_2.36.1-8+deb11u1 vim-common_2:8.2.2434-3+deb11u1 vim-tiny_2:8.2.2434-3+deb11u1 xxd_2:8.2.2434-3+deb11u1 xz-utils_5.2.5-2.1~deb11u1 zlib1g_1:1.2.11.dfsg-2+deb11u2 zlib1g-dev_1:1.2.11.dfsg-2+deb11u2
-
-+------------------------------------------------------------------------------+
-| Build                                                                        |
-+------------------------------------------------------------------------------+
-
-
-Unpack source
--------------
-
-Format: 3.0 (quilt)
-Source: linbpq
-Binary: linbpq
-Architecture: linux-any
-Version: 6.0.24.15-2~bpo11+1
-Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Uploaders:  Dave Hibberd <d@vehibberd.com>,
-Homepage: http://users.telenet.be/on4qz
-Standards-Version: 4.6.1.0
-Vcs-Browser: https://salsa.debian.org/debian-hamradio-team/linbpq
-Vcs-Git: https://salsa.debian.org/debian-hamradio-team/linbpq.git
-Build-Depends: debhelper-compat (= 12), libssl-dev, libminiupnpc-dev, libpcap-dev, libconfig-dev, zlib1g-dev
-Package-List:
- linbpq deb hamradio optional arch=linux-any
-Checksums-Sha1:
- e99317b77aac16795fce4f9fe9ff0c2f7e95df5f 7884841 linbpq_6.0.24.15.orig.tar.gz
- aebce419e02b1a4131649c5fe0a434e5574fa8e5 7872 linbpq_6.0.24.15-2~bpo11+1.debian.tar.xz
-Checksums-Sha256:
- 2ed3d67fbbd71c496805113e75ddce8368e0c7f12fd6e52b57115ae5c0d38fa4 7884841 linbpq_6.0.24.15.orig.tar.gz
- 6122dd4c9b4b48a4f5738f0070c76dbf60a8dffe5644f5158c8a9b3e28bf349a 7872 linbpq_6.0.24.15-2~bpo11+1.debian.tar.xz
-Files:
- a8b80e15db391da057f9e93654a1d270 7884841 linbpq_6.0.24.15.orig.tar.gz
- f62e6d4ef74925de4d19231db5726000 7872 linbpq_6.0.24.15-2~bpo11+1.debian.tar.xz
-
-dpkg-source: warning: extracting unsigned source package (linbpq_6.0.24.15-2~bpo11+1.dsc)
-dpkg-source: info: extracting linbpq in /<<PKGBUILDDIR>>
-dpkg-source: info: unpacking linbpq_6.0.24.15.orig.tar.gz
-dpkg-source: info: unpacking linbpq_6.0.24.15-2~bpo11+1.debian.tar.xz
-dpkg-source: info: using patch list from debian/patches/series
-dpkg-source: info: applying makefile
-
-Check disk space
-----------------
-
-Sufficient free space for build
-
-User Environment
-----------------
-
-APT_CONFIG=/var/lib/sbuild/apt.conf
-HOME=/sbuild-nonexistent
-LANG=en_GB.UTF-8
-LC_ALL=C.UTF-8
-LD_LIBRARY_PATH=/usr/lib/libeatmydata
-LD_PRELOAD=libeatmydata.so
-LOGNAME=hibby
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-PWD=/<<PKGBUILDDIR>>
-SCHROOT_ALIAS_NAME=bullseye
-SCHROOT_CHROOT_NAME=stable-armhf-sbuild
-SCHROOT_COMMAND=env
-SCHROOT_GID=1000
-SCHROOT_GROUP=hibby
-SCHROOT_SESSION_ID=stable-armhf-sbuild-bb430cba-7c90-43ba-8089-0dc15aa027d9
-SCHROOT_UID=1000
-SCHROOT_USER=hibby
-SHELL=/bin/sh
-USER=hibby
-
-dpkg-buildpackage
------------------
-
-Command: dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
-dpkg-buildpackage: info: source package linbpq
-dpkg-buildpackage: info: source version 6.0.24.15-2~bpo11+1
-dpkg-buildpackage: info: source distribution bullseye
-dpkg-buildpackage: info: source changed by Dave Hibberd <d@vehibberd.com>
- dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture armhf
- debian/rules clean
-dh clean
-   dh_auto_clean
-	make -j16 clean
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-rm -f *.d
-rm -f linbpq pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_clean
- debian/rules binary
-dh binary
-   dh_update_autotools_config
-   dh_autoreconf
-   dh_auto_configure
-   dh_auto_build
-	make -j16 "INSTALL=install --strip-program=true"
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwtran.o pngwtran.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrtran.o pngrtran.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngset.o pngset.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrio.o pngrio.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwio.o pngwio.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngtrans.o pngtrans.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngrutil.o pngrutil.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwutil.o pngwutil.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngread.o pngread.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngwrite.o pngwrite.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o png.o png.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngerror.o pngerror.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngget.o pngget.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o pngmem.o pngmem.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSIconData.o APRSIconData.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AISCommon.o AISCommon.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o upnp.o upnp.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSStdPages.o APRSStdPages.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HSMODEM.o HSMODEM.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WinRPR.o WinRPR.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KISSHF.o KISSHF.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCEmulators.o TNCEmulators.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqhdlc.o bpqhdlc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SerialPort.o SerialPort.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o adif.o adif.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WebMail.o WebMail.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o utf8Routines.o utf8Routines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o VARA.o VARA.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzFind.o LzFind.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Alloc.o Alloc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaDec.o LzmaDec.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaEnc.o LzmaEnc.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LzmaLib.o LzmaLib.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Multicast.o Multicast.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ARDOP.o ARDOP.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o IPCode.o IPCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FLDigi.o FLDigi.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o linether.o linether.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CMSAuth.o CMSAuth.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o APRSCode.o APRSCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQtoAGW.o BPQtoAGW.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o KAMPactor.o KAMPactor.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AEAPactor.o AEAPactor.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HALDriver.o HALDriver.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MULTIPSK.o MULTIPSK.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSHTMLConfig.o BBSHTMLConfig.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o ChatHTMLConfig.o ChatHTMLConfig.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BBSUtilities.o BBSUtilities.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o bpqaxip.o bpqaxip.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQINP3.o BPQINP3.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o BPQNRR.o BPQNRR.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o cMain.o cMain.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Cmd.o Cmd.c
-BBSUtilities.c: In function ‘GetConfig’:
-BBSUtilities.c:10308:16: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10308 |   ptr = strlop(ptr, '|');
-      |                ^~~
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10312:16: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10312 |   ptr = strlop(ptr, '|');
-      |                ^~~
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10316:16: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10316 |   ptr = strlop(ptr, '|');
-      |                ^~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o CommonCode.o CommonCode.c
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10320:16: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10320 |   ptr = strlop(ptr, '|');
-      |                ^~~
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-BBSUtilities.c:10344:16: warning: passing argument 1 of ‘strlop’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-10344 |   ptr = strlop(ptr, '|');
-      |                ^~~
-In file included from bpqmail.h:36,
-                 from BBSUtilities.c:24:
-CHeaders.h:96:22: note: expected ‘char *’ but argument is of type ‘const char *’
-   96 | char * strlop(char * buf, char delim);
-      |               ~~~~~~~^~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTMLCommonCode.o HTMLCommonCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o compatbits.o compatbits.c
-cMain.c: In function ‘Start’:
-cMain.c:945:28: warning: implicit declaration of function ‘CanPortDigi’ [-Wimplicit-function-declaration]
-  945 |   if (PortRec->DIGIPORT && CanPortDigi(PortRec->DIGIPORT))
-      |                            ^~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o config.o config.c
-cMain.c:1077:23: warning: implicit declaration of function ‘KissEncode’ [-Wimplicit-function-declaration]
- 1077 |    KISS->KISSCMDLEN = KissEncode(KissString, KISS->KISSCMD, KissLen);
-      |                       ^~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o datadefs.o datadefs.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FBBRoutines.o FBBRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HFCommon.o HFCommon.c
-CommonCode.c: In function ‘ProcessIncommingConnectEx’:
-CommonCode.c:920:30: warning: initialization of ‘struct PORTCONTROL *’ from incompatible pointer type ‘struct _EXTPORTDATA *’ [-Wincompatible-pointer-types]
-  920 |  struct PORTCONTROL * PORT = TNC->PortRecord;
-      |                              ^~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Housekeeping.o Housekeeping.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HTTPcode.o HTTPcode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o kiss.o kiss.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L2Code.o L2Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L3Code.o L3Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o L4Code.o L4Code.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o lzhuf32.o lzhuf32.c
-kiss.c:115:65: warning: ‘struct ConnectionInfo’ declared inside parameter list will not be visible outside of this definition or declaration
-  115 | void processDRATSFrame(unsigned char * Message, int Len, struct ConnectionInfo * sockptr);
-      |                                                                 ^~~~~~~~~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailCommands.o MailCommands.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailDataDefs.o MailDataDefs.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o LinBPQ.o LinBPQ.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailRouting.o MailRouting.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MailTCP.o MailTCP.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o MBLRoutines.o MBLRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o md5.o md5.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Moncode.o Moncode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o NNTPRoutines.o NNTPRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o RigControl.o RigControl.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TelnetV6.o TelnetV6.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WINMOR.o WINMOR.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o TNCCode.o TNCCode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UZ7HODrv.o UZ7HODrv.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o WPRoutines.o WPRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTrackeMulti.o SCSTrackeMulti.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSPactor.o SCSPactor.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o SCSTracker.o SCSTracker.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o HanksRT.o HanksRT.c
-WPRoutines.c: In function ‘CreateWPMessage’:
-WPRoutines.c:1419:16: warning: passing argument 1 of ‘gmtime’ from incompatible pointer type [-Wincompatible-pointer-types]
- 1419 |    tm = gmtime(&ptr->last_modif);
-      |                ^~~~~~~~~~~~~~~~
-      |                |
-      |                long long int *
-In file included from compatbits.h:13,
-                 from bpqmail.h:29,
-                 from WPRoutines.c:24:
-/usr/include/time.h:119:41: note: expected ‘const time_t *’ {aka ‘const long int *’} but argument is of type ‘long long int *’
-  119 | extern struct tm *gmtime (const time_t *__timer) __THROW;
-      |                           ~~~~~~~~~~~~~~^~~~~~~
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o UIRoutines.o UIRoutines.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWAPI.o AGWAPI.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o AGWMoncode.o AGWMoncode.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o DRATS.o DRATS.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o FreeDATA.o FreeDATA.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o base64.o base64.c
-gcc -DLINBPQ -MMD -g -fcommon -Wdate-time -D_FORTIFY_SOURCE=2  -c -o Events.o Events.c
-gcc pngwtran.o pngrtran.o pngset.o pngrio.o pngwio.o pngtrans.o pngrutil.o pngwutil.o pngread.o pngwrite.o png.o pngerror.o pngget.o pngmem.o APRSIconData.o AISCommon.o upnp.o APRSStdPages.o HSMODEM.o WinRPR.o KISSHF.o TNCEmulators.o bpqhdlc.o SerialPort.o adif.o WebMail.o utf8Routines.o VARA.o LzFind.o Alloc.o LzmaDec.o LzmaEnc.o LzmaLib.o Multicast.o ARDOP.o IPCode.o FLDigi.o linether.o CMSAuth.o APRSCode.o BPQtoAGW.o KAMPactor.o AEAPactor.o HALDriver.o MULTIPSK.o BBSHTMLConfig.o ChatHTMLConfig.o BBSUtilities.o bpqaxip.o BPQINP3.o BPQNRR.o cMain.o Cmd.o CommonCode.o HTMLCommonCode.o compatbits.o config.o datadefs.o FBBRoutines.o HFCommon.o Housekeeping.o HTTPcode.o kiss.o L2Code.o L3Code.o L4Code.o lzhuf32.o MailCommands.o MailDataDefs.o LinBPQ.o MailRouting.o MailTCP.o MBLRoutines.o md5.o Moncode.o NNTPRoutines.o RigControl.o TelnetV6.o WINMOR.o TNCCode.o UZ7HODrv.o WPRoutines.o SCSTrackeMulti.o SCSPactor.o SCSTracker.o HanksRT.o  UIRoutines.o AGWAPI.o AGWMoncode.o DRATS.o FreeDATA.o base64.o Events.o -Xlinker -Map=output.map -l:libminiupnpc.a -lrt -lm -lz -lpthread -lconfig -lpcap -o linbpq
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_auto_test
-   create-stamp debian/debhelper-build-stamp
-   dh_prep
-   dh_installdirs
-   dh_auto_install
-	make -j16 install DESTDIR=/<<PKGBUILDDIR>>/debian/linbpq AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
-make[1]: Entering directory '/<<PKGBUILDDIR>>'
-install -b -m 755  -D -d		debian/linbpq/opt/oarc/bpq
-install -b -m 755  -s -p linbpq		debian/linbpq/opt/oarc/bpq
-make[1]: Leaving directory '/<<PKGBUILDDIR>>'
-   dh_install
-   dh_installdocs
-   dh_installchangelogs
-   dh_installinit
-   dh_installsystemd
-   dh_perl
-   dh_link
-   dh_strip_nondeterminism
-   dh_compress
-   dh_fixperms
-   dh_missing
-   dh_dwz
-dwz: debian/linbpq/opt/oarc/bpq/linbpq: .debug_info section not present
-   dh_strip
-   dh_makeshlibs
-   dh_shlibdeps
-   dh_installdeb
-   dh_gencontrol
-   dh_md5sums
-   dh_builddeb
-dpkg-deb: building package 'linbpq' in '../linbpq_6.0.24.15-2~bpo11+1_armhf.deb'.
- dpkg-genbuildinfo --build=binary
- dpkg-genchanges --build=binary >../linbpq_6.0.24.15-2~bpo11+1_armhf.changes
-dpkg-genchanges: info: binary-only upload (no source code included)
- dpkg-source --after-build .
-dpkg-buildpackage: info: binary-only upload (no source included)
---------------------------------------------------------------------------------
-Build finished at 2023-10-15T21:10:01Z
-
-Finished
---------
-
-I: Built successfully
-
-+------------------------------------------------------------------------------+
-| Changes                                                                      |
-+------------------------------------------------------------------------------+
-
-
-linbpq_6.0.24.15-2~bpo11+1_armhf.changes:
------------------------------------------
-
-Format: 1.8
-Date: Sun, 15 Oct 2023 21:50:46 +0100
-Source: linbpq
-Binary: linbpq
-Architecture: armhf
-Version: 6.0.24.15-2~bpo11+1
-Distribution: bullseye
-Urgency: medium
-Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Changed-By: Dave Hibberd <d@vehibberd.com>
-Description:
- linbpq     - Packet node and ax25 stack
-Changes:
- linbpq (6.0.24.15-2~bpo11+1) bullseye; urgency=medium
- .
-   * Rebuild for bullseye.
-Checksums-Sha1:
- 60d336e8c62ceaec886f5fcffe81fe224fe0566b 5549 linbpq_6.0.24.15-2~bpo11+1_armhf.buildinfo
- 410bf8ef71cae9f36dc2a7cc3b2806ffbe275207 565252 linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-Checksums-Sha256:
- 873470639608a8f2b2af4c98aa3c5a1b50a8de266f2ce5ba8ce8b39f3ee315f8 5549 linbpq_6.0.24.15-2~bpo11+1_armhf.buildinfo
- 3284c9b0323ee66e59acac888b80a7509969de267974dfb673a6d0ca7de45fd6 565252 linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-Files:
- 536b62172e32e35ccca1a7e5ae3ae60b 5549 hamradio optional linbpq_6.0.24.15-2~bpo11+1_armhf.buildinfo
- c90c8da09bc302f1159bf64165aab7de 565252 hamradio optional linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-
-+------------------------------------------------------------------------------+
-| Buildinfo                                                                    |
-+------------------------------------------------------------------------------+
-
-Format: 1.0
-Source: linbpq
-Binary: linbpq
-Architecture: armhf
-Version: 6.0.24.15-2~bpo11+1
-Checksums-Md5:
- c90c8da09bc302f1159bf64165aab7de 565252 linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-Checksums-Sha1:
- 410bf8ef71cae9f36dc2a7cc3b2806ffbe275207 565252 linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-Checksums-Sha256:
- 3284c9b0323ee66e59acac888b80a7509969de267974dfb673a6d0ca7de45fd6 565252 linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-Build-Origin: Raspbian
-Build-Architecture: armhf
-Build-Date: Sun, 15 Oct 2023 21:09:59 +0000
-Build-Path: /<<PKGBUILDDIR>>
-Build-Tainted-By:
- merged-usr-via-aliased-dirs
-Installed-Build-Depends:
- autoconf (= 2.69-14),
- automake (= 1:1.16.3-2),
- autopoint (= 0.21-4),
- autotools-dev (= 20180224.1+nmu1),
- base-files (= 11.1+rpi1+deb11u8),
- base-passwd (= 3.5.51),
- bash (= 5.1-2+deb11u1),
- binutils (= 2.35.2-2+rpi1),
- binutils-arm-linux-gnueabihf (= 2.35.2-2+rpi1),
- binutils-common (= 2.35.2-2+rpi1),
- bsdextrautils (= 2.36.1-8+deb11u1),
- bsdutils (= 1:2.36.1-8+deb11u1),
- build-essential (= 12.9),
- bzip2 (= 1.0.8-4),
- coreutils (= 8.32-4),
- cpp (= 4:10.2.1-1+rpi1),
- cpp-10 (= 10.2.1-6+rpi1),
- dash (= 0.5.11+git20200708+dd9ef66-5),
- debconf (= 1.5.77),
- debhelper (= 13.3.4),
- debianutils (= 4.11.2),
- dh-autoreconf (= 20),
- dh-strip-nondeterminism (= 1.12.0-1),
- diffutils (= 1:3.7-5),
- dpkg (= 1.20.12+rpi1),
- dpkg-dev (= 1.20.12+rpi1),
- dwz (= 0.13+20210201-1),
- file (= 1:5.39-3+deb11u1),
- findutils (= 4.8.0-1),
- g++ (= 4:10.2.1-1+rpi1),
- g++-10 (= 10.2.1-6+rpi1),
- gcc (= 4:10.2.1-1+rpi1),
- gcc-10 (= 10.2.1-6+rpi1),
- gcc-10-base (= 10.2.1-6+rpi1),
- gettext (= 0.21-4),
- gettext-base (= 0.21-4),
- grep (= 3.6-1+deb11u1),
- groff-base (= 1.22.4-6),
- gzip (= 1.10-4+deb11u1),
- hostname (= 3.23),
- init-system-helpers (= 1.60),
- install-info (= 6.7.0.dfsg.2-6),
- intltool-debian (= 0.35.0+20060710.5),
- libacl1 (= 2.2.53-10),
- libarchive-zip-perl (= 1.68-1),
- libasan6 (= 10.2.1-6+rpi1),
- libatomic1 (= 10.2.1-6+rpi1),
- libattr1 (= 1:2.4.48-6),
- libaudit-common (= 1:3.0-2),
- libaudit1 (= 1:3.0-2),
- libbinutils (= 2.35.2-2+rpi1),
- libblkid1 (= 2.36.1-8+deb11u1),
- libbz2-1.0 (= 1.0.8-4),
- libc-bin (= 2.31-13+rpi1+deb11u7),
- libc-dev-bin (= 2.31-13+rpi1+deb11u7),
- libc6 (= 2.31-13+rpi1+deb11u7),
- libc6-dev (= 2.31-13+rpi1+deb11u7),
- libcap-ng0 (= 0.7.9-2.2+b1),
- libcc1-0 (= 10.2.1-6+rpi1),
- libcom-err2 (= 1.46.2-2),
- libconfig-dev (= 1.5-0.4),
- libconfig9 (= 1.5-0.4),
- libcrypt-dev (= 1:4.4.18-4),
- libcrypt1 (= 1:4.4.18-4),
- libctf-nobfd0 (= 2.35.2-2+rpi1),
- libctf0 (= 2.35.2-2+rpi1),
- libdb5.3 (= 5.3.28+dfsg1-0.8),
- libdbus-1-3 (= 1.12.28-0+deb11u1),
- libdbus-1-dev (= 1.12.28-0+deb11u1),
- libdebconfclient0 (= 0.260),
- libdebhelper-perl (= 13.3.4),
- libdpkg-perl (= 1.20.12+rpi1),
- libelf1 (= 0.183-1),
- libffi7 (= 3.3-6),
- libfile-stripnondeterminism-perl (= 1.12.0-1),
- libgcc-10-dev (= 10.2.1-6+rpi1),
- libgcc-s1 (= 10.2.1-6+rpi1),
- libgcrypt20 (= 1.8.7-6),
- libgdbm-compat4 (= 1.19-2),
- libgdbm6 (= 1.19-2),
- libglib2.0-0 (= 2.66.8-1),
- libgmp10 (= 2:6.2.1+dfsg-1+deb11u1),
- libgomp1 (= 10.2.1-6+rpi1),
- libgpg-error0 (= 1.38-2),
- libgssapi-krb5-2 (= 1.18.3-6+deb11u4),
- libicu67 (= 67.1-7),
- libisl23 (= 0.23-1),
- libk5crypto3 (= 1.18.3-6+deb11u4),
- libkeyutils1 (= 1.6.1-2),
- libkrb5-3 (= 1.18.3-6+deb11u4),
- libkrb5support0 (= 1.18.3-6+deb11u4),
- liblz4-1 (= 1.9.3-2),
- liblzma5 (= 5.2.5-2.1~deb11u1),
- libmagic-mgc (= 1:5.39-3+deb11u1),
- libmagic1 (= 1:5.39-3+deb11u1),
- libminiupnpc-dev (= 2.2.1-1),
- libminiupnpc17 (= 2.2.1-1),
- libmount1 (= 2.36.1-8+deb11u1),
- libmpc3 (= 1.2.0-1),
- libmpfr6 (= 4.1.0-3),
- libnsl-dev (= 1.3.0-2),
- libnsl2 (= 1.3.0-2),
- libpam-modules (= 1.4.0-9+deb11u1),
- libpam-modules-bin (= 1.4.0-9+deb11u1),
- libpam-runtime (= 1.4.0-9+deb11u1),
- libpam0g (= 1.4.0-9+deb11u1),
- libpcap-dev (= 1.10.0-2),
- libpcap0.8 (= 1.10.0-2),
- libpcap0.8-dev (= 1.10.0-2),
- libpcre2-8-0 (= 10.36-2+deb11u1),
- libpcre3 (= 2:8.39-13),
- libperl5.32 (= 5.32.1-4+deb11u2),
- libpipeline1 (= 1.5.3-1),
- libseccomp2 (= 2.5.1-1+rpi1+deb11u1),
- libselinux1 (= 3.1-3),
- libsigsegv2 (= 2.13-1),
- libsmartcols1 (= 2.36.1-8+deb11u1),
- libssl-dev (= 1.1.1w-0+deb11u1),
- libssl1.1 (= 1.1.1w-0+deb11u1),
- libstdc++-10-dev (= 10.2.1-6+rpi1),
- libstdc++6 (= 10.2.1-6+rpi1),
- libsub-override-perl (= 0.09-2),
- libsystemd0 (= 247.3-7+rpi1+deb11u2),
- libtinfo6 (= 6.2+20201114-2+deb11u2),
- libtirpc-common (= 1.3.1-1+deb11u1),
- libtirpc-dev (= 1.3.1-1+deb11u1),
- libtirpc3 (= 1.3.1-1+deb11u1),
- libtool (= 2.4.6-15),
- libubsan1 (= 10.2.1-6+rpi1),
- libuchardet0 (= 0.0.7-1),
- libudev1 (= 247.3-7+rpi1+deb11u2),
- libunistring2 (= 0.9.10-4),
- libuuid1 (= 2.36.1-8+deb11u1),
- libxml2 (= 2.9.10+dfsg-6.7+deb11u4),
- libzstd1 (= 1.4.8+dfsg-2.1+rpi1),
- linux-libc-dev (= 5.10.197-1+rpi1),
- login (= 1:4.8.1-1),
- lsb-base (= 11.1.0+rpi1),
- m4 (= 1.4.18-5),
- make (= 4.3-4.1),
- man-db (= 2.9.4-2),
- mawk (= 1.3.4.20200120-2),
- ncurses-base (= 6.2+20201114-2+deb11u2),
- ncurses-bin (= 6.2+20201114-2+deb11u2),
- patch (= 2.7.6-7),
- perl (= 5.32.1-4+deb11u2),
- perl-base (= 5.32.1-4+deb11u2),
- perl-modules-5.32 (= 5.32.1-4+deb11u2),
- pkg-config (= 0.29.2-1),
- po-debconf (= 1.0.21+nmu1),
- sed (= 4.7-1),
- sensible-utils (= 0.0.14),
- sysvinit-utils (= 2.96-7+deb11u1),
- tar (= 1.34+dfsg-1),
- util-linux (= 2.36.1-8+deb11u1),
- xz-utils (= 5.2.5-2.1~deb11u1),
- zlib1g (= 1:1.2.11.dfsg-2+deb11u2),
- zlib1g-dev (= 1:1.2.11.dfsg-2+deb11u2)
-Environment:
- DEB_BUILD_OPTIONS="parallel=16"
- LANG="en_GB.UTF-8"
- LC_ALL="C.UTF-8"
- LC_COLLATE="C.UTF-8"
- LD_LIBRARY_PATH="/usr/lib/libeatmydata"
- SOURCE_DATE_EPOCH="1697403046"
-
-
-+------------------------------------------------------------------------------+
-| Package contents                                                             |
-+------------------------------------------------------------------------------+
-
-
-linbpq_6.0.24.15-2~bpo11+1_armhf.deb
-------------------------------------
-
- new Debian package, version 2.0.
- size 565252 bytes: control archive=1840 bytes.
-     433 bytes,    11 lines      control              
-     319 bytes,     5 lines      md5sums              
-    2517 bytes,    69 lines   *  postinst             #!/bin/sh
-     653 bytes,    21 lines   *  postrm               #!/bin/sh
-     222 bytes,     7 lines   *  prerm                #!/bin/sh
- Package: linbpq
- Version: 6.0.24.15-2~bpo11+1
- Architecture: armhf
- Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
- Installed-Size: 2362
- Depends: libc6 (>= 2.29), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
- Section: hamradio
- Priority: optional
- Homepage: http://users.telenet.be/on4qz
- Description: Packet node and ax25 stack
-  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
-
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./etc/
-lrwxrwxrwx root/root         0 2023-10-15 20:50 ./etc/bpq32.cfg -> /opt/oarc/bpq/bpq32.cfg
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./lib/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./lib/systemd/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./lib/systemd/system/
--rw-r--r-- root/root       179 2023-08-31 23:14 ./lib/systemd/system/linbpq.service
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./opt/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./opt/oarc/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./opt/oarc/bpq/
--rw-r--r-- root/root     10976 2023-08-31 23:14 ./opt/oarc/bpq/bpq32.cfg
--rwxr-xr-x root/root   2383280 2023-10-15 20:50 ./opt/oarc/bpq/linbpq
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./usr/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./usr/share/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./usr/share/doc/
-drwxr-xr-x root/root         0 2023-10-15 20:50 ./usr/share/doc/linbpq/
--rw-r--r-- root/root       326 2023-10-15 20:50 ./usr/share/doc/linbpq/changelog.Debian.gz
--rw-r--r-- root/root      1161 2023-08-31 23:14 ./usr/share/doc/linbpq/copyright
-
-
-+------------------------------------------------------------------------------+
-| Post Build                                                                   |
-+------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------+
-| Cleanup                                                                      |
-+------------------------------------------------------------------------------+
-
-Purging /<<BUILDDIR>>
-Not cleaning session: cloned chroot in use
-
-+------------------------------------------------------------------------------+
-| Summary                                                                      |
-+------------------------------------------------------------------------------+
-
-Build Architecture: armhf
-Build Type: binary
-Build-Space: 40008
-Build-Time: 51
-Distribution: bullseye
-Host Architecture: armhf
-Install-Time: 24
-Job: /home/hibby/Dev/oarc/linbpq/linbpq_6.0.24.15-2~bpo11+1.dsc
-Machine Architecture: amd64
-Package: linbpq
-Package-Time: 129
-Source-Version: 6.0.24.15-2~bpo11+1
-Space: 40008
-Status: successful
-Version: 6.0.24.15-2~bpo11+1
---------------------------------------------------------------------------------
-Finished at 2023-10-15T21:10:01Z
-Build needed 00:02:09, 40008k disk space
