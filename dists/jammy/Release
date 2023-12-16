@@ -1,27 +1,27 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: jammy
-Date: Mon, 11 Dec 2023 13:14:01 UTC
+Date: Sat, 16 Dec 2023 14:58:04 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 MD5Sum:
- b9d950f063daf6f6c7abaeae88f87b54 5496 main/binary-amd64/Packages
- 8887befaa6caf781bf65404abd7d97f9 2330 main/binary-amd64/Packages.gz
+ c34389168cb2bed104f1ef9a26e3475a 6187 main/binary-amd64/Packages
+ 7e5158cfa9295407657ae6d5781a5ae0 2561 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
  06d4228b39ce51226fb08af0569067c3 1062 main/binary-arm64/Packages
  2230b8a0779a89ad3b768025562f6e4f 679 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
 SHA1:
- ef09b3058d39c5fb0933af898d92d46ec3f124b5 5496 main/binary-amd64/Packages
- 5a4b515e74f590659c2c74aa94d397f291b11d11 2330 main/binary-amd64/Packages.gz
+ 0645666c44467a40a651ecf97cc49f582cecf2d4 6187 main/binary-amd64/Packages
+ 33ea9b6cd7584b20e6654697321683a4886c52e6 2561 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
  fa2afe04b6d65802fdcfb8947e89a845fb751de1 1062 main/binary-arm64/Packages
  4fb6a1c8377a9d445132601c3fb1e2bb77b16e75 679 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
 SHA256:
- 186f11da3b99c6e4263b41dc879262f16f4ee67782c61a5b962f22eccaa207d9 5496 main/binary-amd64/Packages
- d0f2e7c054d1e0de99a998f9af75f9e66fd4f4194f3616eb6ebebd1be719d985 2330 main/binary-amd64/Packages.gz
+ 1e370b8ba695d066f1d95c2dff3214bd187a132eff91ce505af033dfdae57ec4 6187 main/binary-amd64/Packages
+ 6ab47731df9ba353ff8339b1321913ccd4075e5c6ab2af311ece510bf093f752 2561 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
  b016d6467c973609eb33778f9ab7436d918fe1fbdc893e777cdc7b8691eb2576 1062 main/binary-arm64/Packages
  89b51482c8d6975e29526b43c75f06308be89f0052179ff9f4de85eedb7a1a58 679 main/binary-arm64/Packages.gz

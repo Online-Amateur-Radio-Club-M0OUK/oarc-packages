@@ -61,7 +61,11 @@ For Ubuntu 22.04 LTS (Jammy Jellyfish, amd64, released April 2022) amd64:
 
 `deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main`
 
-RaspiOS Stable (bullseye, 32 bit armv7/armhf AND arm64, released 2020):
+RaspiOS Stable (bookworm, 32 bit armv7/armhf AND arm64, released 2020):
+
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main`
+
+RaspiOS Oldstable (bullseye, 32 bit armv7/armhf AND arm64, released 2020):
 
 `deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bullseye main`
 
@@ -77,7 +81,7 @@ Run the below commands to pull in the package lists & install;
 | -------      | --------                      | ------------ |
 | QtTermTCP    | 0.0.0.73                      | qttermtcp    |
 | QtSoundModem | 0.0.0.68                      | qtsoundmodem |
-| LinBPQ       | 6.0.24.22 - currently removed | linbpq       |
+| LinBPQ       | 6.0.24.22                     | linbpq       |
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
 | FBB          | 7.011                         | FBB          |

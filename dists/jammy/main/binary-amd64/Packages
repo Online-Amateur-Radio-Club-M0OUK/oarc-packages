@@ -48,6 +48,23 @@ Description: Packet radio mailbox and utilities
   * reqdir: FBB server which requests directory listings.
   * xfbbC: B/W Ncurses console for xfbbd.
 
+Package: linbpq
+Version: 6.0.24.22-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 2457
+Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
+Priority: optional
+Section: hamradio
+Filename: pool/main/l/linbpq/linbpq_6.0.24.22-jammy2_amd64.deb
+Size: 741780
+SHA256: 8c9c7c0717819ee307d51b15319ae3ab74cb7f23ddfa07d37db438002caf1dd1
+SHA1: 6d83d05e65d71fc44db62c938e6045a2d385eb0b
+MD5sum: d6ecb20392aa26ac9ef01cbe488a6bde
+Description: Packet node and ax25 stack
+ LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
+
 Package: qtsoundmodem
 Version: 0.0.0.68-jammy1
 Architecture: amd64
