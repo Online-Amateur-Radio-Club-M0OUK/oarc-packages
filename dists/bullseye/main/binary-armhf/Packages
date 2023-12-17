@@ -102,40 +102,22 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.68-1~bpo11+1
+Version: 0.0.0.71-1~bpo11+1
 Architecture: armhf
 Maintainer: Dave Hibberd <d@vehibberd.com>,
-Installed-Size: 761
+Installed-Size: 762
 Depends: libasound2 (>= 1.0.16), libc6 (>= 2.27), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
 Recommends: libpulse0
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.68-1~bpo11+1_armhf.deb
-Size: 231056
-SHA256: bbe4f20ab5aef2e94209705bcc5b887fc8f285ccd13298bb1355dbfd4a250cc7
-SHA1: 57fbdcf44a59da19e45454d7d6edcdc6051ad42f
-MD5sum: 10c8748576099d935eeb8cbaa9ee887d
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.71-1~bpo11+1_armhf.deb
+Size: 232056
+SHA256: c0409927fbf6ebf6f6126fb55f9280a0abf8450ad126dc6a15f1eecaa65fac59
+SHA1: ceb928f9b297d2335a45e2a285365a04f2d24b0e
+MD5sum: 87b494c758942e4dc10b92ae3d031819
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
-
-Package: qtsoundmodem-dbgsym
-Source: qtsoundmodem
-Version: 0.0.0.68-1~bpo11+1
-Auto-Built-Package: debug-symbols
-Architecture: armhf
-Maintainer: Dave Hibberd <d@vehibberd.com>,
-Installed-Size: 1775
-Depends: qtsoundmodem (= 0.0.0.68-1~bpo11+1)
-Priority: optional
-Section: debug
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem-dbgsym_0.0.0.68-1~bpo11+1_armhf.deb
-Size: 1710316
-SHA256: fa6d420d07757974bb6388e8e1af0a45e159ded6f4d75d863f155b9e1302b248
-SHA1: a0c44c587dc978ca001d33511ec180b7c5e8f455
-MD5sum: 8a69b3af7c94f81abdcfb8554b43633b
-Description: debug symbols for qtsoundmodem
-Build-Ids: 975f10f16a37673077cae6db672ab85ed0588016
 
 Package: qttermtcp
 Version: 0.0.0.73-1~bpo11+1

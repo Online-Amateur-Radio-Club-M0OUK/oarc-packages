@@ -80,7 +80,7 @@ Run the below commands to pull in the package lists & install;
 | Package      | Revision                      | Install Name |
 | -------      | --------                      | ------------ |
 | QtTermTCP    | 0.0.0.73                      | qttermtcp    |
-| QtSoundModem | 0.0.0.68                      | qtsoundmodem |
+| QtSoundModem | 0.0.0.71                      | qtsoundmodem |
 | LinBPQ       | 6.0.24.22                     | linbpq       |
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
