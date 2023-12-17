@@ -1,7 +1,7 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bookworm
-Date: Sat, 16 Dec 2023 14:56:44 UTC
+Date: Sun, 17 Dec 2023 13:39:12 UTC
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Personal repository
