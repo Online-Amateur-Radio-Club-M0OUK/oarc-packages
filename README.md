@@ -81,7 +81,7 @@ Run the below commands to pull in the package lists & install;
 | -------      | --------                      | ------------ |
 | QtTermTCP    | 0.0.0.73                      | qttermtcp    |
 | QtSoundModem | 0.0.0.71                      | qtsoundmodem |
-| LinBPQ       | 6.0.24.22                     | linbpq       |
+| LinBPQ       | 6.0.24.27                     | linbpq       |
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
 | FBB          | 7.011                         | FBB          |
