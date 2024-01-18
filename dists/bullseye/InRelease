@@ -4,39 +4,39 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bullseye
-Date: Tue, 16 Jan 2024 21:42:46 UTC
+Date: Thu, 18 Jan 2024 10:52:17 UTC
 Architectures: arm64 armhf
 Components: main
 Description: Personal repository
 MD5Sum:
- e81e4b43d21bf3a53b41dc323135a22c 8425 main/binary-arm64/Packages
- a7c06eaecee9d61e0d390713b1a8889e 3519 main/binary-arm64/Packages.gz
+ c116eafeb2a93d8ae399d10a0fbc2ea4 8425 main/binary-arm64/Packages
+ 6981280ff6479f60d8bf780d50cd2b18 3523 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
- 1fc3cbf1dd8055bad92ee4c4e8173028 8423 main/binary-armhf/Packages
- 2c32b10bbefe11e58b1480829c9300a1 3514 main/binary-armhf/Packages.gz
+ 1fdd4650eb39468ea8fcaf871cbb3a57 8423 main/binary-armhf/Packages
+ 7c7f67a8965e4298598a3b931f204660 3516 main/binary-armhf/Packages.gz
  0f4aa2d4c75fcfcb5a18843daa2f949a 156 main/binary-armhf/Release
 SHA1:
- d0e9e4ee1f0f23cc5f9658dcd28513a83f1d4c38 8425 main/binary-arm64/Packages
- 850cc0b50faa400011b458b42fafb4d467b2563e 3519 main/binary-arm64/Packages.gz
+ f887dc8a45463e0637b7b8cbef5479fb643905de 8425 main/binary-arm64/Packages
+ dd0556b91d1dcda82283e0fd812c73d757f42457 3523 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
- 97d76f0b96a47ac40406c8bc698339d336c15f9d 8423 main/binary-armhf/Packages
- 19842faa913d867bfb4b0f21a981259e6d09ea78 3514 main/binary-armhf/Packages.gz
+ b5372f35688aa2266a543a787e5ddc7a42974d34 8423 main/binary-armhf/Packages
+ 57e09ebc9bb5da489ececdfd6e1f460569db5bb8 3516 main/binary-armhf/Packages.gz
  a2c5c99a14ee3c0c8ccaabc52ac79ab42403fe65 156 main/binary-armhf/Release
 SHA256:
- 17215f210b82af472d42a951fa7741e5acefadfcb7bbb800a8e3e5bc3aebf3f2 8425 main/binary-arm64/Packages
- 7f50f1844963aafe4cc67f964b7ac30293561680c902c1b94f2b930d8cf725ad 3519 main/binary-arm64/Packages.gz
+ 84a5a8b08a25f2b7b58b276570b2c7dc209c41068a96098739542fdc531be4e1 8425 main/binary-arm64/Packages
+ 41fae80c2f87e990f78b32ec4ee9eb4794a7b84281695f235487af27e4103ad2 3523 main/binary-arm64/Packages.gz
  0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
- 7d4f5a66ce11bc537eadb64501cc13165796726a2b024441f85db3cec954742a 8423 main/binary-armhf/Packages
- e49bde5b38c8abe10d662c0c88d1b8788343d031e2a4966fc224ffbd439854f4 3514 main/binary-armhf/Packages.gz
+ 1b063193f08d8c7831eb951125054e1f85134a55fba909bc540e0ea9adaf9914 8423 main/binary-armhf/Packages
+ 7429b9ed942c8d399cdef2e8674305a8448e880a09d1a1f5e89c9f8951f48340 3516 main/binary-armhf/Packages.gz
  f5f979447b5b021c34ac2d2a7076bbeb349c510837f6d12e5a1b59cfc262b147 156 main/binary-armhf/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmWm+FkACgkQA6H7ehkE
-dxuMEwf8CmYuiWIcczJNvgSdTov5E76ffuCaLFFissIkn6YhsNd4TwNlPOiGrCKI
-YzgYt+klqyERKTSXp35CyUDqkx47VDm34rgyHKUDRJBKdxKJlXTL9teubYmAZ8XO
-S2F59pwYpwz0ACqx9uhFpE4dLi+regsxu+9P3GGjnfxiOFz7QmrVbRV33yCqUpD9
-lnpKPnXmGQ0sjL38jomM61sWobpxyee8+ueTiVd6c4qN13IiobgzrnzRB3eySAsL
-zlFJa5eS8++jP6AKy/t1fLeprizoqyH/UtJOQBBsHBnBQkSzznZRqfmxuOZtxTeW
-8nmtcEWDb2kby67SrprQacC9h+BcDQ==
-=JipC
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmWpAuQACgkQA6H7ehkE
+dxuNDQgAp1XPfWNIPFsht2PhZZ4LBEJT9Oh70pg8WiobbXlaFjJphg/KoLy2wvo6
+NJKRA0vrB1bJu3Jpc3ivJjKDJeJ5iBqz/fkEda0Vv366ytKf9bWYQOkKRuFRTiuu
+aNCWGiV58l9YeLBUS2TA2312XRyM7WWKkTfif2zPEbcrz8oEEhNDXbnP/vB2M1Wz
+NCRf2BjW8q5SE5g1FmYmMC65a+S659ipfosNdXAQaJCmswwKBJVBbNUydNkGtHkt
+tryDu93QNV3nNeESotLXe7XY3Uz/9rJpBptD4uLByTexRUuJk2x6D8bPNxjgBhgd
+LMOuDqI2oJhnvDQOH4tpPUArUfAyqQ==
+=eJJ+
 -----END PGP SIGNATURE-----
