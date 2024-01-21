@@ -113,3 +113,25 @@ MD5sum: c3fa69cbf4756fb94b0b263ddb2e21f1
 Description: debug symbols for qttermtcp
 Build-Ids: 78bb22b5adb5ee71f46e82e5b7afb60f0c617653
 
+Package: uronode
+Version: 2.15-3~bpo12+1
+Architecture: arm64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 466
+Depends: libax25 (>= 0.0.12-rc5), libc6 (>= 2.34)
+Breaks: ax25-node
+Replaces: ax25-node
+Homepage: https://uronode.sourceforge.net/
+Priority: optional
+Section: hamradio
+Filename: pool/main/u/uronode/uronode_2.15-3~bpo12+1_arm64.deb
+Size: 115404
+SHA256: 6b74840aa01f0b209896933937d1aaf4dad4cfde8ad14d7fd195f062b1fd6c6a
+SHA1: ce5fc99cf05ad407bb0af6e10266177bbb6efb0f
+MD5sum: a3f8e23712593c0871fc3ab409c3e61b
+Description: Node front end for AX.25, NET/ROM, Rose and TCP
+ URONode is a packet radio node front end for amateur radio operators.
+ It provides a shell modelled after those of LinuxNode, AWZNode and
+ Flexnode.  It is capable of initiating connections to remote stations
+ and exposing services installed on them to users.
+
