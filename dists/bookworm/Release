@@ -1,37 +1,37 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bookworm
-Date: Tue, 13 Feb 2024 21:06:11 UTC
+Date: Fri, 23 Feb 2024 23:54:29 UTC
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Personal repository
 MD5Sum:
- 915cfe4cd5273026781b0024b89a6421 8466 main/binary-amd64/Packages
- d921b81a92b60828135008ec2ac5af9d 3516 main/binary-amd64/Packages.gz
+ 4fb98167e55f43226371c61101cd8361 8466 main/binary-amd64/Packages
+ 4635dfb5917494b5c10ebc5d35a2999c 3514 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
- 38d914395d474d6a58b8560882dde5b0 6168 main/binary-arm64/Packages
- b62ea67dfcb4103dcff288831534ecf6 2531 main/binary-arm64/Packages.gz
+ 37e9ebc53da64dbb5c6a724cd84ecdfa 6168 main/binary-arm64/Packages
+ ccd209d44b4566f5c96a6559401f8f67 2532 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
- 6467b242d371c40c24796bfe9f6f153a 5288 main/binary-armhf/Packages
- 58554856e9428ca0dc3f48ff3ef75e66 2213 main/binary-armhf/Packages.gz
+ 100437e31ef81ae413c6af5c12847d11 5288 main/binary-armhf/Packages
+ bdfc91220a7a5babe1158520b4bcd284 2213 main/binary-armhf/Packages.gz
  0f4aa2d4c75fcfcb5a18843daa2f949a 156 main/binary-armhf/Release
 SHA1:
- 13e65ff9e6d4633dae2bcffaefb608d4f44f1203 8466 main/binary-amd64/Packages
- 06b8c58592e8b74845d8882893bdd6ffc11948d6 3516 main/binary-amd64/Packages.gz
+ 01a2ef4f80ae951b3654ba9520e971659e269f3b 8466 main/binary-amd64/Packages
+ b991a6b022b9e878b934a02922c829a2c23d0be7 3514 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
- 47fa0c52d01188a704e9e15b164c7b975628cada 6168 main/binary-arm64/Packages
- 20f63fb0dcc8b7edff04b3bff6fa89c41526cfc3 2531 main/binary-arm64/Packages.gz
+ e780c1e48408ec9847092f6e7d66f94cd6cbeaed 6168 main/binary-arm64/Packages
+ 8f71e173f8d3a967d63edf752c2c858bb4c6705b 2532 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
- b206216f8574cc4dd7c17d8c1274b98f16429532 5288 main/binary-armhf/Packages
- 5b5717f902c32e4722a216cb38a17555126fd1e1 2213 main/binary-armhf/Packages.gz
+ a329216ebb3469cb7727a7ec5cf1b5e719218b5d 5288 main/binary-armhf/Packages
+ 6ca2bcb25b318ae93eac07e8d673d6995cc3a4ee 2213 main/binary-armhf/Packages.gz
  a2c5c99a14ee3c0c8ccaabc52ac79ab42403fe65 156 main/binary-armhf/Release
 SHA256:
- fa278d73103214f53cdc504b7085383a81a577384ce4473209859d62bf1fa773 8466 main/binary-amd64/Packages
- 0537649e2d4066c56082219de6e4034a8a395e6b2e147155f49da35619612841 3516 main/binary-amd64/Packages.gz
+ 18fa3c2855806e30c785faebd86d4b91e1e255add680ca631c93d28e9d8cf357 8466 main/binary-amd64/Packages
+ 1dbeb724b2d70f99fb3082d68ba2ba4f79c99bdc30e2ad06a520b567b6ee2a83 3514 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
- 4aff80c8bff672a56c2dc4def894cab6690250299df05a78a5d7ea81121ef985 6168 main/binary-arm64/Packages
- 84292c22c50903c74077ea36b4b97faf8b43b19bd3709c6f1cf0ffac568a9962 2531 main/binary-arm64/Packages.gz
+ 9e4b128953adad269915c5793d86e646a80eedaf93f257894cfd31eb015b23ec 6168 main/binary-arm64/Packages
+ 8ceeeadd6c82c5a5e8117ffcd8e2ff078c35b72832cdda8293d2ca1915892e28 2532 main/binary-arm64/Packages.gz
  0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
- 23a29e7d1be575e41e3c284ae19fbaa0fdd219f378f82ab2da41118138b8dacf 5288 main/binary-armhf/Packages
- 332b08bed69e35750a36ba1606735f3ab820c6effc4f79224d094192d547571f 2213 main/binary-armhf/Packages.gz
+ 2e66452fe62cec3b99528e7418d5c458613b362f013466b0a6f47370e583991d 5288 main/binary-armhf/Packages
+ 5f78cbee2d7ec18867a4ed9982b1357d2b30deb1d0f7d0258dc1e403d5fac37f 2213 main/binary-armhf/Packages.gz
  f5f979447b5b021c34ac2d2a7076bbeb349c510837f6d12e5a1b59cfc262b147 156 main/binary-armhf/Release
