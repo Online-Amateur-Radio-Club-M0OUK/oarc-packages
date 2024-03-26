@@ -49,19 +49,19 @@ Description: Packet radio mailbox and utilities
   * xfbbC: B/W Ncurses console for xfbbd.
 
 Package: linbpq
-Version: 6.0.24.30-jammy1
+Version: 6.0.24.33-jammy1
 Architecture: amd64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
-Installed-Size: 2472
+Installed-Size: 2466
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.30-jammy1_amd64.deb
-Size: 747378
-SHA256: 59c67fa48f168c37e018264919b78959c54ffd23ad6d9256196bf90348438bb4
-SHA1: 5bf1649946d7fb8b1603ddf389c348d58ba626e7
-MD5sum: aa66f590c73716c48c475ddc9047bba2
+Filename: pool/main/l/linbpq/linbpq_6.0.24.33-jammy1_amd64.deb
+Size: 743874
+SHA256: 7248ae98d003161fd2ffbb40cad649a7fefc453eaf836fb488eadb51d6e39f6d
+SHA1: fe4f88381aa033728f5f66b30b751bbe27b358b4
+MD5sum: 9253695e7cfcdcf764f69e8d4840037a
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
