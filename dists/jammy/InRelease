@@ -4,39 +4,39 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: jammy
-Date: Tue, 26 Mar 2024 21:15:14 UTC
+Date: Sat, 06 Apr 2024 01:36:25 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 MD5Sum:
- 01b11dbecc0aa9cbfdee3ebd23d4e99e 5574 main/binary-amd64/Packages
- 8f23eb94c2ac129505f1f99d8f205792 2342 main/binary-amd64/Packages.gz
+ 9defc3ef041eb54cb2492917c46c26ee 5574 main/binary-amd64/Packages
+ 725955f739b85eb719b74ab3aa82291e 2340 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
  06d4228b39ce51226fb08af0569067c3 1062 main/binary-arm64/Packages
  2230b8a0779a89ad3b768025562f6e4f 679 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
 SHA1:
- 1ad1e60e8686b1c3072a3b77e8ed6c681a7157a9 5574 main/binary-amd64/Packages
- dc3934dd33a4ab82b7452fde82030b082bcb2f4e 2342 main/binary-amd64/Packages.gz
+ 4e016c48d6b427f5dbbd0c72f967fff5244e75e3 5574 main/binary-amd64/Packages
+ 10a2e19c7659fdc01fd8045ac9fd627f650366c7 2340 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
  fa2afe04b6d65802fdcfb8947e89a845fb751de1 1062 main/binary-arm64/Packages
  4fb6a1c8377a9d445132601c3fb1e2bb77b16e75 679 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
 SHA256:
- 3ea81069a34ff0abdbcb6d33ceeb874243e796eb22e60f1c59a9c5281eea52fd 5574 main/binary-amd64/Packages
- 68bb5a79faf50399edefe1790163d80ea5d9b34b44b41311571d0d422a3df32c 2342 main/binary-amd64/Packages.gz
+ c5d95ed20979d8858aceb355b8cd74eadfa081abe640dcccf1f5d492de03e205 5574 main/binary-amd64/Packages
+ 8e24090a52d30daecf35f4587b9dc44ca417bff438b4fa4eed634ad06bce863a 2340 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
  b016d6467c973609eb33778f9ab7436d918fe1fbdc893e777cdc7b8691eb2576 1062 main/binary-arm64/Packages
  89b51482c8d6975e29526b43c75f06308be89f0052179ff9f4de85eedb7a1a58 679 main/binary-arm64/Packages.gz
  0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmYDOuUACgkQA6H7ehkE
-dxukmggAqCnC+ytAQ8hYovRVnzrsxP24Nzgzc40D1KKPZ40DYgDBv3dAOEe27vkp
-M2pUijXqGZaTAH+st86oXVkQIy0aL5UXlHvYYbNP96lZFxbBV7wUVZ3A2LnhCUOo
-1HeXGEbiE5EU4VCzJy98ZlPIxqzKsGsQQRb9WD0AUPAo5dXAzrN8LLKNiW9zj9nP
-a0sUZpo9TcFc7i6YN6X3SVsHViUdwaIpu/MCLnI7gt3R60TlogmaoMk44xV2ihe8
-tylJEPFJQzdsl6kcXEqBEuhxVjG+mr/QB1aPl2AeAADDT8qyr5AIXiKurUM4iYei
-zrHLocox9iUJF0E1BOBBY222f5PD0A==
-=1MNL
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmYQpyEACgkQA6H7ehkE
+dxtigQf+I2I0U6kT9IPcr8/59H1e40nvFrHul0obIeSTFeeIYZM3eZKMov9gAp77
+lLp6R25j4Pg0KG7f5kCDYaw1lIxrR0WYxZM0Sk4+OSGnaJ5BJGPB7mwi5g1k1Wlp
+fHzMZ9kwmJNr88H5T2MQI4CzsUmUq8ewYBeIxow5lzAkKhCKZusOfBE0PbQraCuF
+UU2nvf8KCue+gBZCfJetRggLmOKRPu36Nvwx37+NZI7GN8FAV5Ks9DpNIePTjEYZ
+WNBola/xZZg03BRbE3uYM81Jgo1mCvAfrcnfroSL0IrCSuOEQkEEWKdD/dsOipUq
+kf0MNl5OPrgOy6WNtAcq/YFIZsDJOg==
+=HNje
 -----END PGP SIGNATURE-----
