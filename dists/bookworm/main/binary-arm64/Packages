@@ -43,7 +43,7 @@ Description: debug symbols for fbb
 Build-Ids: 18c59f4ba5d9106fec1ba12d3234c77f4955ce80 2d498378013985062bb27a5536f0190e57d5e5fe 32f52824629cc39fb4327ab3a1d498b10560928f 42bf3876b86761c62b34d02b60e5f68733258a35 44b07e3bb0a31599c26a0277e08b3844353eba1b 4548e549f82907cec315f7710473745e33d0e3d6 797e57fbaed046db40c256e061e04b937839376b 7a6a45e0a158f9b320ec8f7088fd6223ddf7b1e5 ce49c93f5ccb072efb5e84ba1bbc5bb7f93b9448 f845b4e9be2d50038b96bfd17b55a9388cfc9368 fd43fa0e6bc17f015cc023dd43cd9992f1c85961
 
 Package: linbpq
-Version: 6.0.24.34-1~bpo12+1
+Version: 6.0.24.34-2~bpo12+1
 Architecture: arm64
 Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
 Installed-Size: 2389
@@ -51,11 +51,11 @@ Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0)
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.34-1~bpo12+1_arm64.deb
-Size: 593056
-SHA256: 9bc68a32ead4fe9bf94fee27b881e4f99ad12588c58c64e50e4383944dbf3c94
-SHA1: 3f2b8e1be2dcd4dca0a4c85aa22fa2381be501c0
-MD5sum: 648a34c3cd39a6bfca1a61ebe925be55
+Filename: pool/main/l/linbpq/linbpq_6.0.24.34-2~bpo12+1_arm64.deb
+Size: 592988
+SHA256: 150044ceb69c339ab0df8b9481391fc26284b4232538d1aa7d864a55fa5ecaf4
+SHA1: cf8c09fd9bbd9c469c47ef426fea34b16ce2ca72
+MD5sum: 9bb0945bcb49dc6c457ded26365b5d76
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
