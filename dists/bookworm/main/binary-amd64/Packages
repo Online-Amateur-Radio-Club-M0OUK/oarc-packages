@@ -102,7 +102,7 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.71-1~bpo12+1
+Version: 0.0.0.72-1~bpo12+1
 Architecture: amd64
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 808
@@ -111,11 +111,11 @@ Recommends: libpulse0
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.71-1~bpo12+1_amd64.deb
-Size: 261432
-SHA256: 1ecb0ce6082f77a5caff467fa9c3d18598c4e752078b641dcbf16e3863f90662
-SHA1: 05785565c3935516b2ade29584470a81b829bd98
-MD5sum: f632d2a9691eeec3dcb63ca4f4d46fbd
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.72-1~bpo12+1_amd64.deb
+Size: 261264
+SHA256: f6a00056da03aa484ab4f805cf82b1a84d3db220987b3f4f7a9d17c1bc2332bb
+SHA1: e5a47e07d9c1e5e9df6400d17841e4a587a6c972
+MD5sum: c6b745fbdda6c0a2542885a1cae7a87e
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 

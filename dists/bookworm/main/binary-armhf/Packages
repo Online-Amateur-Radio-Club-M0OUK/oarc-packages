@@ -60,20 +60,20 @@ Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
 
 Package: qtsoundmodem
-Version: 0.0.0.71-1~bpo12+1
+Version: 0.0.0.72-1~bpo12+1
 Architecture: armhf
 Maintainer: Dave Hibberd <d@vehibberd.com>,
 Installed-Size: 762
-Depends: libasound2 (>= 1.0.16), libc6 (>= 2.34), libfftw3-single3 (>= 3.3.10), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.27), libfftw3-single3 (>= 3.3.5), libgcc-s1 (>= 3.5), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5serialport5 (>= 5.6.0), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 5)
 Recommends: libpulse0
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/QtSoundModem.html
 Priority: optional
 Section: hamradio
-Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.71-1~bpo12+1_armhf.deb
-Size: 231896
-SHA256: e23348a804562297db4f368667ce059e245ab21dcc60426c383dfddab6db73b9
-SHA1: dee2200d46fac3885632e71b3bb86e9272dae3c9
-MD5sum: c9c69dc7e0c463821ba527e64b8bb515
+Filename: pool/main/q/qtsoundmodem/qtsoundmodem_0.0.0.72-1~bpo12+1_armhf.deb
+Size: 232068
+SHA256: 8b4a3100d9a0963c1e0629f6988098f42c5c4ffc7b14bfd46a125d0cbf8874ad
+SHA1: fb5e9f8035502bbcc0a34ad065ef182886cc3442
+MD5sum: 318b9bb9bfb53b7b87da632f1244fcbb
 Description: Qt-based Sound Modem & Terminal for packet
  QtSoundModem (QtSM) is a multi-platform port of UZ7HO's SoundModem
 
