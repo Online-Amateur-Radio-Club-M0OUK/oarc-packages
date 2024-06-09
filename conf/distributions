@@ -29,3 +29,11 @@ Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 SignWith: 1904771b
+
+Origin: OARC Packet Radio Packages
+Label: maintained by Hibby MM0RFN <hibby@debian.org>
+Codename: noble
+Architectures: amd64
+Components: main
+Description: Personal repository
+SignWith: 1904771b

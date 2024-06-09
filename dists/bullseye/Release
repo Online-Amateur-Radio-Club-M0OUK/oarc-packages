@@ -1,28 +1,28 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bullseye
-Date: Tue, 16 Apr 2024 20:35:19 UTC
+Date: Sun, 09 Jun 2024 23:40:39 UTC
 Architectures: arm64 armhf
 Components: main
 Description: Personal repository
 MD5Sum:
- 80e45122f5a0925e25808b3682bc7e67 8434 main/binary-arm64/Packages
- 7f9f92b6b85bf3126fb87b34c487d970 3522 main/binary-arm64/Packages.gz
+ b6d597d968ad9c8d1fe369535173c24d 8629 main/binary-arm64/Packages
+ 374bbc0cdf4e5aa94e6b211ae94bbea6 3639 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
- f97692ebbce9df3b1b161e44eb5a0f68 8432 main/binary-armhf/Packages
- 60ff1437c27aa0f9fce334bc876fbb21 3520 main/binary-armhf/Packages.gz
+ c71ec0bdd0fcb77d948cdb5ebcb64d03 8627 main/binary-armhf/Packages
+ d1dc71b6eba57a97116e314f670d113f 3635 main/binary-armhf/Packages.gz
  0f4aa2d4c75fcfcb5a18843daa2f949a 156 main/binary-armhf/Release
 SHA1:
- 3387931066da929094cac50ee7463555a1636af0 8434 main/binary-arm64/Packages
- ed4dd06472d7acfe2a85818718f309bedba22a90 3522 main/binary-arm64/Packages.gz
+ 3db89d5c6460a0711179ef5a73d72f49ded8ea3b 8629 main/binary-arm64/Packages
+ c29a977e93f62f5ad1a3b2ca93a7305b636e7ecf 3639 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
- 20a8dedc902a4f667ade292ef65a85145eee8405 8432 main/binary-armhf/Packages
- 46c63ee78c3d663c12c7ad784af440d850939dd5 3520 main/binary-armhf/Packages.gz
+ e662b7f9b51f8b583a66ba586e2dd87124118b7a 8627 main/binary-armhf/Packages
+ 7255fce85cd3d1462d03503027a71e490e60b2c3 3635 main/binary-armhf/Packages.gz
  a2c5c99a14ee3c0c8ccaabc52ac79ab42403fe65 156 main/binary-armhf/Release
 SHA256:
- 4575c822eb04fc836164d1276de4d41cdf5c4f7e7e3a03c30bbdff6f29440e25 8434 main/binary-arm64/Packages
- 51a4eb8bba37d90aac898e224ddcd5d448b6ce8fd80c4c41aec824e7c67f64ac 3522 main/binary-arm64/Packages.gz
+ 23223b936a14d15c93a9f9737bc08d48e4e64380be995f7e0993f6a4c81ee365 8629 main/binary-arm64/Packages
+ 461674653d80ed5bb94126e6d59fa536661143c3676f7a44bdb862b918b573be 3639 main/binary-arm64/Packages.gz
  0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
- 0d49c287f7c3af0d8122209968b47d3950c2d8fe6803d50f54e3418c3240a1f3 8432 main/binary-armhf/Packages
- c124cccf930aca67f2ac6093470ed8c90df472f2eba84c73ba5a3e78e4369321 3520 main/binary-armhf/Packages.gz
+ d6e1746b91fdb3e2366ca5b170ab77782ae3f0d6c7f80cb16db36839d8c36a86 8627 main/binary-armhf/Packages
+ 9fdc46e2f754ab520a83753ef912d4d66085670e430ef8550295effc909b78e2 3635 main/binary-armhf/Packages.gz
  f5f979447b5b021c34ac2d2a7076bbeb349c510837f6d12e5a1b59cfc262b147 156 main/binary-armhf/Release

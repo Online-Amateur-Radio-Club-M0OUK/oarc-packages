@@ -1,0 +1,20 @@
+Package: linbpq
+Version: 6.0.24.38-noble1
+Architecture: amd64
+Maintainer: Dave Hibberd <hibby@debian.org>
+Installed-Size: 2466
+Depends: libc6 (>= 2.34), libconfig9, libpcap0.8t64 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser
+Homepage: https://www.cantab.net/users/john.wiseman/Documents/
+Priority: optional
+Section: hamradio
+Filename: pool/main/l/linbpq/linbpq_6.0.24.38-noble1_amd64.deb
+Size: 741358
+SHA256: f94ecdc52a60f811da3d190e3eb8d77db3607d1e11f49833a4dee57ec14dfac7
+SHA1: 579686fabebc9291e803e526fe72b9823f79d231
+MD5sum: 03006ff95305437e15e00a8c6a6c0359
+Description: Packet node and ax25 stack
+ LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
+ It is actively developed by John G8BPQ and contains a complete, independent
+ implementation of ax.25 and net/rom as well as BBS and Chat applications and
+ can be used either as a packet switch or as a full featured node.
+

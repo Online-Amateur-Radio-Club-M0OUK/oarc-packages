@@ -61,6 +61,10 @@ For Ubuntu 22.04 LTS (Jammy Jellyfish, amd64, released April 2022) amd64:
 
 `deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main`
 
+For Ubuntu 24.04 LTS (Noble Numbat, amd64, released April 2024) amd64 (A growing subset of packages):
+
+`deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages jammy main`
+
 RaspiOS Stable (bookworm, 32 bit armv7/armhf AND arm64, released 2020):
 
 `deb https://online-amateur-radio-club-m0ouk.github.io/oarc-packages bookworm main`
@@ -81,7 +85,7 @@ Run the below commands to pull in the package lists & install;
 | -------      | --------                      | ------------ |
 | QtTermTCP    | 0.0.0.73                      | qttermtcp    |
 | QtSoundModem | 0.0.0.72                      | qtsoundmodem |
-| LinBPQ       | 6.0.24.34                     | linbpq       |
+| LinBPQ       | 6.0.24.38                     | linbpq       |
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
 | FBB          | 7.011                         | FBB          |

@@ -1,6 +1,6 @@
 Name: default
 IncomingDir: incoming
 TempDir: tmp
-Allow: testing bookworm bullseye jammy
+Allow: testing bookworm bullseye jammy noble
 Permit: unused_files
 Cleanup: unused_files
