@@ -89,6 +89,8 @@ Run the below commands to pull in the package lists & install;
 | Direwolf     | 1.7-dev                       | direwolf     |
 | Uronode      | 2.15, hibby's twists edition* | uronode      |
 | FBB          | 7.011                         | FBB          |
+| Svxlink      | 24-02                         | svxlink      |
+| qtel         | 24-02                         | qte          |
 
 * Hibby's twists include: addition of MOTD for users connecting in via Net/Rom, removal of all ROSE & FLEXNET menu commands, removal of telnet/ping and other IP commands and likely some other stuff I've forgotten.
 

@@ -24,3 +24,52 @@ Description: Packet radio mailbox and utilities
   * reqdir: FBB server which requests directory listings.
   * xfbbC: B/W Ncurses console for xfbbd.
 
+Package: qtel-icons
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: all
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 51
+Multi-Arch: foreign
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/qtel-icons_24.02-jammy2_all.deb
+Size: 32676
+SHA256: 059c82980e7bde88c9372b3a281c3a043482e4fcc3ee38c3db8d4545e98b90c8
+SHA1: 11edae1da7a70112380c04e2535fc20e6465d605
+MD5sum: 0645f3ff311e0f95539a53e7838aac0a
+Description: Icons for graphical client for the EchoLink® protocol
+ Icons for Qtel, a graphical client program for the EchoLink®
+ ham radio protocol.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: svxlink-gpio
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: all
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 64
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/svxlink-gpio_24.02-jammy2_all.deb
+Size: 37584
+SHA256: 632ac40e77188fa08c4402bd5469210d50d4ad6da0e7417a050af5e5c5496b48
+SHA1: 0e9ae5ce57f2343e5269b0b474b110622a7f08f2
+MD5sum: ff6727b64b61bcb52c22dba9fa25870b
+Description: GPIO control scripts SvxLink amateur radio server
+ This package contains the GPIO control scripts for general purpose I/O
+ for the SvxLink suite. SvxLink provides access to a ham radio
+ transceiver via the EchoLink® protocol.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ By connecting into a server connected to a repeater, an operator
+ can call into a local radio net via the Internet while traveling
+ out of the area. EchoLink® is a registered trademark of
+ Synergenics, LLC.
+

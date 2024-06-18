@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: testing
-Date: Sun, 09 Jun 2024 23:26:43 UTC
+Date: Tue, 18 Jun 2024 23:17:11 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
@@ -22,12 +22,12 @@ SHA256:
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmZmOjQACgkQA6H7ehkE
-dxvghAf/b7VJxE+VBCIRQHy4vKOBNfffC969hj2JExwqEK+eiapAQDAwmLQFHtY5
-UJ+FYlGNzhlEL+rV/tpl5AG4OTsbXXW+CyJ25WtdM/p0pTeemYMNb+ufOOXSQLHv
-i3J+YfPsL7khg2uBQi7lo1t+fWcMuYg5UpWxrupO5WNsTcJHZlC2yNcr2BwUmtSn
-eev3D/i2tleEmLxNKCYFNrxjGIlwctxIUVYqPZnrMYjjKJtIzRGCF7UkUNjDndJR
-O3OPZht8fe4u5X+QoZHg3ZRYs4g6e+eKIfD/xk1XFHJVHP3zff59tZSmEfjf26xG
-yHtokGa6c+RyHBo2HvJwqwgFDjhs6w==
-=NYkT
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmZyFXkACgkQA6H7ehkE
+dxtxygf/QGBnjYrUK4LVcxWGC4zwaBJ7955kaFg05HPsCvQcaJpRp0/MoRZ9VmTG
+m4JKhrxJkqCPVOE23pOdu3Ye5vZHbyy4pI2U/h7dvBEnfYmTTV8qceSsNrcF17Tk
+0qoCHo+eRmTFPiqsVfoM9p4KFmPtPAbd+CN6pHzCJ8QjZSon924R1d766rvAohro
+tJj6StGoP0mg16G2n4vwp1Ew4+Znc3pkRqnuxxXKwfff6j++X1u+tPimjykikt37
+apiUOdAsDXm2KGL7muT70P6ViENKqpTjhjvrpF3Oj8aOO9x2lk8tGnW/7ZX7mLM5
+MZ3gIIThcHgfPg0w4D5QERKqgCEomA==
+=toAB
 -----END PGP SIGNATURE-----

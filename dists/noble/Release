@@ -1,19 +1,19 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <hibby@debian.org>
 Codename: noble
-Date: Sun, 09 Jun 2024 23:26:53 UTC
+Date: Tue, 18 Jun 2024 23:17:22 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 4345887d6121efddd30267989e29ad58 898 main/binary-amd64/Packages
- 2b470c012c80be30348940c9c4248774 616 main/binary-amd64/Packages.gz
+ ee7128309c8eedffa3931015f91c7119 20230 main/binary-amd64/Packages
+ 9c46ed7b9a7ad65fbfb67fb0321cb031 4250 main/binary-amd64/Packages.gz
  ddfb9eeaf8832890e6c4f2d6bc27a490 157 main/binary-amd64/Release
 SHA1:
- 0480f08a18785494a1aedf29ba61429a0184a3dc 898 main/binary-amd64/Packages
- cb41344fb547dbde58a537e12397fbd179837cf1 616 main/binary-amd64/Packages.gz
+ 2b49b69327932faab03621c819ce9e9ff393753c 20230 main/binary-amd64/Packages
+ 53140c6a1ce087e44cce354cc9e1e08a296a28a0 4250 main/binary-amd64/Packages.gz
  42b3c4439fad1d9385915a37d126c82b445d77b4 157 main/binary-amd64/Release
 SHA256:
- f3dc1661a7f5dcec794ac7b2d9d2f5d0059ee84781f8ae1b2eec0a6d568987d9 898 main/binary-amd64/Packages
- 9e3a324354f011b047646fc9649a98cc56e7e48d543dd1ee4b4ad3f9ec68e410 616 main/binary-amd64/Packages.gz
+ 0ce63b50b9787cafef188d1e435dd288e1144406c99aeae3e285ed7ba3c9dfff 20230 main/binary-amd64/Packages
+ b000bfb994b483b7671a595b72293eb0897726444db3ef132b31123dda5fe131 4250 main/binary-amd64/Packages.gz
  460154445db97ae9faf842508b75e1c89c18390c940db04536588247eeaf4f81 157 main/binary-amd64/Release

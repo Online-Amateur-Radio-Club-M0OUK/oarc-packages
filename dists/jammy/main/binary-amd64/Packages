@@ -48,6 +48,256 @@ Description: Packet radio mailbox and utilities
   * reqdir: FBB server which requests directory listings.
   * xfbbC: B/W Ncurses console for xfbbd.
 
+Package: libasyncaudio-dev
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1074
+Depends: libasyncaudio1.6 (= 24.02-jammy2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/svxlink/libasyncaudio-dev_24.02-jammy2_amd64.deb
+Size: 173220
+SHA256: 4b2c3b556579a9a80c9c02f956d6acaf9a95a57913f94714e3acd9abc931676a
+SHA1: b1891ae17ee37f4d285153498eb4d630757f29a4
+MD5sum: d46f0ac4e2b7a9f6f53300cdacb748c2
+Description: AsyncAudio library for SvxLink (development files)
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the static
+ version and the header files for the AsyncAudio library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasyncaudio1.6
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 315
+Depends: libasound2 (>= 1.0.16), libasynccore1.6 (>= 24.02), libc6 (>= 2.35), libgcc-s1 (>= 3.3.1), libgsm1 (>= 1.0.18), libopus0 (>= 1.1), libsigc++-2.0-0v5 (>= 2.8.0), libspeex1 (>= 1.2~beta3-1), libstdc++6 (>= 5.2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libs
+Filename: pool/main/s/svxlink/libasyncaudio1.6_24.02-jammy2_amd64.deb
+Size: 114946
+SHA256: 34c772bf85a1656e9dc0effa019d46816ab7684a29d84d60cd84dadbf4c135d4
+SHA1: 4c16857f77a969d895a376a3d6025cb05bdbe29c
+MD5sum: 3539b67b2433c2722ff67e009b6cc216
+Description: AsyncAudio library for SvxLink
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the AsyncAudio
+ library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasynccore-dev
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1024
+Depends: libasynccore1.6 (= 24.02-jammy2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/svxlink/libasynccore-dev_24.02-jammy2_amd64.deb
+Size: 157634
+SHA256: b596bb8c08816c53d22f3a5be802f100f5cdab70e41f4330e4bea608f90d942d
+SHA1: dab16a13abf3c9b8d448658209223e1be236e508
+MD5sum: b5620be78c1c3c8304e2011c54ea568a
+Description: AsyncCore library for SvxLink (development files)
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the static
+ version and the header files for the AsyncCore library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasynccore1.6
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 275
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libs
+Filename: pool/main/s/svxlink/libasynccore1.6_24.02-jammy2_amd64.deb
+Size: 95020
+SHA256: d4ceee373d03c13e8f1e8a15d175cbd6c05e56487751a7969f435efa3b3b2c7b
+SHA1: 80b528e566c66c64877e0ebea62f3cc614e644fb
+MD5sum: 1205e831cb7e0973174070046f695f89
+Description: AsyncCore library for SvxLink
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the AsyncCore
+ library for event-driven applications that use Async classes.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasynccpp-dev
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 262
+Depends: libasynccpp1.6 (= 24.02-jammy2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/svxlink/libasynccpp-dev_24.02-jammy2_amd64.deb
+Size: 54558
+SHA256: b2d9c9e495bf72686414d510f97d6f41e03b1baa7cb4210a1ff1656852deff3e
+SHA1: 0e42b949bf91a74cd5c5110d1b090ab178e72ff7
+MD5sum: 2dbb9b40a2a488dcdde396964424c630
+Description: AsyncCpp library for SvxLink (development files)
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the static
+ version and the header files for the AsyncCpp library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasynccpp1.6
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 131
+Depends: libasynccore1.6 (>= 24.02), libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libs
+Filename: pool/main/s/svxlink/libasynccpp1.6_24.02-jammy2_amd64.deb
+Size: 47082
+SHA256: e7a4acca1a2d0a025df6027ae98e23317a9eae75508cb8a5e9d2b10ddac25e57
+SHA1: f07c0e01191b72a2b4e82ec3fa8a5da841691895
+MD5sum: b5f418a76748e11690b5e33fa25e8fe2
+Description: AsyncCpp library for SvxLink
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the AsyncCpp
+ library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasyncqt-dev
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 124
+Depends: libasyncqt1.6 (= 24.02-jammy2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/svxlink/libasyncqt-dev_24.02-jammy2_amd64.deb
+Size: 34454
+SHA256: 5dbf0d163cf7a93080ea282439a10ade3a0782598d22ea9a34afa4e867929eb2
+SHA1: 183b24b64c09e6b8da60382587fb1b1fce11472f
+MD5sum: 5887a2439b0869e4ebb22d11dfc605d7
+Description: AsyncQt library for SvxLink (development files)
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. This package contains the static
+ version and the header files for the AsyncQt library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libasyncqt1.6
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 91
+Depends: libasynccore1.6 (>= 24.02), libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libqt5core5a (>= 5.15.1), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libsigc++-2.0-0v5 (>= 2.6.1), libstdc++6 (>= 5.2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libs
+Filename: pool/main/s/svxlink/libasyncqt1.6_24.02-jammy2_amd64.deb
+Size: 34152
+SHA256: f757039b24f9dc88d1fd2e9db25cdb30167b1bac81d840863e06bececbb6081a
+SHA1: de37cb2468a76e7c2a940fb939865ce15b8e912c
+MD5sum: b1400e670c566cebd94ef2b093e48056
+Description: AsyncQt library for SvxLink
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol.  This package contains the AsyncQt
+ library for event-driven Qt applications using the Async classes.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libecholib-dev
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 408
+Depends: libecholib1.3 (= 24.02-jammy2)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/svxlink/libecholib-dev_24.02-jammy2_amd64.deb
+Size: 80692
+SHA256: e02d393567143ca66869ea445848bb72b1de76f811df847de4dcd3f6a2d7b7e9
+SHA1: 86a59794e771b9c2d5d2f6dab29949b81210d657
+MD5sum: 63de6009d250ad56d8b2798efaaacecd
+Description: EchoLib library for SvxLink (development files)
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol.  This package contains the static
+ version and the header files for the EchoLib library.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: libecholib1.3
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 159
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libgsm1 (>= 1.0.18), libsigc++-2.0-0v5 (>= 2.8.0), libspeex1 (>= 1.2~beta3-1), libstdc++6 (>= 11)
+Multi-Arch: same
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: libs
+Filename: pool/main/s/svxlink/libecholib1.3_24.02-jammy2_amd64.deb
+Size: 57114
+SHA256: be92e996ea41c1db7e48b362d3a9f8df3228f863ea39f96b2a85e9ea294516f9
+SHA1: c071a99e1077693a92b75f62881014b71204da8a
+MD5sum: 9776d167017ac30ac44e2169dff4f471
+Description: EchoLib library for SvxLink
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol.  This package contains EchoLib, a
+ library for EchoLink communications.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
 Package: linbpq
 Version: 6.0.24.38-jammy1
 Architecture: amd64
@@ -67,6 +317,52 @@ Description: Packet node and ax25 stack
  It is actively developed by John G8BPQ and contains a complete, independent
  implementation of ax.25 and net/rom as well as BBS and Chat applications and
  can be used either as a packet switch or as a full featured node.
+
+Package: qtel
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 525
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libasyncqt1.6 (>= 24.02), libc6 (>= 2.34), libecholib1.3 (>= 24.02), libgcc-s1 (>= 3.3.1), libgsm1 (>= 1.0.18), libqt5core5a (>= 5.15.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5network5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 5.2), qtel-icons
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/qtel_24.02-jammy2_amd64.deb
+Size: 158034
+SHA256: 138e2918dd274c1335d50f5f84fafa0d517dec6da884f6ac3d4ad7c83a631df3
+SHA1: b8d72a1263bb20ebfae230aac172c5e7ce8db108
+MD5sum: c7dbe135e7cfbe278d980a4e548ab178
+Description: Graphical client for the EchoLink® protocol
+ Qtel is a graphical client program for the EchoLink® ham radio
+ protocol.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: qtel-icons
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: all
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 51
+Multi-Arch: foreign
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/qtel-icons_24.02-jammy2_all.deb
+Size: 32676
+SHA256: 059c82980e7bde88c9372b3a281c3a043482e4fcc3ee38c3db8d4545e98b90c8
+SHA1: 11edae1da7a70112380c04e2535fc20e6465d605
+MD5sum: 0645f3ff311e0f95539a53e7838aac0a
+Description: Icons for graphical client for the EchoLink® protocol
+ Icons for Qtel, a graphical client program for the EchoLink®
+ ham radio protocol.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
 
 Package: qtsoundmodem
 Version: 0.0.0.72-jammy1
@@ -103,6 +399,147 @@ MD5sum: c627fda8ad58c3a0a7ef158e5b1a4ced
 Description: Qt-based Terminal for packet
  QtTermTCP is a multiplatform terminal for packet that will work over TCP, KISS
  and other modes of connectivity
+
+Package: remotetrx
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 903
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libasynccpp1.6 (>= 24.02), libc6 (>= 2.34), libgcc-s1 (>= 4.0), libgcrypt20 (>= 1.9.0), libgpiod2 (>= 1.1), libjsoncpp25 (>= 1.9.5), libpopt0 (>= 1.14), librtlsdr0 (>= 0.6.0), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11), svxlink-gpio (= 24.02-jammy2), adduser
+Recommends: svxlink-server (= 24.02-jammy2), svxlink-calibration-tools (= 24.02-jammy2)
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/remotetrx_24.02-jammy2_amd64.deb
+Size: 328002
+SHA256: 22b9a8e3caed5fbb7ae1ad67ca502d8d74c27753dbe4b1f7ed433bc127099274
+SHA1: b8624b7264af4bb8ac316f585f67e4c1f927f2c8
+MD5sum: 9d542659149a6d81a2beaf6860383a98
+Description: Remote controller for radio transceivers
+ The RemoteTrx server facilitates remote control of amateur radio
+ transceivers via the EchoLink® protocol. It is normally
+ used together with the 'svxlink-server' package, which allows
+ for nearly world-wide access from the Internet.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ The RemoteTrx server provides remote control of a connected radio
+ transceiver. EchoLink® is a registered trademark of
+ Synergenics, LLC.
+
+Package: svxlink-calibration-tools
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 1427
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libasynccpp1.6 (>= 24.02), libc6 (>= 2.34), libgcc-s1 (>= 4.0), libgcrypt20 (>= 1.9.0), libgpiod2 (>= 1.1), libjsoncpp25 (>= 1.9.5), libpopt0 (>= 1.14), librtlsdr0 (>= 0.6.0), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11)
+Breaks: svxlink-server (<< 17.12.1-1)
+Replaces: svxlink-server (<< 17.12.1-1)
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/svxlink-calibration-tools_24.02-jammy2_amd64.deb
+Size: 405252
+SHA256: c053a5e639a274d6ea386e14bf47ff12d8b433e2bb749399bb2c0ab313ecef8a
+SHA1: 69efd5a89cf29ba4ea0ea7699f1eb64cc5a84210
+MD5sum: 7799195c7db94dd964ef0aa748ab9b75
+Description: Calibration tools for SvxLink amateur radio suite
+ SvxLink facilitates remote control of amateur radio transceivers via the
+ EchoLink® protocol. This package included the calibration tools.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ The RemoteTrx server provides remote control of a connected radio
+ transceiver. EchoLink® is a registered trademark of
+ Synergenics, LLC.
+
+Package: svxlink-gpio
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: all
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 64
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/svxlink-gpio_24.02-jammy2_all.deb
+Size: 37584
+SHA256: 632ac40e77188fa08c4402bd5469210d50d4ad6da0e7417a050af5e5c5496b48
+SHA1: 0e9ae5ce57f2343e5269b0b474b110622a7f08f2
+MD5sum: ff6727b64b61bcb52c22dba9fa25870b
+Description: GPIO control scripts SvxLink amateur radio server
+ This package contains the GPIO control scripts for general purpose I/O
+ for the SvxLink suite. SvxLink provides access to a ham radio
+ transceiver via the EchoLink® protocol.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ By connecting into a server connected to a repeater, an operator
+ can call into a local radio net via the Internet while traveling
+ out of the area. EchoLink® is a registered trademark of
+ Synergenics, LLC.
+
+Package: svxlink-server
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 2422
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libasynccpp1.6 (>= 24.02), libc6 (>= 2.34), libcurl3-gnutls (>= 7.16.2), libecholib1.3 (>= 24.02), libgcc-s1 (>= 4.0), libgcrypt20 (>= 1.9.0), libgpiod2 (>= 1.1), libgsm1 (>= 1.0.18), libjsoncpp25 (>= 1.9.5), libpopt0 (>= 1.14), librtlsdr0 (>= 0.6.0), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11), libtcl8.6 (>= 8.6.0), svxlink-gpio (= 24.02-jammy2), adduser
+Recommends: remotetrx (= 24.02-jammy2), svxlink-calibration-tools (= 24.02-jammy2)
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/svxlink-server_24.02-jammy2_amd64.deb
+Size: 745428
+SHA256: 2452606583efab4e65adfa3763de4e6e6764cf5457fa15c1a052e43f10d7bc87
+SHA1: 62b16420b629f622f5b379def2212a1566c4e43a
+MD5sum: f0773c74680293d3083ee5ed6a4f6f65
+Description: Voice-over-IP server for ham radio operators
+ The SvxLink server provides access to a ham radio transceiver via
+ the EchoLink® protocol. It can act as a repeater controller
+ or operate on a simplex channel. Based on a modular design, the server
+ can be configured to provide voice mail and echo (talkback) service.
+ It is normally used together with the 'remotetrx' package, which allows
+ the remote control of a radio transceiver.
+ .
+ For a client program implementing the EchoLink® protocol, please
+ have a look at the 'qtel' package.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
+
+Package: svxreflector
+Source: svxlink
+Version: 24.02-jammy2
+Architecture: amd64
+Maintainer: Debian Hamradio Maintainers <debian-hams@lists.debian.org>
+Installed-Size: 368
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libasyncaudio1.6 (>= 24.02), libasynccore1.6 (>= 24.02), libasynccpp1.6 (>= 24.02), libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libgcrypt20 (>= 1.9.0), libjsoncpp25 (>= 1.9.5), libpopt0 (>= 1.14), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11), adduser
+Homepage: https://www.svxlink.org
+Priority: optional
+Section: hamradio
+Filename: pool/main/s/svxlink/svxreflector_24.02-jammy2_amd64.deb
+Size: 149616
+SHA256: d31573e2317472a9ff415320b2cffe4cefc174b8229aa9cd74c61b1cde7f045f
+SHA1: 968dcf4066b3bf6e70e6496c4c3aa0476e8a96c1
+MD5sum: 366772bd4decdeb216e13d7b2ee2f483
+Description: Conference server for SvxLink amateur radio servers
+ The SvxReflector can interconnect multiple SvxLink nodes. Audio sent to
+ the reflector is broadcast to all other nodes. Only one talker is
+ allowed at a time.
+ .
+ For a client program implementing the EchoLink® protocol, please
+ have a look at the 'qtel' package.
+ .
+ EchoLink® allows licensed amateur radio operators to communicate
+ over the Internet, including remote access to station equipment.
+ EchoLink® is a registered trademark of Synergenics, LLC.
 
 Package: uronode
 Version: 2.15-3+jammy1

@@ -4,30 +4,30 @@ Hash: SHA512
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <hibby@debian.org>
 Codename: noble
-Date: Sun, 09 Jun 2024 23:26:53 UTC
+Date: Tue, 18 Jun 2024 23:17:22 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 4345887d6121efddd30267989e29ad58 898 main/binary-amd64/Packages
- 2b470c012c80be30348940c9c4248774 616 main/binary-amd64/Packages.gz
+ ee7128309c8eedffa3931015f91c7119 20230 main/binary-amd64/Packages
+ 9c46ed7b9a7ad65fbfb67fb0321cb031 4250 main/binary-amd64/Packages.gz
  ddfb9eeaf8832890e6c4f2d6bc27a490 157 main/binary-amd64/Release
 SHA1:
- 0480f08a18785494a1aedf29ba61429a0184a3dc 898 main/binary-amd64/Packages
- cb41344fb547dbde58a537e12397fbd179837cf1 616 main/binary-amd64/Packages.gz
+ 2b49b69327932faab03621c819ce9e9ff393753c 20230 main/binary-amd64/Packages
+ 53140c6a1ce087e44cce354cc9e1e08a296a28a0 4250 main/binary-amd64/Packages.gz
  42b3c4439fad1d9385915a37d126c82b445d77b4 157 main/binary-amd64/Release
 SHA256:
- f3dc1661a7f5dcec794ac7b2d9d2f5d0059ee84781f8ae1b2eec0a6d568987d9 898 main/binary-amd64/Packages
- 9e3a324354f011b047646fc9649a98cc56e7e48d543dd1ee4b4ad3f9ec68e410 616 main/binary-amd64/Packages.gz
+ 0ce63b50b9787cafef188d1e435dd288e1144406c99aeae3e285ed7ba3c9dfff 20230 main/binary-amd64/Packages
+ b000bfb994b483b7671a595b72293eb0897726444db3ef132b31123dda5fe131 4250 main/binary-amd64/Packages.gz
  460154445db97ae9faf842508b75e1c89c18390c940db04536588247eeaf4f81 157 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmZmOj4ACgkQA6H7ehkE
-dxvDxQf/d1lqmMnNLClORSj9k3kV3O2j1Z3IVi+deFf8+N7zcoV7xTISQv87QxDQ
-8Bigc9XWWRzR2OarXFYS4rzkX7lNeC5aNRHCrlF8vIEn+cVgUBQ7HFa9kRXyF7FX
-KPHfX/Wwae08K4VVNdMhCTQHpHx4GFoYUeu3UDOpUt3aCsVBUxiAiD1uieZhAk7K
-Slw6EswjVWnlOXV9J6SYJQX1HcfbmLPN9oeks+J8o6K4Tpp2ULXVXkWb4Qw5b58r
-WtavaLIlLuYV5IQ7dSYME1cUiULOYBg2g/tT5I6ccfNhjERQGjAVW5fosiS7ozPi
-238LnbSbP9ve7TyrNRADENcqKOnC5Q==
-=yKDB
+iQEzBAEBCgAdFiEEXk9UUZPolpyKWbgKA6H7ehkEdxsFAmZyFYQACgkQA6H7ehkE
+dxv0tAgAjXeEx7bbSMi1w8yDnbI57+2gxvWnCayb9uYJYB075mbTcs4IrLueN17K
+KZroaKlm3QG1R22GfsAZEpqoEJp55nT0JjSRELx8RAB2fesLR/Fco8Hhsvoph+Ep
+GWl5qmAUiDSixuz1BUDquBXshUbVHtVSYIhVVaBWUrHtpwvX87MZy4BC8HQqfjJA
+96C7DpG39WBVCk5vD24OfJijXVkp58jb1k8oO19rdN4fv8J7Ar0w+tX3p5bQfFBA
+796xtEaknp6C4lWQHZTpoOaQELtq1b8sDLzswAaT55AjIH0jS2tNfvpo4FlJBwjX
+6QULc678wNtXx8FpkbCMbZa03S7j7A==
+=VoXe
 -----END PGP SIGNATURE-----
