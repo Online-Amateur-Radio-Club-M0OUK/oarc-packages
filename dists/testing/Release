@@ -1,19 +1,19 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: testing
-Date: Tue, 18 Jun 2024 23:17:11 UTC
+Date: Sun, 07 Jul 2024 21:24:58 UTC
 Architectures: amd64
 Components: main
 Description: Personal repository
 MD5Sum:
- 1a93f5c2d570b89f79c2104808d5907b 8511 main/binary-amd64/Packages
- 5aed95b19ec5985ac60e8a96017aa8df 3639 main/binary-amd64/Packages.gz
+ b44cd451e8919b944479384275b16dcc 8511 main/binary-amd64/Packages
+ 98e6a6807fb972eaf6fc3aae7500bc44 3643 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
 SHA1:
- 84203db76bb931d1b75d8dd638c117a60628ac7f 8511 main/binary-amd64/Packages
- 6176265ee813f00d5663cad5126262666f86a555 3639 main/binary-amd64/Packages.gz
+ e441729c6fa1da142bdf87c857d6c96ec7fa7d8d 8511 main/binary-amd64/Packages
+ 6c67e394e8e1ef56f71745ac77d1b9373eda06d4 3643 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
 SHA256:
- ebbbf845839e4518c05a1b1dfab77f5aa1cb993daba576e9eb874dd380aa5ac0 8511 main/binary-amd64/Packages
- de1c136e83a3eb936fcd9f6a2f80e42f705e95fd43f843954ee26b6e6d8613d8 3639 main/binary-amd64/Packages.gz
+ ae322098ff692074062ba81da9adda5113122a67bbb3877d8272c9c61466d140 8511 main/binary-amd64/Packages
+ a35de11bcc53c44d6e0f4d463797545290015c377aef6e4b7ff108153be19cd6 3643 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release

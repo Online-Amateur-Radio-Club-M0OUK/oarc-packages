@@ -299,19 +299,20 @@ Description: EchoLib library for SvxLink
  EchoLink® is a registered trademark of Synergenics, LLC.
 
 Package: linbpq
-Version: 6.0.24.38-jammy1
+Source: linbpq (6.0.24.40-1)
+Version: 6.0.24.40-1~jammy+1
 Architecture: amd64
 Maintainer: Dave Hibberd <hibby@debian.org>
-Installed-Size: 2462
+Installed-Size: 2471
 Depends: libc6 (>= 2.34), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.38-jammy1_amd64.deb
-Size: 745208
-SHA256: 4906a5d8b0a3f8a19a996e403ec82ec10cd4eeee67f1458dc0f64f7d45c54ed8
-SHA1: 5903aa2cb87d59b0799bc7a067c3e23dea2c08bb
-MD5sum: a0d3ede13dcfdbec537c1b3120942f1c
+Filename: pool/main/l/linbpq/linbpq_6.0.24.40-1~jammy+1_amd64.deb
+Size: 745678
+SHA256: e5a8657c2dcb31522e503a9adc79effc8f23fc7ec7a71c29881f78256f80843e
+SHA1: 934de9e6928ff00dc39a52a745ec707debe20bee
+MD5sum: 41690b65dca4547e5914b7326a32cbbe
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
  It is actively developed by John G8BPQ and contains a complete, independent

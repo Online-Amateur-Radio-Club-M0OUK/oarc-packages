@@ -1,27 +1,27 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: jammy
-Date: Tue, 18 Jun 2024 23:17:18 UTC
+Date: Sun, 07 Jul 2024 21:25:05 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Personal repository
 MD5Sum:
- 38983554075e42aeea8fe47f7f69f741 25060 main/binary-amd64/Packages
- 84a07fe036941f718a837869ec334024 5971 main/binary-amd64/Packages.gz
+ 09391169648a2c7977cc03733fee8b61 25095 main/binary-amd64/Packages
+ 1796fd33548975db5154e34df82e4090 5986 main/binary-amd64/Packages.gz
  332296a305fb7b37712b921f9a5690d7 156 main/binary-amd64/Release
  3bb7bbd9a338d8ba240bd4e5d4c0be0b 2964 main/binary-arm64/Packages
  664f6c50e069c13bbbb8418fdd72a8ac 1326 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
 SHA1:
- b9f04f9b4c954509fe29227c4115a39e41fc876d 25060 main/binary-amd64/Packages
- f276b95284838d88d1b9df41dcab7f18f85102f3 5971 main/binary-amd64/Packages.gz
+ 122460e69cc556e51e5eb1d552a61be53e4d10fe 25095 main/binary-amd64/Packages
+ 0970ad91cdaf6dd07e7139f1b43131880273d159 5986 main/binary-amd64/Packages.gz
  0a633feafeca3898e1c01aebc67cc013403a452a 156 main/binary-amd64/Release
  7ba2717df294e4250791d11c67bf0b622f2f3f98 2964 main/binary-arm64/Packages
  20f468feddea9fb31bf17cf91d94e35f29e5a12c 1326 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
 SHA256:
- c3f4c07e3897f09e0d17415e49f48a071c6f55962aabdd4bb85ab144d07dcf6f 25060 main/binary-amd64/Packages
- 62020a7b55245d5cee348839f1be18455cfe23ee4750513eceed5d4f41aa2d63 5971 main/binary-amd64/Packages.gz
+ b01f55bfa90553fced6e3c6e9e36b3c9e0cba45346f540b8f9bf613177d81ee3 25095 main/binary-amd64/Packages
+ b8566745816f9b24d846fbd90581cb6071a6df3b13f51a32a8a0cf77597a47ef 5986 main/binary-amd64/Packages.gz
  33e0a429f9f9e376075e5a4e5aff3dde722393740cffb5550d1dc0df29115a57 156 main/binary-amd64/Release
  7ca895f268c8728d1b534b7946aee971cea0708e158b79731557f17014e82ddb 2964 main/binary-arm64/Packages
  00b013057776f3d8cd7dab315d7e8104d742410b220e56c8866bbf9fe24f9817 1326 main/binary-arm64/Packages.gz

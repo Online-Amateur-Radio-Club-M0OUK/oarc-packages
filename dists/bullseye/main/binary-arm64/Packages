@@ -430,19 +430,20 @@ Description: debug symbols for libecholib1.3
 Build-Ids: ea399a5c250a456b8288f3304582755e8d844519
 
 Package: linbpq
-Version: 6.0.24.38-1~bpo11+1
+Source: linbpq (6.0.24.40-1)
+Version: 6.0.24.40-1~bpo11+1
 Architecture: arm64
 Maintainer: Dave Hibberd <hibby@debian.org>
-Installed-Size: 2337
+Installed-Size: 2342
 Depends: libc6 (>= 2.29), libconfig9, libpcap0.8 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.38-1~bpo11+1_arm64.deb
-Size: 592932
-SHA256: ab5e103f64a8167bd86b1e87eb295af472da4b4a1f03c2075ba5c7aa24b96a5e
-SHA1: 0dd8322a974b26da6ae9d0546ae9a766044f0976
-MD5sum: d506878bd908cddf3c7c91f21ad45216
+Filename: pool/main/l/linbpq/linbpq_6.0.24.40-1~bpo11+1_arm64.deb
+Size: 593364
+SHA256: 9fdd1bbca4d434aa068b09c684d51a77b91f32befcf2197386ada44b1c33908c
+SHA1: a021381bc9eb5b75b44e367deddaae3c434c12be
+MD5sum: 3d14bfc7b5ce4f8778c370ba070c7d27
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
  It is actively developed by John G8BPQ and contains a complete, independent
