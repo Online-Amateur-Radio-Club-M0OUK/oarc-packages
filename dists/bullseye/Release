@@ -1,28 +1,28 @@
 Origin: OARC Packet Radio Packages
 Label: maintained by Hibby MM0RFN <d@vehibberd.com>
 Codename: bullseye
-Date: Sun, 07 Jul 2024 21:25:02 UTC
+Date: Wed, 25 Sep 2024 00:21:19 UTC
 Architectures: arm64 armhf
 Components: main
 Description: Personal repository
 MD5Sum:
- 88b158982bf24e6bf3c92688e0eae996 35141 main/binary-arm64/Packages
- 870657b2f9a333378b431f88c217b140 9064 main/binary-arm64/Packages.gz
+ 89163de5f544129e94feff1eb34eee81 35786 main/binary-arm64/Packages
+ 4eaebb57f9750449038de4818abcf862 9319 main/binary-arm64/Packages.gz
  1cdc41a00dc57302250805e70e66e7a8 156 main/binary-arm64/Release
- 458d2582aa13741039e823128a1f56dc 35133 main/binary-armhf/Packages
- 4895ced2c6b1eabe5e67dbb413680f63 9051 main/binary-armhf/Packages.gz
+ 79a75a05f287c835dc9e4ed7f2c7e4bd 35778 main/binary-armhf/Packages
+ 71719907027320bb2a74db5045ae827d 9310 main/binary-armhf/Packages.gz
  0f4aa2d4c75fcfcb5a18843daa2f949a 156 main/binary-armhf/Release
 SHA1:
- e0944276b2fc5428f06313f75ac4ac7cee886598 35141 main/binary-arm64/Packages
- ccb9b799f87be0f568f7ea1e6a59b2966f35fb92 9064 main/binary-arm64/Packages.gz
+ 56d3bca0408b330fe04dfe95404b8769de6d0eac 35786 main/binary-arm64/Packages
+ 0403a6050db2e6d9f369b00126baf25fe3a3d408 9319 main/binary-arm64/Packages.gz
  a9a6327a0bd45ea7454e68e9657de483f8e51d7f 156 main/binary-arm64/Release
- 0ed8185fd56d1742d5e421eb29ef19a6a7c80a6b 35133 main/binary-armhf/Packages
- ee69e7526a00703712c5318a5084ab7264f0d2c1 9051 main/binary-armhf/Packages.gz
+ bb58c931825c202a231764e2a069690254e590f5 35778 main/binary-armhf/Packages
+ 3102b173cf9cfd478bad2d659339ba48513a149b 9310 main/binary-armhf/Packages.gz
  a2c5c99a14ee3c0c8ccaabc52ac79ab42403fe65 156 main/binary-armhf/Release
 SHA256:
- 6313ac379ee6434c5866b12b7af9fef2f20ae45aa075960b999dc55bd7f9ac16 35141 main/binary-arm64/Packages
- 2e4f9e69e87bab584cfd71d088b45c1f42ef8bebaa88710b6583c06f37dafdec 9064 main/binary-arm64/Packages.gz
+ 01d2c1fb575e481e21aba3a6a3891af94110835dbab013951fd9ac40d22fb46c 35786 main/binary-arm64/Packages
+ dcfcdedc2934094930d7882305dcc791190ae00230883b00c814fb8f1fb6f6dd 9319 main/binary-arm64/Packages.gz
  0bce457efbd7b0954bf93db903e043dd999ab85f322853d0c31ee6f2d6182d63 156 main/binary-arm64/Release
- 6f484d43ef8d92cb1af6db1e0570dff9576ff0ad95d312a34aa31ddfbf4c8274 35133 main/binary-armhf/Packages
- 5a852a9a172c9024344087269a1e99a717abb8c5ca6156143616a2a4f04a4cc9 9051 main/binary-armhf/Packages.gz
+ 9991e35a26f719fa38a6cfbd379a6115e93cf02f218623bb8428e2b3a20b956d 35778 main/binary-armhf/Packages
+ f0617ff40e5d810dd429d2135abbfc700f87d1f7fd109858cf8a1bbf0a3e4c72 9310 main/binary-armhf/Packages.gz
  f5f979447b5b021c34ac2d2a7076bbeb349c510837f6d12e5a1b59cfc262b147 156 main/binary-armhf/Release
