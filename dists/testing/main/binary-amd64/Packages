@@ -101,19 +101,19 @@ Description: mini-buildd archive keys (and sources.lists) for hibbian
  mini-buildd instance id hibbian.
 
 Package: linbpq
-Version: 6.0.24.40-1
+Version: 6.0.24.42-1
 Architecture: amd64
 Maintainer: Dave Hibberd <hibby@debian.org>
-Installed-Size: 2300
-Depends: libc6 (>= 2.34), libconfig9, libpcap0.8t64 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser
+Installed-Size: 2299
+Depends: libc6 (>= 2.34), libconfig9, libpcap0.8t64 (>= 0.9.8), zlib1g (>= 1:1.2.0), adduser, hibbian-archive-keyring
 Homepage: https://www.cantab.net/users/john.wiseman/Documents/
 Priority: optional
 Section: hamradio
-Filename: pool/main/l/linbpq/linbpq_6.0.24.40-1_amd64.deb
-Size: 670400
-SHA256: 3b3745416684f27af9b43f0eafc636b7a80ea1040062674e8aac98a05955ed8b
-SHA1: 8df0c2568eaeb3077926a36052311c31f65f851f
-MD5sum: 59ef75f5ce30dd640c2475e4a1794beb
+Filename: pool/main/l/linbpq/linbpq_6.0.24.42-1_amd64.deb
+Size: 669304
+SHA256: 10b83a31f4e0f621db20eac919a7615f05f9e1d25212df0d108508dcf4a9cec5
+SHA1: 1faccf6772868cde18cc0ae4b76c9630377a22aa
+MD5sum: 60882e5a409efd44ba5adc7c2e1eb34e
 Description: Packet node and ax25 stack
  LINBPQ is a Linux version of the BPQ32 Node, BBS and Chat Server components.
  It is actively developed by John G8BPQ and contains a complete, independent
