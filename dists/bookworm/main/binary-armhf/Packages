@@ -86,17 +86,17 @@ Description: debug symbols for fbb
 Build-Ids: 025adb4583e084b406cefe8921f5778049b621dd 2f8d74644c180b404becd82e6d1846cade8937ba 31c27d145a5dd0a3b6edfa723ee6bcfded72bf4b 4b36ff58b8a5af905561ce495aeb7f551636fc08 4e6de63a8ee9160ac9f2b75b4a292be3c50da588 5834622d43f8566c28270c6f203998abb9281f4f 61884084732c144f340dafa6362998ce70e55b20 9691ac370d8dd78824dd036486556ca168ac2ec0 c992a6ead22f2bdd0789cacf1d55a2013a39438f d90921eef89824ee1679a2fc1990ec8bedf73368 feb2b0e32e6d37fa77553ea2cb26ec9f561b6363
 
 Package: hibbian-archive-keyring
-Version: 20240924~packetrepo12+2
+Version: 20240924~packetrepo12+3
 Architecture: all
 Maintainer: mini-buildd archive hibbian <repository@maxwell.hibbian.org>
-Installed-Size: 30
+Installed-Size: 31
 Priority: optional
 Section: misc
-Filename: pool/main/h/hibbian-archive-keyring/hibbian-archive-keyring_20240924~packetrepo12+2_all.deb
-Size: 4736
-SHA256: 70796b80d1b3c37d957cdc7065913833e20019a66ac0db2d143c8346f9243968
-SHA1: abde3064007d76192a68469242ad590fe6407ca1
-MD5sum: ca726f6b9d7688ab03f4eb3f11ffefa4
+Filename: pool/main/h/hibbian-archive-keyring/hibbian-archive-keyring_20240924~packetrepo12+3_all.deb
+Size: 4828
+SHA256: cc9bac45e35dd1402a861487de3d10fc926ad33bf836cfbbc5696abbc3b3ddc0
+SHA1: 92b24b2f7fe1f2857a55339f0bcf1f09e9057f6d
+MD5sum: 8b11714c3e00160d255ef37af8210fb4
 Description: mini-buildd archive keys (and sources.lists) for hibbian
  Automatic archive keys and APT sources.list library for
  mini-buildd instance id hibbian.
